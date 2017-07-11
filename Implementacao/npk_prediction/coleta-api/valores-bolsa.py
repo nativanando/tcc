@@ -4,7 +4,6 @@ import json
 from pprint import pprint
 
 start = datetime.datetime(2001, 1, 1)
-
 end = datetime.datetime(2017, 1, 27)
 
 f = web.DataReader("AAPL", 'google', start, end)
