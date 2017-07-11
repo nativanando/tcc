@@ -1,0 +1,63 @@
+%!TeX encoding = UTF-8
+
+\chapter{INTRODUÇÃO}\label{ch:introducao}
+
+A informatização do mercado acionário, que permite a movimentação de compra e venda de ações de forma eletrônica e automática, tornou-se fundamental ao longo das últimas décadas, gerando uma série de mudanças na forma em que as negociações são realizadas, se comparado ao modelo de negociação anterior, onde as movimentações aconteciam em uma unidade central, com a presença física dos investidores. Portanto, esse novo modelo mudou a forma de atuação nas bolsas de valores, possibilitando a movimentação de capitais \textit{online}, facilitando e aumentando a gama de possibilidades para a aquisição de novos acionistas. Atualmente, os papéis negociados mais relevantes em bolsas de valores, vêm de grandes empresas que dominam o mercado em suas respectivas áreas, gerando uma alta movimentação financeira que pode conceber um impacto tanto positivo como negativo no setor econômico, influenciando em decisões políticas e sociais que afetam não só a esfera econômica, mas também todos os níveis da sociedade \cite{shiller}.
+
+Em contrapartida, houve, automaticamente, um impacto computacional significativo sobre esse novo paradigma do mercado de ações. Com o advento da Internet e o fácil acesso aos dados históricos dos papéis negociados nas bolsas de valores, através de     \textit{sites} que disponibilizam essas informações, técnicas computacionais têm se tornado uma grande aliada para o diagnóstico dos preços de ações e índices, aumentando significamente as pesquisas e os modelos computacionais que possam auxiliar no aperfeiçoamento e análise do mercado financeiro.
+
+A complexidade em prever valores futuros no mercado de ações, é um estímulo consideravelmente grande para a comunidade científica internacional, tendo em vista a diminuição do risco de investimento em ativos financeiros. Nesse contexto, técnicas como aprendizado de máquina, Redes Neurais Artificiais  e outras soluções de inteligência artificial, vêm sendo aplicadas arduamente para possibilitar um aumento significativo na predição de valores no mercado acionário \cite{gambogi}.
+
+Dessa maneira, uma abordagem que vem ganhando destaque, dentre as pesquisas referentes à predição de cotações futuras que utilizam séries temporais, são as Redes Neurais Artificiais (RNAs). A capacidade das RNAs em trabalhar com uma quantidade significativa de variáveis simultâneas, além da composição de sua estrutura maciçamente paralela e distribuída, evidenciam sua alta escala de poder computacional, concedendo-as habilidades de aprendizado e generalização de funções. Estas duas capacidades de processamento de informação, tornam possíveis para as RNAs resolver problemas de grande escala que, usando o processamento digital convencional, são consideradas computacionalmente inviáveis e intratáveis \cite{elpink, haykin2000}.
+
+Neste sentido, dada a importância das RNAs na predição de cotações futuras de ações em bolsas de valores, o presente trabalho apresenta um estudo da aplicação destas RNAs na previsão de preços futuros dos mais relevantes papéis da NASDAQ \textit{Stock Market}, o segundo maior mercado de ações do mundo, palco onde as maiores empresas de tecnologias investem e controlam seus ativos financeiros.
+
+
+\section{JUSTIFICATIVA}\label{sec:justificativa}
+
+São vários os aspectos que nos levam a tentar realizar a previsão de índices acionários no mercado de investimentos. De fato, faz-se o principal motivo, garantir maior lucratividade possível com a realização de bons investimento, fazendo com que os investidores obtenham sempre uma vantagem sobre os demais que atuam no mercado financeiro.
+
+Outro fator motivacional para a realização desta predição, utilizando RNAs, se dá pela sua capacidade de adaptação à mudanças bruscas e repentinas nos dados a serem analisados, sem que se afete a acuracidade de seus resultados, por não se tratar de um modelo pré-definido \cite{marangoni}.
+
+O crescimento da utilização de RNAs aplicadas a importantes áreas do contexto social, é mais um fator motivacional para sua utilização. Além da aplicação na área financeira apresentada neste trabalho, ferramentas tecnológicas que implementam esta inteligência computacional têm-se feito úteis em áreas como: recursos humanos, marketing, medicina, engenharia, dentre outras. Na área da medicina, por exemplo, é satisfatório citar sua utilidade no diagnóstico e, até mesmo, na prevenção de futuras doenças e patologias \cite{marangoni}.
+
+Portanto, a variação dos preços das ações proporcionada por oscilações diárias, é uma excelente diretriz para o aperfeiçoamento de análises referente à inteligência computacional, dispondo de um ambiente propício para a aplicabilidade sobre séries temporais, através do acesso a uma quantidade contínua de dados que viabiliza criar e aprimorar diversos padrões de RNAs \cite{gambogi}.
+
+
+
+\section{OBJETIVOS}\label{sec:objetivos}
+A partir do tema definido, estabeleceu-se os objetivos a serem alcançados ao término deste trabalho. Assim temos, respectivamente, o objetivo principal e os objetivos específicos, apresentados em ordem lógica de desenvolvimento.
+\subsection{Objetivo Geral} 
+Atribuiu-se, como objetivo principal deste trabalho, especificar e aplicar um modelo de RNA para análise e predição de valores acionários.
+
+\subsection{Objetivos Específicos}\label{subsec:objetivos_especificos}
+Com o objetivo geral determinado, tornaram-se necessários as definições de alguns objetivos específicos, sendo:
+\begin{itemize}
+	\item Aprimorar o conhecimento sobre a funcionalidade do mercado acionário;
+	\item Estudar os conceitos teóricos sobre RNAs e Aprendizado de Máquina;
+	\item Especificar uma arquitetura de RNA;
+	\item Definir um ambiente de desenvolvimento;
+	\item Utilizar uma \textit{Application Programming Interface} (API) para a coleta dos dados que serão analisados;
+	\item Treinar o modelo de RNA especificado;
+	\item Aplicar a RNA para a predição no valor do fechamento diário das ações utilizadas;
+	\item Analisar os resultados obtidos pela implementação, comparando-os com os resultados esperados e avaliando sua capacidade de precisão.
+\end{itemize}
+
+\section{ESTRUTURA DO DOCUMENTO}\label{sec:organizacao-trabalho}
+Este documento será organizado em sete capítulos: introdução, revisão bibliográfica, fundamentação teórica, materiais e métodos, implementação, resultados, conclusões e referências bibliográficas.
+
+O presente capítulo contextualiza e introduz o assunto a ser tratado, bem como define os objetivos a serem alcançados.
+
+Para o segundo capítulo, serão apresentados os trabalhos que são usados como referências e motivação, além de demonstrar suas contribuições científicas.
+
+A fundamentação teórica apresentada no terceiro capítulo, buscará através da literatura, o embasamento referente aos conceitos das técnicas que serão utilizadas para a realização deste estudo.
+
+O quarto capítulo será destinado ao detalhamento de métodos, técnicas e procedimentos que têm por objetivo gerar conhecimento para viabilizar um melhor ambiente de desenvolvimento, referente à RNAs.
+
+O quinto capítulo detalha a implementação de um protótipo de RNA, que segue as especificações das técnicas levantadas no capítulo anterior.
+
+No sexto capítulo são expostos os experimentos realizados sobre o protótipo implementado, dispondo os resultados em situações como análise da eficácia de predição e comparação a modelos distintos.
+
+Por fim, no sétimo capítulo são tratadas as conclusões obtidas pela técnica de RNA desenvolvida, destacando suas vantagens e desvantagens. Também serão idealizadas alternativas para trabalhos futuros, os quais dariam continuidade e complementariam a pesquisa realizada.
+
+

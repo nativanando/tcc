@@ -1,0 +1,1041 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  25 MAY 2017 19:37
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**siglas.tex
+(./siglas.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+
+! LaTeX Error: Environment siglas undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \begin{siglas}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 	\item[API]
+                \textit{Application Programming Interface}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (49.59969pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/it/10 Application
+ []
+
+
+Overfull \hbox (19.17763pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/it/10 Pro-
+ []
+
+
+Overfull \hbox (25.17203pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/it/10 gram-
+ []
+
+
+Overfull \hbox (21.46654pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/it/10 ming
+ []
+
+
+Overfull \hbox (13.05547pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/it/10 In-
+ []
+
+
+Overfull \hbox (15.71652pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/it/10 ter-
+ []
+
+
+Overfull \hbox (17.61792pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/it/10 face 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 	\item[MAE]
+                \textit{Mean Absolute Error}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (23.78873pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/it/10 Mean
+ []
+
+
+Overfull \hbox (15.35542pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/it/10 Ab-
+ []
+
+
+Overfull \hbox (12.7777pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/it/10 so-
+ []
+
+
+Overfull \hbox (15.84433pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/it/10 lute
+ []
+
+
+Overfull \hbox (14.57767pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/it/10 Er-
+ []
+
+
+Overfull \hbox (14.10959pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/it/10 ror 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 	\item[MLP]
+                \textit{Multilayer Perceptron}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (44.61636pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/it/10 Multilayer
+ []
+
+
+Overfull \hbox (19.17763pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/it/10 Per-
+ []
+
+
+Overfull \hbox (17.37762pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/it/10 cep-
+ []
+
+
+Overfull \hbox (18.5281pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/it/10 tron 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 	\item[MSE]
+                \textit{Mean Squared Error}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (23.78873pt too wide) in paragraph at lines 8--9
+\OT1/cmr/m/it/10 Mean
+ []
+
+
+Overfull \hbox (33.6053pt too wide) in paragraph at lines 8--9
+\OT1/cmr/m/it/10 Squared
+ []
+
+
+Overfull \hbox (14.57767pt too wide) in paragraph at lines 8--9
+\OT1/cmr/m/it/10 Er-
+ []
+
+
+Overfull \hbox (14.10959pt too wide) in paragraph at lines 8--9
+\OT1/cmr/m/it/10 ror 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 	\item[NASDAQ]
+                   \textit{National Association of Securities Dealers Automa...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (37.33311pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 National
+ []
+
+
+Overfull \hbox (15.0999pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 As-
+ []
+
+
+Overfull \hbox (12.7777pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 so-
+ []
+
+
+Overfull \hbox (11.24435pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 ci-
+ []
+
+
+Overfull \hbox (8.68883pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 a-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (8.17773pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 of
+ []
+
+
+Overfull \hbox (13.7999pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 Se-
+ []
+
+
+Overfull \hbox (13.54434pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 cu-
+ []
+
+
+Overfull \hbox (10.86102pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 ri-
+ []
+
+
+Overfull \hbox (15.07767pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 ties
+ []
+
+
+Overfull \hbox (22.88315pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 Deal-
+ []
+
+
+Overfull \hbox (12.90546pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 ers
+ []
+
+
+Overfull \hbox (16.1221pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 Au-
+ []
+
+
+Overfull \hbox (12.01102pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 to-
+ []
+
+
+Overfull \hbox (25.81093pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 mated
+ []
+
+
+Overfull \hbox (21.72209pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 Quo-
+ []
+
+
+Overfull \hbox (12.01102pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 ta-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (18.14432pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 Sys-
+ []
+
+
+Overfull \hbox (16.86702pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/it/10 tem 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 	\item[RMSE]
+                  \textit{Root Mean Squared Error}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (19.81651pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/it/10 Root
+ []
+
+
+Overfull \hbox (23.78873pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/it/10 Mean
+ []
+
+
+Overfull \hbox (33.6053pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/it/10 Squared
+ []
+
+
+Overfull \hbox (14.57767pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/it/10 Er-
+ []
+
+
+Overfull \hbox (14.10959pt too wide) in paragraph at lines 10--11
+\OT1/cmr/m/it/10 ror 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 	\item[HTTP]
+                  \textit{Hypertext Transfer Protocol} - Protocolo de Transf...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no - in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+
+Overfull \hbox (41.58856pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/it/10 Hypertext
+ []
+
+
+Overfull \hbox (28.49423pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/it/10 Trans-
+ []
+
+
+Overfull \hbox (11.88324pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/it/10 fer
+ []
+
+
+Overfull \hbox (19.17763pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/it/10 Pro-
+ []
+
+
+Overfull \hbox (12.01102pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/it/10 to-
+ []
+
+
+Overfull \hbox (11.75546pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/it/10 col
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 	\item[HTTPS]
+                   \textit{Hyper Text Transfer Protocol Secure} - Protocolo ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no - in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no ª in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+
+Overfull \hbox (25.70535pt too wide) in paragraph at lines 12--13
+\OT1/cmr/m/it/10 Hyper
+ []
+
+
+Overfull \hbox (18.94986pt too wide) in paragraph at lines 12--13
+\OT1/cmr/m/it/10 Text
+ []
+
+
+Overfull \hbox (28.49423pt too wide) in paragraph at lines 12--13
+\OT1/cmr/m/it/10 Trans-
+ []
+
+
+Overfull \hbox (11.88324pt too wide) in paragraph at lines 12--13
+\OT1/cmr/m/it/10 fer
+ []
+
+
+Overfull \hbox (19.17763pt too wide) in paragraph at lines 12--13
+\OT1/cmr/m/it/10 Pro-
+ []
+
+
+Overfull \hbox (12.01102pt too wide) in paragraph at lines 12--13
+\OT1/cmr/m/it/10 to-
+ []
+
+
+Overfull \hbox (11.75546pt too wide) in paragraph at lines 12--13
+\OT1/cmr/m/it/10 col
+ []
+
+
+Overfull \hbox (13.7999pt too wide) in paragraph at lines 12--13
+\OT1/cmr/m/it/10 Se-
+ []
+
+
+Overfull \hbox (18.27206pt too wide) in paragraph at lines 12--13
+\OT1/cmr/m/it/10 cure
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 	\item[JPG]
+                 \textit{Joint Photographic Experts Group}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (22.37207pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/it/10 Joint
+ []
+
+
+Overfull \hbox (20.5832pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/it/10 Pho-
+ []
+
+
+Overfull \hbox (12.01102pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/it/10 to-
+ []
+
+
+Overfull \hbox (31.30533pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/it/10 graphic
+ []
+
+
+Overfull \hbox (14.99991pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/it/10 Ex-
+ []
+
+
+Overfull \hbox (20.8276pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/it/10 perts
+ []
+
+
+Overfull \hbox (27.6616pt too wide) in paragraph at lines 13--14
+\OT1/cmr/m/it/10 Group 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 	\item[PDF]
+                 \textit{Portable Document Format} - Formato de Documento Po...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no - in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no ¡ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 14.
+
+Overfull \hbox (36.29974pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/it/10 Portable
+ []
+
+
+Overfull \hbox (20.3276pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/it/10 Doc-
+ []
+
+
+Overfull \hbox (8.94438pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/it/10 u-
+ []
+
+
+Overfull \hbox (21.72208pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/it/10 ment
+ []
+
+
+Overfull \hbox (18.66652pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/it/10 For-
+ []
+
+
+Overfull \hbox (16.61101pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/it/10 mat
+ []
+
+
+Overfull \hbox (4.48613pt too wide) in paragraph at lines 14--15
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 	\item[PNG]
+                 \textit{Portable Network Graphics} - Rede PortÃ¡vel de GrÃ¡...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no - in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no ¡ in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no ¡ in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+
+Overfull \hbox (36.29974pt too wide) in paragraph at lines 15--16
+\OT1/cmr/m/it/10 Portable
+ []
+
+
+Overfull \hbox (18.93318pt too wide) in paragraph at lines 15--16
+\OT1/cmr/m/it/10 Net-
+ []
+
+
+Overfull \hbox (20.57208pt too wide) in paragraph at lines 15--16
+\OT1/cmr/m/it/10 work
+ []
+
+
+Overfull \hbox (30.35257pt too wide) in paragraph at lines 15--16
+\OT1/cmr/m/it/10 Graph-
+ []
+
+
+Overfull \hbox (11.75548pt too wide) in paragraph at lines 15--16
+\OT1/cmr/m/it/10 ics
+ []
+
+
+Overfull \hbox (4.48613pt too wide) in paragraph at lines 15--16
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 	\item[URL]
+                 \textit{Uniform Resource Locator} - Localizador PadrÃ£o de ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no - in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no £ in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+
+Overfull \hbox (36.69423pt too wide) in paragraph at lines 16--17
+\OT1/cmr/m/it/10 Uniform
+ []
+
+
+Overfull \hbox (14.96098pt too wide) in paragraph at lines 16--17
+\OT1/cmr/m/it/10 Re-
+ []
+
+
+Overfull \hbox (26.96089pt too wide) in paragraph at lines 16--17
+\OT1/cmr/m/it/10 source
+ []
+
+
+Overfull \hbox (14.44987pt too wide) in paragraph at lines 16--17
+\OT1/cmr/m/it/10 Lo-
+ []
+
+
+Overfull \hbox (12.77766pt too wide) in paragraph at lines 16--17
+\OT1/cmr/m/it/10 ca-
+ []
+
+
+Overfull \hbox (12.6499pt too wide) in paragraph at lines 16--17
+\OT1/cmr/m/it/10 tor
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 	\item[XHTML]
+                   \textit{eXtensible Hypertext Markup Language} - Linguagem...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no - in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no § in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no £ in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+
+Overfull \hbox (44.48857pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/it/10 eXtensible
+ []
+
+
+Overfull \hbox (15.86655pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/it/10 Hy-
+ []
+
+
+Overfull \hbox (16.9943pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/it/10 per-
+ []
+
+
+Overfull \hbox (15.88321pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/it/10 text
+ []
+
+
+Overfull \hbox (33.37201pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/it/10 Markup
+ []
+
+
+Overfull \hbox (20.07207pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/it/10 Lan-
+ []
+
+
+Overfull \hbox (24.2776pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/it/10 guage
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 	\item[XML]
+                 \textit{eXtensible Markup Language} - Linguagem de MarcaÃ§Ã...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no - in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no § in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no £ in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+
+Overfull \hbox (44.48857pt too wide) in paragraph at lines 18--19
+\OT1/cmr/m/it/10 eXtensible
+ []
+
+
+Overfull \hbox (33.37201pt too wide) in paragraph at lines 18--19
+\OT1/cmr/m/it/10 Markup
+ []
+
+
+Overfull \hbox (20.07207pt too wide) in paragraph at lines 18--19
+\OT1/cmr/m/it/10 Lan-
+ []
+
+
+Overfull \hbox (24.2776pt too wide) in paragraph at lines 18--19
+\OT1/cmr/m/it/10 guage
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 	\item[YML]
+                 \textit{Yet Another Markup Language} - Uma Outra Linguagem ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no - in font nullfont!
+Missing character: There is no U in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no § in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no £ in font nullfont!
+Missing character: There is no o in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{siglas}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \end{siglas}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (14.58878pt too wide) in paragraph at lines 19--21
+\OT1/cmr/m/it/10 Yet
+ []
+
+
+Overfull \hbox (16.37766pt too wide) in paragraph at lines 19--21
+\OT1/cmr/m/it/10 An-
+ []
+
+
+Overfull \hbox (22.36095pt too wide) in paragraph at lines 19--21
+\OT1/cmr/m/it/10 other
+ []
+
+
+Overfull \hbox (33.37201pt too wide) in paragraph at lines 19--21
+\OT1/cmr/m/it/10 Markup
+ []
+
+
+Overfull \hbox (20.07207pt too wide) in paragraph at lines 19--21
+\OT1/cmr/m/it/10 Lan-
+ []
+
+
+Overfull \hbox (24.2776pt too wide) in paragraph at lines 19--21
+\OT1/cmr/m/it/10 guage
+ []
+
+
+Overfull \hbox (4.48613pt too wide) in paragraph at lines 19--21
+[]
+ []
+
+)
+! Emergency stop.
+<*> siglas.tex
+              
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 12 strings out of 493105
+ 205 string characters out of 6137072
+ 56476 words of memory out of 5000000
+ 3576 multiletter control sequences out of 15000+600000
+ 3986 words of font info for 15 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 22i,5n,14p,138b,87s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

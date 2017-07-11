@@ -1,0 +1,243 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.2 }
+
+\bibitem[Cardon e Muller 1994]{cardon}
+\abntrefinfo{Cardon e Muller}{CARDON; MULLER}{1994}
+{CARDON, A.; MULLER, N.~D. Introdução Às redes neurais artificiais.
+\textbf{Instituto de Informática, Universidade Federal do Rio Grande do Sul,
+  Porto Alegre}, p.~31, 1994.}
+
+\bibitem[Chizzotti 1991]{chizzotti}
+\abntrefinfo{Chizzotti}{CHIZZOTTI}{1991}
+{CHIZZOTTI, A. Pesquisa em ciências humanas e sociais.
+\textbf{São paulo}, 1991.}
+
+\bibitem[Christie e Schultz 2003]{christie}
+\abntrefinfo{Christie e Schultz}{CHRISTIE; SCHULTZ}{2003}
+{CHRISTIE, G.~W.; SCHULTZ, H.~P. Why do nasdaq market makers avoid odd-eighth
+  quotes.
+\textbf{The journal of Finance}, p.~27, 2003.}
+
+\bibitem[Clements e Hendry 1998]{clements}
+\abntrefinfo{Clements e Hendry}{CLEMENTS; HENDRY}{1998}
+{CLEMENTS, M.~P.; HENDRY, D.~F. Forecasting economic processes.
+\textbf{International Journal of Forecasting}, p. 111--131, 1998.}
+
+\bibitem[Ding, Canu e Denoeux 1995]{ding}
+\abntrefinfo{Ding, Canu e Denoeux}{DING; CANU; DENOEUX}{1995}
+{DING, X.; CANU, D.; DENOEUX, T. Neural network based models for forecasting,
+  em proceedings of adt’95.
+\textbf{Wiley and Sons}, 1995.}
+
+\bibitem[Elpiniki e Katarzyna 2016]{elpink}
+\abntrefinfo{Elpiniki e Katarzyna}{ELPINIKI; KATARZYNA}{2016}
+{ELPINIKI, I.~P.; KATARZYNA, P. A two-stage model for time series prediction
+  based on fuzzy cognitive maps and neural networks.
+\textbf{Neurocomputing}, 2016.}
+
+\bibitem[Exame 2010]{exame}
+\abntrefinfo{Exame}{EXAME}{2010}
+{EXAME. Como funciona a análise fundamentalista de ações.
+2010.
+Acesso em 11 de abril de 2017.
+Dispon{\'\i}vel em:
+  \url{http://exame.abril.com.br/seu-dinheiro/noticias/como-funciona-analise-fundamentalista-acoes-576374}.}
+
+\bibitem[Fama 1970]{fama}
+\abntrefinfo{Fama}{FAMA}{1970}
+{FAMA, E.~F. Efficient capital markets: A review of theory and empirical work.
+\textbf{The Journal of Finance}, p. 383--417, 1970.}
+
+\bibitem[Faria et al. 2009]{faria}
+\abntrefinfo{Faria et al.}{FARIA et al.}{2009}
+{FARIA, E.~L. et al. Predicting the brazilian stock market through neural
+  networks and adaptive exponential smoothing methods.
+\textbf{Expert Systems with Applications}, p. 12506--12509, 2009.}
+
+\bibitem[Ferreira 2004]{ferreira}
+\abntrefinfo{Ferreira}{FERREIRA}{2004}
+{FERREIRA, A.~A. Comparação de arquiteturas de redes neurais para sistemas de
+  reconhecimento de padrões em narizes artificiais.
+\textbf{Recife}, 2004.}
+
+\bibitem[Fortuna 2008]{fortuna}
+\abntrefinfo{Fortuna}{FORTUNA}{2008}
+{FORTUNA, E. Mercado financeiro: produtos e serviços.
+\textbf{Qualitymark}, 2008.}
+
+\bibitem[Gambogi 2013]{gambogi}
+\abntrefinfo{Gambogi}{GAMBOGI}{2013}
+{GAMBOGI, J.~A.
+\textbf{Aplicação de redes neurais na tomada de decisão no mercado de
+  ações}.
+Disserta\c{c}\~{a}o (Mestrado) --- Universidade de São Paulo, 2013.}
+
+\bibitem[Geman, Bienestock e Doursat 1992]{geman}
+\abntrefinfo{Geman, Bienestock e Doursat}{GEMAN; BIENESTOCK; DOURSAT}{1992}
+{GEMAN, S.; BIENESTOCK, E.; DOURSAT, R. Neural networks and bias/variance
+  dilemma.
+\textbf{Neural Computing}, p. 1--58, 1992.}
+
+\bibitem[Guresen, Kayakutlu e Daim 2011]{guresen}
+\abntrefinfo{Guresen, Kayakutlu e Daim}{GURESEN; KAYAKUTLU; DAIM}{2011}
+{GURESEN, E.; KAYAKUTLU, G.; DAIM, U.~T. Using artificial neural network models
+  in stock market index prediction.
+\textbf{Expert Systems with Applications}, p. 10389--10397, 2011.}
+
+\bibitem[Haykin 2000]{haykin2000}
+\abntrefinfo{Haykin}{HAYKIN}{2000}
+{HAYKIN, S. Redes neurais: princípios e prática.
+\textbf{Bookman}, p.~903, 2000.}
+
+\bibitem[Haykin 2009]{haykin2009}
+\abntrefinfo{Haykin}{HAYKIN}{2009}
+{HAYKIN, S. Neural networks and learning machines.
+\textbf{New Jersey: Prentice Hall}, p.~906, 2009.}
+
+\bibitem[Kamijo e Tanigawa 1990]{kamijo}
+\abntrefinfo{Kamijo e Tanigawa}{KAMIJO; TANIGAWA}{1990}
+{KAMIJO, K.; TANIGAWA, T. Stock price pattern recognition a recurrent neural
+  network approach.
+\textbf{Information Technology Research Laboratories, NEC Corporation}, 1990.}
+
+\bibitem[Kara, Boyacioglu e Baykan 2011]{kara}
+\abntrefinfo{Kara, Boyacioglu e Baykan}{KARA; BOYACIOGLU; BAYKAN}{2011}
+{KARA, Y.; BOYACIOGLU, A.~C.; BAYKAN, O.~K. Predicting direction of stock price
+  index movement using artificial neural networks and support vector machines:
+  The sample of the istanbul stock exchange.
+\textbf{Expert Systems with Applications}, p. 5311--5319, 2011.}
+
+\bibitem[Khandelwal, Ratnadip e Verma 2015]{khandelwal}
+\abntrefinfo{Khandelwal, Ratnadip e Verma}{KHANDELWAL; RATNADIP; VERMA}{2015}
+{KHANDELWAL, I.; RATNADIP, A.; VERMA, G. Time series forecasting using hybrid
+  arima and ann models based on dwt decompositiong.
+\textbf{Procedia Computer Science}, p. 173--179, 2015.}
+
+\bibitem[Laville e Dionne 1999]{laville}
+\abntrefinfo{Laville e Dionne}{LAVILLE; DIONNE}{1999}
+{LAVILLE, C.; DIONNE, J. A construção do saber.
+\textbf{Porto Alegre: Artes Médicas, Belo Horizonte: UFMG}, 1999.}
+
+\bibitem[Lent 2001]{lent}
+\abntrefinfo{Lent}{LENT}{2001}
+{LENT, R. Cem bilhões de neurônios? conceitos fundamentais de neurociência.
+\textbf{Rio de Janeiro}, 2001.}
+
+\bibitem[Lu et al. 2014]{lu}
+\abntrefinfo{Lu et al.}{LU et al.}{2014}
+{LU, W. et al. The modeling of time series based on fuzzy information granules.
+\textbf{Expert Systems with Applications}, p. 3799--3808, 2014.}
+
+\bibitem[Marangoni 2010]{marangoni}
+\abntrefinfo{Marangoni}{MARANGONI}{2010}
+{MARANGONI, P.~H. Redes neurais artificiais para previsão de séries temporais
+  no mercado acionário.
+\textbf{Universidade Federal de Santa Catarina, Florianópolis}, 2010.}
+
+\bibitem[McKinney 2013]{python-science}
+\abntrefinfo{McKinney}{MCKINNEY}{2013}
+{MCKINNEY, W. \textbf{Python for Data Analysis}. [S.l.]: O’Reilly Media,
+  2013.}
+
+\bibitem[Medeiros 2004]{medeiros}
+\abntrefinfo{Medeiros}{MEDEIROS}{2004}
+{MEDEIROS, T.~H. Treinamento de redes neurais artificiais com otimização
+  multi-objetivo e regularização bayesiana: Um estudo comparativo.
+\textbf{Dissertação (Mestrado em Engenharia Elétrica), Universidade Federal
+  de Minas Gerais, Belo Horizonte}, p.~105, 2004.}
+
+\bibitem[MENDONÇA NETO 2014]{neto}
+\abntrefinfo{MENDONÇA NETO}{MENDONÇA NETO}{2014}
+{MENDONÇA NETO, J.~N.
+\textbf{Fractais e redes neurais artificiais aplicados à previsão de retorno
+  de ativos financeiros brasileiros}.
+181~p. Disserta\c{c}\~{a}o (Mestrado) --- Dissertação (Mestrado em
+  Ciências), Universidade de São Paulo, São Paulo, 2014.}
+
+\bibitem[Nayak, Misra e Behera 2012]{nayak}
+\abntrefinfo{Nayak, Misra e Behera}{NAYAK; MISRA; BEHERA}{2012}
+{NAYAK, S.~C.; MISRA, B.~B.; BEHERA, H.~S. Index prediction with neuro-genetic
+  hybrid network: A comparative analysis of performance.
+\textbf{International conference on computing, communication and applications
+  (ICCCA)}, p.~1--6, 2012.}
+
+\bibitem[Oliveira 2002]{oliveira2002}
+\abntrefinfo{Oliveira}{OLIVEIRA}{2002}
+{OLIVEIRA, C.~A. Aplicações - redes neurais.
+\textbf{Rio de Janeiro}, p.~1--6, 2002.}
+
+\bibitem[oliveira 2012]{oliveira2012}
+\abntrefinfo{oliveira}{OLIVEIRA}{2012}
+{OLIVEIRA, M.~A. An application of neural networks trained with kalman filter
+  variants (ekf and ukf) to heteroscedastic time series forecasting.
+\textbf{Applied Mathematical Sciences}, p. 3675--3686, 2012.}
+
+\bibitem[Pandas 2017]{pandas}
+\abntrefinfo{Pandas}{PANDAS}{2017}
+{PANDAS. Powerful python data analysis toolkit.
+2017.
+Acesso em 11 de junho de 2017.
+Dispon{\'\i}vel em: \url{http://pandas.pydata.org/pandas-docs/stable}.}
+
+\bibitem[Pereira 2014]{pereira}
+\abntrefinfo{Pereira}{PEREIRA}{2014}
+{PEREIRA, F.~M. Redes neurais artificiais para a predição no mercado
+  acionário brasileiro.
+\textbf{Universidade Federal de Lavas, Minas Gerais}, 2014.}
+
+\bibitem[Pycharm 2017]{pycharm}
+\abntrefinfo{Pycharm}{PYCHARM}{2017}
+{PYCHARM. Docs and demos.
+2017.
+Acesso em 15 de junho de 2017.
+Dispon{\'\i}vel em: \url{https://www.jetbrains.com/pycharm/documentation}.}
+
+\bibitem[Shiller 2005]{shiller}
+\abntrefinfo{Shiller}{SHILLER}{2005}
+{SHILLER, R.~J. Irrational exuberance.
+\textbf{New Jersey: Princeton University Press}, p.~296, 2005.}
+
+\bibitem[Silva 2003]{silva}
+\abntrefinfo{Silva}{SILVA}{2003}
+{SILVA, J. M.~N. Redes neurais artificiais: Rede hopfield e redes
+  estocásticas.
+\textbf{Rio de Janeiro}, 2003.}
+
+\bibitem[Stanford 2014]{stanford}
+\abntrefinfo{Stanford}{STANFORD}{2014}
+{STANFORD. Convolutional neural networks for visual recognition.
+2014.
+Acesso em 02 de abril de 2017.
+Dispon{\'\i}vel em: \url{http://cs231n.github.io/neural-networks-1}.}
+
+\bibitem[Tororadar 2015]{tororadar}
+\abntrefinfo{Tororadar}{TORORADAR}{2015}
+{TORORADAR. Análise técnica de ações.
+2015.
+Acesso em 10 de abril de 2017.
+Dispon{\'\i}vel em:
+  \url{https://www.tororadar.com.br/investimento/analise-tecnica/analise-tecnica-de-acoes}.}
+
+\bibitem[Waibel 1998]{waibel}
+\abntrefinfo{Waibel}{WAIBEL}{1998}
+{WAIBEL, A. Consonant recognition by modular construction of large phonemic
+  time-delay neural networks.
+\textbf{Denver}, p. 215--223, 1998.}
+
+\bibitem[White 1988]{white}
+\abntrefinfo{White}{WHITE}{1988}
+{WHITE, H. Economic prediction using neural networks: The case of ibm daily
+  stock returns.
+\textbf{IEEE International on Neural Networks}, p. 451--458, 1988.}
+
+\bibitem[Zhang, Patuwo e HU 1988]{zhang}
+\abntrefinfo{Zhang, Patuwo e HU}{ZHANG; PATUWO; HU}{1988}
+{ZHANG, G.; PATUWO, E.; HU, M. Forecasting with artificial neural networks: The
+  state of the art. international journal of forecasting.
+p. 35--62, 1988.}
+
+\end{thebibliography}
