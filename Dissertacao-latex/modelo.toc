@@ -23,27 +23,28 @@
 \contentsline {section}{\numberline {3.2}ARQUITETURA DE REDES NEURAIS ARTIFICIAIS}{16}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Redes Alimentadas Adiante com Camada \IeC {\'U}nica}{17}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Redes Alimentadas Adiante com M\IeC {\'u}ltiplas Camadas}{18}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Arquitetura de Camadas Recorrentes}{19}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Outros Modelos de Redes Neurais Artificiais}{20}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.3}Redes de Camadas Recorrentes}{19}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Redes de Hopfield}{20}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Redes Auto-Organiz\IeC {\'a}veis}{21}{subsection.3.2.5}
 \contentsline {section}{\numberline {3.3}FUN\IeC {\c C}\IeC {\~A}O DE ATIVA\IeC {\c C}\IeC {\~A}O}{21}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Fun\IeC {\c c}\IeC {\~a}o Limiar}{21}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Fun\IeC {\c c}\IeC {\~a}o Sigm\IeC {\'o}ide}{21}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Fun\IeC {\c c}\IeC {\~a}o Sigm\IeC {\'o}ide}{22}{subsection.3.3.2}
 \contentsline {section}{\numberline {3.4}TREINAMENTO DE UMA REDE NEURAL ARTIFICIAL}{22}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Processo de aprendizagem}{23}{subsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Aprendizagem Supervisionada}{23}{subsubsection.3.4.1.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Aprendizagem Supervisionada}{24}{subsubsection.3.4.1.1}
 \contentsline {subsubsection}{\numberline {3.4.1.2}Aprendizagem n\IeC {\~a}o Supervisionada}{24}{subsubsection.3.4.1.2}
 \contentsline {section}{\numberline {3.5}ALGORITMOS DE APRENDIZAGEM PARA TREINAMENTO DAS REDES}{24}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}\textit {Backpropagation}}{24}{subsection.3.5.1}
-\contentsline {section}{\numberline {3.6}PROCESSO DE GENERALIZA\IeC {\c C}\IeC {\~A}O}{24}{section.3.6}
+\contentsline {section}{\numberline {3.6}PROCESSO DE GENERALIZA\IeC {\c C}\IeC {\~A}O}{25}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Problemas de generaliza\IeC {\c c}\IeC {\~a}o}{25}{subsection.3.6.1}
 \contentsline {subsubsection}{\numberline {3.6.1.1}\textit {Overfitting} e \textit {underfitting}}{25}{subsubsection.3.6.1.1}
 \contentsline {subsubsection}{\numberline {3.6.1.2}\textit {Overtraining}}{26}{subsubsection.3.6.1.2}
-\contentsline {section}{\numberline {3.7}TEORIA DA REGULARIZA\IeC {\c C}\IeC {\~A}O}{26}{section.3.7}
+\contentsline {section}{\numberline {3.7}TEORIA DA REGULARIZA\IeC {\c C}\IeC {\~A}O}{27}{section.3.7}
 \contentsline {section}{\numberline {3.8}S\IeC {\'E}RIES TEMPORAIS}{27}{section.3.8}
 \contentsline {section}{\numberline {3.9}MERCADO DE CAPITAIS}{27}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}An\IeC {\'a}lise Fundamentalista de Ac\IeC {\~o}es}{28}{subsection.3.9.1}
 \contentsline {subsection}{\numberline {3.9.2}An\IeC {\'a}lise T\IeC {\'e}cnica de A\IeC {\c c}\IeC {\~o}es}{28}{subsection.3.9.2}
-\contentsline {subsection}{\numberline {3.9.3}A bolsa de valores NASDAQ}{28}{subsection.3.9.3}
+\contentsline {subsection}{\numberline {3.9.3}A bolsa de valores NASDAQ}{29}{subsection.3.9.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {MATERIAIS E M\IeC {\'E}TODOS}}{30}{chapter.4}
 \contentsline {section}{\numberline {4.1}IDENTIFICA\IeC {\c C}\IeC {\~A}O DA PESQUISA}{30}{section.4.1}

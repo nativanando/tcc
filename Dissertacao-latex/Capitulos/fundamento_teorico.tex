@@ -11,7 +11,7 @@ As RNAs procuram simular métodos de aprendizado do cérebro humano, através do
 A partir deste conceito, uma RNA pode ser definida como uma estrutura interligada complexa de processamento, composta por neurônios e conexões \cite{ferreira}.
 
 \subsection{Neurônios biológicos} 
-Os neurônios são células, que desempenham o papel de conduzir os impulsos nervosos. Estas células especializadas são, portanto, as unidades básicas do sistema que processa as informações e estímulos no corpo humano \cite{lent}. 
+Os neurônios são células, que desempenham o papel de conduzir os impulsos nervosos. Estas células especializadas são, portanto, as unidades básicas do sistema que processa as informações e estímulos de um cérebro\cite{lent}. 
 
 A Figura 1 representa a estrutura básica de um neurônio biológico. Conceituando os componentes do neurônio, os dendritos são responsáveis pela recepção das informações, possuindo as extremidades ramificadas. O corpo celular é responsável pela integração das informações e os axônios são responsáveis pelo transporte dos impulsos nervosos de um neurônio para outro ou de um neurônio para uma glândula ou fibra muscular \cite{lent}.
 
@@ -26,7 +26,7 @@ A Figura 1 representa a estrutura básica de um neurônio biológico. Conceituan
 Cada dendrito possui em torno de mil a dez mil ramificações em suas extremidades. A transmissão de impulsos nervosos por meio da comunicação dos axônios com os dendritos de neurônios adjacentes é chamada de sinapse, por sua vez, tal conjunto forma o sistema nervoso \cite{neto}.
 
 \subsection{Neurônios artificiais}
-A estrutura de um neurônio artificial segue os mesmos conceitos relacionados aos neurônios biológicos, pois os mesmo busca realizar as mesmas funções, utilizando-se de conceitos matemáticos, aritméticos e de tecnologias computacionais.
+A estrutura de um neurônio artificial segue os mesmos conceitos relacionados aos neurônios biológicos, buscando realizar as mesmas funções, utilizando-se de conceitos matemáticos, aritméticos e de tecnologias computacionais.
 
 A Figura 2 esboça a estrutura que compõe um neurônio artificial não-linear, demarcando cada item que o compõe. 
 
@@ -42,8 +42,8 @@ Analisando a figura da esquerda para a direita, podemos observar:
 
 \begin{enumerate}
 	\item \textit Os sinais de entrada $x_i$ serão processados pela sinapse $wk_i$, conectadas ao neurônio;
-	\item \textit As sinapses ou elos de conexão, com seus respectivos pesos sinápticos que se multiplicarão ao sinal de entrada $\theta_i$. Segundo \citeonline{haykin2000}, ao contrário a uma sinapse do cérebro, o peso sináptico de um neurônio artificial pode estar em um intervalo onde inclui tanto valores positivos quanto negativos;
-	\item \textit O somatório $\sum$, que resulta na soma os sinais de entrada $x_i$, ponderados pela respectiva sinapse do neurônio;
+	\item \textit As sinapses ou elos de conexão, com seus respectivos pesos sinápticos que se multiplicarão ao sinal de entrada $\theta_i$. Segundo \citeonline{haykin2000}, ao contrário a uma sinapse do cérebro, o peso sináptico de um neurônio artificial pode estar em um intervalo que inclui tanto valores positivos quanto negativos;
+	\item \textit O somatório $\sum$, que resulta na soma dos sinais de entrada $x_i$, ponderados pelas respectivas sinapses do neurônio;
 	\item \textit A função de ativação, responsável por delimitar os resultados de saída possíveis a um intervalo finito, recebe como entrada o resultado $v_k$ em $\varphi$(.) para gerar o resultado.
 \end{enumerate}
 
@@ -63,7 +63,7 @@ A representação de uma RNA pode ser visualizada na Figura 3, onde os nodos do 
 \section{ARQUITETURA DE REDES NEURAIS ARTIFICIAIS}\label{sec:redes-neurais-arquitetura}
 A forma como agrupam-se os neurônios artificiais em uma RNA é uma das principais características que definem seu tipo de arquitetura. Estes agrupamentos são baseados na forma como os neurônios são conectados no cérebro humano, de forma que as informações possam ser processadas dinamicamente ou iterativamente.
  
-Biologicamente, as RNAs são organizadas e construídas de forma tridimensional por componentes microscópicos. Há uma forte restrição no número de camadas que a rede pode conter, limitando consideravelmente o tipo e o escopo da implementação da mesma no computador.
+Biologicamente, as RNAs são organizadas e construídas de forma tridimensional por componentes microscópicos. Há uma forte restrição no número de camadas que a rede pode conter, limitando consideravelmente o tipo e o escopo da implementação da mesma no computador \cite{haykin2009}.
 
 A arquitetura de uma RNA pode ser classificada pela quantia de camadas ocultas e pelo sentido do fluxo de dados. Em relação ao número de camadas ocultas, ela pode ser de camada única (\textit{single-layer}) ou multicamadas (\textit{multilayer}). Quanto ao sentido do fluxo de dados, ela pode ser alimentada adiante (\textit{feedforward}) ou recorrente (\textit{feedback}) \cite{neto}.
 
@@ -84,7 +84,7 @@ Segundo \citeonline{haykin2000}, na estrutura de camada única, a representaçã
 	\label{exec-rna-camada-unica}
 \end{figure}
 
-Para exemplificar este modelo de camada única, pode-se citar a RNA \textit{Perceptron} simples, criada por Frank Rosenblatt em 1957 nos laboratórios das forças militares. A classificação dos resultados de uma RNA desta categoria é ilustrada na Figura 5, onde seus resultados são linearmente separáveis. Logo, seu principal objetivo é classificar elementos entre duas classes os estímulos aplicados.
+Para exemplificar este modelo de camada única, pode-se citar a RNA \textit{Perceptron} simples, criada por Frank Rosenblatt em 1957 nos laboratórios das forças militares. A classificação dos resultados de uma RNA desta categoria é ilustrada na Figura 5, onde seus resultados são linearmente separáveis. Ou seja, este modelo de RNA é capaz de classificar de forma satisfatória, resultados que podem ser separados por uma reta ou hiperplano como fronteira de decisão \cite{haykin2009}.
 
 \begin{figure}[h]
 	\centering
@@ -95,7 +95,7 @@ Para exemplificar este modelo de camada única, pode-se citar a RNA \textit{Perc
 \end{figure}
 
 \subsection{Redes Alimentadas Adiante com Múltiplas Camadas}
-A estrutura de múltiplas camadas difere-se da primeira classe alimentada adiante. Esta classe de redes surgiu da necessidade em aperfeiçoar a capacidade de mapeamento que um modelo de camada única não proporciona. Um exemplo clássico é a função ou-exclusivo (XOR) \cite{haykin2009}.
+A estrutura de múltiplas camadas, difere-se da primeira classe alimentada adiante em relação a composição de suas camadas. Esta classe de redes surgiu da necessidade em aperfeiçoar a capacidade de mapeamento que um modelo de camada única não proporciona. Um exemplo clássico é a função ou-exclusivo (XOR) \cite{haykin2009}.
 
 Tipicamente, a rede consiste em uma camada de entrada, uma ou mais camadas ocultas e uma camada de saída. O sinal de entrada se propaga para frente através da rede, camada por camada. Este tipo de rede é bastante popular devido aos métodos de aprendizado bem distribuídos e de fácil uso \cite{haykin2000}.
 
@@ -103,7 +103,7 @@ Sua representação pode ser vista na Figura 6, onde pode-se observar a presenç
 
 De acordo com \citeonline{haykin2000}, qualquer rede semelhante à representada na Figura 6, é dita totalmente conectada, visto que todas as entradas $x_i$ se conectam a todos os nós da camada oculta $a_i$. Caso a premissa não fosse estabelecida a rede seria dita parcialmente conectada.
 
-Outro ponto que a difere da classe de redes com camada única, é a possibilidade de trabalhar com problemas não-lineares. Ou seja, os resultados não necessariamente são classificados em duas classes, o que aumenta a capacidade de redes com esta característica em resolver problemas mais complexos.
+Outro ponto que a difere da classe com camada única, é a possibilidade de trabalhar com problemas não-lineares. Ou seja, os resultados não necessariamente são classificados de forma satisfatória através apenas de uma reta ou hiperplano, o que aumenta a capacidade de RNAs com esta característica em resolver problemas mais complexos.
 
 \begin{figure}[h]
 	\centering
@@ -123,7 +123,7 @@ A Figura 7 exemplifica a representação de um resultado não-linear proporciona
 	\label{exec-nao-linear-imagem}
 \end{figure}
 
-\subsection{Arquitetura de Camadas Recorrentes}
+\subsection{Redes de Camadas Recorrentes}
 Diferentemente da arquitetura de camadas simples adiante, a arquitetura de camadas recorrentes apresenta ao menos um laço de realimentação. A presença de realimentação de informação permite a criação de representações internas e dispositivos de memória capazes de processar e armazenar informações temporais e sinais seqüenciais. Em seu trabalho, \citeonline{haykin2000} cita um exemplo clássico de uma rede de camadas recorrentes, onde os neurônios em camada única alimentam seus sinais de saída novamente para as entradas de todos os neurônios.
 
 A arquitetura de uma RNA recorrente pode ser observada na Figura 8, onde as entradas são realimentadas através da saída. Após realizado esse processamento, a rede apresenta o resultado calculado.
@@ -136,10 +136,13 @@ A arquitetura de uma RNA recorrente pode ser observada na Figura 8, onde as entr
 	\label{fig-recorrente}
 \end{figure}
 
-\subsection{Outros Modelos de Redes Neurais Artificiais}
+\subsection{Redes de Hopfield}
 Dentre outros modelos e arquiteturas de redes que existem, pode-se citar Hopfield, desenvolvida pelo físico John Hopfield. Este modelo se caracteriza por ser do tipo \textit{feedback}, por este motivo, estas redes dificilmente chegam a um estado instável, pois chegará um momento, após seu treinamento, em que o valor de saída para determinadas entradas se padronizam, alcançando sua estabilidade. O modelo utilizou uma função de energia como ferramenta para desenhar redes recorrentes e entender como funciona seu comportamento dinâmico. Desta forma, popularizou o uso desta arquitetura como uma memória associativa e para resolver problemas de otimização \cite{cardon}.
 
 O modelo aplica um princípio chamado de armazenamento de informação como atratores dinamicamente estáveis. Para recuperar informações, utilizou um processo dinâmico de atualização dos estados dos neurônios, sendo que, o neurônio a ser atualizado, é escolhido aleatoriamente. Dois modelos de redes foram apresentados por Hopfield: o analógico e o binário \cite{silva}.
+
+\subsection{Redes Auto-Organizáveis}
+Segundo \citeonline{haykin2009}, Redes Auto-Organizáveis são modelos de 2 camadas que aceitam padrões de N-dimensões como entrada e os mapeia para um conjunto de neurônios de saída, o qual representa o espaço dos dados a serem agrupados. O mapa (camada) de saída, que é tipicamente bi-dimensional, representa as posições dos neurônios em relação aos seus vizinhos. A ideia é que neurônios topologicamente próximos respondam de maneira semelhante a entradas semelhantes. Para isso todos neurônios da camada de entrada são todos conectados aos neurônios de saída.
 
 \section{FUNÇÃO DE ATIVAÇÃO}\label{sec:funcao-ativacao}
 O processamento em cada neurônio se dá através da função de ativação. A escolha da função de ativação de uma RNA é um processo de grande relevância, uma vez que esta função define como devem ser tratados seus dados de entrada. As funções de ativação podem ser classificadas como lineares ou não lineares \cite{haykin2000}.
