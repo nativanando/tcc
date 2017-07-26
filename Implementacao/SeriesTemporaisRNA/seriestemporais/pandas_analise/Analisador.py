@@ -11,8 +11,8 @@ class Analisador:
     def criarDataSet(self):
         self.dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/'+self.nome_empresa+'.txt')
         self.dataset.head()  ##informacoes sobre a base (colunas etc)
-        self.dataset['Date'] = pd.to_datetime(self.dataset['Date'])  ##cast de data
-        self.dataset['Variation'] = self.dataset['Close'].sub(self.dataset['Open'])  ##variacao entre a abertura e o fechamento
+        self.dataset['Date'] = pd.to_datetime(self.dataset['Date'])  ##repassando o valor para um formato de data
+        self.dataset['Variation'] = self.dataset['Close'].sub(self.dataset['Open'])  ##Variação entre a abertura e o fechamento
 
     def plotarGrafico(self):
         self.linha = self.dataset.Date
