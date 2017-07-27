@@ -12,29 +12,28 @@ A escolha de uma estratégia de pesquisa tem que ser feita considerando-se, entr
 Ou seja, de acordo com as afirmativas acima, a presente pesquisa é caracterizada por ser experimental e qualitativa. Segundo \citeonline{chizzotti}, na pesquisa experimental, o pesquisador parte de um estado delimitado a priori, sobre qual cria possíveis hipóteses que podem ser analisadas, determinando os métodos de verificação a serem utilizados, através dos quais procurará controlar as condições do experimento.
 
 \section{SELEÇÃO DAS AÇÕES}
-Para iniciar o processo de desenvolvimento deste trabalho é necessário definir quais ações serão escolhidas para compor a implementação. Os critérios para definir quais serão selecionadas são caracterizados pelo alto potencial de movimentação e lucratividade na NASDAQ. Ou seja, são as empresas que mais influênciam na ecônomia, que, por coincidência, são do ramo da tecnologia \cite{christie}.
+Para iniciar o processo de desenvolvimento deste trabalho, é necessário definir quais ações serão escolhidas para compor a implementação. Os critérios para definir quais serão selecionadas, são caracterizados pelo alto potencial de movimentação e lucratividade na NASDAQ. Ou seja, são as empresas que mais influênciam na ecônomia, que, por coincidência, são do ramo da tecnologia \cite{christie}.
 
-Portanto, as empresas selecionadas e o código de suas ações para a realização da coleta dos dados são:
+Tendo em vista os critérios especificados acima, as empresas selecionadas e o código de suas ações para a realização da coleta dos dados são:
 \begin{itemize}
 	\item Apple (AAPL);
 	\item Amazon (AMZN);
 	\item Cisco Systems (CSCO);
-	\item Facebook (FB);
 	\item Intel (INTC);
-	\item Google (GOOGL);
 	\item Microsoft (MSFT);
-	\item Ebay (EBAY).
 \end{itemize}
 
 \section{TÉCNICA PARA COLETA DE DADOS}
-Com a definição da bolsa de valores em questão e das empresas que serão utilizadas para realizar a implementação deste trabalho, a próxima etapa se dá pela necessidade em coletar seus dados histórios. Portanto, esta fase de coleta de dados é muito importante para o bom funcionamento da RNA que será criada, tornando-se essencial para o êxito final do trabalho.
+Com a definição da bolsa de valores em questão e das empresas que serão utilizadas para realizar a implementação deste trabalho, a próxima etapa se dá pela necessidade em coletar seus dados histórios.
 
-Como os dados históricos das ações caracterizam-se por serem séries temporais, o tipo de técnica aplicada para conseguir indicadores de relevância para uma boa análise dos objetivos propostos, refere-se à análise fundamentalisa. 
+Como os dados históricos das ações caracterizam-se por serem séries temporais, o tipo de técnica aplicada para conseguir indicadores de relevância para uma boa análise dos objetivos propostos, refere-se à análise técnica. 
+
+Portanto, esta fase de coleta de dados é muito importante para o bom funcionamento da RNA que será criada, tornando-se essencial para o êxito final do trabalho.
 
 \subsection{Definição das séries}
-Selecionar os dados corretos para trabalhar com RNAs é uma fase de grande relevância, pois são esses dados que serão treinados e que irão garantir estabilidade e a capacidade de generalização da rede em sí.
+Selecionar os dados corretos para trabalhar com RNAs é uma fase de grande relevância, pois são esses dados que serão treinados e que irão garantir a estabilidade e a capacidade de generalização da rede em sí.
 
-Portanto, a partir do conhecimento concebido pelo Capítulo 3, pode-se destacar dois aspectos importantes para a análise de quais dados coletar dentro de um problema em geral, sendo eles:
+Sendo assim, a partir do conhecimento concebido pelo Capítulo 3, pode-se destacar dois aspectos importantes para a análise de quais dados coletar dentro de um problema em geral, sendo eles:
 
 \begin{enumerate}
 \item Dados que influeciam diretamente no resultado final e na coêrencia da análise proposta;
@@ -81,7 +80,7 @@ Portanto, a principal justificativa para a utilização da biblioteca se dá pel
 \subsection{Google \textit{Finance} API}
 É importante citar qual a fonte onde o pandas busca as séries históricas, por questões como confiabilidade dos dados. O acesso é realizado através da integração com o Google \textit{Finance} API, um banco de dados quase em tempo real mantido pelo Google, que trabalha com as principais bolsas de valores do mundo.
 
-Sendo assim, a idéia é preparar um ambiente que proporcione o uso dessa ferramenta, junto à biblioteca citada na \autoref{pandas-lib} para realizar a busca pelos dados necessários.
+Sendo assim, a ideia é preparar um ambiente que proporcione o uso dessa ferramenta, junto à biblioteca citada na \autoref{pandas-lib} para realizar a busca pelos dados necessários.
 
 
 \subsection{PyCharm IDE}
