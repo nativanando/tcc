@@ -63,7 +63,7 @@ A representação de uma RNA pode ser visualizada na Figura 3, onde os nodos do 
 \section{ARQUITETURA DE REDES NEURAIS ARTIFICIAIS}\label{sec:redes-neurais-arquitetura}
 A forma como agrupam-se os neurônios artificiais em uma RNA é uma das principais características que definem seu tipo de arquitetura. Estes agrupamentos são baseados na forma como os neurônios são conectados no cérebro humano, de forma que as informações possam ser processadas dinamicamente ou iterativamente.
  
-Biologicamente, as RNAs são organizadas e construídas de forma tridimensional por componentes microscópicos. Há uma forte restrição no número de camadas que a rede pode conter, limitando consideravelmente o tipo e o escopo da implementação da mesma no computador \cite{haykin2009}.
+Biologicamente, as RNAs são organizadas e construídas de forma tridimensional por componentes microscópicos. Há uma forte restrição no número de camadas que a rede pode conter, limitando consideravelmente o tipo e o escopo da implementação da mesma, dependendo da complexidade do problema \cite{haykin2009}.
 
 A arquitetura de uma RNA pode ser classificada pela quantia de camadas ocultas e pelo sentido do fluxo de dados. Em relação ao número de camadas ocultas, ela pode ser de camada única (\textit{single-layer}) ou multicamadas (\textit{multilayer}). Quanto ao sentido do fluxo de dados, ela pode ser alimentada adiante (\textit{feedforward}) ou recorrente (\textit{feedback}) \cite{neto}.
 
@@ -156,15 +156,15 @@ Para este exemplo de função temos que para:
 y=\sum_{j=1}^{w} w_{kj}\ x_j + b_{k'}
 \end{equation}
 
-Onde $v_k$ é a entrada induzida no neurônio, gerando um resultado $y_k$ dado por:
+Onde $x$ é a entrada induzida no neurônio, gerando um resultado $y_k$ dado por:
 \begin{equation}\label{eq:limiar-result} 
-y_k = {1\ se\ v_k  \geq 0}
+y_k = {1\ se\ x_j  > 0}
 \end{equation}
 
 ou
 
 \begin{equation}\label{eq:limiar-result} 
-y_k = {0\ se\ v_k \leq 0}  
+y_k = {0\ se\ x_j < 0}  
 \end{equation}
 
 Neste modelo a saída do neurônio assume o valor 1 se o campo local induzido daquele neurônio for positivo, e 0 se for negativo. Utilizam-se dos mesmos preceitos de regressão linear e de outras técnicas, para estimar resultados a partir de valores conhecidos.
@@ -178,7 +178,7 @@ f(x)=\frac{1}{1+e^{- \lambda x}}
 
 Onde $- \lambda x$ é a entrada a ser processada.
 
-\citeonline{haykin2009} define a função sigmóide como uma função crescente, com o  objetivo de realizar um balanceamento adequado entre comportamentos lineares e não-lineares em um intervalo entre [0,1] justificando sua grande usabilidade. No Código 1 é demonstrado a implementação da função na linguagem de programação Python.
+\citeonline{haykin2009} define a função sigmóide como uma função crescente, com o  objetivo de realizar um balanceamento adequado entre comportamentos lineares e não-lineares em um intervalo entre [0,1] justificando sua grande usabilidade. No Código 1 é apresentada a implementação da função na linguagem de programação Python.
 
 \citeonline{haykin2009} também evidência a utilização da tangente hiperbólica com o mesmo intuito da sigmóide, porém com um intervalo variando em um intervalo de [-1,1].
 
@@ -199,14 +199,14 @@ Resultados com esta característica são reconhecidos por formar um "S", exempli
 \section{TREINAMENTO DE UMA REDE NEURAL ARTIFICIAL}\label{sec:rna-treinamento}
 Após determinar a arquitetura a ser utilizada pela RNA, a quantia de camadas, a função de ativação adequada ao trabalho a ser realizado, a rede neural deve adquirir conhecimento em relação aos dados aplicados sobre a mesma.
 
-O treinamento de uma RNA consiste em minimizar uma função de custo, através de um algoritmo, cujos valores iniciais são escolhidos aleatoriamente com o objetivo de facilitar a busca  pelo valor mínimo da função da amostra de treinamento, através de iterações, este processo é conhecido como mínimo global. O treinamento pode ser interrompido por duas formas: Um limite de épocas estipulado para o treinamento ou um ponto de parada a partir de um critério de desempenho. Os critérios de desempenho típicos em um processo de treinamento de uma determinada amostra de dados, são o \textit {Mean Squared Error} (MSE), \textit {Root Mean Squared Error} (RMSE) e o \textit {Mean Absolute Error} (MAE) \cite{gambogi}. 
+O treinamento de uma RNA consiste em minimizar uma função de custo, através de um algoritmo, cujos valores iniciais são escolhidos aleatoriamente com o objetivo de facilitar a busca  pelo valor mínimo da função da amostra de treinamento, através de iterações, este processo é conhecido como mínimo global. O treinamento pode ser interrompido de duas formas: Um limite de épocas estipulado para o treinamento ou um ponto de parada a partir de um critério de desempenho. Os critérios de desempenho típicos em um processo de treinamento de uma determinada amostra de dados, são o Erro quadrático médio (EQM), Raiz do Erro Quadrático Médio (REQM) e o Erro Absoluto Médio (EAM) \cite{gambogi}. 
 
 \subsection{Processo de aprendizagem}
 O processo de aprendizagem é considerado uma etapa de grande dificuldade em termos de análise de dados, porque a procura da solução adequada ocorre em um universo de soluções válidas de grande dimensão, onde a base de tomada de decisão serão os próprios dados treinados \cite{medeiros}.
  
 Para adquirir conhecimento, uma RNA requer um processo de inúmeras iterações e aprendizagem, absorvendo os conhecimentos sobre o comportamento e relacionamento dos dados a cada iteração e armazenando os ajustes realizados nos pesos sinápticos de cada neurônio \cite{neto}.
 
-Segundo \citeonline{haykin2000}, o processo de aprendizagem de uma rede neural pode ser resumido a uma sequência de três passos, engatilhada a cada estímulo enviado a rede, são eles:
+Segundo \citeonline{haykin2000}, o processo de aprendizagem de uma rede neural pode ser resumido a uma sequência de três passos a cada estímulo enviado a rede, são eles:
 
 \begin{enumerate}
 	\item \textit O ambiente estimula a RNA com informações oriundas do mundo exterior;
@@ -244,7 +244,7 @@ Para garantir uma boa capacidade de generalização, a idéia é minimizar ao m�
 \subsubsection{\textit{Overfitting} e \textit{underfitting}}
 As soluções que apresentam inconsistências devido à alta taxa de variância geralmente apresentam sobre-ajuste em relação aos dados de treinamento, efeito conhecido como overfitting \cite{medeiros}. Na Figura 9 pode-se observar o comportamento de uma função com \textit{overfitting}.
 
-Uma forma de evitar a alta taxa de variância, e assim, a ocorrência de \textit{overfitting}, se dá pela simplificação dos parâmetros de ativação da RNA. Porém, a redução desses parâmetros podem ocasionar outro problema muito comum dentre os protótipos desenvolvidos, denominado \textit{underfitting}. \textit{Underfitting} refere-se a um modelo que não pode nem modelar os dados de treinamento nem generalizar a novos dados, tornando-se um modelo estático, limitando assim, sua característica de aprender a novos padrões \cite{geman}. Na Figura 9 pode-se observar o comportamento de uma função com \textit{underfitting}.
+Uma forma de evitar a alta taxa de variância, e assim, a ocorrência de \textit{overfitting}, se dá pela simplificação dos parâmetros de ativação da RNA. Porém, a redução desses parâmetros podem ocasionar outro problema muito comum dentre os protótipos desenvolvidos, denominado \textit{underfitting}. \textit{Underfitting} refere-se a um modelo que não pode nem modelar os dados de treinamento nem generalizar a novos dados, tornando-se um modelo estático, limitando assim, sua característica de aprender novos padrões \cite{geman}. Na Figura 9 pode-se observar o comportamento de uma função com \textit{underfitting}.
 
 Com isso nota-se que deve existir um ponto de equilíbrio entre ambos efeitos, várias são as abordagens que tentam minimizar esses problemas, como os métodos construtivos e os algoritmos de \textit{pruning}.
 
@@ -274,7 +274,7 @@ As séries temporais podem ser classificadas de diversas formas. Elas podem ser 
 \section{MERCADO DE CAPITAIS}\label{capitais}
 O mercado de capitais é um sistema de distribuição de valores mobiliários que visa proporcionar liquidez aos títulos de emissão de empresas e viabilizar seu processo de capitalização. É constituído pelas bolsas, corretoras e outras instituições financeiras autorizadas \cite{tororadar}.
 
-Os mercados de grandes ações são considerados os pilares centrais do crescimento e desenvolvimento econômico. Prever como irá se comportar futuramente o movimento de ações, tornou-se interesse comum entre investidores deste mercado.
+Os mercados de grandes ações são considerados os pilares centrais do crescimento e desenvolvimento econômico. Prever como irá se comportar futuramente o movimento de ações, tornou-se interesse comum entre investidores deste mercado \cite{pereira}.
 
 Partindo deste pretexto, estudos ligados a predição de valores do mercado acionário, dividem-se basicamente em três vertentes. Há os que não crêem que investidores podem conseguir consideráveis vantagens em transações, que se fundamentam em teorias aleatórias de mercado. Há também os que crêem no hábito de seguir aspectos relacionados a análise fundamentalista de empresas e indicadores macro-econômicos. Por fim, há os que crêem que com base em séries recentes de dados e históricos é possível conseguir generalizar e classificar padrões de dados. A partir da última citação, surgem os interesses em trabalhos que relacionam o tema à técnicas de inteligência computacional, especificamente o uso de redes neurais artificiais \cite{pereira}.
 
@@ -286,7 +286,7 @@ A análise fundamentalista busca, basicamente, avaliar a saúde financeira das e
 \subsection{Análise Técnica de Ações}\label{ch:analise-tecnica}
 Análise Técnica de ações é a prática de medir as flutuações futuras do preço de uma ação analisando suas atividades passadas. Este método envolve a procura de padrões gráficos e o exame de outros dados históricos relacionados a preço e volume de ações negociadas \cite{tororadar}.
  
-Relaciona as oscilações de preços ao "humor" do mercado em relação à ação, e não à empresa. Este modelo de análise acredita na repetitividade do comportamento humano e no poder da ciência estatística como forma de determinar, com base no comportamento passado, as perspectivas para o mercado no futuro \cite{pereira}.
+Relaciona as oscilações de preços do mercado em relação à ação, e não à empresa. Este modelo de análise acredita na repetitividade do comportamento humano e no poder da ciência estatística como forma de determinar, com base no comportamento passado, as perspectivas para o mercado no futuro \cite{pereira}.
 
 A análise técnica também é conhecida como escola grafista, e auxilia o investidor na escolha do melhor momento para compra e venda de ações. Esta escola baseia-se na análise gráfica, tendo como base os volumes e os preços pelos quais foram comercializadas as ações nos pregões anteriores \cite{fortuna}.
 
@@ -296,4 +296,4 @@ Uma boa métrica para análise técnica se dá pela utilização de seus gráfic
 
 \subsection{A bolsa de valores NASDAQ}
 A bolsa de valores que será utilizada como referência para a execução do trabalho, será a  \textit{National Association of Securities Dealers Automated Quotations} (NASDAQ). Fundada em 1971, é atualmente a segunda maior bolsa de valores de mercado do mundo. Grande parte das empresas listadas no mercado de ações da NASDAQ, fazem parte do ramo de produção de alta tecnologia, como o Facebook, Apple, Amazon, Adobe, Cisco, dentre outras, incluindo a própria NASDAQ, listada em seu mercado desde 2002. 
-A NASDAQ é muito conhecida pela realização de negócios de mercado inteiramente de forma eletrônica. O mercado financeiro considera o conjunto de negócios realizados através da NASDAQ como "Nova Economia", o que a difere da Bolsa de Valores de Nova York, por exemplo,  considerada "Velha Economia" \cite{christie}.
+A NASDAQ é muito conhecida pela realização de negócios de mercado inteiramente de forma eletrônica. O mercado financeiro considera o conjunto de negócios realizados através da NASDAQ como Nova Economia, o que a difere da Bolsa de Valores de Nova York, por exemplo, considerada como Velha Economia \cite{christie}.

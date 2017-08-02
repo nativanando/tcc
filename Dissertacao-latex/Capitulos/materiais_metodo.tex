@@ -50,7 +50,7 @@ Segundo \citeonline{tororadar}, as variáveis que influenciam em um sistema de a
 \item Média móvel: 10 dias;
 \item Média móvel: 26 dias;
 \item Valor de fechamento no dia;
-\item \textit{Moving Average Convergence Divergence} (MACD): indicador que controle a divergência e convergência das médias móveis. o MACD é formado pela diferença entre duas médias móveis, sendo uma de longo prazo e outra de curto prazo. Para o presenta trabalho será calculado o MACD referente às médias de 26 e 10 dias.
+\item \textit{Moving Average Convergence Divergence} (MACD): indicador que controle a divergência e convergência das médias móveis. o MACD é formado pela diferença entre duas médias móveis, sendo uma de longo prazo e outra de curto prazo. Para o presente trabalho será calculado o MACD referente às médias de 26 e 10 dias.
 \end{enumerate}
 
 O período de dados que serão coletados referente às empresas selecionadas, irão variar de 03/05/2001 até 01/06/2017.
@@ -78,7 +78,7 @@ Segundo \citeonline{pandas}, o seu uso é adequado para diferentes tipos de dado
 Portanto, a principal justificativa para a utilização da biblioteca se dá pelo seu desenvolvimento, de código aberto, que impulsiona a comunidade a realizar diferentes aplicações, além da sua excelente documentação e suporte de acesso aos dados históricos da bolsa de valores NASDAQ, que são requisitos para a realização deste trabalho.
 
 \subsection{Google \textit{Finance} API}
-É importante citar qual a fonte onde o pandas busca as séries históricas, por questões como confiabilidade dos dados. O acesso é realizado através da integração com o Google \textit{Finance} API, um banco de dados quase em tempo real mantido pelo Google, que trabalha com as principais bolsas de valores do mundo.
+É importante citar qual a fonte onde o pandas busca as séries históricas, por questões como confiabilidade dos dados. O acesso é realizado através da integração com o Google \textit{Finance} API, um banco de dados quase em tempo real mantido pelo Google, que trabalha com as principais bolsas de valores do mundo \cite{pandas}.
 
 Sendo assim, a ideia é preparar um ambiente que proporcione o uso dessa ferramenta, junto à biblioteca citada na \autoref{pandas-lib} para realizar a busca pelos dados necessários.
 
@@ -89,9 +89,9 @@ Sendo assim, a ideia é preparar um ambiente que proporcione o uso dessa ferrame
 PyCharm suporta o desenvolvimento com a linguagem de programação Python desde a sua versão 2.4 até a versão 3.6. Vale citar que outras IDEs para o desenvolvimento poderiam ser utilizadas, porém a praticidade e a boa documentação das ferramentas JetBrains são fatores que justificam a sua utilização \cite{pycharm}.
 
 \section{ESPECIFICAÇÃO DO MODELO DE REDES NEURAIS ARTIFICIAIS}\label{especifica-modelo}
-Tendo como base o conhecimento adquirido no Capítulo 3, a definição de um modelo de RNA varia muito, sendo específico para cada problema do mundo real. Por isso, é importante frisar que não existe um modelo pré-definido e eficiente em RNAs, ficando a cargo da análise dos resultados, e, muitas vezes, por métodos de tentativa e erro para se chegar à um resultado eficiente.
+Tendo como base o conhecimento adquirido no Capítulo 3, a definição de um modelo de RNA varia muito, sendo específico para cada problema do mundo real. Por isso, é importante frisar que não existe um modelo pré-definido e eficiente em RNAs, ficando a cargo da análise dos resultados, e, muitas vezes, por métodos de tentativa e erro para se chegar à um resultado eficiente \cite{haykin2000}.
  
-Porém, com o estudo realizado no Capítulo 3, esse processo pode ser menos custoso quanto parece. Avaliar o problema em que se está trabalhando junto com o conhecimento teórico é de grande auxílio para a especificação e construção de um modelo inicial que se aproxime do desejado.
+Porém, com o estudo realizado no Capítulo 3, esse processo pode ser menos custoso do que parece. Avaliar o problema em que se está trabalhando junto com o conhecimento teórico é de grande auxílio para a especificação e construção de um modelo inicial que se aproxime do desejado.
 
 Para especificar quais modelos não devem ser aplicados, ou seja, modelos que não tenham características referente a resolução do problema em 	questão, algumas perguntas-chave serão elaboradas, sendo elas:
 
@@ -101,11 +101,11 @@ Para especificar quais modelos não devem ser aplicados, ou seja, modelos que n�
 \item "A RNA será exposta à uma quantidade significativa de dados desconhecidos aos treinados?".
 \end{enumerate}
 
-A primeira pergunta da \autoref{enumerate-questions} refere-se ao modelo de transmissão dos dados que a RNA deve implementar. Ou seja, se ela será formada por por camadas adiantes ou recorrentes.
+A primeira pergunta refere-se ao modelo de transmissão dos dados que a RNA deve implementar. Ou seja, se ela será formada por camadas adiante ou recorrente. Como é necessário o ajuste dos pesos nas camadas intermediárias, após a saída, a RNA deverá trabalhar com um modelo de camadas recorrente.
 
-A segunda pergunta da \autoref{enumerate-questions} refere-se ao processo de aprendizagem. Se os dados são treinados com resultados esperados, a RNA deve possuir um método de aprendizado supervisionado, caso contrário, um modelo de RNA com treinamento não supervisionado deve ser utilizado.
+A segunda pergunta refere-se ao processo de aprendizagem. Se os dados são treinados com resultados esperados, a RNA deve possuir um método de aprendizado supervisionado, caso contrário, um modelo de RNA com treinamento não supervisionado deve ser utilizado. A RNA será treinada a partir dos resultados esperados através das séries temporais, ou seja, o modelo trabalhará com aprendizagem supervisionada.
 
-A terceira pergunta da \autoref{enumerate-questions} refere-se à capacidade de generalização. Sendo assim, um modelo de RNA que irá trabalhar com dados desconhecidos deve ter caracteristícas de boa generalização. Caso contrário, um modelo simples ja é o suficiente.
+A terceira pergunta refere-se à capacidade de generalização. Sendo assim, um modelo de RNA que irá trabalhar com dados desconhecidos deve ter caracteristícas de boa generalização, caso contrário, um modelo simples ja é o suficiente.
 
 O modelo que será construído levará esses critérios como referência para simplificar o processo de tentativa e erro, possibilitando encontrar uma solução ideal para o problema, criando assim, uma técnica de RNA eficiente para ser utilizada.
 
