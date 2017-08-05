@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  5 AUG 2017 15:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  5 AUG 2017 17:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1680,13 +1680,13 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
-Package xcolor Warning: Incompatible color definition on input line 186.
+Package xcolor Warning: Incompatible color definition on input line 184.
 
 
-Package xcolor Warning: Incompatible color definition on input line 186.
+Package xcolor Warning: Incompatible color definition on input line 184.
 
 
-Package xcolor Warning: Incompatible color definition on input line 186.
+Package xcolor Warning: Incompatible color definition on input line 184.
 
 (./src/Sigmoide.py
 
@@ -1720,7 +1720,7 @@ Package xcolor Warning: Incompatible color definition on input line 5.
 File: ./Imagens/sigmoide.png Graphic file (type png)
 
 <use ./Imagens/sigmoide.png>
-Package pdftex.def Info: ./Imagens/sigmoide.png used on input line 192.
+Package pdftex.def Info: ./Imagens/sigmoide.png used on input line 190.
 (pdftex.def)             Requested size: 364.00139pt x 269.97888pt.
 
 
@@ -1731,7 +1731,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: ./Imagens/overfitting.png Graphic file (type png)
 
 <use ./Imagens/overfitting.png>
-Package pdftex.def Info: ./Imagens/overfitting.png used on input line 265.
+Package pdftex.def Info: ./Imagens/overfitting.png used on input line 262.
 (pdftex.def)             Requested size: 409.49722pt x 188.77408pt.
  [26 <./Imagens/overfitting.png>] [27] [28])
 (./Capitulos/materiais_metodo.tex [29] [30
@@ -1931,7 +1931,7 @@ ic/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/tex
 mf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/publi
 c/cm-super/sfxc1200.pfb>
-Output written on modelo.pdf (40 pages, 950476 bytes).
+Output written on modelo.pdf (40 pages, 950367 bytes).
 PDF statistics:
  923 PDF objects out of 1000 (max. 8388607)
  812 compressed objects within 9 object streams

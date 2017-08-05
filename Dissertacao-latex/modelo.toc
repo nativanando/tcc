@@ -37,11 +37,11 @@
 \contentsline {subsection}{\numberline {3.5.1}\textit {Backpropagation}}{24}{subsection.3.5.1}
 \contentsline {section}{\numberline {3.6}PROCESSO DE GENERALIZA\IeC {\c C}\IeC {\~A}O}{25}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Problemas de generaliza\IeC {\c c}\IeC {\~a}o}{25}{subsection.3.6.1}
-\contentsline {subsubsection}{\numberline {3.6.1.1}\textit {Overfitting} e \textit {underfitting}}{26}{subsubsection.3.6.1.1}
-\contentsline {subsubsection}{\numberline {3.6.1.2}\textit {Overtraining}}{27}{subsubsection.3.6.1.2}
+\contentsline {subsubsection}{\numberline {3.6.1.1}\textit {Overfitting} e \textit {underfitting}}{25}{subsubsection.3.6.1.1}
+\contentsline {subsubsection}{\numberline {3.6.1.2}\textit {Overtraining}}{26}{subsubsection.3.6.1.2}
 \contentsline {section}{\numberline {3.7}TEORIA DA REGULARIZA\IeC {\c C}\IeC {\~A}O}{27}{section.3.7}
 \contentsline {section}{\numberline {3.8}S\IeC {\'E}RIES TEMPORAIS}{27}{section.3.8}
-\contentsline {section}{\numberline {3.9}MERCADO DE CAPITAIS}{28}{section.3.9}
+\contentsline {section}{\numberline {3.9}MERCADO DE CAPITAIS}{27}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}An\IeC {\'a}lise Fundamentalista de Ac\IeC {\~o}es}{28}{subsection.3.9.1}
 \contentsline {subsection}{\numberline {3.9.2}An\IeC {\'a}lise T\IeC {\'e}cnica de A\IeC {\c c}\IeC {\~o}es}{28}{subsection.3.9.2}
 \contentsline {subsection}{\numberline {3.9.3}A bolsa de valores NASDAQ}{29}{subsection.3.9.3}

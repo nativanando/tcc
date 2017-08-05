@@ -162,7 +162,6 @@ y_k = {1\ se\ x_j  > 0}
 \end{equation}
 
 ou
-
 \begin{equation}\label{eq:limiar-result} 
 y_k = {0\ se\ x_j < 0}  
 \end{equation}
@@ -171,7 +170,6 @@ Neste modelo a saída do neurônio assume o valor 1 se o campo local induzido da
 
 \subsection{Função Sigmóide}
 A função sigmóide, representada na Equação (3.4), é a forma mais comum de função de ativação utilizada na construção de RNAs.
-
 \begin{equation}\label{eq:limiar-result} 
 f(x)=\frac{1}{1+e^{- \lambda x}}
 \end{equation}
@@ -229,15 +227,14 @@ Muitos algoritmos são aplicados para a minimização e melhoria da aprendizagem
 
 \subsection{\textit{Backpropagation}}
 O algoritmo de retropropagação (\textit{backpropagation}) é um método baseado no gradiente descendente, de aprendizado supervisionado e com alimentação à frente, que utiliza a função de ativação do tipo sigmóide e um coeficiente de aprendizado, denominado \textit{learning rate}, responsável por especificar uma taxa de convergência da RNA, este coeficiente de aprendizado normalmente está em um intervalo entre [0,1]    \cite{haykin2000}.
-Neste modelo, reconhecido por ser a técnica mais utilizada dentre os métodos de treinamento aplicados, o erro de saída obtido propaga para as camadas intermediárias da RNA, isso se dá pela necessidade de ajuste dos neurônios que não tem contato com a saída, possibilitando assim, a atualização dos pesos desses neurônios, aumentando o poder de classificação e correção de erros \cite{medeiros}.
+Neste modelo, reconhecido por ser a técnica mais utilizada dentre os métodos de treinamento aplicados, o erro de saída obtido se propaga para as camadas intermediárias da RNA, isso se dá pela necessidade de ajuste dos neurônios que não tem contato com a saída, possibilitando assim, a atualização dos pesos desses neurônios, aumentando o poder de classificação e de correção de erros \cite{medeiros}.
 
-O algoritmo usa a Equação 3.5 para atualizar os pesos de um determinado neurônio.
-
+O algoritmo usa a Equação abaixo para atualizar os pesos de um determinado neurônio.
 \begin{equation}\label{eq:backpropagation-ajuste-pesos}
 W_{ij,(t+1)} = W_{ij, t} + (\lambda)(\varepsilon W_{ij})(N_i)
 \end{equation}
 
-para realizar a atualização do $W_{ij}$ que é o peso determinado neurônio $N_i$ referente ao neurônio atual $N_j$ , onde o sub-índice $t$ refere-se ao número de vezes em que a rede foi atualizada e $\lambda$ refere-se à \textit{learning rate}, a ser fixada no código computacional preparado para simular a série de tempo tida como meta. Essa taxa de aprendizagem controla o peso e suas alterações.	
+A equação 3.5 realiza a atualização do peso $W_{ij}$ de um determinado neurônio $N_i$ referente ao neurônio atual $N_j$ , onde o sub-índice $t$ refere-se ao número de vezes em que a rede foi atualizada e $\lambda$ refere-se à taxa de aprendizagem (\textit{learning rate}). Esta taxa de aprendizagem é responsável por controlar o peso e suas alterações.	
 
 \section{PROCESSO DE GENERALIZAÇÃO}\label{rna-generalização}
 O processo de generalização de uma RNA, ocorre a partir da sua capacidade em responder adequadamente não somente aos padrões de treinamento mas também aos demais padrões \cite{medeiros}. Vale ressaltar que o processo de treinamento é uma das etapas mais delicadas, em termos de análise e execução, ao se utilizar um modelo de RNA.
