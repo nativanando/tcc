@@ -47,13 +47,10 @@ Segundo \citeonline{tororadar}, as variáveis que influenciam em um sistema de a
 \item Máximo: Valor máximo negociado no dia;
 \item Mínimo: Valor mínimo negociado no dia;
 \item Volume: Número de negociações do papel no dia (valor bruto das negociações);
-\item Média móvel: 10 dias;
-\item Média móvel: 26 dias;
 \item Valor de fechamento no dia;
+\item Médias móveis simples: As médias móveis suavizam os dados de preços para formar um indicador de tendência sequencial. Elas não prevêem a direção dos preços, mas, antes, definem a sua direção atual com um atraso. Como o próprio nome indica, uma média móvel é uma média que se move. Os dados antigos são retirados, a medida que dados mais recentes se tornam disponíveis, isto faz com que a média se mova ao longo do tempo. A maioria das médias móveis são baseadas em preços de fechamento;
 \item \textit{Moving Average Convergence Divergence} (MACD): indicador que controle a divergência e convergência das médias móveis. o MACD é formado pela diferença entre duas médias móveis, sendo uma de longo prazo e outra de curto prazo. Para o presente trabalho será calculado o MACD referente às médias de 26 e 10 dias.
 \end{enumerate}
-
-O período de dados que serão coletados referente às empresas selecionadas, irão variar de 03/05/2001 até 01/06/2017.
 
 \section{FERRAMENTAS PARA COLETA DE DADOS}
 Com a especificação das séries que serão coletadas, é necessário preparar um ambiente que dispõe o acesso à esses dados de forma simplificada. 
@@ -77,11 +74,28 @@ Segundo \citeonline{pandas}, o seu uso é adequado para diferentes tipos de dado
 
 Portanto, a principal justificativa para a utilização da biblioteca se dá pelo seu desenvolvimento, de código aberto, que impulsiona a comunidade a realizar diferentes aplicações, além da sua excelente documentação e suporte de acesso aos dados históricos da bolsa de valores NASDAQ, que são requisitos para a realização deste trabalho.
 
+Para exemplificar como a biblioteca facilita o processo de coleta dos dados, o Código 2 ilustra uma pesquisa das ações da Microsoft, no período de 05/03/2001 a 11/04/2001.
+\codigoPython\
+\lstinputlisting[label=cod:script-coleta-dados, caption=\textit{Script} para coleta de dados]{src/microsoft.py}
+
+As séries históricas são disponibilizadas em arquivos com valores separados por vírgulas (*.csv) contendo a data de negociação, valor de abertura, valores máximo e mínimo atingidos, valor de fechamento e o volume de negociações.
+
+Na Figura 10 é possível observar o arquivo criado a partir do Código 2, demonstrando o formato especificado acima que a API retorna para a manipulação.
+
+\begin{figure}[h]
+	\centering
+	\fbox{\includegraphics[width=0.5\textwidth, height=0.33\textheight]{dados-pandas}}
+	\caption{Representação dos dados coletados pela biblioteca pandas}
+	\fonte{Elaborado pelo autor}
+	\label{exec-coleta-dados}
+\end{figure}
+
 \subsection{Google \textit{Finance} API}
 É importante citar qual a fonte onde o pandas busca as séries históricas, por questões como confiabilidade dos dados. O acesso é realizado através da integração com o Google \textit{Finance} API, um banco de dados quase em tempo real mantido pelo Google, que trabalha com as principais bolsas de valores do mundo \cite{pandas}.
 
-Sendo assim, a ideia é preparar um ambiente que proporcione o uso dessa ferramenta, junto à biblioteca citada na \autoref{pandas-lib} para realizar a busca pelos dados necessários.
+A API trabalha com um limite inicial para a coleta das ações, este limite se inicia em 03/05/2001 e vai se atualizando diariamente. Tendo em vista que para trabalhar com RNAs é importante buscar o máximo de informações possíveis, e também considerando o limite disponível pela API, o período das ações das empresas selecionadas serão coletadas iniciando no ano de 2001 até o ano de 2017. 
 
+Sendo assim, a ideia é preparar um ambiente que proporcione o uso dessa ferramenta, junto à biblioteca citada na \autoref{pandas-lib} para realizar a busca pelos dados necessários.
 
 \subsection{PyCharm IDE}
 É necessário utilizar uma \textit{Integrated Development Environment} (IDE) para auxiliar no \textit{script} de coleta de dados. PyCharm é uma IDE proprietária do grupo JetBrains que conta com uma versão livre para estudantes, que será realizada neste trabalho.
