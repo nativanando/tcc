@@ -11,6 +11,14 @@
 \textbf{Instituto de Informática, Universidade Federal do Rio Grande do Sul,
   Porto Alegre}, p.~31, 1994.}
 
+\bibitem[Castro 1996]{castro}
+\abntrefinfo{Castro}{CASTRO}{1996}
+{CASTRO, M. C.~F.
+\textbf{Algoritmo Hebbiano Generalizado para extração dos componentes
+  principais de um conjunto de dados no domínio complexo}.
+121~p. Disserta\c{c}\~{a}o (Mestrado) --- Universidade Católica do Rio Grande
+  do Sul, Porto Alegre, 1996.}
+
 \bibitem[Chizzotti 1991]{chizzotti}
 \abntrefinfo{Chizzotti}{CHIZZOTTI}{1991}
 {CHIZZOTTI, A. Pesquisa em ciências humanas e sociais.
@@ -74,7 +82,8 @@ Dispon{\'\i}vel em:
 {GAMBOGI, J.~A.
 \textbf{Aplicação de redes neurais na tomada de decisão no mercado de
   ações}.
-Disserta\c{c}\~{a}o (Mestrado) --- Universidade de São Paulo, 2013.}
+Disserta\c{c}\~{a}o (Mestrado) --- Universidade de São Paulo, São Paulo,
+  2013.}
 
 \bibitem[Geman, Bienestock e Doursat 1992]{geman}
 \abntrefinfo{Geman, Bienestock e Doursat}{GEMAN; BIENESTOCK; DOURSAT}{1992}
@@ -145,18 +154,19 @@ Disserta\c{c}\~{a}o (Mestrado) --- Universidade de São Paulo, 2013.}
 
 \bibitem[Medeiros 2004]{medeiros}
 \abntrefinfo{Medeiros}{MEDEIROS}{2004}
-{MEDEIROS, T.~H. Treinamento de redes neurais artificiais com otimização
-  multi-objetivo e regularização bayesiana: Um estudo comparativo.
-\textbf{Dissertação (Mestrado em Engenharia Elétrica), Universidade Federal
-  de Minas Gerais, Belo Horizonte}, p.~105, 2004.}
+{MEDEIROS, T.~H.
+\textbf{Treinamento de redes neurais artificiais com otimização
+  multi-objetivo e regularização bayesiana: Um estudo comparativo}.
+105~p. Disserta\c{c}\~{a}o (Mestrado) --- Universidade Federal de Minas Gerais,
+  Belo Horizonte, 2004.}
 
 \bibitem[MENDONÇA NETO 2014]{neto}
 \abntrefinfo{MENDONÇA NETO}{MENDONÇA NETO}{2014}
 {MENDONÇA NETO, J.~N.
 \textbf{Fractais e redes neurais artificiais aplicados à previsão de retorno
   de ativos financeiros brasileiros}.
-181~p. Disserta\c{c}\~{a}o (Mestrado) --- Dissertação (Mestrado em
-  Ciências), Universidade de São Paulo, São Paulo, 2014.}
+181~p. Disserta\c{c}\~{a}o (Mestrado) --- Universidade de São Paulo, São
+  Paulo, 2014.}
 
 \bibitem[Nayak, Misra e Behera 2012]{nayak}
 \abntrefinfo{Nayak, Misra e Behera}{NAYAK; MISRA; BEHERA}{2012}

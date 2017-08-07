@@ -4,5 +4,5 @@ import datetime
 start = datetime.datetime(2001, 03, 05)
 end = datetime.datetime(2001, 04, 11)
 
-f = web.DataReader("MSFT", 'google', start, end)
-f.to_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/microsoft.txt')
+dataset = web.DataReader("MSFT", 'google', start, end)
+dataset.to_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/msft.csv')

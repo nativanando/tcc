@@ -234,17 +234,54 @@ O algoritmo usa a Equação abaixo para atualizar os pesos de um determinado neu
 W_{ij,(t+1)} = W_{ij, t} + (\lambda)(\varepsilon W_{ij})(N_i)
 \end{equation}
 
-A equação 3.5 realiza a atualização do peso $W_{ij}$ de um determinado neurônio $N_i$ referente ao neurônio atual $N_j$ , onde o sub-índice $t$ refere-se ao número de vezes em que a rede foi atualizada e $\lambda$ refere-se à taxa de aprendizagem (\textit{learning rate}). Esta taxa de aprendizagem é responsável por controlar o peso e suas alterações.	
+A Equação (3.5) realiza a atualização do peso $W_{ij}$ de um determinado neurônio $N_i$ referente ao neurônio atual $N_j$ , onde o sub-índice $t$ refere-se ao número de vezes em que a rede foi atualizada e $\lambda$ refere-se à taxa de aprendizagem (\textit{learning rate}). Esta taxa de aprendizagem é responsável por controlar o peso e suas alterações.
+
+Como dito anteriormente, o algoritmo trabalha com a função de ativação sigmóide para tratar suas saídas, a Equação (3.4) representa o cálculo realizado pela função.
+
+Após organizar os dados da saída da rede, é necessário ajustar os pesos caso haja um erro na resposta esperada, este cálculo de erro é detalhado na Equação (3.6).
+\begin{equation}\label{eq:backpropagation-calculo-erro}
+E_j = \frac{1}{2} \sum_{saidas} (N_j - D_j)^2
+\end{equation}
+
+Onde $D_j$ é a saída desejada e $N_j$ é o resultado atual do neurônio. 	
+
+Encontrando o valor do erro, é necessário calcular a variação do mesmo em relação às mudanças dos valores de entrada, isso é feito determinando quanto a Equação (3.6) se altera em relação à Equação (3.5). O cálculo é dado pela equação (3.7).
+\begin{equation}\label{eq:backpropagation-calculo-erro-diferença}
+\varepsilon S_{j} = E_j N_j (1 - N_j)
+\end{equation}
+
+O próximo passo é calcular os pesos ajustados para $W_{ij}$ da camada atual $N_i$ para o neurônio atual $N_j$. Esse cálculo é dado pela Equação (3.8).
+\begin{equation}\label{eq:backpropagation-ajustes-erro}
+\varepsilon W_{ij} = \varepsilon S_j N_i
+\end{equation}
+
+Por fim, a Equação (3.9) é usada para calcular as atualizações dos pesos de cada neurônio $N_j$ , onde $j$ representa os neurônios da camada escondida.
+
+De forma geral, as operações de cada neurônio seguem os cálculos especificados acima. A ideia é que os valores dos neurônios sejam atualizados de acordo com cada entrada da rede. 
+
+\subsection{Algoritmo de Aprendizado Hebbiano}
+O Aprendizado Hebbiano é uma classe de aprendizado não-supervisionado ou auto-organizado, onde uma RNA treinada sob este algoritmo possui capacidade de descobrir padrões significativos ou características em dados sem o auxílio de um padrão pré-definido, deixando a cargo da própria RNA aprender por sí só os padrões, características, correlações ou categorias nos dados de entrada \cite{castro}.
+
+Segundo \citeonline{haykin2000}, o primeiro princípio do Aprendizado Hebbiano afirma que as modificações nos pesos sinápticos, baseadas em sinais pré-sinápticos e pós-sinápticos, tendem a se auto-amplificar. Uma sinapse forte leva à coincidência entre os sinais pré-sinápticos e pós-sinápticos e isto leva ao acréscimo da força da sinapse.
+
+os sinais pré-sinápticos e pós-sinápticos, respectivamente x e y, podem ser equacionados por:
+\begin{equation}\label{eq:hebbiano}
+w_{0} (n + 1) = w_{0}(n)+ \eta y_0(n)x(n)
+\end{equation}
+
+Onde $w_{0}(n)$ é o peso atual do neurônio, $\eta$ é a taxa de aprendizagem, $x(n)$ é a entrada da rede e $y_0(n)$ é a saída da rede.
+
+\citeonline{castro} diz que o segundo princípio do Aprendizado Hebbiano trabalha através de competição entre os pesos sinápticos. Ou seja, um aumento na força de algumas sinapses na rede deve ser compensado por um decréscimo em outras. Assim, só as sinapses de sucesso podem crescer, enquanto as de menos sucesso tendem a enfraquecer, podendo, inclusive, desaparecer.
 
 \section{PROCESSO DE GENERALIZAÇÃO}\label{rna-generalização}
-O processo de generalização de uma RNA, ocorre a partir da sua capacidade em responder adequadamente não somente aos padrões de treinamento mas também aos demais padrões \cite{medeiros}. Vale ressaltar que o processo de treinamento é uma das etapas mais delicadas, em termos de análise e execução, ao se utilizar um modelo de RNA.
+O processo de generalização de uma RNA, ocorre a partir da sua capacidade em responder adequadamente não somente aos padrões de treinamento mas também aos demais padrões \cite{medeiros}. Vale ressaltar que o processo de treinamento é uma das eta	pas mais delicadas, em termos de análise e execução, ao se utilizar um modelo de RNA.
 
 Tendo este conceito como ponto de partida, a capacidade de alta generalização desses modelos são fatores fundamentais para alcançar um nível de excelência. Ou seja, desde os primórdios destas técnicas, são utilizados métodos que possam abstrair a complexidade e suprir a necessidade de controlar o processo de generalização.
 
 \subsection{Problemas de generalização}
  Diferentes realizações para um conjunto de treinamento podem fazer com que diferentes soluções sejam tomadas, dada uma topologia de rede. Essa variabilidade de soluções, dados os conjuntos de treinamentos distintos para uma mesma tarefa, é chamada de variância \cite{haykin2000}.
  
-Para garantir uma boa capacidade de generalização, a idéia é minimizar ao máximo essa variância que ocorre no processo de treinamento \cite{medeiros}. As inconsistências que influenciam  na capacidade de generalização de um algoritmo podem ser atribuídas aos seguintes fatores: sobre-ajuste (\textit{overfitting}), sub-ajuste (\textit{underfitting}) e sobretreinamento (\textit{overtraining}). A seguir encontram-se alguns detalhes a respeito desses fatores.
+Para garantir uma boa capacidade de generalização, a ideia é minimizar ao máximo essa variância que ocorre no processo de treinamento \cite{medeiros}. As inconsistências que influenciam  na capacidade de generalização de um algoritmo podem ser atribuídas aos seguintes fatores: sobre-ajuste (\textit{overfitting}), sub-ajuste (\textit{underfitting}) e sobretreinamento (\textit{overtraining}). A seguir encontram-se alguns detalhes a respeito desses fatores.
 
 \subsubsection{\textit{Overfitting} e \textit{underfitting}}
 As soluções que apresentam inconsistências devido à alta taxa de variância geralmente apresentam sobre-ajuste em relação aos dados de treinamento, efeito conhecido como overfitting \cite{medeiros}. Na Figura 9 pode-se observar o comportamento de uma função com \textit{overfitting}.
@@ -253,7 +290,7 @@ Uma forma de evitar a alta taxa de variância, e assim, a ocorrência de \textit
 
 Com isso nota-se que deve existir um ponto de equilíbrio entre ambos efeitos, várias são as abordagens que tentam minimizar esses problemas, como os métodos construtivos e os algoritmos de \textit{pruning}.
 
-Os algoritmos construtivos buscam a construção gradual da RNA por meio da adição, até que um critério de parada envolvendo o erro de treinamento seja atingido. A resposta da rede se inicia em uma situação de \textit{underfitting} e com a adição de novos neurônios aproxima-se de \textit{overfitting}, a idéia desses algoritmos consiste em encontrar uma melhor generalização na transição entre esses dois extremos \cite{medeiros}.
+Os algoritmos construtivos buscam a construção gradual da RNA por meio da adição, até que um critério de parada envolvendo o erro de treinamento seja atingido. A resposta da rede se inicia em uma situação de \textit{underfitting} e com a adição de novos neurônios aproxima-se de \textit{overfitting}, a ideia desses algoritmos consiste em encontrar uma melhor generalização na transição entre esses dois extremos \cite{medeiros}.
 
 Os algoritmos de pruning, por sua vez, visam à minimização da estrutura pela eliminação gradativa dos pesos e dos neurônios, buscando diminuir os pesos excessivos, e assim, diminuindo o \textit{overfitting}.
 
@@ -269,7 +306,7 @@ Os algoritmos de pruning, por sua vez, visam à minimização da estrutura pela 
 As arquiteturas convencionais de treinamento estão sujeitas a sofrerem um sobretreinamento (\textit{overtraining}). Quando a rede parece estar respondendo o conjunto de dados cada vez melhor, ou seja, o erro de treinamento do conjunto de dados continua diminuindo, em algum ponto desse processo, a capacidade em resolver novos padrões torna-se falha. Isto ocorre por utilizar dados muito parecidos, assim como a quantidade de épocas em que esse conjunto de dados é treinado, viciando o conhecimento da RNA \cite{haykin2000}.
 
 \section{TEORIA DA REGULARIZAÇÃO}\label{regularizacao}
-A regularização é um método que busca melhorar a capacidade de generalização dos algoritmos de aprendizado por meio de alguma regra durante o processo de treinamento. A idéia básica da regularização é estabilizar a solução por meio de uma suavização entre o mapeamento da entrada até a saída, no sentido de que entradas similares correspondam a saídas similares. A suavização pode transformar um problema mal posto em um problema bem posto \cite{medeiros}. Um dos problemas a ser resolvido com métodos de regularização, seria encontrar um ponto de equilíbrio entre \textit{overfitting} e \textit{underfitting} no processo de treinamento de uma RNA, implicando na suavização do conjunto de dados.
+A regularização é um método que busca melhorar a capacidade de generalização dos algoritmos de aprendizado por meio de alguma regra durante o processo de treinamento. A ideia básica da regularização é estabilizar a solução por meio de uma suavização entre o mapeamento da entrada até a saída, no sentido de que entradas similares correspondam a saídas similares. A suavização pode transformar um problema mal posto em um problema bem posto \cite{medeiros}. Um dos problemas a ser resolvido com métodos de regularização, seria encontrar um ponto de equilíbrio entre \textit{overfitting} e \textit{underfitting} no processo de treinamento de uma RNA, implicando na suavização do conjunto de dados.
 
 \section{SÉRIES TEMPORAIS}\label{series-temporais}
 Séries temporais são definidas como sequências de dados indexados ao longo de um período. Diferentemente de dados em seção transversal (\textit{cross-section}), em que os dados são coletados somente em um determinado instante de tempo, representando uma instância dos dados naquele momento, a ordem temporal dos dados tem relevância na obtenção de resultados e conclusões. Se a ordem dos dados for modificada, haverá perda de informação relevante sobre os dados, podendo obter conclusões equivocadas em relação à série em estudo \cite{neto}.
