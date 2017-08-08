@@ -107,10 +107,10 @@ Tendo como base o conhecimento adquirido no Capítulo 3, a definição de um mod
  
 Porém, com o estudo realizado no Capítulo 3, esse processo pode ser menos custoso do que parece. Avaliar o problema em que se está trabalhando junto com o conhecimento teórico é de grande auxílio para a especificação e construção de um modelo inicial que se aproxime do desejado.
 
-Para especificar quais modelos não devem ser aplicados, ou seja, modelos que não tenham características referente a resolução do problema em 	questão, algumas perguntas-chave serão elaboradas, sendo elas:
+Para especificar quais modelos não devem ser aplicados, ou seja, modelos que não tenham características referente a resolução do problema em questão, algumas perguntas-chave serão elaboradas, sendo elas:
 
 \begin{enumerate}\label{enumerate-questions}
-\item "Qual o modelo de dados que estou trabalhando?";
+\item "Qual o modelo de dados se está trabalhando?";
 \item "Estes dados serão treinados a partir de resultados esperados?";
 \item "A RNA será exposta à uma quantidade significativa de dados desconhecidos aos treinados?".
 \end{enumerate}
@@ -121,5 +121,8 @@ A segunda pergunta refere-se ao processo de aprendizagem. Se os dados são trein
 
 A terceira pergunta refere-se à capacidade de generalização. Sendo assim, um modelo de RNA que irá trabalhar com dados desconhecidos deve ter caracteristícas de boa generalização, caso contrário, um modelo simples ja é o suficiente.
 
-O modelo que será construído levará esses critérios como referência para simplificar o processo de tentativa e erro, possibilitando encontrar uma solução ideal para o problema, criando assim, uma técnica de RNA eficiente para ser utilizada.
+\subsection{Definição da Arquitetura}
 
+Tendo em vista estes critérios estabelecidos na Seção anterior, chega-se a definição de que a RNA deverá possuir uma arquitetura de camadas recorrente, um método de aprendizado supervisionado e uma função de custo, para controlar o processo de generalização da mesma.
+
+\citeonline{haykin2000} direciona este modelo de rede ao Perceptron de Múltiplas Camadas (MLP, \textit{Multilayer Perceptron}), são redes neurais compostas por um conjunto de unidades sensoriais que constituem a camada de entrada, uma ou mais camadas ocultas e uma camada de saída, onde o sinal de entrada se propaga para frente através da rede, camada por camada. Redes MLP trabalham normalmente junto ao algoritmo \textit{backproagation} para realizar seu treinamento e aprendizado.

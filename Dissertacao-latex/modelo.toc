@@ -58,6 +58,7 @@
 \contentsline {subsection}{\numberline {4.4.3}Google \textit {Finance} API}{35}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}PyCharm IDE}{35}{subsection.4.4.4}
 \contentsline {section}{\numberline {4.5}ESPECIFICA\IeC {\c C}\IeC {\~A}O DO MODELO DE REDES NEURAIS ARTIFICIAIS}{36}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Defini\IeC {\c c}\IeC {\~a}o da Arquitetura}{36}{subsection.4.5.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{37}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{38}{section*.6}
