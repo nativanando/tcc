@@ -117,12 +117,12 @@ Para especificar quais modelos não devem ser aplicados, ou seja, modelos que n�
 
 A primeira pergunta refere-se ao modelo de transmissão dos dados que a RNA deve implementar. Ou seja, se ela será formada por camadas adiante ou recorrente. Como é necessário o ajuste dos pesos nas camadas intermediárias, após a saída, a RNA deverá trabalhar com um modelo de camadas recorrente.
 
-A segunda pergunta refere-se ao processo de aprendizagem. Se os dados são treinados com resultados esperados, a RNA deve possuir um método de aprendizado supervisionado, caso contrário, um modelo de RNA com treinamento não supervisionado deve ser utilizado. A RNA será treinada a partir dos resultados esperados através das séries temporais, ou seja, o modelo trabalhará com aprendizagem supervisionada.
+A segunda pergunta refere-se ao processo de aprendizagem. Se os dados são treinados com resultados esperados, a RNA deverá possuir um método de aprendizado supervisionado, caso contrário, um modelo de RNA com treinamento não supervisionado deverá ser utilizado. A RNA será treinada a partir dos resultados esperados através das séries temporais, ou seja, o modelo trabalhará com aprendizagem supervisionada.
 
-A terceira pergunta refere-se à capacidade de generalização. Sendo assim, um modelo de RNA que irá trabalhar com dados desconhecidos deve ter caracteristícas de boa generalização, caso contrário, um modelo simples ja é o suficiente.
+A terceira pergunta refere-se à capacidade de generalização. Sendo assim, um modelo de RNA que irá trabalhar com dados desconhecidos deve ter caracteristícas de boa generalização, caso contrário, um modelo simples já é o suficiente.
 
 \subsection{Definição da Arquitetura}
 
 Tendo em vista estes critérios estabelecidos na Seção anterior, chega-se a definição de que a RNA deverá possuir uma arquitetura de camadas recorrente, um método de aprendizado supervisionado e uma função de custo, para controlar o processo de generalização da mesma.
 
-\citeonline{haykin2000} direciona este modelo de rede ao Perceptron de Múltiplas Camadas (MLP, \textit{Multilayer Perceptron}), são redes neurais compostas por um conjunto de unidades sensoriais que constituem a camada de entrada, uma ou mais camadas ocultas e uma camada de saída, onde o sinal de entrada se propaga para frente através da rede, camada por camada. Redes MLP trabalham normalmente junto ao algoritmo \textit{backproagation} para realizar seu treinamento e aprendizado.
+\citeonline{haykin2000} direciona este modelo de rede ao Perceptron de Múltiplas Camadas (MLP, \textit{Multilayer Perceptron}), são redes neurais compostas por um conjunto de unidades sensoriais que constituem a camada de entrada, uma ou mais camadas ocultas e uma camada de saída, onde o sinal de entrada se propaga para frente através da rede, camada por camada. Redes MLP trabalham normalmente junto ao algoritmo \textit{backpropagation} para realizar seu treinamento e aprendizado.
