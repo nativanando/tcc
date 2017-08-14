@@ -126,3 +126,28 @@ A terceira pergunta refere-se à capacidade de generalização. Sendo assim, um 
 Tendo em vista estes critérios estabelecidos na Seção anterior, chega-se a definição de que a RNA deverá possuir uma arquitetura de camadas recorrente, um método de aprendizado supervisionado e uma função de custo, para controlar o processo de generalização da mesma.
 
 \citeonline{haykin2000} direciona este modelo de rede ao Perceptron de Múltiplas Camadas (MLP, \textit{Multilayer Perceptron}), são redes neurais compostas por um conjunto de unidades sensoriais que constituem a camada de entrada, uma ou mais camadas ocultas e uma camada de saída, onde o sinal de entrada se propaga para frente através da rede, camada por camada. Redes MLP trabalham normalmente junto ao algoritmo \textit{backpropagation} para realizar seu treinamento e aprendizado.
+
+Tendo em vista a especificação do modelo da rede e dos dados que serão utilizados para realizar o treinamento e os testes, a próxima etapa será definir quais serão as entradas utilizadas. Como o objetivo do trabalho é realizar a predição do valor de fechamento das ações, todas as váriaveis coletadas, com a exceção do valor de fechamento, serão utilizadas como entrada da RNA. 
+
+Portanto, as variáveis que irão compor a camada de entrada da RNA são:
+
+\begin{enumerate}
+\item Valor de abertura;
+\item Valor máximo negociado no dia;
+\item Valor mínimo negociado no dia;
+\item Número de negociações do papel;
+\item Médias móveis simples de 10 e 26 dias;
+\item \textit{Moving Average Convergence Divergence} (MACD).
+\end{enumerate}
+
+Segundo \citeonline{haykin2000} e \citeonline{marangoni}, na camada intermediária da RNA existe um cuidado especial para especificar sua composição, pois o número de neurônios depende de várias condições, tais como:
+
+\begin{itemize}
+\item Quantidade de dados para treinamento em relação a quantidade de neurônios na camada oculta: Deve-se ter cuidado para não utilizar neurônios e camadas demais, o que pode levar a rede a memorizar os padrões de treinamento, quebrando seu processo de aprendizagem (\textit{overfitting}). O inverso também é válido, poucos neurônios para uma grande quantidade de dados, pode levar a rede a não encontrar uma solução desejável, pelo pouco poder de processamento (\textit{underfitting});
+\item Definir o número de neurônios em função da dimensão das camadas de entrada e saída da rede: Pode-se definir o número de neurônios na camada escondida como sendo a média aritmética entre o tamanho da entrada e da saída da rede.
+\item Utilizar um número de sinapses dez vezes menor que o número de exemplos disponíveis para treinamento.
+\end{itemize}
+
+Por isso, para a grande maioria dos problemas utiliza-se apenas uma camada escondida, onde sua quantidade de neurônios é definida buscando um meio termo entre a quantidade de entradas e a sua saída, tentando evitar as complicações evidenciadas nos tópicos anteriores.
+
+  

@@ -61,4 +61,4 @@
 \contentsline {subsection}{\numberline {4.5.1}Defini\IeC {\c c}\IeC {\~a}o da Arquitetura}{36}{subsection.4.5.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{38}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{39}{section*.6}
