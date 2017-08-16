@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  15 AUG 2017 22:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  16 AUG 2017 17:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1875,11 +1875,12 @@ File: ./Imagens/rna-arq2.jpg Graphic file (type jpg)
 <use ./Imagens/rna-arq2.jpg>
 Package pdftex.def Info: ./Imagens/rna-arq2.jpg used on input line 159.
 (pdftex.def)             Requested size: 164.53429pt x 123.46094pt.
-) (./modelo.bbl [38 <./Imagens/rna-arq2.jpg>]
+ [38 <./Imagens/rna-arq2.jpg>]) (./modelo.bbl
+[39]
 bibitemlist
-[39
+[40
 
-] [40]
+] [41]
 Underfull \hbox (badness 5077) in paragraph at lines 234--239
 []\T1/cmr/m/n/12 TORORADAR. Aná-lise téc-nica de ações. 2015. Acesso em 10 de a
 bril de
@@ -1891,11 +1892,11 @@ Underfull \hbox (badness 4266) in paragraph at lines 234--239
 m . br / investimento / analise-[]tecnica /
  []
 
-) [41]
+) [42]
 No file modelo.ind.
 
 AED: lastpage setting LastPage
-[42]
+[43]
 \tf@lof=\write6
 \openout6 = `modelo.lof'.
 
@@ -1920,8 +1921,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
  ) 
 Here is how much of TeX's memory you used:
- 35664 strings out of 493105
- 776017 string characters out of 6137072
+ 35665 strings out of 493105
+ 776024 string characters out of 6137072
  1027510 words of memory out of 5000000
  38217 multiletter control sequences out of 15000+600000
  18411 words of font info for 52 fonts, out of 8000000 for 9000
@@ -1944,10 +1945,10 @@ ic/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/tex
 mf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/publi
 c/cm-super/sfxc1200.pfb>
-Output written on modelo.pdf (43 pages, 1423485 bytes).
+Output written on modelo.pdf (44 pages, 1425559 bytes).
 PDF statistics:
- 989 PDF objects out of 1000 (max. 8388607)
- 874 compressed objects within 9 object streams
- 212 named destinations out of 1000 (max. 500000)
+ 995 PDF objects out of 1000 (max. 8388607)
+ 879 compressed objects within 9 object streams
+ 213 named destinations out of 1000 (max. 500000)
  565 words of extra memory for PDF output out of 10000 (max. 10000000)
 

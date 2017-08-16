@@ -157,17 +157,31 @@ Por fim, a saída da rede será composta por uma única camada que irá conter o
 \begin{figure}[h]
 	\centering
 	\fbox{\includegraphics[width=0.8\textwidth, scale=0.5]{rna-arq2}}
-	\caption{Modelo de arquitetura proposto utilizando o algoritmo \textit{backpropagation}}
+	\caption{Modelo de arquitetura proposta utilizando o algoritmo \textit{backpropagation}}
 	\fonte{Elaborado pelo autor}
 	\label{exec-rna}
 \end{figure}
 
 \section{DEFINIÇÃO DA BASE DE TREINAMENTO}
+A partir do modelo de rede definido, é necessário classificar os dados que serão utilizados na fase de treinamento e os que serão utilizados para a realização dos testes. Como no trabalho serão coletadas as ações de 5 empresas distintas, a ideia é que para cada empresa, individualmente, sejam realizados os processos de treinamento e testes, com objetivo de observar o comportamento da rede nas mais diversas situações e proporcionar uma análise mais detalhada do modelo.
+
+Segundo \citeonline{haykin2000}
+
+Ao determinar
+
+Quando há uma grande quantidade de amostras disponíveis para o
+treinamento:
+– 33,33% Treino // 33,33% Validação // 33,33% Teste
+• Quando o número de amostras é reduzido pode-se diminuir a
+proporção dos conjuntos de Validação e Teste:
+– Exemplo: 50% Treino // 25% Validação // 25% Teste
+• Em casos extremos pode-se fazer:
+– Conjunto de Validação = Conjunto de Teste
+
+\section{BIBLIOTECA PyBrain}
 
 \citeonline{pybrain2010}
 
-
-\section{BIBLIOTECA PyBrain}
 
 
 
