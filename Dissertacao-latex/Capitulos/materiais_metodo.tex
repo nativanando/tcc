@@ -49,7 +49,7 @@ Segundo \citeonline{tororadar}, as variáveis que influenciam em um sistema de a
 \item Volume: Número de negociações do papel no dia (valor bruto das negociações);
 \item Valor de fechamento no dia;
 \item Médias móveis simples: As médias móveis suavizam os dados de preços para formar um indicador de tendência sequencial. Elas não prevêem a direção dos preços, mas, antes, definem a sua direção atual com um atraso. Como o próprio nome indica, uma média móvel é uma média que se move. Os dados antigos são retirados, a medida que dados mais recentes se tornam disponíveis, isto faz com que a média se mova ao longo do tempo. A maioria das médias móveis são baseadas em preços de fechamento;
-\item \textit{Moving Average Convergence Divergence} (MACD): indicador que controle a divergência e convergência das médias móveis. o MACD é formado pela diferença entre duas médias móveis, sendo uma de longo prazo e outra de curto prazo. Para o presente trabalho será calculado o MACD referente às médias de 26 e 10 dias.
+\item \textit{Moving Average Convergence Divergence} (MACD): indicador que controle a divergência e convergência das médias móveis. o MACD é formado pela diferença entre duas médias móveis, sendo uma de longo prazo e outra de curto prazo. Para o presente trabalho será calculado o MACD referente às médias de 10 e 26 dias.
 \end{enumerate}
 
 \section{FERRAMENTAS PARA COLETA DE DADOS}
@@ -144,10 +144,34 @@ Segundo \citeonline{haykin2000} e \citeonline{marangoni}, na camada intermediár
 
 \begin{itemize}
 \item Quantidade de dados para treinamento em relação a quantidade de neurônios na camada oculta: Deve-se ter cuidado para não utilizar neurônios e camadas demais, o que pode levar a rede a memorizar os padrões de treinamento, quebrando seu processo de aprendizagem (\textit{overfitting}). O inverso também é válido, poucos neurônios para uma grande quantidade de dados, pode levar a rede a não encontrar uma solução desejável, pelo pouco poder de processamento (\textit{underfitting});
-\item Definir o número de neurônios em função da dimensão das camadas de entrada e saída da rede: Pode-se definir o número de neurônios na camada escondida como sendo a média aritmética entre o tamanho da entrada e da saída da rede.
+\item Definir o número de neurônios em função da dimensão das camadas de entrada e saída da rede: Pode-se definir o número de neurônios na camada escondida como sendo a média aritmética entre o tamanho da entrada e da saída da rede;
 \item Utilizar um número de sinapses dez vezes menor que o número de exemplos disponíveis para treinamento.
 \end{itemize}
 
 Por isso, para a grande maioria dos problemas utiliza-se apenas uma camada escondida, onde sua quantidade de neurônios é definida buscando um meio termo entre a quantidade de entradas e a sua saída, tentando evitar as complicações evidenciadas nos tópicos anteriores.
+
+Levando isso em consideração, a rede será desenvolvida com apenas uma camada intermediária e composta por 11 neurônios, buscando otimizar a sua estrutura e obtendo um resultado eficiente para o problema.
+
+Por fim, a saída da rede será composta por uma única camada que irá conter o valor do fechamento diário das ações. É importante deixar claro que este valor, durante o processo de treinamento, será preenchido com os valores reais das ações em relação ao período que será escolhido para o processo de treinamento. Na Figura abaixo é possível visualizar a composição gráfica da arquitetura proposta.
+
+\begin{figure}[h]
+	\centering
+	\fbox{\includegraphics[width=0.8\textwidth, scale=0.5]{rna-arq2}}
+	\caption{Modelo de arquitetura proposto utilizando o algoritmo \textit{backpropagation}}
+	\fonte{Elaborado pelo autor}
+	\label{exec-rna}
+\end{figure}
+
+\section{DEFINIÇÃO DA BASE DE TREINAMENTO}
+
+\citeonline{pybrain2010}
+
+
+\section{BIBLIOTECA PyBrain}
+
+
+
+
+
 
   

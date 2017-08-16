@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  14 AUG 2017 18:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  15 AUG 2017 22:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1491,6 +1491,9 @@ LaTeX Warning: Label `eq:limiar-result' multiply defined.
 
 LaTeX Warning: Label `eq:limiar-result' multiply defined.
 
+
+LaTeX Warning: Label `exec-rna' multiply defined.
+
 )
 \openout1 = `modelo.aux'.
 
@@ -1615,7 +1618,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (./Capitulos/revisa_bib.tex [11] [12
 
 ]) (./Capitulos/fundamento_teorico.tex
-[13] <./Imagens/cerebro.png, id=294, 182.6022pt x 66.7293pt>
+[13] <./Imagens/cerebro.png, id=300, 182.6022pt x 66.7293pt>
 File: ./Imagens/cerebro.png Graphic file (type png)
 
 <use ./Imagens/cerebro.png>
@@ -1624,49 +1627,49 @@ Package pdftex.def Info: ./Imagens/cerebro.png used on input line 20.
  [14
 
  <./Imagens/cerebro.png>]
-<./Imagens/neuronio.png, id=311, 263.5446pt x 147.9126pt>
+<./Imagens/neuronio.png, id=317, 263.5446pt x 147.9126pt>
 File: ./Imagens/neuronio.png Graphic file (type png)
 
 <use ./Imagens/neuronio.png>
 Package pdftex.def Info: ./Imagens/neuronio.png used on input line 35.
 (pdftex.def)             Requested size: 364.00139pt x 204.30241pt.
  [15 <./Imagens/neuronio.png>]
-<./Imagens/RNA.png, id=334, 117.0774pt x 149.5989pt>
+<./Imagens/RNA.png, id=340, 117.0774pt x 149.5989pt>
 File: ./Imagens/RNA.png Graphic file (type png)
  <use ./Imagens/RNA.png>
 Package pdftex.def Info: ./Imagens/RNA.png used on input line 57.
 (pdftex.def)             Requested size: 227.52824pt x 235.55559pt.
 
 [16 <./Imagens/RNA.png>]
-<./Imagens/camadaunica.png, id=352, 192.4791pt x 126.4725pt>
+<./Imagens/camadaunica.png, id=358, 192.4791pt x 126.4725pt>
 File: ./Imagens/camadaunica.png Graphic file (type png)
 
 <use ./Imagens/camadaunica.png>
 Package pdftex.def Info: ./Imagens/camadaunica.png used on input line 81.
 (pdftex.def)             Requested size: 273.00278pt x 179.38956pt.
  [17 <./Imagens/camadaunica.png>]
-<./Imagens/separavel.png, id=360, 409.53pt x 360.34625pt>
+<./Imagens/separavel.png, id=366, 409.53pt x 360.34625pt>
 File: ./Imagens/separavel.png Graphic file (type png)
 
 <use ./Imagens/separavel.png>
 Package pdftex.def Info: ./Imagens/separavel.png used on input line 91.
 (pdftex.def)             Requested size: 227.5pt x 200.18147pt.
 
-<./Imagens/multicamada.png, id=371, 238.0092pt x 119.2455pt>
+<./Imagens/multicamada.png, id=377, 238.0092pt x 119.2455pt>
 File: ./Imagens/multicamada.png Graphic file (type png)
 
 <use ./Imagens/multicamada.png>
 Package pdftex.def Info: ./Imagens/multicamada.png used on input line 110.
 (pdftex.def)             Requested size: 409.49722pt x 205.16919pt.
  [18 <./Imagens/separavel.png>]
-<./Imagens/naolinear.png, id=383, 417.56pt x 380.42125pt>
+<./Imagens/naolinear.png, id=389, 417.56pt x 380.42125pt>
 File: ./Imagens/naolinear.png Graphic file (type png)
 
 <use ./Imagens/naolinear.png>
 Package pdftex.def Info: ./Imagens/naolinear.png used on input line 120.
 (pdftex.def)             Requested size: 227.5pt x 207.27031pt.
  [19 <./Imagens/multicamada.png> <./Imagens/naolinear.png>] <./Imagens/recorren
-te.png, id=396, 237.2865pt x 165.4983pt>
+te.png, id=402, 237.2865pt x 165.4983pt>
 File: ./Imagens/recorrente.png Graphic file (type png)
 
 <use ./Imagens/recorrente.png>
@@ -1716,7 +1719,7 @@ Package xcolor Warning: Incompatible color definition on input line 5.
 
 Package xcolor Warning: Incompatible color definition on input line 5.
 
-) <./Imagens/sigmoide.png, id=432, 411.2163pt x 304.9794pt>
+) <./Imagens/sigmoide.png, id=438, 411.2163pt x 304.9794pt>
 File: ./Imagens/sigmoide.png Graphic file (type png)
 
 <use ./Imagens/sigmoide.png>
@@ -1727,7 +1730,7 @@ Package pdftex.def Info: ./Imagens/sigmoide.png used on input line 190.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [22] [23 <./Imagens/sigmoide.png>] [24] [25] [26]
-<./Imagens/overfitting.png, id=512, 592.614pt x 273.1806pt>
+<./Imagens/overfitting.png, id=518, 592.614pt x 273.1806pt>
 File: ./Imagens/overfitting.png Graphic file (type png)
 
 <use ./Imagens/overfitting.png>
@@ -1855,7 +1858,7 @@ Package xcolor Warning: Incompatible color definition on input line 8.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
-) <./Imagens/dados-pandas.png, id=606, 487.8225pt x 707.64375pt>
+) <./Imagens/dados-pandas.png, id=612, 487.8225pt x 707.64375pt>
 File: ./Imagens/dados-pandas.png Graphic file (type png)
 
 <use ./Imagens/dados-pandas.png>
@@ -1865,18 +1868,25 @@ Package pdftex.def Info: ./Imagens/dados-pandas.png used on input line 87.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34] [35 <./Imagens/dados-pandas.png>] [36] [37]) (./modelo.bbl [38]
+[34] [35 <./Imagens/dados-pandas.png>] [36] [37]
+<./Imagens/rna-arq2.jpg, id=667, 329.0694pt x 246.9225pt>
+File: ./Imagens/rna-arq2.jpg Graphic file (type jpg)
+
+<use ./Imagens/rna-arq2.jpg>
+Package pdftex.def Info: ./Imagens/rna-arq2.jpg used on input line 159.
+(pdftex.def)             Requested size: 164.53429pt x 123.46094pt.
+) (./modelo.bbl [38 <./Imagens/rna-arq2.jpg>]
 bibitemlist
 [39
 
 ] [40]
-Underfull \hbox (badness 5077) in paragraph at lines 229--234
+Underfull \hbox (badness 5077) in paragraph at lines 234--239
 []\T1/cmr/m/n/12 TORORADAR. Aná-lise téc-nica de ações. 2015. Acesso em 10 de a
 bril de
  []
 
 
-Underfull \hbox (badness 4266) in paragraph at lines 229--234
+Underfull \hbox (badness 4266) in paragraph at lines 234--239
 \T1/cmr/m/n/12 2017. Dis-po-ní-vel em: [][]$<[]https : / / www . tororadar . co
 m . br / investimento / analise-[]tecnica /
  []
@@ -1910,10 +1920,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
  ) 
 Here is how much of TeX's memory you used:
- 35646 strings out of 493105
- 775730 string characters out of 6137072
- 1027359 words of memory out of 5000000
- 38206 multiletter control sequences out of 15000+600000
+ 35664 strings out of 493105
+ 776017 string characters out of 6137072
+ 1027510 words of memory out of 5000000
+ 38217 multiletter control sequences out of 15000+600000
  18411 words of font info for 52 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  60i,13n,83p,1126b,1663s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1934,10 +1944,10 @@ ic/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/tex
 mf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/publi
 c/cm-super/sfxc1200.pfb>
-Output written on modelo.pdf (43 pages, 958597 bytes).
+Output written on modelo.pdf (43 pages, 1423485 bytes).
 PDF statistics:
- 972 PDF objects out of 1000 (max. 8388607)
- 858 compressed objects within 9 object streams
- 208 named destinations out of 1000 (max. 500000)
- 544 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 989 PDF objects out of 1000 (max. 8388607)
+ 874 compressed objects within 9 object streams
+ 212 named destinations out of 1000 (max. 500000)
+ 565 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -169,7 +169,7 @@ y_k = {0\ se\ x_j < 0}
 Neste modelo a saída do neurônio assume o valor 1 se o campo local induzido daquele neurônio for positivo, e 0 se for negativo. Utilizam-se dos mesmos preceitos de regressão linear e de outras técnicas, para estimar resultados a partir de valores conhecidos.
 
 \subsection{Função Sigmóide}
-A função sigmóide, representada na Equação (3.4), é a forma mais comum de função de ativação utilizada na construção de RNAs.
+A função sigmóide, representada na equação (3.4), é a forma mais comum de função de ativação utilizada na construção de RNAs.
 \begin{equation}\label{eq:limiar-result} 
 f(x)=\frac{1}{1+e^{- \lambda x}}
 \end{equation}
@@ -229,33 +229,33 @@ Muitos algoritmos são aplicados para a minimização e melhoria da aprendizagem
 O algoritmo de retropropagação (\textit{backpropagation}) é um método baseado no gradiente descendente, de aprendizado supervisionado e com alimentação à frente, que utiliza a função de ativação do tipo sigmóide e um coeficiente de aprendizado, denominado \textit{learning rate}, responsável por especificar uma taxa de convergência da RNA, este coeficiente de aprendizado normalmente está em um intervalo entre [0,1]    \cite{haykin2000}.
 Neste modelo, reconhecido por ser a técnica mais utilizada dentre os métodos de treinamento aplicados, o erro de saída obtido se propaga para as camadas intermediárias da RNA, isso se dá pela necessidade de ajuste dos neurônios que não tem contato com a saída, possibilitando assim, a atualização dos pesos desses neurônios, aumentando o poder de classificação e de correção de erros \cite{medeiros}.
 
-O algoritmo usa a Equação abaixo para atualizar os pesos de um determinado neurônio.
+O algoritmo usa a equação abaixo para atualizar os pesos de um determinado neurônio.
 \begin{equation}\label{eq:backpropagation-ajuste-pesos}
 W_{ij,(t+1)} = W_{ij, t} + (\lambda)(\varepsilon W_{ij})(N_i)
 \end{equation}
 
-A Equação (3.5) realiza a atualização do peso $W_{ij}$ de um determinado neurônio $N_i$ referente ao neurônio atual $N_j$ , onde o sub-índice $t$ refere-se ao número de vezes em que a rede foi atualizada e $\lambda$ refere-se à taxa de aprendizagem (\textit{learning rate}). Esta taxa de aprendizagem é responsável por controlar o peso e suas alterações.
+A equação (3.5) realiza a atualização do peso $W_{ij}$ de um determinado neurônio $N_i$ referente ao neurônio atual $N_j$ , onde o sub-índice $t$ refere-se ao número de vezes em que a rede foi atualizada e $\lambda$ refere-se à taxa de aprendizagem (\textit{learning rate}). Esta taxa de aprendizagem é responsável por controlar o peso e suas alterações.
 
-Como dito anteriormente, o algoritmo trabalha com a função de ativação sigmóide para tratar suas saídas, a Equação (3.4) representa o cálculo realizado pela função.
+Como dito anteriormente, o algoritmo trabalha com a função de ativação sigmóide para tratar suas saídas, a equação (3.4) representa o cálculo realizado pela função.
 
-Após organizar os dados da saída da rede, é necessário ajustar os pesos caso haja um erro na resposta esperada, este cálculo de erro é detalhado na Equação (3.6).
+Após organizar os dados da saída da rede, é necessário ajustar os pesos caso haja um erro na resposta esperada, este cálculo de erro é detalhado na equação (3.6).
 \begin{equation}\label{eq:backpropagation-calculo-erro}
 E_j = \frac{1}{2} \sum_{saidas} (N_j - D_j)^2
 \end{equation}
 
 Onde $D_j$ é a saída desejada e $N_j$ é o resultado atual do neurônio. 	
 
-Encontrando o valor do erro, é necessário calcular a variação do mesmo em relação às mudanças dos valores de entrada, isso é feito determinando quanto a Equação (3.6) se altera em relação à Equação (3.5). O cálculo é dado pela equação (3.7).
+Encontrando o valor do erro, é necessário calcular a variação do mesmo em relação às mudanças dos valores de entrada, isso é feito determinando quanto a equação (3.6) se altera em relação à equação (3.5). O cálculo é dado pela equação (3.7).
 \begin{equation}\label{eq:backpropagation-calculo-erro-diferença}
 \varepsilon S_{j} = E_j N_j (1 - N_j)
 \end{equation}
 
-O próximo passo é calcular os pesos ajustados para $W_{ij}$ da camada atual $N_i$ para o neurônio atual $N_j$. Esse cálculo é dado pela Equação (3.8).
+O próximo passo é calcular os pesos ajustados para $W_{ij}$ da camada atual $N_i$ para o neurônio atual $N_j$. Esse cálculo é dado pela equação (3.8).
 \begin{equation}\label{eq:backpropagation-ajustes-erro}
 \varepsilon W_{ij} = \varepsilon S_j N_i
 \end{equation}
 
-Por fim, a Equação (3.9) é usada para calcular as atualizações dos pesos de cada neurônio $N_j$ , onde $j$ representa os neurônios da camada escondida.
+Por fim, a equação (3.9) é usada para calcular as atualizações dos pesos de cada neurônio $N_j$ , onde $j$ representa os neurônios da camada escondida.
 
 De forma geral, as operações de cada neurônio seguem os cálculos especificados acima. A ideia é que os valores dos neurônios sejam atualizados de acordo com cada entrada da rede. 
 

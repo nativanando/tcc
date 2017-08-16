@@ -206,6 +206,11 @@ Dispon{\'\i}vel em: \url{http://pandas.pydata.org/pandas-docs/stable}.}
 Acesso em 15 de junho de 2017.
 Dispon{\'\i}vel em: \url{https://www.jetbrains.com/pycharm/documentation}.}
 
+\bibitem[Schaul et al. 2010]{pybrain2010}
+\abntrefinfo{Schaul et al.}{SCHAUL et al.}{2010}
+{SCHAUL, T. et al. {PyBrain}.
+\textbf{Journal of Machine Learning Research}, v.~11, p. 743--746, 2010.}
+
 \bibitem[Shiller 2005]{shiller}
 \abntrefinfo{Shiller}{SHILLER}{2005}
 {SHILLER, R.~J. Irrational exuberance.
