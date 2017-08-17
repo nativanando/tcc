@@ -197,7 +197,7 @@ Resultados com esta característica são reconhecidos por formar um "S", exempli
 \section{TREINAMENTO DE UMA REDE NEURAL ARTIFICIAL}\label{sec:rna-treinamento}
 Após determinar a arquitetura a ser utilizada pela RNA, a quantia de camadas, a função de ativação adequada ao trabalho a ser realizado, a rede neural deve adquirir conhecimento em relação aos dados aplicados sobre a mesma.
 
-O treinamento de uma RNA consiste em minimizar uma função de custo, através de um algoritmo, cujos valores iniciais são escolhidos aleatoriamente com o objetivo de facilitar a busca  pelo valor mínimo da função da amostra de treinamento, através de iterações, este processo é conhecido como mínimo global. O treinamento pode ser interrompido de duas formas: Um limite de épocas estipulado para o treinamento ou um ponto de parada a partir de um critério de desempenho. Os critérios de desempenho típicos em um processo de treinamento de uma determinada amostra de dados, são o Erro quadrático médio (EQM), Raiz do Erro Quadrático Médio (REQM) e o Erro Absoluto Médio (EAM) \cite{gambogi}. 
+O treinamento de uma RNA consiste em minimizar uma função de custo, através de um algoritmo, cujos valores iniciais são escolhidos aleatoriamente com o objetivo de facilitar a busca  pelo valor mínimo da função da amostra de treinamento, através de iterações. O treinamento pode ser interrompido de duas formas: Um limite de épocas estipulado para o treinamento ou um ponto de parada a partir de um critério de desempenho. Os critérios de desempenho típicos em um processo de treinamento, de uma determinada amostra de dados, são o Erro quadrático médio (EQM), Raiz do Erro Quadrático Médio (REQM) e o Erro Absoluto Médio (EAM) \cite{gambogi}. 
 
 \subsection{Processo de aprendizagem}
 O processo de aprendizagem é considerado uma etapa de grande dificuldade em termos de análise de dados, porque a procura da solução adequada ocorre em um universo de soluções válidas de grande dimensão, onde a base de tomada de decisão serão os próprios dados treinados \cite{medeiros}.
@@ -245,7 +245,7 @@ E_j = \frac{1}{2} \sum_{saidas} (N_j - D_j)^2
 
 Onde $D_j$ é a saída desejada e $N_j$ é o resultado atual do neurônio. 	
 
-Encontrando o valor do erro, é necessário calcular a variação do mesmo em relação às mudanças dos valores de entrada, isso é feito determinando quanto a equação (3.6) se altera em relação à equação (3.5). O cálculo é dado pela equação (3.7).
+Encontrando o valor do erro, é necessário calcular a variação do mesmo em relação às mudanças dos valores de entrada, isso é feito determinando quanto a equação (3.6) se altera em relação à equação (3.5). O cálculo é dado pela equação abaixo.
 \begin{equation}\label{eq:backpropagation-calculo-erro-diferença}
 \varepsilon S_{j} = E_j N_j (1 - N_j)
 \end{equation}
@@ -271,7 +271,7 @@ w_{0} (n + 1) = w_{0}(n)+ \eta y_0(n)x(n)
 
 Onde $w_{0}(n)$ é o peso atual do neurônio, $\eta$ é a taxa de aprendizagem, $x(n)$ é a entrada da rede e $y_0(n)$ é a saída da rede.
 
-\citeonline{castro} diz que o segundo princípio do Aprendizado Hebbiano trabalha através de competição entre os pesos sinápticos. Ou seja, um aumento na força de algumas sinapses na rede deve ser compensado por um decréscimo em outras. Assim, só as sinapses de sucesso podem crescer, enquanto as de menos sucesso tendem a enfraquecer, podendo, inclusive, desaparecer.
+\citeonline{castro} diz que o segundo princípio do Aprendizado Hebbiano trabalha através de competição entre os pesos sinápticos. Um aumento na força de algumas sinapses na rede deve ser compensado por um decréscimo em outras. Assim, só as sinapses de sucesso podem crescer, enquanto as de menos sucesso tendem a enfraquecer podendo, inclusive, desaparecer.
 
 \section{PROCESSO DE GENERALIZAÇÃO}\label{rna-generalização}
 O processo de generalização de uma RNA, ocorre a partir da sua capacidade em responder adequadamente não somente aos padrões de treinamento mas também aos demais padrões \cite{medeiros}. Vale ressaltar que o processo de treinamento é uma das eta	pas mais delicadas, em termos de análise e execução, ao se utilizar um modelo de RNA.
