@@ -19,8 +19,8 @@ class Analisador:
         self.coluna = self.dataset.Close
         self.fig, self.ax = plt.subplots()
         self.ax.plot(self.linha, self.coluna)
-        self.fig.set_size_inches(8, 6, forward=True)
+        self.fig.set_size_inches(12, 8, forward=True)
         plt.show()
         plt.grid(True)
-        plt.savefig('../assets/'+self.nome_empresa+'.jpeg', pdi=300)
+        plt.savefig('../assets/'+self.nome_empresa+'.jpeg', pdi=1000)
         plt.close()

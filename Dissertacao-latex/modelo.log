@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  17 AUG 2017 11:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  20 AUG 2017 10:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1683,13 +1683,13 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
-Package xcolor Warning: Incompatible color definition on input line 184.
+Package xcolor Warning: Incompatible color definition on input line 181.
 
 
-Package xcolor Warning: Incompatible color definition on input line 184.
+Package xcolor Warning: Incompatible color definition on input line 181.
 
 
-Package xcolor Warning: Incompatible color definition on input line 184.
+Package xcolor Warning: Incompatible color definition on input line 181.
 
 (./src/Sigmoide.py
 
@@ -1723,27 +1723,20 @@ Package xcolor Warning: Incompatible color definition on input line 5.
 File: ./Imagens/sigmoide.png Graphic file (type png)
 
 <use ./Imagens/sigmoide.png>
-Package pdftex.def Info: ./Imagens/sigmoide.png used on input line 190.
-(pdftex.def)             Requested size: 364.00139pt x 269.97888pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[22] [23 <./Imagens/sigmoide.png>] [24] [25] [26]
-<./Imagens/overfitting.png, id=518, 592.614pt x 273.1806pt>
+Package pdftex.def Info: ./Imagens/sigmoide.png used on input line 187.
+(pdftex.def)             Requested size: 364.02365pt x 235.55617pt.
+ [22 <./Imagens/sigmoide.png>] [23] [24] [25]
+[26] [27] <./Imagens/overfitting.png, id=529, 592.614pt x 273.1806pt>
 File: ./Imagens/overfitting.png Graphic file (type png)
 
 <use ./Imagens/overfitting.png>
-Package pdftex.def Info: ./Imagens/overfitting.png used on input line 299.
+Package pdftex.def Info: ./Imagens/overfitting.png used on input line 304.
 (pdftex.def)             Requested size: 409.49722pt x 188.77408pt.
+ [28 <./Imagens/overfitting.png>] [29])
+(./Capitulos/materiais_metodo.tex [30] [31] [32
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[27] [28 <./Imagens/overfitting.png>] [29]) (./Capitulos/materiais_metodo.tex
-[30] [31
-
-] [32] [33] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+] [33] [34]
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
@@ -1858,7 +1851,7 @@ Package xcolor Warning: Incompatible color definition on input line 8.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
-) <./Imagens/dados-pandas.png, id=612, 487.8225pt x 707.64375pt>
+) <./Imagens/dados-pandas.png, id=621, 487.8225pt x 707.64375pt>
 File: ./Imagens/dados-pandas.png Graphic file (type png)
 
 <use ./Imagens/dados-pandas.png>
@@ -1868,19 +1861,19 @@ Package pdftex.def Info: ./Imagens/dados-pandas.png used on input line 87.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34] [35 <./Imagens/dados-pandas.png>] [36] [37]
-<./Imagens/rna-arq2.jpg, id=667, 329.0694pt x 246.9225pt>
+[35] [36 <./Imagens/dados-pandas.png>] [37] [38]
+<./Imagens/rna-arq2.jpg, id=676, 329.0694pt x 246.9225pt>
 File: ./Imagens/rna-arq2.jpg Graphic file (type jpg)
 
 <use ./Imagens/rna-arq2.jpg>
 Package pdftex.def Info: ./Imagens/rna-arq2.jpg used on input line 159.
 (pdftex.def)             Requested size: 164.53429pt x 123.46094pt.
- [38 <./Imagens/rna-arq2.jpg>]) (./modelo.bbl
-[39]
+ [39 <./Imagens/rna-arq2.jpg>]) (./modelo.bbl
+[40]
 bibitemlist
-[40
+[41
 
-] [41]
+] [42]
 Underfull \hbox (badness 5077) in paragraph at lines 234--239
 []\T1/cmr/m/n/12 TORORADAR. Aná-lise téc-nica de ações. 2015. Acesso em 10 de a
 bril de
@@ -1892,11 +1885,11 @@ Underfull \hbox (badness 4266) in paragraph at lines 234--239
 m . br / investimento / analise-[]tecnica /
  []
 
-) [42]
+) [43]
 No file modelo.ind.
 
 AED: lastpage setting LastPage
-[43]
+[44]
 \tf@lof=\write6
 \openout6 = `modelo.lof'.
 
@@ -1921,10 +1914,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
  ) 
 Here is how much of TeX's memory you used:
- 35669 strings out of 493105
- 776048 string characters out of 6137072
- 1027510 words of memory out of 5000000
- 38217 multiletter control sequences out of 15000+600000
+ 35672 strings out of 493105
+ 776114 string characters out of 6137072
+ 1027562 words of memory out of 5000000
+ 38218 multiletter control sequences out of 15000+600000
  18411 words of font info for 52 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  60i,13n,83p,1126b,1663s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1945,10 +1938,10 @@ ic/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/tex
 mf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/publi
 c/cm-super/sfxc1200.pfb>
-Output written on modelo.pdf (44 pages, 1426693 bytes).
+Output written on modelo.pdf (45 pages, 1427694 bytes).
 PDF statistics:
- 1003 PDF objects out of 1200 (max. 8388607)
- 887 compressed objects within 9 object streams
- 217 named destinations out of 1000 (max. 500000)
+ 1012 PDF objects out of 1200 (max. 8388607)
+ 895 compressed objects within 9 object streams
+ 219 named destinations out of 1000 (max. 500000)
  565 words of extra memory for PDF output out of 10000 (max. 10000000)
 

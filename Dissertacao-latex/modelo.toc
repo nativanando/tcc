@@ -29,38 +29,38 @@
 \contentsline {section}{\numberline {3.3}FUN\IeC {\c C}\IeC {\~A}O DE ATIVA\IeC {\c C}\IeC {\~A}O}{21}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Fun\IeC {\c c}\IeC {\~a}o Limiar}{21}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Fun\IeC {\c c}\IeC {\~a}o Sigm\IeC {\'o}ide}{22}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}TREINAMENTO DE UMA REDE NEURAL ARTIFICIAL}{22}{section.3.4}
+\contentsline {section}{\numberline {3.4}TREINAMENTO DE UMA REDE NEURAL ARTIFICIAL}{23}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Processo de aprendizagem}{23}{subsection.3.4.1}
 \contentsline {subsubsection}{\numberline {3.4.1.1}Aprendizagem Supervisionada}{24}{subsubsection.3.4.1.1}
 \contentsline {subsubsection}{\numberline {3.4.1.2}Aprendizagem n\IeC {\~a}o Supervisionada}{24}{subsubsection.3.4.1.2}
 \contentsline {section}{\numberline {3.5}ALGORITMOS DE APRENDIZAGEM PARA TREINAMENTO DAS REDES}{24}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}\textit {Backpropagation}}{24}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Algoritmo de Aprendizado Hebbiano}{25}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.1}\textit {Backpropagation}}{25}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Algoritmo de Aprendizado Hebbiano}{26}{subsection.3.5.2}
 \contentsline {section}{\numberline {3.6}PROCESSO DE GENERALIZA\IeC {\c C}\IeC {\~A}O}{26}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Problemas de generaliza\IeC {\c c}\IeC {\~a}o}{26}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.1}Problemas de generaliza\IeC {\c c}\IeC {\~a}o}{27}{subsection.3.6.1}
 \contentsline {subsubsection}{\numberline {3.6.1.1}\textit {Overfitting} e \textit {underfitting}}{27}{subsubsection.3.6.1.1}
-\contentsline {subsubsection}{\numberline {3.6.1.2}\textit {Overtraining}}{27}{subsubsection.3.6.1.2}
+\contentsline {subsubsection}{\numberline {3.6.1.2}\textit {Overtraining}}{28}{subsubsection.3.6.1.2}
 \contentsline {section}{\numberline {3.7}TEORIA DA REGULARIZA\IeC {\c C}\IeC {\~A}O}{28}{section.3.7}
-\contentsline {section}{\numberline {3.8}S\IeC {\'E}RIES TEMPORAIS}{28}{section.3.8}
+\contentsline {section}{\numberline {3.8}S\IeC {\'E}RIES TEMPORAIS}{29}{section.3.8}
 \contentsline {section}{\numberline {3.9}MERCADO DE CAPITAIS}{29}{section.3.9}
-\contentsline {subsection}{\numberline {3.9.1}An\IeC {\'a}lise Fundamentalista de Ac\IeC {\~o}es}{29}{subsection.3.9.1}
-\contentsline {subsection}{\numberline {3.9.2}An\IeC {\'a}lise T\IeC {\'e}cnica de A\IeC {\c c}\IeC {\~o}es}{29}{subsection.3.9.2}
+\contentsline {subsection}{\numberline {3.9.1}An\IeC {\'a}lise Fundamentalista de Ac\IeC {\~o}es}{30}{subsection.3.9.1}
+\contentsline {subsection}{\numberline {3.9.2}An\IeC {\'a}lise T\IeC {\'e}cnica de A\IeC {\c c}\IeC {\~o}es}{30}{subsection.3.9.2}
 \contentsline {subsection}{\numberline {3.9.3}A bolsa de valores NASDAQ}{30}{subsection.3.9.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {MATERIAIS E M\IeC {\'E}TODOS}}{31}{chapter.4}
-\contentsline {section}{\numberline {4.1}IDENTIFICA\IeC {\c C}\IeC {\~A}O DA PESQUISA}{31}{section.4.1}
-\contentsline {section}{\numberline {4.2}SELE\IeC {\c C}\IeC {\~A}O DAS A\IeC {\c C}\IeC {\~O}ES}{31}{section.4.2}
-\contentsline {section}{\numberline {4.3}T\IeC {\'E}CNICA PARA COLETA DE DADOS}{32}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Defini\IeC {\c c}\IeC {\~a}o das s\IeC {\'e}ries}{32}{subsection.4.3.1}
-\contentsline {section}{\numberline {4.4}FERRAMENTAS PARA COLETA DE DADOS}{33}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Linguagem de programa\IeC {\c c}\IeC {\~a}o Python}{33}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Biblioteca pandas}{34}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Google \textit {Finance} API}{35}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}PyCharm IDE}{35}{subsection.4.4.4}
-\contentsline {section}{\numberline {4.5}ESPECIFICA\IeC {\c C}\IeC {\~A}O DO MODELO DE REDES NEURAIS ARTIFICIAIS}{36}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Defini\IeC {\c c}\IeC {\~a}o da Arquitetura}{36}{subsection.4.5.1}
-\contentsline {section}{\numberline {4.6}DEFINI\IeC {\c C}\IeC {\~A}O DA BASE DE TREINAMENTO}{38}{section.4.6}
-\contentsline {section}{\numberline {4.7}BIBLIOTECA PyBrain}{39}{section.4.7}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {MATERIAIS E M\IeC {\'E}TODOS}}{32}{chapter.4}
+\contentsline {section}{\numberline {4.1}IDENTIFICA\IeC {\c C}\IeC {\~A}O DA PESQUISA}{32}{section.4.1}
+\contentsline {section}{\numberline {4.2}SELE\IeC {\c C}\IeC {\~A}O DAS A\IeC {\c C}\IeC {\~O}ES}{32}{section.4.2}
+\contentsline {section}{\numberline {4.3}T\IeC {\'E}CNICA PARA COLETA DE DADOS}{33}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Defini\IeC {\c c}\IeC {\~a}o das s\IeC {\'e}ries}{33}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}FERRAMENTAS PARA COLETA DE DADOS}{34}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Linguagem de programa\IeC {\c c}\IeC {\~a}o Python}{34}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Biblioteca pandas}{35}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Google \textit {Finance} API}{36}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}PyCharm IDE}{36}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.5}ESPECIFICA\IeC {\c C}\IeC {\~A}O DO MODELO DE REDES NEURAIS ARTIFICIAIS}{37}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Defini\IeC {\c c}\IeC {\~a}o da Arquitetura}{37}{subsection.4.5.1}
+\contentsline {section}{\numberline {4.6}DEFINI\IeC {\c C}\IeC {\~A}O DA BASE DE TREINAMENTO}{39}{section.4.6}
+\contentsline {section}{\numberline {4.7}BIBLIOTECA PyBrain}{40}{section.4.7}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{40}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{41}{section*.6}
