@@ -61,6 +61,8 @@
 \contentsline {subsection}{\numberline {4.5.1}Defini\IeC {\c c}\IeC {\~a}o da Arquitetura}{37}{subsection.4.5.1}
 \contentsline {section}{\numberline {4.6}DEFINI\IeC {\c C}\IeC {\~A}O DA BASE DE TREINAMENTO}{39}{section.4.6}
 \contentsline {section}{\numberline {4.7}BIBLIOTECA PyBrain}{40}{section.4.7}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {IMPLEMENTA\IeC {\c C}\IeC {\~A}O DAS T\IeC {\'E}CNICAS}}{43}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{43}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{44}{section*.6}
