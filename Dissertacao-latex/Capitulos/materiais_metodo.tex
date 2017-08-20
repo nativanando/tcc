@@ -183,13 +183,41 @@ Segundo \citeonline{haykin2000}, ao determinar a classificação de um conjunto 
 \end{itemize}
 
 \section{BIBLIOTECA PyBrain}
+\textit{Python-Based Reinforcement Learning, Artificial Intelligence and Neural Network Library} (PyBrain) é uma biblioteca de aprendizagem de máquinas para Python. Seu objetivo é oferecer algoritmos flexíveis e fáceis de usar que proporcione uma forma mais intuitiva de desenvolver algoritmos complexos relacionados a Inteligência Artificial. Embora existam poucas bibliotecas de aprendizado de máquinas, PyBrain pretende ser uma biblioteca modular fácil de aprender, podendo ser utilizada por estudantes de nível básico até um nível mais avançado, oferecendo flexibilidade e algoritmos para pesquisa de ponta \cite{pybrain2010}.
 
-\citeonline{pybrain2010}
+Segundo \citeonline{pybrain2010}, como o próprio nome sugere, PyBrain contém algoritmos para redes neurais, aprendizagem supervisionada, aprendizagem não supervisionada e algoritmos evolutivos. A biblioteca é construída com seu núcleo baseado em redes neurais, onde todos os métodos de treinamento aceitam uma rede como instância pré-treinada. Isso faz de PyBrain uma ferramenta poderosa para a execução de tarefas complexas de serem resolvidas.
 
+A Figura 12 demonstra de maneira mais clara como a biblioteca PyBrain irá auxiliar no projeto.
 
+\begin{figure}[h]
+	\centering
+	\fbox{\includegraphics[width=0.8\textwidth, scale=0.5]{pybrain8}}
+	\caption{Arquitetura da biblioteca PyBrain aplicada na estrutura do trabalho}
+	\fonte{Adaptado de \citeonline{pybrain2010}}
+	\label{exec-rna-pybrain}
+\end{figure}
 
+PyBrain tem ênfase nas arquiteturas de rede, que podem ser treinadas e manipuladas com quase todos os algoritmos oferecidos de aprendizado de máquina. As redes são compostas por módulos que estão ligados através de conexões, onde os nós são os módulos e as bordas são as conexões. Isso torna o PyBrain muito flexível, mas também necessário em todos os casos, seguir este padrão.
 
+Alguns exemplos de arquiteturas disponibilizada pela biblioteca são:
 
+\begin{itemize}
+	\item Redes Neurais Alimentadas Adiante (\textit{Feedforward};
+	\item Redes Neurais Recorrentes;
+	\item Redes Neurais Recorrentes Multidimensionais;
+	\item Redes de Kahonen (Mapas Auto-Organizáveis);
+	\item Redes Bidirecionais;
+	\item Topologias Personalizadas.
+\end{itemize}
 
+Dentre os algoritmos de aprendizagem supervisionada utilizado pelo PyBrain, destacam-se:
 
-  
+\begin{itemize}
+	\item Algoritmo de retropropagação \textit{backpropagation};
+	\item Algoritmo de R-prop;
+	\item Algoritmos de Máquinas de Vetores de Suporte (SVM).
+\end{itemize}	
+
+Também é importante evidenciar que a biblioteca PyBrain é de código aberto e gratuita para todos, licenciada sob a \textit{Berkeley Software Distribution} (BSD) Software.
+
+Desta forma, todos os métodos necessários para realizar a implementação do trabalho foram levantados, o próximo capítulo será responsável por detalhar o processo de desenvolvimento das técnicas, e, consequentemente, da obtenção dos objetivos desejados, levando todos os aspectos estudados e definidos até o momento em consideração.
