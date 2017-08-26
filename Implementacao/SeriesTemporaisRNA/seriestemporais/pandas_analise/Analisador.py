@@ -1,3 +1,7 @@
+'''
+Classe responsável por realizar o procedimento de ajustes dos dados coletados, através da biblioteca pandas.
+Os métodos implementados manipulam o dataset, criando os indicadores técnicos que serão utilizados como entrada da RNA.
+'''
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -12,7 +16,6 @@ class Analisador:
         self.dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/'+self.nome_empresa+'.txt')
         self.dataset.head()  #informacoes sobre a base (colunas etc)
         self.dataset['Date'] = pd.to_datetime(self.dataset['Date'])  #repassando o valor para um formato de data
-        self.dataset['Variation'] = self.dataset['Close'].sub(self.dataset['Open']) #Variação entre a abertura e o fechamento
         self.dataset['movel_26'] = None
         self.dataset['movel_10'] = None
 
@@ -28,13 +31,6 @@ class Analisador:
         plt.close()
 
     def calcula_media_movel(self, dia):
-        '''
-        Inicia  o looping do dataset a partir do primeiro dia escolhido (26 ou 10) até o tamanho total do dataset
-        Pega o valor atual do indice e o dataset inteiro, colocando-os em outra função
-        Entrando nesta função, fazer uma subtração do indice atual - o dia ecolhido, será igual ao índice inicial desse looping
-        Fazer o for do dataset na posição inicial que foi calculada até o indice atual, somando os valores de fechamento
-        Feito isso, realizar a divisão do valor calculado pela quantidade do dia, calculando assim, a média movel
-        '''
         tamanho_dataset = self.dataset.__len__()
         media_valor = 0 # valor que sera incrementado
         flag_parada = 0
@@ -53,5 +49,17 @@ class Analisador:
 
         self.dataset.set_value(indice_dataset - 1, 'movel_' + str(dia), valor_media / dia, takeable=False)
         print(self.dataset.loc[indice_dataset - 1])
-        valor_media = 0
+        self.dataset.to_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/'+self.nome_empresa+'_calculado.txt')
+
+    def formata_dataset(self):
+        self.dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/'+self.nome_empresa+'_calculado.txt')
+        self.dataset.drop(self.dataset.columns[[0]], axis=1, inplace=True)
+        for i in range(25):
+            self.dataset.drop(i, inplace=True)
+
+        print(self.dataset)
+        self.dataset['MACD'] = self.dataset['movel_10'].sub(self.dataset['movel_26']) #calculo do MACS a partir das duas médias móveis
         self.dataset.to_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/'+self.nome_empresa+'_formatado.txt')
+
+
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  20 AUG 2017 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  26 AUG 2017 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1862,18 +1862,18 @@ Package pdftex.def Info: ./Imagens/dados-pandas.png used on input line 87.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [35] [36 <./Imagens/dados-pandas.png>] [37] [38]
-<./Imagens/rna-arq2.jpg, id=680, 329.0694pt x 246.9225pt>
-File: ./Imagens/rna-arq2.jpg Graphic file (type jpg)
+<./Imagens/arquitetura-rna.jpg, id=681, 98.79309pt x 74.07675pt>
+File: ./Imagens/arquitetura-rna.jpg Graphic file (type jpg)
 
-<use ./Imagens/rna-arq2.jpg>
-Package pdftex.def Info: ./Imagens/rna-arq2.jpg used on input line 159.
-(pdftex.def)             Requested size: 164.53429pt x 123.46094pt.
- [39 <./Imagens/rna-arq2.jpg>] [40]
-<./Imagens/pybrain8.jpeg, id=700, 84.14293pt x 72.57973pt>
+<use ./Imagens/arquitetura-rna.jpg>
+Package pdftex.def Info: ./Imagens/arquitetura-rna.jpg used on input line 160.
+(pdftex.def)             Requested size: 49.39641pt x 37.03828pt.
+ [39 <./Imagens/arquitetura-rna.jpg>]
+[40] <./Imagens/pybrain8.jpeg, id=701, 84.14293pt x 72.57973pt>
 File: ./Imagens/pybrain8.jpeg Graphic file (type jpg)
 
 <use ./Imagens/pybrain8.jpeg>
-Package pdftex.def Info: ./Imagens/pybrain8.jpeg used on input line 194.
+Package pdftex.def Info: ./Imagens/pybrain8.jpeg used on input line 195.
 (pdftex.def)             Requested size: 42.07135pt x 36.28976pt.
  [41 <./Imagens/pybrain8.jpeg>])
 (./Capitulos/implementacao.tex [42]) (./modelo.bbl [43
@@ -1923,8 +1923,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
  ) 
 Here is how much of TeX's memory you used:
- 35692 strings out of 493105
- 776456 string characters out of 6137072
+ 35693 strings out of 493105
+ 776498 string characters out of 6137072
  1027850 words of memory out of 5000000
  38227 multiletter control sequences out of 15000+600000
  18411 words of font info for 52 fonts, out of 8000000 for 9000
@@ -1947,10 +1947,10 @@ ic/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/tex
 mf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/publi
 c/cm-super/sfxc1200.pfb>
-Output written on modelo.pdf (48 pages, 1552459 bytes).
+Output written on modelo.pdf (48 pages, 1591232 bytes).
 PDF statistics:
- 1040 PDF objects out of 1200 (max. 8388607)
- 916 compressed objects within 10 object streams
- 224 named destinations out of 1000 (max. 500000)
+ 1041 PDF objects out of 1200 (max. 8388607)
+ 917 compressed objects within 10 object streams
+ 225 named destinations out of 1000 (max. 500000)
  578 words of extra memory for PDF output out of 10000 (max. 10000000)
 

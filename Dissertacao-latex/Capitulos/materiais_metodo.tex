@@ -136,7 +136,8 @@ Portanto, as variáveis que irão compor a camada de entrada da RNA são:
 \item Valor máximo negociado no dia;
 \item Valor mínimo negociado no dia;
 \item Número de negociações do papel;
-\item Médias móveis simples de 10 e 26 dias;
+\item Média móvel simples de 10;
+\item Média móvel simples de 26;
 \item \textit{Moving Average Convergence Divergence} (MACD).
 \end{enumerate}
 
@@ -150,13 +151,13 @@ Segundo \citeonline{haykin2000} e \citeonline{marangoni}, na camada intermediár
 
 Por isso, para a grande maioria dos problemas utiliza-se apenas uma camada escondida, onde sua quantidade de neurônios é definida buscando um meio termo entre a quantidade de entradas e a sua saída, tentando evitar as complicações evidenciadas nos tópicos anteriores.
 
-Levando isso em consideração, a rede será desenvolvida com apenas uma camada intermediária e composta por 11 neurônios, buscando otimizar a sua estrutura e obtendo um resultado eficiente para o problema.
+Levando isso em consideração, a rede será desenvolvida com apenas uma camada intermediária composta por 11 neurônios, buscando otimizar a sua estrutura e obtendo um resultado eficiente para o problema.
 
 Por fim, a saída da rede será composta por uma única camada que irá conter o valor do fechamento diário das ações. É importante deixar claro que este valor, durante o processo de treinamento, será preenchido com os valores reais das ações em relação ao período que será escolhido para o processo de treinamento. Na Figura abaixo é possível visualizar a composição gráfica da arquitetura proposta.
 
 \begin{figure}[h]
 	\centering
-	\fbox{\includegraphics[width=0.8\textwidth, scale=0.5]{rna-arq2}}
+	\fbox{\includegraphics[width=0.8\textwidth, scale=0.5]{arquitetura-rna}}
 	\caption{Modelo de arquitetura proposta utilizando o algoritmo \textit{backpropagation}}
 	\fonte{Elaborado pelo autor}
 	\label{exec-rna}
