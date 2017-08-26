@@ -1,3 +1,10 @@
+"""
+intel.py: Classe responsável por realizar a coleta das ações da intel.
+"""
+__author__ = 'Fernando Demarchi Natividade Luiz'
+__email__ = "nativanando@gmail.com"
+__version__ = "1.0"
+
 import pandas_datareader.data as web
 import datetime
 
