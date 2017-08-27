@@ -1,5 +1,5 @@
 """
-microsoft.py: Classe responsável por realizar a coleta das ações da microsoft
+microsoft.py: Classe responsável por realizar a coleta das ações da microsoft.
 """
 __author__ = 'Fernando Demarchi Natividade Luiz'
 __email__ = "nativanando@gmail.com"
