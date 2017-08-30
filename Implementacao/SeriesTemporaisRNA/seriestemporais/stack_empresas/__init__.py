@@ -1,5 +1,5 @@
 """
-__init__.py: Arquivo responsável por iniciar as buscas das respectivas empresas selecionadas
+__init__.py: Arquivo responsável por iniciar as buscas das respectivas empresas selecionadas.
 """
 from seriestemporais.stack_empresas.amazon import *
 from seriestemporais.stack_empresas.apple import *
@@ -8,21 +8,16 @@ from seriestemporais.stack_empresas.cisco import *
 from seriestemporais.stack_empresas.intel import *
 from seriestemporais.stack_empresas.crawler import *
 
+__author__ = 'Fernando Demarchi Natividade Luiz'
+__email__ = "nativanando@gmail.com"
+__version__ = "1.0"
+
 def main():
     amazon = Amazon()
-    busca(amazon)
     apple = Apple()
-    busca(apple)
-    microsoft = Microsoft()
-    busca(microsoft)
-    cisco = Cisco
-    busca(cisco)
+    cisco = Cisco()
     intel = Intel()
-    busca(intel)
-
-def busca(empresa):
-    crawler = Crawler(empresa.nome_empresa, empresa.codigo)
-    crawler.executa_busca()
+    microsoft = Microsoft()
 
 if __name__ == '__main__':
     main()
