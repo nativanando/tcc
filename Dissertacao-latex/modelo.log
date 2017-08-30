@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  29 AUG 2017 14:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  29 AUG 2017 23:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1883,13 +1883,13 @@ bibitemlist
 [44
 
 ] [45]
-Underfull \hbox (badness 5077) in paragraph at lines 240--245
+Underfull \hbox (badness 5077) in paragraph at lines 234--239
 []\T1/cmr/m/n/12 TORORADAR. Aná-lise téc-nica de ações. 2015. Acesso em 10 de a
 bril de
  []
 
 
-Underfull \hbox (badness 4266) in paragraph at lines 240--245
+Underfull \hbox (badness 4266) in paragraph at lines 234--239
 \T1/cmr/m/n/12 2017. Dis-po-ní-vel em: [][]$<[]https : / / www . tororadar . co
 m . br / investimento / analise-[]tecnica /
  []
@@ -1923,10 +1923,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
  ) 
 Here is how much of TeX's memory you used:
- 35699 strings out of 493105
- 776558 string characters out of 6137072
+ 35697 strings out of 493105
+ 776536 string characters out of 6137072
  1028001 words of memory out of 5000000
- 38232 multiletter control sequences out of 15000+600000
+ 38231 multiletter control sequences out of 15000+600000
  18411 words of font info for 52 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  60i,13n,83p,1126b,1663s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1947,10 +1947,10 @@ ic/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/tex
 mf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/publi
 c/cm-super/sfxc1200.pfb>
-Output written on modelo.pdf (48 pages, 1591544 bytes).
+Output written on modelo.pdf (48 pages, 1591233 bytes).
 PDF statistics:
- 1042 PDF objects out of 1200 (max. 8388607)
- 918 compressed objects within 10 object streams
- 226 named destinations out of 1000 (max. 500000)
+ 1041 PDF objects out of 1200 (max. 8388607)
+ 917 compressed objects within 10 object streams
+ 225 named destinations out of 1000 (max. 500000)
  578 words of extra memory for PDF output out of 10000 (max. 10000000)
 

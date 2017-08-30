@@ -5,11 +5,8 @@ __author__ = 'Fernando Demarchi Natividade Luiz'
 __email__ = "nativanando@gmail.com"
 __version__ = "1.0"
 
-import pandas_datareader.data as web
-import datetime
+class Cisco:
 
-start = datetime.datetime(2001, 1, 1)
-end = datetime.datetime(2017, 1, 27)
-
-f = web.DataReader("CSCO", 'google', start, end)
-f.to_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/cisco.txt')
+    def __init__(self):
+        self.nome_empresa = 'cisco'
+        self.codigo = 'CSCO'
