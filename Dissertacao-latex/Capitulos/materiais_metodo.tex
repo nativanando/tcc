@@ -26,12 +26,10 @@ Tendo em vista os critérios especificados acima, as empresas selecionadas e o c
 \section{TÉCNICA PARA COLETA DE DADOS}
 Com a definição da bolsa de valores em questão e das empresas que serão utilizadas para realizar a implementação deste trabalho, a próxima etapa se dá pela necessidade em coletar seus dados histórios.
 
-Como os dados históricos das ações caracterizam-se por serem séries temporais, o tipo de técnica aplicada para conseguir indicadores de relevância para uma boa análise dos objetivos propostos, refere-se à análise técnica. 
-
-Portanto, esta fase de coleta de dados é muito importante para o bom funcionamento da RNA que será criada, tornando-se essencial para o êxito final do trabalho.
+Como os dados históricos das ações caracterizam-se por serem séries temporais, o tipo de técnica aplicada para conseguir indicadores de relevância para uma boa análise dos objetivos propostos, refere-se à análise técnica. Portanto, esta fase de coleta de dados é muito importante para o bom funcionamento da RNA que será criada, tornando-se essencial para o êxito final do trabalho.
 
 \subsection{Definição das séries}
-Selecionar os dados corretos para trabalhar com RNAs é uma fase de grande relevância, pois são esses dados que serão treinados e que irão garantir a estabilidade e a capacidade de generalização da rede em sí.
+Selecionar os dados corretos para trabalhar com RNAS é uma etapa de grande relevância, pois são esses dados que serão treinados pela mesma e que irão garantir a sua estabilidade e capacidade de generalização.
 
 Sendo assim, a partir do conhecimento concebido pelo Capítulo 3, pode-se destacar dois aspectos importantes para a análise de quais dados coletar dentro de um problema em geral, sendo eles:
 
@@ -49,21 +47,21 @@ Segundo \citeonline{tororadar}, as variáveis que influenciam em um sistema de a
 \item Volume: Número de negociações do papel no dia (valor bruto das negociações);
 \item Valor de fechamento no dia;
 \item Médias móveis simples: As médias móveis suavizam os dados de preços para formar um indicador de tendência sequencial. Elas não prevêem a direção dos preços, mas, antes, definem a sua direção atual com um atraso. Como o próprio nome indica, uma média móvel é uma média que se move. Os dados antigos são retirados, a medida que dados mais recentes se tornam disponíveis, isto faz com que a média se mova ao longo do tempo. A maioria das médias móveis são baseadas em preços de fechamento;
-\item \textit{Moving Average Convergence Divergence} (MACD): indicador que controle a divergência e convergência das médias móveis. o MACD é formado pela diferença entre duas médias móveis, sendo uma de longo prazo e outra de curto prazo. Para o presente trabalho será calculado o MACD referente às médias de 10 e 26 dias.
+\item \textit{Moving Average Convergence Divergence} (MACD): indicador que controle a divergência e convergência das médias móveis. O MACD é formado pela diferença entre duas médias móveis, sendo uma de longo prazo e outra de curto prazo. Para o presente trabalho será calculado o MACD referente às médias de 10 e 26 dias.
 \end{enumerate}
 
 \section{FERRAMENTAS PARA COLETA DE DADOS}
 Com a especificação das séries que serão coletadas, é necessário preparar um ambiente que dispõe o acesso à esses dados de forma simplificada. 
 
-Pensando nesse contexto, é essencial utilizar uma linguagem de programação que tenha suporte à esse modelo de busca por dados. Tendo em vista essa premissa, a disponibilidade de uma API ou biblioteca é de extrema importância para a automatização deste processo.
+Pensando nesse contexto, é essencial utilizar uma linguagem de programação que tenha suporte à esse modelo de busca por dados. Tendo em vista esta premissa, a disponibilidade de uma API ou biblioteca é de extrema importância para a automatização deste processo.
 
 \subsection{Linguagem de programação Python}
-Segundo \citeonline{python-science}, apesar das diversas linguagens de programação disponíveis hoje para o desenvolvimento de aplicações e \textit{scripts}, a linguagem de programação Python vêm se destacando e crescendo constantemente na comunidade científica, seja por sua variedade de bibliotecas que auxiliam os desenvolvedores e pesquisadores à resolverem seus problemas de forma mais simplificada, até seu poder computacional e suas características de multiplataforma e multiparadigma.
+Segundo \citeonline{python-science}, apesar das diversas linguagens de programação disponíveis hoje para o desenvolvimento de aplicações e \textit{scripts}, a linguagem de programação Python vem se destacando e crescendo constantemente na comunidade científica, seja por sua variedade de bibliotecas que auxiliam os desenvolvedores e pesquisadores à resolverem seus problemas de forma mais simplificada, até seu poder computacional e suas características de multiplataforma e multiparadigma.
 
 Um fator que determina a utilização da linguagem de programação Python, como dito no paragrafo anterior, se dá pela sua variabilidade de bibliotecas voltadas, principalmente, para a análise de dados. Colocando isso no contexto deste trabalho, é essencial o uso de uma ferramenta que proporcione um alto nível de funcionalidades disponíveis para serem exploradas.
 
 \subsection{Biblioteca pandas}\label{pandas-lib}
-A biblioteca pandas é um pacote disponível na linguagem de programação Python que fornece fácil acesso à dados disponíveis na internet. O objetivo principal do pandas é justamente fornecer buscas flexíveis e intuítivas para a análise de dados estruturados e não estruturados. A biblioteca tem como objetivo específico se tornar a ferramenta de análise, busca e manipulação de dados aberta mais poderosa e flexível existente \cite{pandas}.
+A biblioteca pandas é um pacote disponível na linguagem de programação Python que fornece fácil acesso à dados disponíveis na internet. O objetivo principal do pandas é, justamente, fornecer buscas flexíveis e intuítivas para a análise de dados estruturados e não estruturados. Além disto, busca como objetivo específico, se tornar a ferramenta de análise, busca e manipulação de dados, aberta, mais poderosa e flexível existente \cite{pandas}.
 
 Segundo \citeonline{pandas}, o seu uso é adequado para diferentes tipos de dados, sendo eles:
 \begin{enumerate}
@@ -78,9 +76,9 @@ Para exemplificar como a biblioteca facilita o processo de coleta dos dados, o C
 \codigoPython\
 \lstinputlisting[language=Python, label=script-coleta-dados, caption=\textit{Script} para coleta de dados]{src/microsoft.py}
 
-As séries históricas são disponibilizadas em arquivos com valores separados por vírgulas (*.csv) contendo a data de negociação, valor de abertura, valores máximo e mínimo atingidos, valor de fechamento e o volume de negociações.
+As séries históricas são disponibilizadas em arquivos com valores separados por vírgulas (*.csv), contendo a data de negociação, valor de abertura, valores máximo e mínimo atingidos, valor de fechamento e o volume de negociações.
 
-Na Figura 10 é possível observar o arquivo criado a partir do Código 2, demonstrando o formato especificado acima que a API retorna para a manipulação.
+Na Figura 10 é possível observar o arquivo criado a partir do Código 2, demonstrando o formato que foi especificado no código e o que a API retorna para a manipulação.
 
 \begin{figure}[h]
 	\centering
@@ -93,9 +91,9 @@ Na Figura 10 é possível observar o arquivo criado a partir do Código 2, demon
 \subsection{Google \textit{Finance} API}
 É importante citar qual a fonte onde o pandas busca as séries históricas, por questões como confiabilidade dos dados. O acesso é realizado através da integração com o Google \textit{Finance} API, um banco de dados quase em tempo real mantido pelo Google, que trabalha com as principais bolsas de valores do mundo \cite{pandas}.
 
-A API trabalha com um limite inicial para a coleta das ações, este limite se inicia em 03/05/2001 e vai se atualizando diariamente. Tendo em vista que para trabalhar com RNAs é importante buscar o máximo de informações possíveis e, também, considerando o limite disponível pela API, o período das ações das empresas selecionadas serão coletadas iniciando no ano de 2001 até o ano de 2017. 
+A API trabalha com um limite inicial para a coleta das ações, a partir de 03/05/2001 e vai se atualizando diariamente. Tendo em vista que para trabalhar com RNAs é importante buscar o máximo de informações possíveis e, também, considerando o limite disponível pela API, o período das ações das empresas selecionadas serão coletadas iniciando no ano de 2001 até o ano de 2017. 
 
-Sendo assim, a ideia é preparar um ambiente que proporcione o uso dessa ferramenta, junto à biblioteca citada na \autoref{pandas-lib} para realizar a busca pelos dados necessários.
+Sendo assim, a ideia é preparar um ambiente que proporcione o uso dessa ferramenta, junto à biblioteca citada na \autoref{pandas-lib} para realizar as buscas pelos dados necessários.
 
 \subsection{PyCharm IDE}
 É necessário utilizar uma \textit{Integrated Development Environment} (IDE) para auxiliar no \textit{script} de coleta de dados. PyCharm é uma IDE proprietária do grupo JetBrains que conta com uma versão livre para estudantes, que será realizada neste trabalho.
@@ -105,7 +103,7 @@ PyCharm suporta o desenvolvimento com a linguagem de programação Python desde 
 \section{ESPECIFICAÇÃO DO MODELO DE REDES NEURAIS ARTIFICIAIS}\label{especifica-modelo}
 Tendo como base o conhecimento adquirido no Capítulo 3, a definição de um modelo de RNA varia muito, sendo específico para cada problema do mundo real. Por isso, é importante frisar que não existe um modelo pré-definido e eficiente em RNAs, ficando a cargo da análise dos resultados, e, muitas vezes, por métodos de tentativa e erro para se chegar à um resultado eficiente \cite{haykin2000}.
  
-Porém, com o estudo realizado no Capítulo 3, esse processo pode ser menos custoso do que parece. Avaliar o problema em que se está trabalhando junto com o conhecimento teórico é de grande auxílio para a especificação e construção de um modelo inicial que se aproxime do desejado.
+Porém, com o estudo realizado no Capítulo 3, esse processo pode ser menos custoso do que parece. Avaliar o problema em que se está trabalhando, junto com o conhecimento teórico, é de grande auxílio para a especificação e construção de um modelo inicial que se aproxime do desejado.
 
 Para especificar quais modelos não devem ser aplicados, ou seja, modelos que não tenham características referente a resolução do problema em questão, algumas perguntas-chave serão elaboradas, sendo elas:
 
@@ -117,19 +115,17 @@ Para especificar quais modelos não devem ser aplicados, ou seja, modelos que n�
 
 A primeira pergunta refere-se ao modelo de transmissão dos dados que a RNA deve implementar, ou seja, se ela será formada por camadas adiante ou recorrente. Como é necessário o ajuste dos pesos nas camadas intermediárias, após a saída, a RNA deverá trabalhar com um modelo de camadas recorrente.
 
-A segunda pergunta refere-se ao processo de aprendizagem. Se os dados são treinados com resultados esperados, a RNA deverá possuir um método de aprendizado supervisionado, caso contrário, um modelo de RNA com treinamento não supervisionado deverá ser utilizado. A RNA será treinada a partir dos resultados esperados através das séries temporais, ou seja, o modelo trabalhará com aprendizagem supervisionada.
+A segunda pergunta refere-se ao processo de aprendizagem que deve ser utilizado. Se os dados são treinados a partir de resultados esperados, a RNA deverá possuir um método de aprendizado supervisionado, caso contrário, um modelo de RNA com treinamento não supervisionado deverá ser utilizado. Para este trabalho, a RNA será treinada a partir dos resultados esperados através das séries temporais, ou seja, o modelo trabalhará com aprendizagem supervisionada.
 
 A terceira pergunta refere-se à capacidade de generalização. Sendo assim, um modelo de RNA que irá trabalhar com dados desconhecidos deve ter caracteristícas de boa generalização, caso contrário, um modelo simples já é o suficiente.
 
 \subsection{Definição da Arquitetura}
 
-Tendo em vista estes critérios estabelecidos na Seção anterior, chega-se a definição de que a RNA deverá possuir uma arquitetura de camadas recorrente, um método de aprendizado supervisionado e uma função de custo, para controlar o processo de generalização da mesma.
+Tendo em vista os critérios estabelecidos na Seção anterior, chega-se a definição de que a RNA deverá possuir uma arquitetura de camadas recorrente, um método de aprendizado supervisionado e uma função de custo, para controlar o processo de generalização da mesma.
 
-\citeonline{haykin2000} direciona este modelo de rede ao Perceptron de Múltiplas Camadas (MLP, \textit{Multilayer Perceptron}), são redes neurais compostas por um conjunto de unidades sensoriais que constituem a camada de entrada, uma ou mais camadas ocultas e uma camada de saída, onde o sinal de entrada se propaga para frente através da rede, camada por camada. Redes MLP trabalham normalmente junto ao algoritmo \textit{backpropagation} para realizar seu treinamento e aprendizado.
+\citeonline{haykin2000} direciona este modelo de rede ao \textit{Perceptron} de Múltiplas Camadas (MLP, \textit{Multilayer Perceptron}), são redes neurais compostas por um conjunto de unidades sensoriais que constituem a camada de entrada, uma ou mais camadas ocultas e uma camada de saída, onde o sinal de entrada se propaga para frente através da rede, camada por camada. Redes MLP trabalham normalmente junto ao algoritmo \textit{backpropagation} para realizar seu treinamento e aprendizado.
 
-Tendo em vista a especificação do modelo da rede e dos dados que serão utilizados para realizar o treinamento e os testes, a próxima etapa será definir quais serão as entradas utilizadas. Como o objetivo do trabalho é realizar a predição do valor de fechamento das ações, todas as váriaveis coletadas, com a exceção do valor de fechamento, serão utilizadas como entrada da RNA. 
-
-Portanto, as variáveis que irão compor a camada de entrada da RNA são:
+Tendo em vista a especificação do modelo da rede e dos dados que serão utilizados para realizar o treinamento e os testes, a próxima etapa será definir quais serão as entradas utilizadas. Como o objetivo do trabalho é realizar a predição do valor de fechamento das ações, todas as váriaveis coletadas, com a exceção do valor de fechamento, serão utilizadas como entrada da RNA. Portanto, as variáveis que irão compor a camada de entrada da RNA são:
 
 \begin{enumerate}
 \item Valor de abertura;
@@ -153,7 +149,7 @@ Por isso, para a grande maioria dos problemas utiliza-se apenas uma camada escon
 
 Levando isso em consideração, a rede será desenvolvida com apenas uma camada intermediária composta por 11 neurônios, buscando otimizar a sua estrutura e obtendo um resultado eficiente para o problema.
 
-Por fim, a saída da rede será composta por uma única camada que irá conter o valor do fechamento diário das ações. É importante deixar claro que este valor, durante o processo de treinamento, será preenchido com os valores reais das ações em relação ao período que será escolhido para o processo de treinamento. Na Figura abaixo é possível visualizar a composição gráfica da arquitetura proposta.
+Por fim, a saída da rede será composta por uma única camada que irá conter o valor do fechamento diário das ações. É importante deixar claro que este valor, durante o processo de treinamento, será preenchido com os valores reais das ações em relação ao período que será escolhido para o processo de treinamento. Na Figura 11 é possível visualizar a composição gráfica da arquitetura proposta.
 
 \begin{figure}[h]
 	\centering
@@ -184,11 +180,11 @@ Segundo \citeonline{haykin2000}, ao determinar a classificação de um conjunto 
 \end{itemize}
 
 \section{BIBLIOTECA PyBrain}
-\textit{Python-Based Reinforcement Learning, Artificial Intelligence and Neural Network Library} (PyBrain) é uma biblioteca de aprendizagem de máquinas para Python. Seu objetivo é oferecer algoritmos flexíveis e fáceis de usar que proporcione uma forma mais intuitiva de desenvolver algoritmos complexos relacionados a Inteligência Artificial. Embora existam poucas bibliotecas de aprendizado de máquinas, PyBrain pretende ser uma biblioteca modular fácil de aprender, podendo ser utilizada por estudantes de nível básico até um nível mais avançado, oferecendo flexibilidade e algoritmos para pesquisa de ponta \cite{pybrain2010}.
+\textit{Python-Based Reinforcement Learning, Artificial Intelligence and Neural Network Library} (PyBrain) é uma biblioteca de aprendizagem de máquinas para Python. Seu objetivo é oferecer algoritmos flexíveis e fáceis de usar que proporcione uma forma mais intuitiva de desenvolver algoritmos complexos relacionados à Inteligência Artificial. Embora existam poucas bibliotecas de aprendizado de máquinas, PyBrain pretende ser uma biblioteca modular fácil de aprender, podendo ser utilizada por estudantes de nível básico até um nível mais avançado, oferecendo flexibilidade e algoritmos para pesquisa de ponta \cite{pybrain2010}.
 
 Segundo \citeonline{pybrain2010}, como o próprio nome sugere, PyBrain contém algoritmos para redes neurais, aprendizagem supervisionada, aprendizagem não supervisionada e algoritmos evolutivos. A biblioteca é construída com seu núcleo baseado em redes neurais, onde todos os métodos de treinamento aceitam uma rede como instância pré-treinada. Isso faz de PyBrain uma ferramenta poderosa para a execução de tarefas complexas de serem resolvidas.
 
-A Figura 12 demonstra de maneira mais clara como a biblioteca PyBrain irá auxiliar no projeto.
+A Figura 12 demonstra, de maneira mais clara, como a biblioteca PyBrain irá auxiliar no projeto.
 
 \begin{figure}[h]
 	\centering
@@ -221,4 +217,4 @@ Dentre os algoritmos de aprendizagem supervisionada utilizado pelo PyBrain, dest
 
 Também é importante evidenciar que a biblioteca PyBrain é de código aberto e gratuita para todos, licenciada sob a \textit{Berkeley Software Distribution} (BSD) Software.
 
-Desta forma, todos os métodos necessários para realizar a implementação do trabalho foram levantados, o próximo capítulo será responsável por detalhar o processo de desenvolvimento das técnicas, e, consequentemente, da obtenção dos objetivos desejados, levando todos os aspectos estudados e definidos até o momento em consideração.
+Desta forma, todos os métodos necessários para realizar a implementação deste trabalho foram levantados, o próximo capítulo irá detalhar o processo de desenvolvimento das técnicas, e, consequentemente, da obtenção dos objetivos desejados, levando todos os aspectos estudados e definidos até o momento considerado.
