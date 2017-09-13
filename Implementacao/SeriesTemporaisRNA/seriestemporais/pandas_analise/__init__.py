@@ -1,5 +1,9 @@
-from seriestemporais.pandas_analise.Analisador import *
-from seriestemporais.pandas_analise.Classificador import *
+from seriestemporais.pandas_analise.analisador import *
+from seriestemporais.pandas_analise.classificador import *
 
 if __name__ == '__main__':
-    print()
+    analisador = Analisador("amazon")
+    analisador = Analisador("cisco")
+    analisador = Analisador("apple")
+    analisador = Analisador("microsoft")
+    analisador = Analisador("intel")
