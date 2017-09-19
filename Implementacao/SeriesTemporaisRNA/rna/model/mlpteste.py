@@ -6,10 +6,7 @@ from pybrain.datasets import SupervisedDataSet
 from pybrain.supervised import BackpropTrainer
 from pybrain.tools.customxml.networkwriter import NetworkWriter
 from pybrain.tools.customxml.networkreader import NetworkReader
-from pandas import Series
-from sklearn import preprocessing
-from sklearn.preprocessing import MinMaxScaler
-import math
+
 
 
 def importaRedeTeste():
@@ -24,7 +21,7 @@ def importaRedeTeste():
                  dataset.iloc[i]['movel_10'], dataset.iloc[i]['MACD']], dataset.iloc[i + 1]['Open'])
 
         trainer = BackpropTrainer(net, dataset_treino, verbose=True, learningrate=0.01, momentum=0.99)
-        for epoch in range(0, 1000):  # treina por 1000 iterações para ajuste de pesos
+        for epoch in range(0, 10000):  # treina por 1000 iterações para ajuste de pesos
             resultTrainer = trainer.train()
 
         print(resultTrainer)
@@ -37,7 +34,6 @@ def normalizaDataSet(nome_empresa):
     # Normalize time series data
     # load the dataset and print the first 5 rows
     series = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/'+nome_empresa+'_formatado.txt', header=0)
-    series.drop('Date', axis=1, inplace=True)
     series['Open-normalizado'] = (series['Open'] - min(series['Open'])) / (max(series['Open']) - min(series['Open']))
     series['High-normalizado'] = (series['High'] - min(series['High'])) / (max(series['High']) - min(series['High']))
     series['Low-normalizado'] = (series['Low'] - min(series['Low'])) / (max(series['Low']) - min(series['Low']))
@@ -59,13 +55,13 @@ def normalizaDataSet(nome_empresa):
              series.iloc[i]['movel_10-normalizado'], series.iloc[i]['MACD-normalizado']], series.iloc[i+1]['Open-normalizado'])
 
     trainer = BackpropTrainer(net, dataset_treino, verbose=True, learningrate=0.01, momentum=0.99)
-    for epoch in range(0, 1000):  # treina por 1000 iterações para ajuste de pesos
+    for epoch in range(0, 3000):  # treina por 1000 iterações para ajuste de pesos
         resultTrainer = trainer.train()
 
     NetworkWriter.writeToFile(net, 'rede2.xml')
 
     valor_abertura2 = (net.activate([37.87, 38.0, 37.52, 37.8, 32357313, 36.7930769231, 36.971,0.17792307689999376]))  # penultima - 1 #37.82 resultado #[ 0.90872757]
-    print("valor abertura", valor_abertura2[0])
+    print("valor abertura", valor_abertura2)
     resultadorede2 = valor_abertura2[0] * max(series['Open']) + (1 - valor_abertura2[0]) * min(series['Open'])
     print("resultado", resultadorede2)
 

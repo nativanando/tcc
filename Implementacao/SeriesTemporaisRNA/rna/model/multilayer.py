@@ -11,6 +11,7 @@ __version__ = "1.0"
 
 from pybrain.structure import LinearLayer, SigmoidLayer
 from pybrain.structure import FullConnection
+from pybrain.structure import FeedForwardNetwork
 from pybrain.structure import RecurrentNetwork
 import pandas as pd
 from pybrain.datasets import SupervisedDataSet
@@ -52,14 +53,11 @@ class MultiLayer:
         self.iniciaRede()
 
     def visualizaPesosSinapticos(self):
-        print('peso camada_entrada_oculta',
-              self.ligacao_entrada_oculta.params)  # mostra os pesos das conexões de entrada para camada oculta, todas interligadas entre sí. 3x4 = 12 pesos sinpaticos
-        print('peso camada_oculta_saida',
-              self.ligacao_oculta_saida.params)  # mostra os pesos das conexões da camada oculta para a camada de saída. Todas interligadas entre sí. 3x1 = 3 pesos sinapticos
         print('pesos rede', self.network.params)
 
     def iniciaRede(self):
         self.network.sortModules()
+        self.network.reset()
 
     def adicionaDadosTreinamento(self):
         self.dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/' + self.nome_empresa + '_formatado.txt',header=0)
@@ -74,6 +72,8 @@ class MultiLayer:
         self.dataset['MACD-normalizado'] = (self.dataset['MACD'] - min(self.dataset['MACD'])) / (max(self.dataset['MACD']) - min(self.dataset['MACD']))
         self.dataset.to_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/' + self.nome_empresa + '_normalizado.txt')
         self.dataset_treino = SupervisedDataSet(8, 1)
+        print(self.dataset.iloc[1]['Open-normalizado'])
+        print(self.dataset.iloc[2]['Open'])
 
         for i in range(self.dataset.__len__() - 1):
             self.dataset_treino.addSample([self.dataset.iloc[i]['Open-normalizado'], self.dataset.iloc[i]['High-normalizado'],
@@ -84,15 +84,9 @@ class MultiLayer:
         self.realizaTreinamento()
 
     def realizaTreinamento(self):
-        trainer = BackpropTrainer(self.network, self.dataset_treino, verbose=True, learningrate=0.01, momentum=0.99)
-        start = timeit.default_timer()
-
-        for epoch in range(0, 1000):  # treina por 1000 iterações para ajuste de pesos
-            resultTrainer = trainer.train()
-
-        NetworkWriter.writeToFile(self.network, 'rede2.xml')
-
-        valor_abertura2 = (self.network.activate([37.87, 38.0, 37.52, 37.8, 32357313, 36.7930769231, 36.971, 0.17792307689999376]))  # penultima - 1 #37.82 resultado #[ 0.90872757]
-        print("valor abertura", valor_abertura2[0])
+        trainer = BackpropTrainer(self.network, self.dataset_treino, verbose=True)
+        trainer.trainEpochs(epochs=100)
+        valor_abertura2 = (self.network.activate([38.0,38.45,37.81,37.98,44368566,36.8830769231,37.159,0.27592307689999984]))  # penultima - 1 #37.82 resultado #[ 0.90872757]
+        print("valor aberturasad", valor_abertura2[0])
         resultadorede2 = valor_abertura2[0] * max(self.dataset['Open']) + (1 - valor_abertura2[0]) * min(self.dataset['Open'])
         print("resultado", resultadorede2)

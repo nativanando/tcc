@@ -12,10 +12,10 @@ class Crawler:
 
     def __init__(self, nome_empresa, codigo):
         self.start = datetime.datetime(2001, 1, 1)
-        self.end = datetime.datetime(2017, 1, 27)
+        self.end = datetime.datetime(2017, 8, 31)
         self.nome_empresa = nome_empresa
         self.codigo = codigo
 
     def executa_busca(self):
-        f = web.DataReader(self.codigo, 'google', self.start, self.end)
+        f = web.DataReader(self.codigo, 'google',  "2015-01-01", "2015-01-05")
         f.to_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/' + self.nome_empresa + '.txt')
