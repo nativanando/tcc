@@ -8,6 +8,7 @@ dataset_microsoft = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_c
 dataset_intel = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_calculados/intel_normalizado.txt')
 dataset_apple = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_calculados/apple_normalizado.txt')
 
+
 dataset_cisco['Date'] = pd.to_datetime(dataset_cisco['Date'])  # repassando o valor para um formato de data
 linha = dataset_cisco.Date
 coluna = dataset_cisco['Open-normalizado']
