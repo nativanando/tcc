@@ -18,4 +18,4 @@ class Crawler:
 
     def executa_busca(self):
         file = web.DataReader(self.codigo, 'google',  self.start, self.end)
-        file.to_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/' + self.nome_empresa + '.txt')
+        file.to_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/' + self.nome_empresa + '.csv')

@@ -21,10 +21,11 @@ from pybrain.tools.customxml.networkreader import NetworkReader
 import timeit
 import numpy as np
 
+
 class MultiLayer:
     def __init__(self, network, camada_entrada, camada_oculta, camada_saida, nome_empresa):
         self.network = network
-        self.network = RecurrentNetwork()
+        self.network = FeedForwardNetwork()
         self.camada_entrada = camada_entrada
         self.camada_oculta = camada_oculta
         self.camada_saida = camada_saida
@@ -57,20 +58,10 @@ class MultiLayer:
 
     def iniciaRede(self):
         self.network.sortModules()
-        self.network.reset()
 
     def adicionaDadosTreinamento(self):
-        self.dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/' + self.nome_empresa + '_formatado.txt',header=0)
+        self.dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_calculados/' + self.nome_empresa + '_normalizado.txt',header=0)
         self.dataset.drop('Date', axis=1, inplace=True)
-        self.dataset['Open-normalizado'] = (self.dataset['Open'] - min(self.dataset['Open'])) / (max(self.dataset['Open']) - min(self.dataset['Open']))
-        self.dataset['High-normalizado'] = (self.dataset['High'] - min(self.dataset['High'])) / (max(self.dataset['High']) - min(self.dataset['High']))
-        self.dataset['Low-normalizado'] = (self.dataset['Low'] - min(self.dataset['Low'])) / (max(self.dataset['Low']) - min(self.dataset['Low']))
-        self.dataset['Close-normalizado'] = (self.dataset['Close'] - min(self.dataset['Close'])) / (max(self.dataset['Close']) - min(self.dataset['Close']))
-        self.dataset['Volume-normalizado'] = (self.dataset['Volume'] - min(self.dataset['Volume'])) / (max(self.dataset['Volume']) - min(self.dataset['Volume']))
-        self.dataset['movel_26-normalizado'] = (self.dataset['movel_26'] - min(self.dataset['movel_26'])) / (max(self.dataset['movel_26']) - min(self.dataset['movel_26']))
-        self.dataset['movel_10-normalizado'] = (self.dataset['movel_10'] - min(self.dataset['movel_10'])) / (max(self.dataset['movel_10']) - min(self.dataset['movel_10']))
-        self.dataset['MACD-normalizado'] = (self.dataset['MACD'] - min(self.dataset['MACD'])) / (max(self.dataset['MACD']) - min(self.dataset['MACD']))
-        self.dataset.to_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/' + self.nome_empresa + '_normalizado.txt')
         self.dataset_treino = SupervisedDataSet(8, 1)
         print(self.dataset.iloc[1]['Open-normalizado'])
         print(self.dataset.iloc[2]['Open'])
@@ -86,7 +77,25 @@ class MultiLayer:
     def realizaTreinamento(self):
         trainer = BackpropTrainer(self.network, self.dataset_treino, verbose=True)
         trainer.trainEpochs(epochs=100)
+        NetworkWriter.writeToFile(self.network, 'rede-feedfoward.xml')
+
         valor_abertura2 = (self.network.activate([38.0,38.45,37.81,37.98,44368566,36.8830769231,37.159,0.27592307689999984]))  # penultima - 1 #37.82 resultado #[ 0.90872757]
         print("valor aberturasad", valor_abertura2[0])
         resultadorede2 = valor_abertura2[0] * max(self.dataset['Open']) + (1 - valor_abertura2[0]) * min(self.dataset['Open'])
         print("resultado", resultadorede2)
+
+        valor_abertura2 = (self.network.activate([37.74,37.84,37.33,37.42,23954716,37.22200000000002,36.89115384615385,0.3308461538461742]))  # penultima - 1 #37.82 resultado #[ 0.90872757]
+        print("valor aberturasad", valor_abertura2[0])
+        resultadorede2 = valor_abertura2[0] * max(self.dataset['Open']) + (1 - valor_abertura2[0]) * min(self.dataset['Open'])
+        print("resultado", resultadorede2)
+
+        valor_abertura2 = (self.network.activate([37.22, 37.37, 36.64, 36.82, 27059084, 37.224000000000025, 36.88500000000001, 0.33900000000001995]))  # penultima - 1 #37.82 resultado #[ 0.90872757]
+        print("valor aberturasad", valor_abertura2[0])
+        resultadorede2 = valor_abertura2[0] * max(self.dataset['Open']) + (1 - valor_abertura2[0]) * min(
+            self.dataset['Open'])
+        print("resultado", resultadorede2)
+
+if __name__ == '__main__':
+    network = None
+    rna = MultiLayer(network, 8, 13, 1, "intel")
+    rna.adicionaDadosTreinamento()

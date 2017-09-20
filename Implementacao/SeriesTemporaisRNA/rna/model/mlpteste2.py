@@ -10,9 +10,9 @@ from pybrain.tools.customxml.networkreader import NetworkReader
 
 
 def importaRedeTeste():
-        net = NetworkReader.readFrom('rede-feedfoward.xml')
+        net = NetworkReader.readFrom('rede.xml')
         print('pesos rede', net.params)
-        dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_calculados/intel_normalizado.txt')
+        dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/intel_formatado.txt')
         dataset_treino = SupervisedDataSet(8, 1)
         for i in range(dataset.__len__() - 1):
             dataset_treino.addSample(
@@ -33,38 +33,37 @@ def importaRedeTeste():
 def normalizaDataSet(nome_empresa):
     # Normalize time series data
     # load the dataset and print the first 5 rows
-    series = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_calculados/intel_normalizado.txt')
+    series = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_calculados/'+nome_empresa+'_normalizado.txt', header=0)
     print (series['Open-normalizado'].iloc[1])
+    series_teste = series.iloc[4117:4124]
+
     print (series.iloc[2]['Open'])
     net = NetworkReader.readFrom('rede-feedfoward.xml')
     print('pesos rede', net.params)
     dataset_treino = SupervisedDataSet(8, 1)
-    for i in range(series.__len__() - 1):
+    for i in range(series.__len__() - 8):
         dataset_treino.addSample(
             [series.iloc[i]['Open-normalizado'], series.iloc[i]['High-normalizado'], series.iloc[i]['Low-normalizado'],
              series.iloc[i]['Close-normalizado'], series.iloc[i]['Volume-normalizado'], series.iloc[i]['movel_26-normalizado'],
              series.iloc[i]['movel_10-normalizado'], series.iloc[i]['MACD-normalizado']], series.iloc[i+1]['Open-normalizado'])
 
     trainer = BackpropTrainer(net, dataset_treino, verbose=True, learningrate=0.01, momentum=0.99)
-    for epoch in range(0, 3000):  # treina por 1000 iterações para ajuste de pesos
+    for epoch in range(0, 1500):  # treina por 1000 iterações para ajuste de pesos
         resultTrainer = trainer.train()
 
     NetworkWriter.writeToFile(net, 'rede2.xml')
 
-    valor_abertura2 = (net.activate([37.87, 38.0, 37.52, 37.8, 32357313, 36.7930769231, 36.971,0.17792307689999376]))  # penultima - 1 #37.82 resultado #[ 0.90872757]
-    print("valor abertura", valor_abertura2)
-    resultadorede2 = valor_abertura2[0] * max(series['Open']) + (1 - valor_abertura2[0]) * min(series['Open'])
-    print("resultado", resultadorede2)
+    test_data = SupervisedDataSet(8, 1)
 
-    valor_abertura2 = (net.activate([37.82,37.92,37.42,37.56,34144843,36.8411538462,37.032,0.19084615379999548]))  # penultima - 1 #37.82 resultado #[ 0.90872757]
-    print("valor abertura", valor_abertura2)
-    resultadorede2 = valor_abertura2[0] * max(series['Open']) + (1 - valor_abertura2[0]) * min(series['Open'])
-    print("resultado", resultadorede2)
+    for i in range(series_teste.__len__() - 1):
+        test_data.addSample([series_teste.iloc[i]['Open-normalizado'], series_teste.iloc[i]['High-normalizado'],
+        series_teste.iloc[i]['Low-normalizado'],
+        series_teste.iloc[i]['Close-normalizado'], series_teste.iloc[i]['Volume-normalizado'],
+        series_teste.iloc[i]['movel_26-normalizado'],
+        series_teste.iloc[i]['movel_10-normalizado'], series_teste.iloc[i]['MACD-normalizado']],
+                            series_teste.iloc[i + 1]['Open-normalizado'])
 
-    valor_abertura2 = (net.activate([38.0,38.45,37.81,37.98,44368566,36.8830769231,37.159,0.27592307689999984]))  # penultima - 1 #37.82 resultado #[ 0.90872757]
-    print("valor abertura", valor_abertura2)
-    resultadorede2 = valor_abertura2[0] * max(series['Open']) + (1 - valor_abertura2[0]) * min(series['Open'])
-    print("resultado", resultadorede2)
+    result = trainer.testOnData(test_data, verbose=True)
 
 
 if __name__ == '__main__':

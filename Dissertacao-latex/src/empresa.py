@@ -14,6 +14,6 @@ class Apple(Empresa):
         self.codigo = 'AAPL'
         self.executa_busca()
 
-    def executa_busca(self):                                    # OVERRIDE
+    def executa_busca(self):
         crawler = Crawler(self.nome_empresa, self.codigo)
         crawler.executa_busca()

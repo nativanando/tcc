@@ -1,0 +1,20 @@
+Testing on data:
+('out:    ', '[0.97  ]')
+('correct:', '[0.98  ]')
+error:  0.00005305
+('out:    ', '[0.949 ]')
+('correct:', '[0.961 ]')
+error:  0.00007077
+('out:    ', '[0.928 ]')
+('correct:', '[0.945 ]')
+error:  0.00014599
+('out:    ', '[0.915 ]')
+('correct:', '[0.924 ]')
+error:  0.00003673
+('out:    ', '[0.921 ]')
+('correct:', '[0.94  ]')
+error:  0.00018464
+('All errors:', [5.3054559171023318e-05, 7.0774844592972732e-05, 0.00014598569158021904, 3.6732255468117899e-05, 0.00018463588455553347])
+('Average error:', 9.8236647073573311e-05)
+('Max error:', 0.00018463588455553347, 'Median error:', 7.0774844592972732e-05)
+fernando@fernando:~/Documentos/TCC/dist-tcc/Implementacao/SeriesTemporaisRNA/rna/model$
