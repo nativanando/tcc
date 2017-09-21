@@ -36,6 +36,12 @@ def normalizaDataSet(nome_empresa):
     series = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_calculados/'+nome_empresa+'_normalizado.txt', header=0)
     print (series['Open-normalizado'].iloc[1])
     series_teste = series.iloc[4117:4124]
+    resultadorede2 = 0.864 * max(series['Open'] + (1 - 0.864) * min(series['Open']))
+    print ("correta", resultadorede2)
+
+    resultadorede2 = 0.885 * max(series['Open'] + (1 - 0.885) * min(series['Open']))
+    print ("predição", resultadorede2)
+
 
     print (series.iloc[2]['Open'])
     net = NetworkReader.readFrom('rede-feedfoward.xml')
@@ -48,7 +54,7 @@ def normalizaDataSet(nome_empresa):
              series.iloc[i]['movel_10-normalizado'], series.iloc[i]['MACD-normalizado']], series.iloc[i+1]['Open-normalizado'])
 
     trainer = BackpropTrainer(net, dataset_treino, verbose=True, learningrate=0.01, momentum=0.99)
-    for epoch in range(0, 1500):  # treina por 1000 iterações para ajuste de pesos
+    for epoch in range(0, 100):  # treina por 1500 iterações para ajuste de pesos
         resultTrainer = trainer.train()
 
     NetworkWriter.writeToFile(net, 'rede2.xml')
@@ -60,11 +66,10 @@ def normalizaDataSet(nome_empresa):
         series_teste.iloc[i]['Low-normalizado'],
         series_teste.iloc[i]['Close-normalizado'], series_teste.iloc[i]['Volume-normalizado'],
         series_teste.iloc[i]['movel_26-normalizado'],
-        series_teste.iloc[i]['movel_10-normalizado'], series_teste.iloc[i]['MACD-normalizado']],
-                            series_teste.iloc[i + 1]['Open-normalizado'])
+        series_teste.iloc[i]['movel_10-normalizado'], series_teste.iloc[i]['MACD-normalizado']],series_teste.iloc[i]['Open-normalizado'])
 
     result = trainer.testOnData(test_data, verbose=True)
 
 
 if __name__ == '__main__':
-    normalizaDataSet('intel')
+    normalizaDataSet('amazon')

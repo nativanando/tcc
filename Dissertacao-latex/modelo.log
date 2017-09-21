@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  19 SEP 2017 23:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  21 SEP 2017 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1868,18 +1868,18 @@ Overfull \hbox (3.20535pt too wide) in paragraph at lines 94--95
  []
 
 [36 <./Imagens/dados-pandas.png>] [37] [38]
-<./Imagens/arquitetura-rna.jpg, id=693, 98.79309pt x 74.07675pt>
+<./Imagens/arquitetura-rna.jpg, id=696, 98.79309pt x 74.07675pt>
 File: ./Imagens/arquitetura-rna.jpg Graphic file (type jpg)
 
 <use ./Imagens/arquitetura-rna.jpg>
-Package pdftex.def Info: ./Imagens/arquitetura-rna.jpg used on input line 157.
+Package pdftex.def Info: ./Imagens/arquitetura-rna.jpg used on input line 159.
 (pdftex.def)             Requested size: 49.39641pt x 37.03828pt.
  [39 <./Imagens/arquitetura-rna.jpg>]
-[40] <./Imagens/pybrain8.jpeg, id=713, 84.14293pt x 72.57973pt>
+[40] <./Imagens/pybrain8.jpeg, id=715, 84.14293pt x 72.57973pt>
 File: ./Imagens/pybrain8.jpeg Graphic file (type jpg)
 
 <use ./Imagens/pybrain8.jpeg>
-Package pdftex.def Info: ./Imagens/pybrain8.jpeg used on input line 192.
+Package pdftex.def Info: ./Imagens/pybrain8.jpeg used on input line 194.
 (pdftex.def)             Requested size: 42.07135pt x 36.28976pt.
  [41 <./Imagens/pybrain8.jpeg>])
 (./Capitulos/implementacao.tex [42]
@@ -2279,7 +2279,7 @@ Package xcolor Warning: Incompatible color definition on input line 21.
 
 Package xcolor Warning: Incompatible color definition on input line 21.
 
-) <./Imagens/amazon_coletado.png, id=750, 141.02974pt x 68.96623pt>
+) <./Imagens/amazon_coletado.png, id=753, 141.02974pt x 68.96623pt>
 File: ./Imagens/amazon_coletado.png Graphic file (type png)
 
 <use ./Imagens/amazon_coletado.png>
@@ -2355,10 +2355,10 @@ super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfxc1200.pfb>
-Output written on modelo.pdf (50 pages, 1685056 bytes).
+Output written on modelo.pdf (50 pages, 1685193 bytes).
 PDF statistics:
- 1124 PDF objects out of 1200 (max. 8388607)
- 995 compressed objects within 10 object streams
+ 1127 PDF objects out of 1200 (max. 8388607)
+ 998 compressed objects within 10 object streams
  276 named destinations out of 1000 (max. 500000)
  591 words of extra memory for PDF output out of 10000 (max. 10000000)
 
