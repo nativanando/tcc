@@ -7,7 +7,7 @@ com as camadas ocultas utilizando a função de ativação do tipo sigmóide.
 """
 __author__ = 'Fernando Demarchi Natividade Luiz'
 __email__ = "nativanando@gmail.com"
-__version__ = "1.0"
+__version__ = "0.0.1"
 
 from pybrain.structure import LinearLayer, SigmoidLayer
 from pybrain.structure import FullConnection

@@ -3,7 +3,7 @@ Crawler.py: Buscador genérico das séries temporais.
 """
 __author__ = 'Fernando Demarchi Natividade Luiz'
 __email__ = "nativanando@gmail.com"
-__version__ = "1.0"
+__version__ = "0.0.1"
 
 import pandas_datareader.data as web
 import datetime

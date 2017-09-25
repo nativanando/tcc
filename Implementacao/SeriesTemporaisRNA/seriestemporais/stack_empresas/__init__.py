@@ -10,7 +10,7 @@ from seriestemporais.stack_empresas.crawler import *
 
 __author__ = 'Fernando Demarchi Natividade Luiz'
 __email__ = "nativanando@gmail.com"
-__version__ = "1.0"
+__version__ = "0.0.1"
 
 def main():
     amazon = Amazon()

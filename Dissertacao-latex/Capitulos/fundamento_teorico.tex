@@ -151,7 +151,6 @@ Segundo \citeonline{haykin2000}, caracterizando-se pela limitação de valores d
 
 \subsection{Função Limiar}
 Para este exemplo de função, o seguinte cálculo deve ser utilizado:
- 
 \begin{equation}\label{eq:limiar}
 y=\sum_{j=1}^{w} w_{kj}\ x_j + b_{k'},
 \end{equation}
@@ -173,10 +172,9 @@ f(x)=\frac{1}{1+e^{- \lambda x}} ,
 \end{equation}
 onde $- \lambda x$ é a entrada a ser processada.
 
-\citeonline{haykin2009} define a função sigmóide como uma função crescente, com o  objetivo de realizar um balanceamento adequado entre comportamentos lineares e não-lineares em um intervalo entre [0,1] justificando sua grande usabilidade. No Código 1 é apresentada a implementação da função na linguagem de programação Python.
+\citeonline{haykin2009} define a função sigmóide como uma função crescente, com o objetivo de realizar um balanceamento adequado entre comportamentos lineares e não-lineares em um intervalo entre [0,1], justificando sua grande usabilidade. No Código 1 é apresentada a implementação da função na linguagem de programação Python.
 
 \citeonline{haykin2009} também evidência a utilização da tangente hiperbólica com o mesmo intuito da sigmóide, porém com um intervalo variando em um intervalo de [-1,1].
-
 \codigoPython\
 \lstinputlisting[label=cod:exempla-sigmoide, caption=Função sigmóide em Python]{src/Sigmoide.py}
 

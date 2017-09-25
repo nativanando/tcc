@@ -107,6 +107,12 @@ Disserta\c{c}\~{a}o (Mestrado) --- Universidade de São Paulo, São Paulo,
 {HAYKIN, S. Neural networks and learning machines.
 \textbf{New Jersey: Prentice Hall}, p.~906, 2009.}
 
+\bibitem[Hunter 2007]{matplotlib}
+\abntrefinfo{Hunter}{HUNTER}{2007}
+{HUNTER, J.~D. Matplotlib: A 2d graphics environment.
+\textbf{Computing In Science \& Engineering}, IEEE COMPUTER SOC, v.~9, n.~3, p.
+  90--95, 2007.}
+
 \bibitem[Kamijo e Tanigawa 1990]{kamijo}
 \abntrefinfo{Kamijo e Tanigawa}{KAMIJO; TANIGAWA}{1990}
 {KAMIJO, K.; TANIGAWA, T. Stock price pattern recognition a recurrent neural
@@ -254,5 +260,12 @@ Dispon{\'\i}vel em:
 {ZHANG, G.; PATUWO, E.; HU, M. Forecasting with artificial neural networks: The
   state of the art. international journal of forecasting.
 p. 35--62, 1988.}
+
+\bibitem[Zárate, Helman e Gálvez 2003]{Luiz}
+\abntrefinfo{Zárate, Helman e Gálvez}{ZáRATE; HELMAN; GáLVEZ}{2003}
+{ZáRATE, L.~E.; HELMAN, H.; GáLVEZ, J.~M. Representação e controle de
+  laminadores tandem baseado em funções de sensibilidade obtidos através de
+  redes neurais.
+\textbf{Sba Controle e Automação}, v.~14, 2003.}
 
 \end{thebibliography}

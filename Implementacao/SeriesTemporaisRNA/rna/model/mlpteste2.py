@@ -1,13 +1,8 @@
-from pybrain.structure import LinearLayer, SigmoidLayer
-from pybrain.structure import FullConnection
-from pybrain.structure import RecurrentNetwork
 import pandas as pd
 from pybrain.datasets import SupervisedDataSet
 from pybrain.supervised import BackpropTrainer
 from pybrain.tools.customxml.networkwriter import NetworkWriter
 from pybrain.tools.customxml.networkreader import NetworkReader
-
-
 
 def importaRedeTeste():
         net = NetworkReader.readFrom('rede.xml')
@@ -31,17 +26,19 @@ def importaRedeTeste():
         resultado1 = trainer.testOnData(test_data3, verbose=True)
 
 def normalizaDataSet(nome_empresa):
+    import matplotlib as plt
+
     # Normalize time series data
     # load the dataset and print the first 5 rows
     series = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_calculados/'+nome_empresa+'_normalizado.txt', header=0)
+    resultado = []
     print (series['Open-normalizado'].iloc[1])
     series_teste = series.iloc[4117:4124]
-    resultadorede2 = 0.864 * max(series['Open'] + (1 - 0.864) * min(series['Open']))
+    resultadorede2 = 0.867 * max(series['Open']) + (1 - 0.895) * min(series['Open'])
     print ("correta", resultadorede2)
 
-    resultadorede2 = 0.885 * max(series['Open'] + (1 - 0.885) * min(series['Open']))
+    resultadorede2 = 0.892 * max(series['Open']) + (1 - 0.892) * min(series['Open'])
     print ("predição", resultadorede2)
-
 
     print (series.iloc[2]['Open'])
     net = NetworkReader.readFrom('rede-feedfoward.xml')
@@ -54,10 +51,11 @@ def normalizaDataSet(nome_empresa):
              series.iloc[i]['movel_10-normalizado'], series.iloc[i]['MACD-normalizado']], series.iloc[i+1]['Open-normalizado'])
 
     trainer = BackpropTrainer(net, dataset_treino, verbose=True, learningrate=0.01, momentum=0.99)
-    for epoch in range(0, 100):  # treina por 1500 iterações para ajuste de pesos
+    for epoch in range(0, 1000):  # treina por 1500 iterações para ajuste de pesos
         resultTrainer = trainer.train()
-
-    NetworkWriter.writeToFile(net, 'rede2.xml')
+        print ("result treinamento epoca ",resultTrainer)
+        resultado.append(resultTrainer)
+    #NetworkWriter.writeToFile(net, 'rede2.xml')
 
     test_data = SupervisedDataSet(8, 1)
 
@@ -71,5 +69,6 @@ def normalizaDataSet(nome_empresa):
     result = trainer.testOnData(test_data, verbose=True)
 
 
+
 if __name__ == '__main__':
-    normalizaDataSet('amazon')
+    normalizaDataSet('intel')

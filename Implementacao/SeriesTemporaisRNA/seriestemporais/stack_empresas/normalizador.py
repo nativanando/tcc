@@ -18,11 +18,11 @@ coluna3 = dataset_intel['Open-normalizado']
 coluna4= dataset_apple['Open-normalizado']
 
 fig, ax = plt.subplots()
-ax.plot(linha, coluna,  label='Line 2')
-ax.plot(linha, coluna1, label='Line 2')
-ax.plot(linha, coluna2, label='Line 2')
-ax.plot(linha, coluna3, label='Line 2')
-ax.plot(linha, coluna4, label='Line 2')
+ax.plot(linha, coluna)
+ax.plot(linha, coluna1)
+ax.plot(linha, coluna2)
+ax.plot(linha, coluna3)
+ax.plot(linha, coluna4)
 fig.set_size_inches(12, 8, forward=True)
 plt.legend(['Cisco', 'Amazon', 'Microsoft', 'Intel', 'Apple'])
 plt.grid(True)

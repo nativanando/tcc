@@ -4,7 +4,7 @@ Os métodos implementados manipulam o dataset, criando os indicadores técnicos 
 """
 __author__ = 'Fernando Demarchi Natividade Luiz'
 __email__ = "nativanando@gmail.com"
-__version__ = "1.0"
+__version__ = "0.0"
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -50,9 +50,7 @@ class Analisador:
             if i >= indice_inicial:
                 valor_media = valor_media + self.dataset.loc[i].Close
                 print ('index:', i)
-
         self.dataset.set_value(indice_dataset - 1, 'movel_' + str(dia), valor_media / dia, takeable=False)
-        print(self.dataset.loc[indice_dataset - 1])
         self.dataset.to_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/'+self.nome_empresa+'_calculado.txt')
 
     def formata_dataset(self):
@@ -64,3 +62,18 @@ class Analisador:
         print(self.dataset)
         self.dataset['MACD'] = self.dataset['movel_10'].sub(self.dataset['movel_26']) #calculo do MACS a partir das duas médias móveis
         self.dataset.to_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/'+self.nome_empresa+'_formatado.txt')
+
+    def calcula_macd(self, dataset):
+        dataset['MACD'] = dataset['movel_10'].sub(self.dataset['movel_26'])
+        return dataset
+
+    def normaliza_coluna(self, dataset, coluna):
+        resultado = []
+        for i in range(dataset.__len__()):
+            resultado.append((dataset.iloc[i][coluna] - min(dataset[coluna])) / (max(dataset[coluna]) - min(dataset[coluna])))
+        dataset[coluna + '-normalizado'] = resultado
+        return dataset
+
+    def desnormaliza_valor(self, dataset, coluna, valor):
+        valor = valor * max(dataset[coluna]) + (1 - valor) * min(dataset[coluna])
+        return valor
