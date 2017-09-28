@@ -113,6 +113,13 @@ Disserta\c{c}\~{a}o (Mestrado) --- Universidade de São Paulo, São Paulo,
 \textbf{Computing In Science \& Engineering}, IEEE COMPUTER SOC, v.~9, n.~3, p.
   90--95, 2007.}
 
+\bibitem[Jones et al. 2001]{scipy}
+\abntrefinfo{Jones et al.}{JONES et al.}{2001}
+{JONES, E. et al. {SciPy}: Open source scientific tools for {Python}.
+2001.
+Acesso em 10 de setembro de 2017.
+Dispon{\'\i}vel em: \url{http://www.scipy.org}.}
+
 \bibitem[Kamijo e Tanigawa 1990]{kamijo}
 \abntrefinfo{Kamijo e Tanigawa}{KAMIJO; TANIGAWA}{1990}
 {KAMIJO, K.; TANIGAWA, T. Stock price pattern recognition a recurrent neural

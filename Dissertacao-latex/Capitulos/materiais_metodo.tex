@@ -182,7 +182,7 @@ Segundo \citeonline{haykin2000}, ao determinar a classificação de um conjunto 
 \item Em casos com um número muito pequeno de amostras, é recomandável utilizar 50\% para ambos.
 \end{itemize}
 
-\section{BIBLIOTECA PyBrain}
+\section{BIBLIOTECA PYBRAIN}
 \textit{Python-Based Reinforcement Learning, Artificial Intelligence and Neural Network Library} (PyBrain) é uma biblioteca de aprendizagem de máquinas para Python. Seu objetivo é oferecer algoritmos flexíveis e fáceis de usar que proporcione uma forma mais intuitiva de desenvolver algoritmos complexos relacionados à Inteligência Artificial. Embora existam poucas bibliotecas de aprendizado de máquinas, PyBrain pretende ser uma biblioteca modular fácil de aprender, podendo ser utilizada por estudantes de nível básico até um nível mais avançado, oferecendo flexibilidade e algoritmos para pesquisa de ponta \cite{pybrain2010}.
 
 Segundo \citeonline{pybrain2010}, como o próprio nome sugere, PyBrain contém algoritmos para redes neurais, aprendizagem supervisionada, aprendizagem não supervisionada e algoritmos evolutivos. A biblioteca é construída com seu núcleo baseado em redes neurais, onde todos os métodos de treinamento aceitam uma rede como instância pré-treinada. Isso faz de PyBrain uma ferramenta poderosa para a execução de tarefas complexas de serem resolvidas. 
@@ -218,6 +218,18 @@ Dentre os algoritmos de aprendizagem supervisionada utilizado pelo PyBrain, dest
 	\item Algoritmos de Máquinas de Vetores de Suporte (SVM).
 \end{itemize}	
 
+Todos os algoritmos e implementações matemáticas da PyBrain tem como base o SciPy. SciPy é um ecossistema baseado em Python, de código aberto, para matemática, ciência e engenharia. Sua biblioteca central é o NumPy, que fornece uma manipulação conveniente e rápida de estruturas de dados que armazenam os valores em mais de uma dimensão. Portanto, a biblioteca SciPy foi desenvolvida para trabalhar com \textit{arrays} NumPy, fornecendo rotinas amigáveis e eficientes para realizar cálculos complexos \cite{scipy}.
+
 Também é importante evidenciar que a biblioteca PyBrain é de código aberto e gratuita para todos, licenciada sob a \textit{Berkeley Software Distribution} (BSD) Software.
+
+\section{BIBLIOTECA MATPLOTLIB}
+O matplotlib é uma biblioteca disponível para a linguagem de programação Python que contém recursos para a geração de gráficos 2D, a partir de um determinado conjunto de dados. Seus gráficos são criados com alta qualidade utilizando comandos simples e intuitivos \cite{matplotlib}.
+
+Segundo \citeonline{matplotlib}, o código Matplotlib é dividido conceitualmente em três partes:
+\begin{itemize}
+\item pylab: conjunto de funções disponíveis em matplotlib.pylab que permite a escrita de códigos simples de serem criados;
+\item API: camada responsável por realizar toda a lógica da biblioteca, criando por exemplo figuras, textos, gráficos e linhas;
+\item \textit{backend}: conjunto de funções que dependem do dispositivo de saída, como por exemplo imagens e arquivos no formato \textit{Portable Document Format} (PDF).
+\end{itemize}
 
 Desta forma, todos os métodos necessários para realizar a implementação deste trabalho foram levantados, o próximo capítulo irá detalhar o processo de desenvolvimento das técnicas, e, consequentemente, da obtenção dos objetivos desejados, levando todos os aspectos estudados e definidos até o momento considerado.

@@ -34,10 +34,10 @@ def normalizaDataSet(nome_empresa):
     resultado = []
     print (series['Open-normalizado'].iloc[1])
     series_teste = series.iloc[4117:4124]
-    resultadorede2 = 0.867 * max(series['Open']) + (1 - 0.895) * min(series['Open'])
+    resultadorede2 = 0.876 * max(series['Open']) + (1 - 0.876) * min(series['Open'])
     print ("correta", resultadorede2)
 
-    resultadorede2 = 0.892 * max(series['Open']) + (1 - 0.892) * min(series['Open'])
+    resultadorede2 = 0.885 * max(series['Open']) + (1 - 0.885) * min(series['Open'])
     print ("predição", resultadorede2)
 
     print (series.iloc[2]['Open'])
