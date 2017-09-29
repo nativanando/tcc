@@ -6,3 +6,4 @@
 \contentsline {lstlisting}{\numberline {6}Implementa\IeC {\c c}\IeC {\~a}o da fun\IeC {\c c}\IeC {\~a}o que realiza o c\IeC {\'a}lculo do MACD}{49}{lstlisting.5.6}
 \contentsline {lstlisting}{\numberline {7}Implementa\IeC {\c c}\IeC {\~a}o da fun\IeC {\c c}\IeC {\~a}o de normaliza\IeC {\c c}\IeC {\~a}o}{51}{lstlisting.5.7}
 \contentsline {lstlisting}{\numberline {8}Implementa\IeC {\c c}\IeC {\~a}o da fun\IeC {\c c}\IeC {\~a}o de desnormaliza\IeC {\c c}\IeC {\~a}o de um valor}{51}{lstlisting.5.8}
+\contentsline {lstlisting}{\numberline {9}Classe que gera o gr\IeC {\'a}fico dos dados normalizados}{51}{lstlisting.5.9}

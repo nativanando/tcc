@@ -69,4 +69,4 @@
 \contentsline {section}{\numberline {5.3}NORMALIZANDO OS DADOS}{50}{section.5.3}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{52}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{53}{section*.6}

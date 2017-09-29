@@ -69,6 +69,5 @@ def normalizaDataSet(nome_empresa):
     result = trainer.testOnData(test_data, verbose=True)
 
 
-
 if __name__ == '__main__':
     normalizaDataSet('intel')

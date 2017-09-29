@@ -113,7 +113,12 @@ A partir da equação (5.2), foi implementada uma função que normaliza uma det
 Para efetuar a desnormalização de um determinado valor, levando em consideração a equação (5.3), foi implementada uma função que realiza este procedimento, detalhada no Código 8.
 \lstinputlisting[language=Python, label=cod-desnormalizador, caption=Implementação da função de desnormalização de um valor]{src/desnormalizador.py}  
 
-Tendo em vista o desenvolvimento dos \textit{scripts} demonstrados acima, foi criado o Gráfico 7 para detalhar como ficaram os dados das empresas selecionadas para o presente trabalho, após o processo de normalização, utilizando o Código 7.
+Tendo em vista o desenvolvimento dos \textit{scripts} demonstrados acima, foi utilizada a biblioteca matplotlib para gerar um gráfico e representar de maneira mais clara como ficaram os conjuntos de dados após o processo de normalização. O Código 9 detalha este procedimento.
+
+\lstinputlisting[language=Python, label=cod-normalizado-grafico, caption=Classe que gera o gráfico dos dados normalizados]{src/normalizadorGrafico.py}
+
+Após a execução do código acima, foi renderizado o Gráfico 7 que demonstra os valores distribuidos entre o intervalo [0,1].
+
 \begin{grafico}[h]
 	\centering
 	\centerline{\includegraphics[scale=4]{empresas_normalizado}}

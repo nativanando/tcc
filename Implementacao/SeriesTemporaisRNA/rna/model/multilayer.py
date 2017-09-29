@@ -12,15 +12,11 @@ __version__ = "0.0.1"
 from pybrain.structure import LinearLayer, SigmoidLayer
 from pybrain.structure import FullConnection
 from pybrain.structure import FeedForwardNetwork
-from pybrain.structure import RecurrentNetwork
 import pandas as pd
 from pybrain.datasets import SupervisedDataSet
 from pybrain.supervised import BackpropTrainer
 from pybrain.tools.customxml.networkwriter import NetworkWriter
 from pybrain.tools.customxml.networkreader import NetworkReader
-import timeit
-import numpy as np
-
 
 class MultiLayer:
     def __init__(self, network, camada_entrada, camada_oculta, camada_saida, nome_empresa):
@@ -60,42 +56,84 @@ class MultiLayer:
         self.network.sortModules()
 
     def adicionaDadosTreinamento(self):
-        self.dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_calculados/' + self.nome_empresa + '_normalizado.txt',header=0)
+        try:
+            self.dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_calculados/'
+                                       + self.nome_empresa + '_normalizado.txt',header=0)
+        except IOError:
+            print ("Erro ao abrir os dados da empresa "+self.nome_empresa+"")
+            return 0
+
         self.dataset.drop('Date', axis=1, inplace=True)
+        self.dataset_teste = self.dataset.iloc[4117:4125]
+
         self.dataset_treino = SupervisedDataSet(8, 1)
         print(self.dataset.iloc[1]['Open-normalizado'])
         print(self.dataset.iloc[2]['Open'])
 
-        for i in range(self.dataset.__len__() - 1):
+        for i in range(self.dataset.__len__() - 8):
             self.dataset_treino.addSample([self.dataset.iloc[i]['Open-normalizado'], self.dataset.iloc[i]['High-normalizado'],
-            self.dataset.iloc[i]['Low-normalizado'],self.dataset.iloc[i]['Close-normalizado'], self.dataset.iloc[i]['Volume-normalizado'],
-            self.dataset.iloc[i]['movel_26-normalizado'], self.dataset.iloc[i]['movel_10-normalizado'], self.dataset.iloc[i]['MACD-normalizado']],
-            self.dataset.iloc[i + 1]['Open-normalizado'])
-
-        self.realizaTreinamento()
+                                           self.dataset.iloc[i]['Low-normalizado'],
+                                           self.dataset.iloc[i]['Close-normalizado'], self.dataset.iloc[i]['Volume-normalizado'],
+                                           self.dataset.iloc[i]['movel_26-normalizado'],
+                                           self.dataset.iloc[i]['movel_10-normalizado'], self.dataset.iloc[i]['MACD-normalizado']],
+                                           self.dataset.iloc[i + 1]['Open-normalizado'])
 
     def realizaTreinamento(self):
-        trainer = BackpropTrainer(self.network, self.dataset_treino, verbose=True)
-        trainer.trainEpochs(epochs=100)
-        NetworkWriter.writeToFile(self.network, 'rede-feedfoward.xml')
+        self.trainer = BackpropTrainer(self.network, self.dataset_treino, verbose=True)
+        self.trainer.trainEpochs(epochs=1000)
+        NetworkWriter.writeToFile(self.network, 'snapshot_redes/rede-feedforward-'+self.nome_empresa+'.xml')
 
-        valor_abertura2 = (self.network.activate([38.0,38.45,37.81,37.98,44368566,36.8830769231,37.159,0.27592307689999984]))  # penultima - 1 #37.82 resultado #[ 0.90872757]
-        print("valor aberturasad", valor_abertura2[0])
-        resultadorede2 = valor_abertura2[0] * max(self.dataset['Open']) + (1 - valor_abertura2[0]) * min(self.dataset['Open'])
-        print("resultado", resultadorede2)
+    def testaRede(self):
+        base_teste = SupervisedDataSet(8, 1)
 
-        valor_abertura2 = (self.network.activate([37.74,37.84,37.33,37.42,23954716,37.22200000000002,36.89115384615385,0.3308461538461742]))  # penultima - 1 #37.82 resultado #[ 0.90872757]
-        print("valor aberturasad", valor_abertura2[0])
-        resultadorede2 = valor_abertura2[0] * max(self.dataset['Open']) + (1 - valor_abertura2[0]) * min(self.dataset['Open'])
-        print("resultado", resultadorede2)
+        for i in range(self.dataset_teste.__len__() - 1):
+            base_teste.addSample([self.dataset_teste.iloc[i]['Open-normalizado'], self.dataset_teste.iloc[i]['High-normalizado'],
+                                  self.dataset_teste.iloc[i]['Low-normalizado'],
+                                  self.dataset_teste.iloc[i]['Close-normalizado'], self.dataset_teste.iloc[i]['Volume-normalizado'],
+                                  self.dataset_teste.iloc[i]['movel_26-normalizado'],
+                                  self.dataset_teste.iloc[i]['movel_10-normalizado'],
+                                  self.dataset_teste.iloc[i]['MACD-normalizado']], self.dataset_teste.iloc[i+1]['Open-normalizado'])
 
-        valor_abertura2 = (self.network.activate([37.22, 37.37, 36.64, 36.82, 27059084, 37.224000000000025, 36.88500000000001, 0.33900000000001995]))  # penultima - 1 #37.82 resultado #[ 0.90872757]
-        print("valor aberturasad", valor_abertura2[0])
-        resultadorede2 = valor_abertura2[0] * max(self.dataset['Open']) + (1 - valor_abertura2[0]) * min(
-            self.dataset['Open'])
-        print("resultado", resultadorede2)
+        erro, result = self.trainer.testOnData(base_teste, verbose=True)
+        print ("erro", result[1][0][0])
+        self.resultado_rede = result;
+
+    def testarRedeEmpresa(self):
+        try:
+            rede = NetworkReader.readFrom('snapshot_redes/rede-feedforward-'+self.nome_empresa+'.xml')
+            self.dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_calculados/'
+                                  + self.nome_empresa + '_normalizado.txt',header=0)
+        except IOError:
+            print ("Erro ao abrir os arquivo da rede neural")
+            return 0
+
+        print (self.dataset.__len__())
+        self.dataset_teste = self.dataset.iloc[4117:4125]
+        self.trainer = BackpropTrainer(rede)
+
+        base_teste = SupervisedDataSet(8, 1)
+
+        for i in range(self.dataset_teste.__len__() - 1):
+            base_teste.addSample([self.dataset_teste.iloc[i]['Open-normalizado'], self.dataset_teste.iloc[i]['High-normalizado'],
+                                  self.dataset_teste.iloc[i]['Low-normalizado'],
+                                  self.dataset_teste.iloc[i]['Close-normalizado'], self.dataset_teste.iloc[i]['Volume-normalizado'],
+                                  self.dataset_teste.iloc[i]['movel_26-normalizado'],
+                                  self.dataset_teste.iloc[i]['movel_10-normalizado'],
+                                  self.dataset_teste.iloc[i]['MACD-normalizado']], self.dataset_teste.iloc[i+1]['Open-normalizado'])
+
+        erro, result = self.trainer.testOnData(base_teste, verbose=True)
+        self.resultado_rede = result;
+        print(self.resultado_rede.__len__())
+        for i in range (self.resultado_rede.__len__()):
+            resultadorede = self.resultado_rede[i][0][0] * max(self.dataset['Open']) +\
+                             (1 - self.resultado_rede[i][0][0] ) * min(self.dataset['Open'])
+            resultado_esperado = self.dataset_teste.iloc[i + 1]['Open']
+            print ("resultado esperado: ",resultado_esperado)
+            print ("resultado rede", resultadorede)
 
 if __name__ == '__main__':
     network = None
     rna = MultiLayer(network, 8, 13, 1, "intel")
-    rna.adicionaDadosTreinamento()
+    ##rna.adicionaDadosTreinamento()
+    ##rna.realizaTreinamento()
+    rna.testarRedeEmpresa()
