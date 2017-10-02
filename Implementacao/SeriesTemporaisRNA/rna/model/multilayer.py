@@ -12,11 +12,11 @@ __version__ = "0.0.1"
 from pybrain.structure import LinearLayer, SigmoidLayer
 from pybrain.structure import FullConnection
 from pybrain.structure import FeedForwardNetwork
-import pandas as pd
 from pybrain.datasets import SupervisedDataSet
 from pybrain.supervised import BackpropTrainer
 from pybrain.tools.customxml.networkwriter import NetworkWriter
 from pybrain.tools.customxml.networkreader import NetworkReader
+import pandas as pd
 
 class MultiLayer:
     def __init__(self, network, camada_entrada, camada_oculta, camada_saida, nome_empresa):
@@ -122,7 +122,7 @@ class MultiLayer:
                                   self.dataset_teste.iloc[i]['MACD-normalizado']], self.dataset_teste.iloc[i+1]['Open-normalizado'])
 
         erro, result = self.trainer.testOnData(base_teste, verbose=True)
-        self.resultado_rede = result;
+        self.resultado_rede = result
         print(self.resultado_rede.__len__())
         for i in range (self.resultado_rede.__len__()):
             resultadorede = self.resultado_rede[i][0][0] * max(self.dataset['Open']) +\
@@ -133,7 +133,7 @@ class MultiLayer:
 
 if __name__ == '__main__':
     network = None
-    rna = MultiLayer(network, 8, 13, 1, "intel")
-    ##rna.adicionaDadosTreinamento()
-    ##rna.realizaTreinamento()
-    rna.testarRedeEmpresa()
+    rna = MultiLayer(network, 8, 13, 1, "cisco")
+    rna.adicionaDadosTreinamento()
+    rna.realizaTreinamento()
+    rna.testaRede()
