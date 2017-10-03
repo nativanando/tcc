@@ -133,7 +133,7 @@ class MultiLayer:
 
 if __name__ == '__main__':
     network = None
-    rna = MultiLayer(network, 8, 13, 1, "cisco")
+    rna = MultiLayer(network, 8, 13, 1, "apple")
     rna.adicionaDadosTreinamento()
     rna.realizaTreinamento()
     rna.testaRede()
