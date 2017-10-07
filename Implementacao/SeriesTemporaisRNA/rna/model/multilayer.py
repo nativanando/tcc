@@ -79,8 +79,8 @@ class MultiLayer:
                                            self.dataset.iloc[i + 1]['Open-normalizado'])
 
     def realizaTreinamento(self):
-        self.trainer = BackpropTrainer(self.network, self.dataset_treino, verbose=True)
-        self.trainer.trainEpochs(epochs=1000)
+        self.trainer = BackpropTrainer(self.network, self.dataset_treino, learningrate=0.4, verbose=True)
+        self.trainer.trainEpochs(epochs=500)
         NetworkWriter.writeToFile(self.network, 'snapshot_redes/rede-feedforward-'+self.nome_empresa+'.xml')
 
     def testaRede(self):
@@ -103,6 +103,7 @@ class MultiLayer:
             rede = NetworkReader.readFrom('snapshot_redes/rede-feedforward-'+self.nome_empresa+'.xml')
             self.dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_calculados/'
                                   + self.nome_empresa + '_normalizado.txt',header=0)
+            print ('sadasda', max(self.dataset['Open-normalizado']))
         except IOError:
             print ("Erro ao abrir os arquivo da rede neural")
             return 0
@@ -129,11 +130,9 @@ class MultiLayer:
                              (1 - self.resultado_rede[i][0][0] ) * min(self.dataset['Open'])
             resultado_esperado = self.dataset_teste.iloc[i + 1]['Open']
             print ("resultado esperado: ",resultado_esperado)
-            print ("resultado rede", resultadorede)
+            print("%.2f" % resultadorede)
 
 if __name__ == '__main__':
     network = None
-    rna = MultiLayer(network, 8, 13, 1, "apple")
-    rna.adicionaDadosTreinamento()
-    rna.realizaTreinamento()
-    rna.testaRede()
+    rna = MultiLayer(network, 8, 13, 1, "microsoft")
+    rna.testarRedeEmpresa()

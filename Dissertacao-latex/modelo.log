@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  3 OCT 2017 21:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  7 OCT 2017 11:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2289,14 +2289,14 @@ Package xcolor Warning: Incompatible color definition on input line 21.
 File: ./Imagens/amazon_coletado.png Graphic file (type png)
 
 <use ./Imagens/amazon_coletado.png>
-Package pdftex.def Info: ./Imagens/amazon_coletado.png used on input line 31.
+Package pdftex.def Info: ./Imagens/amazon_coletado.png used on input line 33.
 (pdftex.def)             Requested size: 564.1175pt x 275.8642pt.
 
 <./Imagens/apple_coletado.png, id=827, 141.02974pt x 68.96623pt>
 File: ./Imagens/apple_coletado.png Graphic file (type png)
 
 <use ./Imagens/apple_coletado.png>
-Package pdftex.def Info: ./Imagens/apple_coletado.png used on input line 42.
+Package pdftex.def Info: ./Imagens/apple_coletado.png used on input line 44.
 (pdftex.def)             Requested size: 564.1175pt x 275.8642pt.
 
 
@@ -2306,7 +2306,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: ./Imagens/cisco_coletado.png Graphic file (type png)
 
 <use ./Imagens/cisco_coletado.png>
-Package pdftex.def Info: ./Imagens/cisco_coletado.png used on input line 50.
+Package pdftex.def Info: ./Imagens/cisco_coletado.png used on input line 52.
 (pdftex.def)             Requested size: 564.1175pt x 275.8642pt.
 
 
@@ -2316,7 +2316,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: ./Imagens/intel_coletado.png Graphic file (type png)
 
 <use ./Imagens/intel_coletado.png>
-Package pdftex.def Info: ./Imagens/intel_coletado.png used on input line 58.
+Package pdftex.def Info: ./Imagens/intel_coletado.png used on input line 60.
 (pdftex.def)             Requested size: 564.1175pt x 275.8642pt.
 
 
@@ -2326,7 +2326,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: ./Imagens/microsoft_coletado.png Graphic file (type png)
 
 <use ./Imagens/microsoft_coletado.png>
-Package pdftex.def Info: ./Imagens/microsoft_coletado.png used on input line 66
+Package pdftex.def Info: ./Imagens/microsoft_coletado.png used on input line 68
 .
 (pdftex.def)             Requested size: 564.1175pt x 275.8642pt.
 
@@ -2339,13 +2339,13 @@ t_coletado.png>] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
-Package xcolor Warning: Incompatible color definition on input line 81.
+Package xcolor Warning: Incompatible color definition on input line 83.
 
 
-Package xcolor Warning: Incompatible color definition on input line 81.
+Package xcolor Warning: Incompatible color definition on input line 83.
 
 
-Package xcolor Warning: Incompatible color definition on input line 81.
+Package xcolor Warning: Incompatible color definition on input line 83.
 
 (./src/media-movel.py
 
@@ -2466,13 +2466,13 @@ Package xcolor Warning: Incompatible color definition on input line 9.
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
-Package xcolor Warning: Incompatible color definition on input line 86.
+Package xcolor Warning: Incompatible color definition on input line 88.
 
 
-Package xcolor Warning: Incompatible color definition on input line 86.
+Package xcolor Warning: Incompatible color definition on input line 88.
 
 
-Package xcolor Warning: Incompatible color definition on input line 86.
+Package xcolor Warning: Incompatible color definition on input line 88.
 
 (./src/macd.py
 
@@ -2517,26 +2517,26 @@ Package xcolor Warning: Incompatible color definition on input line 3.
 
 Package xcolor Warning: Incompatible color definition on input line 3.
 
-) <./Imagens/dados_formatados.png, id=849, 81.6651pt x 50.51672pt>
+) [49
+
+] <./Imagens/dados_formatados.png, id=866, 81.6651pt x 50.51672pt>
 File: ./Imagens/dados_formatados.png Graphic file (type png)
 
 <use ./Imagens/dados_formatados.png>
-Package pdftex.def Info: ./Imagens/dados_formatados.png used on input line 91.
+Package pdftex.def Info: ./Imagens/dados_formatados.png used on input line 93.
 (pdftex.def)             Requested size: 40.83244pt x 25.25829pt.
- [49
-
-]
+ [50 <./Imagens/dados_formatados.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
-Package xcolor Warning: Incompatible color definition on input line 111.
+Package xcolor Warning: Incompatible color definition on input line 113.
 
 
-Package xcolor Warning: Incompatible color definition on input line 111.
+Package xcolor Warning: Incompatible color definition on input line 113.
 
 
-Package xcolor Warning: Incompatible color definition on input line 111.
+Package xcolor Warning: Incompatible color definition on input line 113.
 
 (./src/normalizador.py
 
@@ -2545,7 +2545,6 @@ Package xcolor Warning: Incompatible color definition on input line 1.
 
 Package xcolor Warning: Incompatible color definition on input line 1.
 
-[50 <./Imagens/dados_formatados.png>]
 
 Package xcolor Warning: Incompatible color definition on input line 2.
 
@@ -2598,13 +2597,13 @@ Package xcolor Warning: Incompatible color definition on input line 6.
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
-Package xcolor Warning: Incompatible color definition on input line 114.
+Package xcolor Warning: Incompatible color definition on input line 116.
 
 
-Package xcolor Warning: Incompatible color definition on input line 114.
+Package xcolor Warning: Incompatible color definition on input line 116.
 
 
-Package xcolor Warning: Incompatible color definition on input line 114.
+Package xcolor Warning: Incompatible color definition on input line 116.
 
 (./src/desnormalizador.py
 
@@ -2632,13 +2631,13 @@ Package xcolor Warning: Incompatible color definition on input line 3.
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
-Package xcolor Warning: Incompatible color definition on input line 118.
+Package xcolor Warning: Incompatible color definition on input line 120.
 
 
-Package xcolor Warning: Incompatible color definition on input line 118.
+Package xcolor Warning: Incompatible color definition on input line 120.
 
 
-Package xcolor Warning: Incompatible color definition on input line 118.
+Package xcolor Warning: Incompatible color definition on input line 120.
 
 (./src/normalizadorGrafico.py
 
@@ -3238,7 +3237,7 @@ File: ./Imagens/empresas_normalizado.png Graphic file (type png)
 
 <use ./Imagens/empresas_normalizado.png>
 Package pdftex.def Info: ./Imagens/empresas_normalizado.png used on input line 
-124.
+126.
 (pdftex.def)             Requested size: 564.1175pt x 275.8642pt.
 ) (./modelo.bbl [52 <./Imagens/empresas_normalizado.png>]
 bibitemlist
@@ -3310,7 +3309,7 @@ super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfxc1200.pfb>
-Output written on modelo.pdf (57 pages, 2227152 bytes).
+Output written on modelo.pdf (57 pages, 2226736 bytes).
 PDF statistics:
  1297 PDF objects out of 1440 (max. 8388607)
  1147 compressed objects within 12 object streams

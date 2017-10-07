@@ -124,7 +124,7 @@ A Figura 7 exemplifica a representação de um resultado não-linear proporciona
 \end{figure}
 
 \subsection{Redes de Camadas Recorrentes}
-Diferentemente da arquitetura de camadas simples adiante, a arquitetura de camadas recorrentes apresenta ao menos um laço de realimentação. A presença de realimentação de informação permite a criação de representações internas e dispositivos de memória capazes de processar e armazenar informações temporais e sinais seqüenciais. Em seu trabalho, \citeonline{haykin2000} cita um exemplo clássico de uma rede de camadas recorrentes, onde os neurônios em camada única alimentam seus sinais de saída novamente para as entradas de todos os neurônios.
+Diferentemente da arquitetura de camadas simples adiante, a arquitetura de camadas recorrentes apresenta ao menos um laço de realimentação. A presença de realimentação de informação permite a criação de representações internas e dispositivos de memória capazes de processar e armazenar informações temporais e sinais sequenciais. Em seu trabalho, \citeonline{haykin2000} cita um exemplo clássico de uma rede de camadas recorrentes, onde os neurônios em camada única alimentam seus sinais de saída novamente para as entradas de todos os neurônios.
 
 A arquitetura de uma RNA recorrente pode ser observada na Figura 8, onde as entradas são realimentadas através da saída. Após realizado esse processamento, a rede apresenta o resultado calculado.
 
@@ -192,14 +192,14 @@ Resultados com esta característica são reconhecidos por formar um "S", exempli
 \section{TREINAMENTO DE UMA REDE NEURAL ARTIFICIAL}\label{sec:rna-treinamento}
 Após determinar a arquitetura a ser utilizada pela RNA, a quantia de camadas, a função de ativação adequada ao trabalho a ser realizado, a rede neural deve adquirir conhecimento em relação aos dados aplicados sobre a mesma.
 
-O treinamento de uma RNA consiste em minimizar uma função de custo, através de um algoritmo, cujos valores iniciais são escolhidos aleatoriamente com o objetivo de facilitar a busca  pelo valor mínimo da função da amostra de treinamento, através de iterações. O treinamento pode ser interrompido de duas formas: Um limite de épocas estipulado para o treinamento ou um ponto de parada a partir de um critério de desempenho.
+O treinamento de uma RNA consiste em minimizar uma função de custo, através de um algoritmo, cujos valores iniciais são escolhidos aleatoriamente com o objetivo de facilitar a busca  pelo valor mínimo da função da amostra de treinamento, através de iterações. 
 
-Os critérios de desempenho típicos em um processo de treinamento, de uma determinada amostra de dados, são o Erro quadrático médio (EQM), Raiz do Erro Quadrático Médio (REQM) e o Erro Absoluto Médio (EAM) \cite{gambogi}. 
+O treinamento pode ser interrompido de duas formas: um limite de épocas estipulado para o treinamento ou um ponto de parada a partir de um critério de desempenho. Os critérios de desempenho típicos em um processo de treinamento, de uma determinada amostra de dados, são o Erro quadrático médio (EQM), Raiz do Erro Quadrático Médio (REQM) e o Erro Absoluto Médio (EAM) \cite{gambogi}. 
 
 \subsection{Processo de Aprendizagem}
 O processo de aprendizagem é considerado uma etapa de grande dificuldade em termos de análise de dados, porque a procura da solução adequada ocorre em um universo de soluções válidas de grande dimensão, onde a base de tomada de decisão serão os próprios dados treinados \cite{medeiros}.
  
-Para adquirir conhecimento, uma RNA requer um processo de inúmeras iterações e aprendizagem, absorvendo os conhecimentos sobre o comportamento e relacionamento dos dados a cada iteração e armazenando os ajustes realizados nos pesos sinápticos de cada neurônio \cite{neto}.
+Para adquirir conhecimento, uma RNA requer um processo de inúmeras iterações, absorvendo os conhecimentos sobre o comportamento e relacionamento dos dados a cada ciclo e armazenando os ajustes realizados nos pesos sinápticos de cada neurônio \cite{neto}.
 
 Segundo \citeonline{haykin2000}, o processo de aprendizagem de uma rede neural pode ser resumido a uma sequência de três passos a cada estímulo enviado a rede, são eles:
 
