@@ -67,6 +67,10 @@
 \contentsline {section}{\numberline {5.1}REALIZA\IeC {\c C}\IeC {\~A}O DA COLETA DE DADOS}{44}{section.5.1}
 \contentsline {section}{\numberline {5.2}EXPLORANDO O \textit {DATAFRAME}}{49}{section.5.2}
 \contentsline {section}{\numberline {5.3}NORMALIZANDO OS DADOS}{50}{section.5.3}
+\contentsline {section}{\numberline {5.4}DESENVOLVIMENTO DA REDE NEURAL ARTIFICIAL}{53}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}\textit {Script} para cria\IeC {\c c}\IeC {\~a}o de um modelo \textit {FeedForward}}{53}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Organiza\IeC {\c c}\IeC {\~a}o das camadas do modelo}{53}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Treinamento da rede}{55}{subsection.5.4.3}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{53}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{57}{section*.6}
