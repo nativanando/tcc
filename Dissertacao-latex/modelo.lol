@@ -13,3 +13,4 @@
 \contentsline {lstlisting}{\numberline {13}Conectando as camadas criadas na RNA}{54}{lstlisting.5.13}
 \contentsline {lstlisting}{\numberline {14}Constru\IeC {\c c}\IeC {\~a}o de uma base de dados para treinamento}{55}{lstlisting.5.14}
 \contentsline {lstlisting}{\numberline {15}M\IeC {\'e}todo de treinamento da RNA atrav\IeC {\'e}s do \textit {Backpropagation}}{56}{lstlisting.5.15}
+\contentsline {lstlisting}{\numberline {16}Estrutura do arquivo XML de uma RNA}{57}{lstlisting.5.16}

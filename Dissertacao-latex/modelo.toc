@@ -73,4 +73,4 @@
 \contentsline {subsection}{\numberline {5.4.3}Treinamento da rede}{55}{subsection.5.4.3}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{57}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{60}{section*.6}
