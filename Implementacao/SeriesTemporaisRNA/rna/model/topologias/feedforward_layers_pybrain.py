@@ -1,6 +1,5 @@
 from pybrain.structure import LinearLayer, SigmoidLayer
 
-
 class FeedForwardNetworkPyBrainLayers:
 
     def __init__(self, tamanho_camada_entrada, tamanho_camada_oculta, tamanho_camada_saida):
@@ -45,3 +44,11 @@ class FeedForwardNetworkPyBrainLayers:
                                            self.dataset.iloc[i]['movel_10-normalizado'], self.dataset.iloc[i]['MACD-normalizado']],
                                            self.dataset.iloc[i + 1]['Open-normalizado'])
         return self.dataset_treino
+
+def realizaTreinamento(self, rede, dataset_treino, epocas, nome_empresa):
+    from pybrain.supervised import BackpropTrainer
+    from pybrain.tools.customxml import NetworkWriter
+
+    treinamento = BackpropTrainer(rede, dataset_treino, learningrate=0.4, verbose=True)
+    treinamento.trainer.trainEpochs(epochs = epocas)
+    NetworkWriter.writeToFile(rede, 'snapshot_redes/rede-feedforward-' + nome_empresa + '.xml')

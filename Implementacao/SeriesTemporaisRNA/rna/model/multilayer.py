@@ -17,6 +17,8 @@ from pybrain.supervised import BackpropTrainer
 from pybrain.tools.customxml.networkwriter import NetworkWriter
 from pybrain.tools.customxml.networkreader import NetworkReader
 import pandas as pd
+import matplotlib.pyplot as plt
+
 
 class MultiLayer:
     def __init__(self, network, camada_entrada, camada_oculta, camada_saida, nome_empresa):
@@ -79,9 +81,15 @@ class MultiLayer:
                                            self.dataset.iloc[i + 1]['Open-normalizado'])
 
     def realizaTreinamento(self):
+        error = []
+        indice = []
         self.trainer = BackpropTrainer(self.network, self.dataset_treino, learningrate=0.4, verbose=True)
-        self.trainer.trainEpochs(epochs=500)
+        for i in range (1000):
+            erro_quadratico = self.trainer.train()
+            error.append(erro_quadratico)
+            indice.append(i)
         NetworkWriter.writeToFile(self.network, 'snapshot_redes/rede-feedforward-'+self.nome_empresa+'.xml')
+        self.plotaGraficoErro(indice, error)
 
     def testaRede(self):
         base_teste = SupervisedDataSet(8, 1)
@@ -132,7 +140,17 @@ class MultiLayer:
             print ("resultado esperado: ",resultado_esperado)
             print("%.2f" % resultadorede)
 
+    def plotaGraficoErro(self, indice, erro):
+        print (indice)
+        print (erro)
+        plt.plot(indice, erro)
+        plt.yscale('log')
+        plt.xlabel('Iterações')
+        plt.ylabel('Erro quadrático médio')
+        plt.grid(True)
+        plt.show()
+
 if __name__ == '__main__':
     network = None
-    rna = MultiLayer(network, 8, 13, 1, "microsoft")
+    rna = MultiLayer(network, 8, 13, 1, "apple")
     rna.testarRedeEmpresa()

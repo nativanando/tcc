@@ -12,3 +12,4 @@
 \contentsline {lstlisting}{\numberline {12}Inser\IeC {\c c}\IeC {\~a}o de camadas em um modelo de RNA}{54}{lstlisting.5.12}
 \contentsline {lstlisting}{\numberline {13}Conectando as camadas criadas na RNA}{54}{lstlisting.5.13}
 \contentsline {lstlisting}{\numberline {14}Constru\IeC {\c c}\IeC {\~a}o de uma base de dados para treinamento}{55}{lstlisting.5.14}
+\contentsline {lstlisting}{\numberline {15}M\IeC {\'e}todo de treinamento da RNA atrav\IeC {\'e}s do \textit {Backpropagation}}{56}{lstlisting.5.15}
