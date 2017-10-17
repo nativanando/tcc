@@ -152,5 +152,5 @@ class MultiLayer:
 
 if __name__ == '__main__':
     network = None
-    rna = MultiLayer(network, 8, 13, 1, "apple")
+    rna = MultiLayer(network, 8, 13, 1, "intel")
     rna.testarRedeEmpresa()

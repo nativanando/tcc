@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  13 OCT 2017 18:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  16 OCT 2017 19:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4000,13 +4000,13 @@ File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
-Package xcolor Warning: Incompatible color definition on input line 185.
+Package xcolor Warning: Incompatible color definition on input line 183.
 
 
-Package xcolor Warning: Incompatible color definition on input line 185.
+Package xcolor Warning: Incompatible color definition on input line 183.
 
 
-Package xcolor Warning: Incompatible color definition on input line 185.
+Package xcolor Warning: Incompatible color definition on input line 183.
 
 (./src/rede-feedforward-intel.xml
 
@@ -4576,7 +4576,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 225.
 Here is how much of TeX's memory you used:
  36308 strings out of 493105
  787429 string characters out of 6137072
- 1184098 words of memory out of 5000000
+ 1184169 words of memory out of 5000000
  38515 multiletter control sequences out of 15000+600000
  18411 words of font info for 52 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
@@ -4599,7 +4599,7 @@ super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfxc1200.pfb>
-Output written on modelo.pdf (64 pages, 2257705 bytes).
+Output written on modelo.pdf (64 pages, 2257811 bytes).
 PDF statistics:
  1483 PDF objects out of 1728 (max. 8388607)
  1324 compressed objects within 14 object streams

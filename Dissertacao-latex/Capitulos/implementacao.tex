@@ -6,7 +6,7 @@ Este capítulo tem como objetivo apresentar, de forma mais detalhada, todo o pro
 \section{REALIZAÇÃO DA COLETA DE DADOS}
 Tendo em vista as ferramentas necessárias para realizar à coleta das séries temporais que serão utilizadas para o treinamento e testes da RNA, foi desenvolvido um método de automatização de aquisição dos \textit{DataFrames} das ações que serão coletadas para a análise.
 
-Inicialmente, foi criada uma interface em Python que contém a assinatura do método que as classes das empresas deverão implementar. Após isso, foram criadas as classes para as respectivas empresas, definidas no seção 4.2. Para exemplificar o que está sendo exposto, o Código 3 demonstra, de forma mais intuituva, a implementação do atual procedimento.
+Inicialmente, foi criada uma interface em Python que contém a assinatura do método que as classes das empresas deverão implementar. Após isso, foram criadas as classes para as respectivas empresas, definidas no Seção 4.2. Para exemplificar o que está sendo exposto, o Código 3 demonstra, de forma mais intuituva, a implementação do atual procedimento.
 \codigoPython\
 \lstinputlisting[label=cod:exempla-coleta, caption=Implementação da interface Empresa em Python]{src/empresa.py}
 
@@ -23,7 +23,7 @@ passando quatro parâmetros, sendo eles:
 \item Data final da coleta.
 \end{enumerate}
 
-Após a realização da requisição, a API retorna um arquivo com as ações entre as respectivas datas, no formato especificado na seção 4.4.2, formando assim, o \textit{DataFrame} inicial das empresas. Este procedimento foi realizado para todas as empresas que são analisadas neste trabalho.
+Após a realização da requisição, a API retorna um arquivo com as ações entre as respectivas datas, no formato especificado na Seção 4.4.2, formando assim, o \textit{DataFrame} inicial das empresas. Este procedimento foi realizado para todas as empresas que são analisadas neste trabalho.
 
 Posteriormente, são analisadas as séries específicas de cada empresa, através de seus valores diários de abertura. O período coletado foi de 09/04/2001 a 31/08/2017.
 
@@ -130,9 +130,9 @@ Após a execução do Código 9, foi renderizado o Gráfico 7 que demonstra os v
 \end{grafico}
 
 \section{DESENVOLVIMENTO DA REDE NEURAL ARTIFICIAL}
-O ambiente de desenvolvimento do modelo de RNA proposto, baseou-se nas ferramentas definidas no capítulo anterior, sendo elas a linguagem de programação Python, em sua versão 3.6.0, e a biblioteca PyBrain. Esta Seção detalha todos os procedimentos realizados para a implementação do modelo desenvolvido, evidenciando aspectos gerais de como trabalhar com Python e PyBrain.
+O ambiente de desenvolvimento do modelo de RNA proposto baseou-se nas ferramentas definidas no capítulo anterior, sendo elas a linguagem de programação Python, em sua versão 3.6.0, e a biblioteca PyBrain. Esta Seção detalha todos os procedimentos realizados para a implementação do modelo desenvolvido, evidenciando aspectos gerais de como trabalhar com Python e PyBrain.
 \subsection{\textit{Script} para criação de um modelo \textit{FeedForward}}
-A implementação de uma RNA com a topologia \textit{FeedForward} foi construída através do módulo pybrain.structure.networks. O mesmo tem como objetivo, especificar como são tratados o fluxo dos dados de entrada da rede. O Código 10 determina a importação do módulo e a criação da topologia determinada.
+A implementação de uma RNA com a topologia \textit{FeedForward} foi construída através do módulo pybrain.structure.networks. O mesmo tem como objetivo, especificar como são tratados o fluxo dos dados de entrada da rede. O Código 10 demonstra a importação do módulo e a criação da topologia determinada.
 
 \lstinputlisting[language=Python, label=objeto-feedforward, caption=Construção de uma RNA com a estrutura \textit{FeedForward}]{src/FeedForward.py}
 
@@ -143,20 +143,20 @@ Após a implementação da topologia, faz-se necessário organizar suas camadas,
 
 Neste código são importados dois objetos do tipo \textit{Layer}, denominados \textit{LinearLayer} e \textit{SigmoidLayer}. A camada de entrada é composta pelo objeto \textit{LinearLayer}, onde os dados não sofrem nenhuma transformação, apenas transferindo-os para a camada posterior. A camada oculta é composta pelo objeto \textit{SigmoidLayer}, que implementa o cálculo da Equação (3.4) para os dados recebidos. Por fim, a camada oculta também é composta pelo objeto \textit{LinearLayer}, resultando na resposta da rede.   
 
-Realizada a etapa de especificação das camadas e suas respectivas funcionalidades, é necessário adicioná-las efetivamente ao modelo de rede. Este procedimento deve ser feito por meio dos métodos \textit{addInputModule}, \textit{addModule} e \textit{addOutputModule}. O Código 12 demonstra a função desenvolvida para a inserção das camadas.
+Realizada a etapa de especificação das camadas e suas respectivas funcionalidades, é necessário adicioná-las, efetivamente, ao modelo de rede. Este procedimento deve ser feito por meio dos métodos \textit{addInputModule}, \textit{addModule} e \textit{addOutputModule}. O Código 12 demonstra a função desenvolvida para a inserção das camadas.
 
 \lstinputlisting[language=Python, label=feedforward-layer, caption=Inserção de camadas em um modelo de RNA]{src/add_modulos.py}
 
-Observando este código, pode-se notar que o mesmo recebe um modelo de rede como parâmetro, faz a inserção através dos respectivos métodos citados anteriormente, e retorna a rede com a nova configuração.
+Observando este código, pode-se notar que o mesmo recebe um modelo de rede como parâmetro, faz a inserção através dos respectivos métodos citados anteriormente e retorna a rede com a nova configuração.
 
 A partir disto, a rede precisa identificar quais são as distribuições de conexões referente às camadas inseridas, para determinar o fluxo de trabalho dos dados. Este procedimento é realizado através do objeto \textit{FullConnection}, que determina a ligação entre as camadas. Como o modelo será composto por 3 camadas, faz-se necessário realizar duas conexões, uma entre a camada de entrada e a camada oculta e outra entre a camada oculta e a camada de saída. No Código 13 é demonstrado o método desenvolvido para criar esta funcionalidade.
 
 \lstinputlisting[language=Python, label=feedforward-connection, caption=Conectando as camadas criadas na RNA]{src/conexoes-camadas.py}
 
-Concluída a fase de inserção de conexões, apresentada no Código 13, a rede foi iniciada com pesos aleatórios, utilizando o método \textit{sortModules}.
+Concluída a fase de inserção das conexões, apresentada no Código 13, faz-se necessário inserir os pesos iniciais da rede. Este procedimento é executado através do método \textit{sortModules}, disponbilizado pela biblioteca PyBrain, que adiciona, de forma aleatória, os pesos em um intervalo [-2,2].
 
 \subsection{Treinamento da rede}
-Para o desenvolvimento do treinamento, a biblioteca PyBrain utiliza dois módulos principais, sendo eles o pybrain.datasets, que é responsável por especificar qual o modelo de aprendizado que a rede trabalha, e, para o caso do aprendizado supervisionado, o módulo pybrain.supervised, que contém os algoritmos utilizados para aprendizagem supervisionada.
+Para o desenvolvimento do treinamento a biblioteca PyBrain utiliza dois módulos principais, sendo eles o pybrain.datasets, que é responsável por especificar qual o modelo de aprendizado que a rede trabalha, e, para o caso do aprendizado supervisionado, o módulo pybrain.supervised, que contém os respectivos algoritmos para a presente técnica.
 
 Para mapear uma base de dados de aprendizagem supervisionada com as características desejadas, é necessário utilizar o método \textit{SupervisedDataSet}, onde o mesmo recebe como parâmetro a quantidade de entradas referente à base de dados utilizada e a quantidade de saídas desejadas. Para o presente trabalho, foi instanciada uma base de dados de treino para 8 entradas e 1 saída, seguindo as especificações da Seção 4.5.1.
 
@@ -166,24 +166,22 @@ O Código 14 expõe o desenvolvimento do método que realiza a criação da base
 
 Observando este código, pode-se notar que as linhas 2 e 3 são responsáveis por importar as dependências das bibliotecas utilizadas. Entre as linhas 5 e 9, é realizada a leitura do arquivo da empresa que foi transferida para a função via parâmetro (nome\_empresa). A linha 11 cria o objeto \textit{SupervisedDataSet} com suas devidas configurações, enquanto a linha 13 consome a base de treino a partir do \textit{DataFrame} sem seus oito últimos dias, que são utilizados para testes. Já a linha 14 inicia o processo de inserção das variáveis do \textit{DataFrame} para a nova base, através do método \textit{addSample}.
 
-Também é possível notar, em relação ao \textit{DataFrame}, que são utilizados os dados normalizados para consumir a base de treinamento. Por fim, a distribuição da camada de saída, encontrada na linha 23, está sendo carregada pelo valor de abertura no dia posterior ao estudado, pelo índice [i + 1], caracterizando de forma correta a base de treino para o problema proposto.
+Também é possível notar, em relação ao \textit{DataFrame}, que são utilizados os dados normalizados para consumir a base de treinamento. Por fim, a distribuição da camada de saída, encontrada na linha 23, está sendo carregada pelo valor de abertura no dia posterior ao estudado, pelo índice [i + 1], caracterizando, de forma correta, a base de treino para o problema proposto.
 
 Após concluído os procedimentos anteriores, pode-se iniciar, efetivamente, o treinamento da RNA. É importante ressaltar que, neste trabalho, o treino foi executado através do algoritmo \textit{Backpropagation}. O Código 15 demostra, de forma simples, como trabalhar com o algoritmo através da biblioteca PyBrain.
 
 \lstinputlisting[language=Python, label=base-treino-cod, caption=Método de treinamento da RNA através do \textit{Backpropagation}]{src/realizaTreinamento.py}
 
-A função implementada no Código 15, inicia o treino a partir da chamada ao objeto \textit{BackPropTrainer}. Este, por sua vez, recebe alguns parâmetros no momento de sua criação, sendo eles: a rede neural em sí, a base de treinamento e a taxa de aprendizagem (\textit{learning rate}), detalhada na Seção 3.5.1. Segundo \citeonline{haykin2000}, um valor recomendado para o parâmetro \textit{learning rate} é de 0.4 (40\%). No presente trabalho, foi utilizada está taxa como referência para o treinamento, evidenciada na linha 5 do Código 15. Já o parâmetro \textit{verbose}, auxilia no acompanhamento do erro quadrático médio, durante o processo de treinamento, guardando as respectivas variações em um vetor unidimensional.
+A função implementada no Código 15, inicia o processo de treino a partir da chamada ao objeto \textit{BackPropTrainer}. Este, por sua vez, recebe alguns parâmetros no momento de sua criação, sendo eles: a rede neural em sí, a base de treinamento e a taxa de aprendizagem (\textit{learning rate}), detalhada na Seção 3.5.1. Segundo \citeonline{haykin2000}, um valor recomendado para o parâmetro \textit{learning rate} é de 0.4 (40\%). No presente trabalho, foi utilizada esta taxa como referência para o treinamento, evidenciada na linha 5 do Código 15. Já o parâmetro \textit{verbose}, auxilia o acompanhamento do erro quadrático médio durante o processo de treinamento, guardando as respectivas variações em um vetor unidimensional.
 
-A partir disto, faz-se necessário realizar a chamada ao método \textit{train}, o mesmo recebe um valor responsável por limitar a quantidade de ciclos (iterações) na qual o modelo é treinado, através da variável \textit{epochs}.
+A partir disto, faz-se necessário realizar a chamada ao método \textit{train}. O mesmo recebe um valor responsável por limitar a quantidade de ciclos (iterações) na qual o modelo é treinado, através da variável \textit{epochs}.
 
-O objeto \textit{NetworkWriter}, encontrado na linha 7, pertence ao pacote tools.customxml, implementando pela biblioteca, que utiliza uma classe que pode receber o estado atual de uma rede treinada e gravá-la em um arquivo \textit{eXtensible Markup Language} (XML). Segundo \cite{xml}, o XML foi criado para gerar linguagens de notação para necessidades especiais, de fácil manuseio e portabilidade de sua estrutura.
-
-Portanto, tendo em vista a possibilidade de exportação da RNA para um arquivo XML, algumas possibilidades são oferecidas, tais como: retreinar a mesma de forma simplificada e testá-la quando desejado, sem a necessidade de realizar o processo de treinamento novamente.
+O objeto \textit{NetworkWriter}, encontrado na linha 7, pertence ao pacote tools.customxml, implementando pela biblioteca, que utiliza uma classe que pode receber o estado atual de uma rede treinada e gravá-la em um arquivo \textit{eXtensible Markup Language} (XML). Segundo \citeonline{xml}, o XML foi criado para gerar linguagens de notação para necessidades especiais, de fácil manuseio e portabilidade de sua estrutura. Portanto, tendo em vista a capacidade de exportação da RNA para um arquivo XML, algumas possibilidades são oferecidas, tais como: retreinar a mesma, de forma simplificada, e testá-la quando desejado, sem a necessidade de realizar o processo de treinamento novamente.
 
 A estrutura do arquivo gerado, levando em consideração a exportação realizada pelo Código 15, é demonstrada detalhadamente no Código 16.
 
 \lstinputlisting[language=XML, label=base-treino-cod, caption=Estrutura do arquivo XML de uma RNA]{src/rede-feedforward-intel.xml}
 
-Observando o Código 16, pode-se notar que todas configurações executadas para construir a rede são armazenadas dentro de suas respectivas características, denominadas \textit{tags}. As \textit{tags} são padronizadas para que, no momento de leitura da RNA, através do objeto \textit{networkReader}, todo o ambiente seja importado de forma correta. Analisando as linhas 3, 6 e 14, por exemplo, é possível notar alguns dos parâmetros inseridos anteriormente na RNA. Além disso, também fica evidente a presença dos pesos sinápticos, entre a camada de entrada e a camada oculta, e, entre a camada oculta e a camada de saída, que são fundamentais para salvar um determinado estado da rede.
+Observando o Código 16, pode-se notar que todas as configurações executadas para construir a rede são armazenadas dentro de suas respectivas características, denominadas \textit{tags}. As \textit{tags} são padronizadas para que, no momento de leitura da RNA, através do objeto \textit{networkReader}, todo o ambiente seja importado de forma correta. Analisando as linhas 3, 6 e 14, por exemplo, é possível notar alguns dos parâmetros inseridos anteriormente na RNA. Além disso, também fica evidente a presença dos pesos sinápticos, entre a camada de entrada e a camada oculta, e, entre a camada oculta e a camada de saída, que são fundamentais para salvar um determinado estado da rede.
 
-Por fim, tendo em vista o refinamento de todas as bases de dados coletadas, e, da implementação do modelo da RNA, todos os procedimentos necessários para realizar os testes foram desenvolvidos, com base na teoria e especificações dos capítulos anteriores. 
+Por fim, tendo em vista o refinamento de todas as bases de dados coletadas e da implementação do modelo da RNA, todos os procedimentos necessários para realizar os testes foram desenvolvidos, com base na teoria e especificações dos capítulos anteriores. 
