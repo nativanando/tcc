@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  18 OCT 2017 23:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  18 OCT 2017 23:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1629,11 +1629,11 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
-) [10]
-(./Capitulos/revisa_bib.tex [11] [12
+)
+(./Capitulos/revisa_bib.tex [10] [11] [12
 
-]) (./Capitulos/fundamento_teorico.tex
-[13] <./Imagens/cerebro.png, id=371, 182.6022pt x 66.7293pt>
+]) (./Capitulos/fundamento_teorico.tex [13] <./Imagens/cerebro.png, id=371, 182
+.6022pt x 66.7293pt>
 File: ./Imagens/cerebro.png Graphic file (type png)
 
 <use ./Imagens/cerebro.png>
@@ -4616,7 +4616,7 @@ super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfxc1200.pfb>
-Output written on modelo.pdf (66 pages, 2288824 bytes).
+Output written on modelo.pdf (66 pages, 2288774 bytes).
 PDF statistics:
  1512 PDF objects out of 1728 (max. 8388607)
  1349 compressed objects within 14 object streams
