@@ -71,6 +71,10 @@
 \contentsline {subsection}{\numberline {5.4.1}\textit {Script} para cria\IeC {\c c}\IeC {\~a}o de um modelo \textit {FeedForward}}{53}{subsection.5.4.1}
 \contentsline {subsection}{\numberline {5.4.2}Organiza\IeC {\c c}\IeC {\~a}o das camadas do modelo}{53}{subsection.5.4.2}
 \contentsline {subsection}{\numberline {5.4.3}Treinamento da rede}{55}{subsection.5.4.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {AN\IeC {\'A}LISE DOS RESULTADOS}}{60}{chapter.6}
+\contentsline {section}{\numberline {6.1}AN\IeC {\'A}LISE DAS S\IeC {\'E}RIES UTILIZADAS}{60}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}An\IeC {\'a}lise do modelo da RNA: Intel Corporation}{60}{subsection.6.1.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{60}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{62}{section*.6}
