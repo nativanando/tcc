@@ -88,7 +88,7 @@ class MultiLayer:
             erro_quadratico = self.trainer.train()
             error.append(erro_quadratico)
             indice.append(i)
-        NetworkWriter.writeToFile(self.network, 'snapshot_redes/rede-feedforward-'+self.nome_empresa+'_erro.xml')
+        NetworkWriter.writeToFile(self.network, 'snapshot_redes/rede-feedforward-'+self.nome_empresa+'_erro_escrita.xml')
         self.plotaGraficoErro(indice, error)
 
     def testaRede(self):
@@ -147,7 +147,6 @@ class MultiLayer:
         plt.yscale('log')
         plt.xlabel('Iterações')
         plt.ylabel('Erro quadrático médio')
-        plt.grid(True)
         plt.show()
 
 if __name__ == '__main__':
