@@ -75,7 +75,8 @@
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {AN\IeC {\'A}LISE DOS RESULTADOS}}{60}{chapter.6}
 \contentsline {section}{\numberline {6.1}AN\IeC {\'A}LISE DAS S\IeC {\'E}RIES UTILIZADAS}{60}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}An\IeC {\'a}lise do modelo da RNA: Intel Corporation}{60}{subsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.1.1}Corporation: Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{60}{subsubsection.6.1.1.1}
+\contentsline {subsubsection}{\numberline {6.1.1.1}Intel Corporation: Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{60}{subsubsection.6.1.1.1}
+\contentsline {subsubsection}{\numberline {6.1.1.2}Intel Corporation: Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{63}{subsubsection.6.1.1.2}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{63}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{64}{section*.6}

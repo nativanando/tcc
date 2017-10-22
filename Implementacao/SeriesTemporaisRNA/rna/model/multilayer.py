@@ -18,6 +18,7 @@ from pybrain.tools.customxml.networkwriter import NetworkWriter
 from pybrain.tools.customxml.networkreader import NetworkReader
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 
 
 class MultiLayer:
@@ -149,7 +150,33 @@ class MultiLayer:
         plt.ylabel('Erro quadrático médio')
         plt.show()
 
+    def plotaGraficoResultado(self):
+        try:
+            dados = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/resultado_series/'
+                                       + self.nome_empresa + '_predicao.txt', header=0)
+            print(dados)
+        except IOError:
+            print("Erro ao abrir o arquivo de resultados")
+            return 0
+
+        dados['Data'] = pd.to_datetime(dados['Data'], format="%d-%m-%Y")
+        linha = dados['Data']
+        coluna = dados['Abertura']
+        coluna1 = dados['Predição']
+        fig, ax = plt.subplots()
+        ax.plot(linha, coluna, 'go')  # green bolinha
+        ax.plot(linha, coluna1, 'ro')  # green bolinha
+        fig.set_size_inches(12, 8, forward=True)
+        plt.legend(['Valor de abertura', 'Predição'])
+        ax.plot(linha, coluna, 'k:', color='orange')  # linha pontilha orange
+        ax.plot(linha, coluna1, 'k:', color='blue')  # linha pontilha orange
+        plt.grid(True)
+        plt.show()
+        plt.close()
+
+
+
 if __name__ == '__main__':
     network = None
     rna = MultiLayer(network, 8, 13, 1, "intel")
-    rna.testarRedeEmpresa()
+    rna.plotaGraficoResultado()
