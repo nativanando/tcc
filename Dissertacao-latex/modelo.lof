@@ -1,14 +1,14 @@
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o de um neur\IeC {\^o}nio biol\IeC {\'o}gico}}{14}{figure.3.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o de um neur\IeC {\^o}nio artificial}}{15}{figure.3.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o gr\IeC {\'a}fica de uma Rede Neural Artificial}}{16}{figure.3.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o de uma Rede Neural Artificial com camada \IeC {\'u}nica}}{17}{figure.3.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o de resultados linearmente separ\IeC {\'a}veis}}{18}{figure.3.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Rede Neural Artificial com m\IeC {\'u}ltiplas camadas}}{19}{figure.3.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Classifica\IeC {\c c}\IeC {\~a}o de resultados n\IeC {\~a}o-lineares}}{19}{figure.3.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Rede Neural Artificial recorrente}}{20}{figure.3.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Comportamento de fun\IeC {\c c}\IeC {\~o}es com \textit {overfitting} e \textit {underfitting}}}{28}{figure.3.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o dos dados coletados pela biblioteca pandas}}{36}{figure.4.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Modelo de arquitetura proposta utilizando o algoritmo \textit {backpropagation}}}{39}{figure.4.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Arquitetura da biblioteca PyBrain aplicada na estrutura do trabalho}}{41}{figure.4.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Exemplo do \textit {DataFrame} com os dados atualizados}}{50}{figure.5.13}
+\contentsline {figure}{\numberline {1}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o de um neur\IeC {\^o}nio biol\IeC {\'o}gico}}{15}{figure.3.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o de um neur\IeC {\^o}nio artificial}}{16}{figure.3.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o gr\IeC {\'a}fica de uma Rede Neural Artificial}}{17}{figure.3.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o de uma Rede Neural Artificial com camada \IeC {\'u}nica}}{18}{figure.3.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o de resultados linearmente separ\IeC {\'a}veis}}{19}{figure.3.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Rede Neural Artificial com m\IeC {\'u}ltiplas camadas}}{20}{figure.3.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Classifica\IeC {\c c}\IeC {\~a}o de resultados n\IeC {\~a}o-lineares}}{20}{figure.3.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Rede Neural Artificial recorrente}}{21}{figure.3.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Comportamento de fun\IeC {\c c}\IeC {\~o}es com \textit {overfitting} e \textit {underfitting}}}{29}{figure.3.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o dos dados coletados pela biblioteca pandas}}{37}{figure.4.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Modelo de arquitetura proposta utilizando o algoritmo \textit {backpropagation}}}{40}{figure.4.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Arquitetura da biblioteca PyBrain aplicada na estrutura do trabalho}}{42}{figure.4.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Exemplo do \textit {DataFrame} com os dados atualizados}}{51}{figure.5.13}

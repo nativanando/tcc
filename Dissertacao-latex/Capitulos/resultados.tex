@@ -77,3 +77,47 @@ Analisando a Tabela 2, pode-se observar que os resultados obtidos foram signific
 Pelo gráfico também é possível observar como os resultados são próximos aos esperados. Os valores de abertura, nos respectivos dias testados, são representados por um ponto verde. Já os resultados obtidos pela rede são caracterizados pelo ponto vermelho. 
 
 \subsubsection{Intel Corporation: Treinamento com 1000 Iterações}	
+Para comparar com a simulação anterior, foi realizado um teste com 1000 épocas de treinamento, visando alcançar um resultado mais preciso e com o objetivo de validar se o aumento na quantidade de iterações, no processo de treinamento, melhoram os resultados retornados pela rede. A configuração de treinamento foi de 1000 iterações x 4117 linhas, onde as linhas são a quantidade de registros do período de testes. Portanto, o modelo foi exposto e calculado por um total de 4.117.000 exemplos. O Gráfico 10 demonstra, de acordo com a quantidade de ciclos, a variação do EQM.
+\begin{grafico}[h]
+	\centering
+	\fbox{\includegraphics[width=1\textwidth]{erro_intel_1000iteracoes}}
+	\caption{Decaimento do EQM no treinamento da rede}
+	\fonte{Elaborado pelo autor}
+	\label{lingua}
+\end{grafico}
+
+O Gráfico 10 ilustra a variação dos resultados obtidos. O EQM iniciou-se, na primeira iteração, com um erro percentual de 0.00664064049629 e, após o término das 1000 épocas de treinamento, concluí-se com um erro percentual de 8.7943563121853531.$10^{-05}$. Analisando o gráfico, pode-se observar que o erro obteve uma queda constante até 200 iterações, enquanto que, entre as iterações de número 200 até a de número 400, manteve o padrão com valores aproximados. Os últimos 600 ciclos mantiveram um decaimento mínimo do EQM.
+
+Tendo em vista a simulação anterior, fica claro que a queda brusca e rápida aconteceria, pois a base de dados utilizada é a mesma, porém, com um número maior de iterações, é possível observar que o EQM obteve resultados mais baixos em relação ao treino anterior.
+
+O período para realizar os testes foi o mesmo utilizado na Tabela 1. Os dados foram devidamente refinados e normalizados e, a partir disto, foram ativados na rede. Os resultados obtidos são demonstrados na Tabela 3.
+\clearpage
+\begin{table}[h]
+\centering
+\caption{Resultados da predição realizada nos dados utilizados pela rede}
+\vspace{0.5cm}
+\begin{tabular}{>{\centering\arraybackslash}m{3cm} >{\centering\arraybackslash}m{3cm} >{\centering\arraybackslash}m{3cm} >{\centering\arraybackslash}m{3cm}}
+\toprule
+Data    & Valor esperado   & Resultado    & Erro (\%)\\
+\midrule
+23/08/2017 & 34.54 & 34.67 & 0.376\\
+24/08/2017 & 34.70 & 34.64 & 0.172\\
+25/08/2017 & 34.82 & 34.71 & 0.315\\
+28/08/2017 & 34.78 & 34.68 & 0.287\\
+29/08/2017 & 34.51 & 34.65 & 0.405\\
+30/08/2017 & 34.75 & 34.70 & 0.143\\
+31/08/2017 & 34.94 & 34.84 & 0.286\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Analisando a Tabela 3, pode-se observar que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.50\%, se aproximando consideravelmente dos valores reais. Porém, a média de todo o período analisado obteve um erro de 0.28\%, superior ao treinamento anterior. O Gráfico 10 representa, de maneira ilustrativa, os resultados da série.
+\begin{grafico}[h]
+	\centering
+	\fbox{\includegraphics[width=1\textwidth]{predicao_intel_1000}}
+	\caption{Distribuição dos dados resultantes da RNA e seus valores esperados}
+	\fonte{Elaborado pelo autor}
+	\label{lingua}
+\end{grafico}
+
+Apesar da diferença do erro percentual relativo entre os dois cenários ser de apenas 8\%, foi encontrada uma melhor parâmetrização para o presente modelo de dados utilizado em 200 iterações. Sendo assim, chega-se a definição que nem sempre um número maior de ciclos de treinamento aumentam a precisão da RNA. Neste caso, a rede sofreu uma convergência do EQM em torno de 200 iteraçoes, este detalhe pode ser observado visualizando o comportamento dos Gráficos 8 e 10. Dessa forma, as iterações posteriores propagaram o erro de forma desnecessária, alterando assim os pesos sinápticos dos neurônios e, automaticamente, causando uma maior dispersão nos resultados. Este processo ocorrido na segunda simulação, na literatura, é denominado \textit{Overtraining}, detalhado no Capítulo 3.

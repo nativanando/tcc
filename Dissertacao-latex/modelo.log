@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  22 OCT 2017 16:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  22 OCT 2017 22:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1520,6 +1520,12 @@ LaTeX Warning: Label `base-treino-cod' multiply defined.
 
 LaTeX Warning: Label `lingua' multiply defined.
 
+
+LaTeX Warning: Label `lingua' multiply defined.
+
+
+LaTeX Warning: Label `lingua' multiply defined.
+
 )
 \openout1 = `modelo.aux'.
 
@@ -1628,11 +1634,11 @@ l.128
 
 ]) (./modelo.toc [6
 
-]) [7]
-(./Capitulos/introducao.tex [8
+]) [7] [8]
+(./Capitulos/introducao.tex [9
 
 
-] [9]
+] [10]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -1641,67 +1647,67 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
 )
-(./Capitulos/revisa_bib.tex [10] [11] [12
+(./Capitulos/revisa_bib.tex [11] [12] [13
 
-]) (./Capitulos/fundamento_teorico.tex [13] <./Imagens/cerebro.png, id=375, 182
+]) (./Capitulos/fundamento_teorico.tex [14] <./Imagens/cerebro.png, id=385, 182
 .6022pt x 66.7293pt>
 File: ./Imagens/cerebro.png Graphic file (type png)
 
 <use ./Imagens/cerebro.png>
 Package pdftex.def Info: ./Imagens/cerebro.png used on input line 20.
 (pdftex.def)             Requested size: 273.00278pt x 99.76888pt.
- [14
+ [15
 
  <./Imagens/cerebro.png>]
-<./Imagens/neuronio.png, id=392, 263.5446pt x 147.9126pt>
+<./Imagens/neuronio.png, id=402, 263.5446pt x 147.9126pt>
 File: ./Imagens/neuronio.png Graphic file (type png)
 
 <use ./Imagens/neuronio.png>
 Package pdftex.def Info: ./Imagens/neuronio.png used on input line 35.
 (pdftex.def)             Requested size: 364.00139pt x 204.30241pt.
- [15 <./Imagens/neuronio.png>]
-<./Imagens/RNA.png, id=414, 117.0774pt x 149.5989pt>
+ [16 <./Imagens/neuronio.png>]
+<./Imagens/RNA.png, id=424, 117.0774pt x 149.5989pt>
 File: ./Imagens/RNA.png Graphic file (type png)
  <use ./Imagens/RNA.png>
 Package pdftex.def Info: ./Imagens/RNA.png used on input line 57.
 (pdftex.def)             Requested size: 227.52824pt x 235.55559pt.
 
-[16 <./Imagens/RNA.png>]
-<./Imagens/camadaunica.png, id=432, 192.4791pt x 126.4725pt>
+[17 <./Imagens/RNA.png>]
+<./Imagens/camadaunica.png, id=442, 192.4791pt x 126.4725pt>
 File: ./Imagens/camadaunica.png Graphic file (type png)
 
 <use ./Imagens/camadaunica.png>
 Package pdftex.def Info: ./Imagens/camadaunica.png used on input line 81.
 (pdftex.def)             Requested size: 273.00278pt x 179.38956pt.
- [17 <./Imagens/camadaunica.png>]
-<./Imagens/separavel.png, id=440, 409.53pt x 360.34625pt>
+ [18 <./Imagens/camadaunica.png>]
+<./Imagens/separavel.png, id=451, 409.53pt x 360.34625pt>
 File: ./Imagens/separavel.png Graphic file (type png)
 
 <use ./Imagens/separavel.png>
 Package pdftex.def Info: ./Imagens/separavel.png used on input line 91.
 (pdftex.def)             Requested size: 227.5pt x 200.18147pt.
 
-<./Imagens/multicamada.png, id=451, 238.0092pt x 119.2455pt>
+<./Imagens/multicamada.png, id=462, 238.0092pt x 119.2455pt>
 File: ./Imagens/multicamada.png Graphic file (type png)
 
 <use ./Imagens/multicamada.png>
 Package pdftex.def Info: ./Imagens/multicamada.png used on input line 110.
 (pdftex.def)             Requested size: 409.49722pt x 205.16919pt.
- [18 <./Imagens/separavel.png>]
-<./Imagens/naolinear.png, id=463, 417.56pt x 380.42125pt>
+ [19 <./Imagens/separavel.png>]
+<./Imagens/naolinear.png, id=473, 417.56pt x 380.42125pt>
 File: ./Imagens/naolinear.png Graphic file (type png)
 
 <use ./Imagens/naolinear.png>
 Package pdftex.def Info: ./Imagens/naolinear.png used on input line 120.
 (pdftex.def)             Requested size: 227.5pt x 207.27031pt.
- [19 <./Imagens/multicamada.png> <./Imagens/naolinear.png>] <./Imagens/recorren
-te.png, id=476, 237.2865pt x 165.4983pt>
+ [20 <./Imagens/multicamada.png> <./Imagens/naolinear.png>] <./Imagens/recorren
+te.png, id=486, 237.2865pt x 165.4983pt>
 File: ./Imagens/recorrente.png Graphic file (type png)
 
 <use ./Imagens/recorrente.png>
 Package pdftex.def Info: ./Imagens/recorrente.png used on input line 133.
 (pdftex.def)             Requested size: 409.49722pt x 285.61363pt.
- [20 <./Imagens/recorrente.png>] [21]
+ [21 <./Imagens/recorrente.png>] [22]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
@@ -1745,23 +1751,23 @@ Package xcolor Warning: Incompatible color definition on input line 5.
 
 Package xcolor Warning: Incompatible color definition on input line 5.
 
-) <./Imagens/sigmoide.png, id=513, 411.2163pt x 304.9794pt>
+) <./Imagens/sigmoide.png, id=523, 411.2163pt x 304.9794pt>
 File: ./Imagens/sigmoide.png Graphic file (type png)
 
 <use ./Imagens/sigmoide.png>
 Package pdftex.def Info: ./Imagens/sigmoide.png used on input line 185.
 (pdftex.def)             Requested size: 364.02365pt x 235.55617pt.
- [22 <./Imagens/sigmoide.png>] [23] [24] [25]
-[26] [27] <./Imagens/overfitting.png, id=604, 592.614pt x 273.1806pt>
+ [23 <./Imagens/sigmoide.png>] [24] [25] [26]
+[27] [28] <./Imagens/overfitting.png, id=614, 592.614pt x 273.1806pt>
 File: ./Imagens/overfitting.png Graphic file (type png)
 
 <use ./Imagens/overfitting.png>
 Package pdftex.def Info: ./Imagens/overfitting.png used on input line 302.
 (pdftex.def)             Requested size: 409.49722pt x 188.77408pt.
- [28 <./Imagens/overfitting.png>] [29])
-(./Capitulos/materiais_metodo.tex [30] [31] [32
+ [29 <./Imagens/overfitting.png>] [30])
+(./Capitulos/materiais_metodo.tex [31] [32] [33
 
-] [33] [34]
+] [34] [35]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
@@ -1877,7 +1883,7 @@ Package xcolor Warning: Incompatible color definition on input line 8.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
-) <./Imagens/dados-pandas.png, id=699, 487.8225pt x 707.64375pt>
+) <./Imagens/dados-pandas.png, id=710, 487.8225pt x 707.64375pt>
 File: ./Imagens/dados-pandas.png Graphic file (type png)
 
 <use ./Imagens/dados-pandas.png>
@@ -1887,28 +1893,28 @@ Package pdftex.def Info: ./Imagens/dados-pandas.png used on input line 85.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[35]
+[36]
 Overfull \hbox (3.20535pt too wide) in paragraph at lines 94--95
 []\T1/cmr/m/n/12 A API tra-ba-lha com um li-mite ini-cial para a co-leta das aç
 ões, a par-tir de 03/05/2001
  []
 
-[36 <./Imagens/dados-pandas.png>] [37] [38]
-<./Imagens/arquitetura-rna.jpg, id=760, 98.79309pt x 74.07675pt>
+[37 <./Imagens/dados-pandas.png>] [38] [39]
+<./Imagens/arquitetura-rna.jpg, id=770, 98.79309pt x 74.07675pt>
 File: ./Imagens/arquitetura-rna.jpg Graphic file (type jpg)
 
 <use ./Imagens/arquitetura-rna.jpg>
 Package pdftex.def Info: ./Imagens/arquitetura-rna.jpg used on input line 159.
 (pdftex.def)             Requested size: 49.39641pt x 37.03828pt.
- [39 <./Imagens/arquitetura-rna.jpg>]
-[40] <./Imagens/pybrain8.jpeg, id=779, 84.14293pt x 72.57973pt>
+ [40 <./Imagens/arquitetura-rna.jpg>]
+[41] <./Imagens/pybrain8.jpeg, id=789, 84.14293pt x 72.57973pt>
 File: ./Imagens/pybrain8.jpeg Graphic file (type jpg)
 
 <use ./Imagens/pybrain8.jpeg>
 Package pdftex.def Info: ./Imagens/pybrain8.jpeg used on input line 194.
 (pdftex.def)             Requested size: 42.07135pt x 36.28976pt.
- [41 <./Imagens/pybrain8.jpeg>] [42])
-(./Capitulos/implementacao.tex [43]
+ [42 <./Imagens/pybrain8.jpeg>] [43])
+(./Capitulos/implementacao.tex [44]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
@@ -2026,7 +2032,7 @@ Package xcolor Warning: Incompatible color definition on input line 18.
 
 Package xcolor Warning: Incompatible color definition on input line 19.
 
-) [44
+) [45
 
 ] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
@@ -2305,14 +2311,14 @@ Package xcolor Warning: Incompatible color definition on input line 21.
 
 Package xcolor Warning: Incompatible color definition on input line 21.
 
-) [45] <./Imagens/amazon_coletado.png, id=860, 141.02974pt x 68.96623pt>
+) [46] <./Imagens/amazon_coletado.png, id=870, 141.02974pt x 68.96623pt>
 File: ./Imagens/amazon_coletado.png Graphic file (type png)
 
 <use ./Imagens/amazon_coletado.png>
 Package pdftex.def Info: ./Imagens/amazon_coletado.png used on input line 33.
 (pdftex.def)             Requested size: 564.1175pt x 275.8642pt.
 
-<./Imagens/apple_coletado.png, id=861, 141.02974pt x 68.96623pt>
+<./Imagens/apple_coletado.png, id=871, 141.02974pt x 68.96623pt>
 File: ./Imagens/apple_coletado.png Graphic file (type png)
 
 <use ./Imagens/apple_coletado.png>
@@ -2322,7 +2328,7 @@ Package pdftex.def Info: ./Imagens/apple_coletado.png used on input line 44.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Imagens/cisco_coletado.png, id=862, 141.02974pt x 68.96623pt>
+<./Imagens/cisco_coletado.png, id=872, 141.02974pt x 68.96623pt>
 File: ./Imagens/cisco_coletado.png Graphic file (type png)
 
 <use ./Imagens/cisco_coletado.png>
@@ -2332,7 +2338,7 @@ Package pdftex.def Info: ./Imagens/cisco_coletado.png used on input line 52.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Imagens/intel_coletado.png, id=863, 141.02974pt x 68.96623pt>
+<./Imagens/intel_coletado.png, id=873, 141.02974pt x 68.96623pt>
 File: ./Imagens/intel_coletado.png Graphic file (type png)
 
 <use ./Imagens/intel_coletado.png>
@@ -2342,7 +2348,7 @@ Package pdftex.def Info: ./Imagens/intel_coletado.png used on input line 60.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./Imagens/microsoft_coletado.png, id=864, 141.02974pt x 68.96623pt>
+<./Imagens/microsoft_coletado.png, id=874, 141.02974pt x 68.96623pt>
 File: ./Imagens/microsoft_coletado.png Graphic file (type png)
 
 <use ./Imagens/microsoft_coletado.png>
@@ -2353,8 +2359,8 @@ Package pdftex.def Info: ./Imagens/microsoft_coletado.png used on input line 68
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[46 <./Imagens/amazon_coletado.png>] [47 <./Imagens/apple_coletado.png> <./Imag
-ens/cisco_coletado.png>] [48 <./Imagens/intel_coletado.png> <./Imagens/microsof
+[47 <./Imagens/amazon_coletado.png>] [48 <./Imagens/apple_coletado.png> <./Imag
+ens/cisco_coletado.png>] [49 <./Imagens/intel_coletado.png> <./Imagens/microsof
 t_coletado.png>] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
@@ -2537,15 +2543,15 @@ Package xcolor Warning: Incompatible color definition on input line 3.
 
 Package xcolor Warning: Incompatible color definition on input line 3.
 
-) [49
+) [50
 
-] <./Imagens/dados_formatados.png, id=900, 81.6651pt x 50.51672pt>
+] <./Imagens/dados_formatados.png, id=910, 81.6651pt x 50.51672pt>
 File: ./Imagens/dados_formatados.png Graphic file (type png)
 
 <use ./Imagens/dados_formatados.png>
 Package pdftex.def Info: ./Imagens/dados_formatados.png used on input line 93.
 (pdftex.def)             Requested size: 40.83244pt x 25.25829pt.
- [50 <./Imagens/dados_formatados.png>]
+ [51 <./Imagens/dados_formatados.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
@@ -3074,7 +3080,7 @@ Package xcolor Warning: Incompatible color definition on input line 18.
 
 Package xcolor Warning: Incompatible color definition on input line 18.
 
-[51]
+[52]
 
 Package xcolor Warning: Incompatible color definition on input line 19.
 
@@ -3252,14 +3258,14 @@ Package xcolor Warning: Incompatible color definition on input line 35.
 
 Package xcolor Warning: Incompatible color definition on input line 36.
 
-) <./Imagens/empresas_normalizado.png, id=942, 141.02974pt x 68.96623pt>
+) <./Imagens/empresas_normalizado.png, id=952, 141.02974pt x 68.96623pt>
 File: ./Imagens/empresas_normalizado.png Graphic file (type png)
 
 <use ./Imagens/empresas_normalizado.png>
 Package pdftex.def Info: ./Imagens/empresas_normalizado.png used on input line 
 126.
 (pdftex.def)             Requested size: 564.1175pt x 275.8642pt.
- [52 <./Imagens/empresas_normalizado.png>] (/usr/share/texlive/texmf-dist/tex/l
+ [53 <./Imagens/empresas_normalizado.png>] (/usr/share/texlive/texmf-dist/tex/l
 atex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
@@ -3379,7 +3385,7 @@ Package xcolor Warning: Incompatible color definition on input line 8.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
-) [53] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+) [54] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
@@ -3537,7 +3543,7 @@ Package xcolor Warning: Incompatible color definition on input line 6.
 
 Package xcolor Warning: Incompatible color definition on input line 7.
 
-) [54] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+) [55] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
@@ -3910,7 +3916,7 @@ Package xcolor Warning: Incompatible color definition on input line 25.
 
 Package xcolor Warning: Incompatible color definition on input line 25.
 
-) [55] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+) [56] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
@@ -4001,7 +4007,7 @@ Overfull \hbox (7.37355pt too wide) in paragraph at lines 179--180
 on-trado na li-nha 7, per-tence ao pa-cote to-ols.customxml,
  []
 
-[56] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[57] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
@@ -4443,7 +4449,7 @@ Package xcolor Warning: Incompatible color definition on input line 22.
 
 Package xcolor Warning: Incompatible color definition on input line 23.
 
-[57]
+[58]
 
 Package xcolor Warning: Incompatible color definition on input line 24.
 
@@ -4534,8 +4540,8 @@ Package xcolor Warning: Incompatible color definition on input line 31.
 
 Package xcolor Warning: Incompatible color definition on input line 32.
 
-) [58]) (./Capitulos/resultados.tex [59]
-<./Graficos/erro_intel_comgrid.png, id=1092, 987.2082pt x 482.7636pt>
+) [59]) (./Capitulos/resultados.tex [60]
+<./Graficos/erro_intel_comgrid.png, id=1103, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_intel_comgrid.png Graphic file (type png)
 
 <use ./Graficos/erro_intel_comgrid.png>
@@ -4547,7 +4553,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 18--19
  [][] 
  []
 
-[60
+[61
 
 ]
 Overfull \hbox (3.94908pt too wide) in paragraph at lines 35--35
@@ -4589,8 +4595,8 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 43--43
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[61 <./Graficos/erro_intel_comgrid.png>]
-<./Graficos/predicao_intel.png, id=1104, 987.2082pt x 482.7636pt>
+[62 <./Graficos/erro_intel_comgrid.png>]
+<./Graficos/predicao_intel.png, id=1114, 987.2082pt x 482.7636pt>
 File: ./Graficos/predicao_intel.png Graphic file (type png)
 
 <use ./Graficos/predicao_intel.png>
@@ -4601,9 +4607,36 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 71--72
  [][] 
  []
 
-) (./modelo.bbl [62 <./Graficos/predicao_intel.png>] [63]
+<./Graficos/erro_intel_1000iteracoes.png, id=1115, 987.2082pt x 482.7636pt>
+File: ./Graficos/erro_intel_1000iteracoes.png Graphic file (type png)
+
+<use ./Graficos/erro_intel_1000iteracoes.png>
+Package pdftex.def Info: ./Graficos/erro_intel_1000iteracoes.png used on input 
+line 83.
+(pdftex.def)             Requested size: 455.0pt x 222.50119pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 83--84
+ [][] 
+ []
+
+[63 <./Graficos/predicao_intel.png>] [64 <./Graficos/erro_intel_1000iteracoes.p
+ng>] <./Graficos/predicao_intel_1000.png, id=1128, 987.2082pt x 482.7636pt>
+File: ./Graficos/predicao_intel_1000.png Graphic file (type png)
+
+<use ./Graficos/predicao_intel_1000.png>
+Package pdftex.def Info: ./Graficos/predicao_intel_1000.png used on input line 
+117.
+(pdftex.def)             Requested size: 455.0pt x 222.50119pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 117--118
+ [][] 
+ []
+
+) (./modelo.bbl [65
+
+ <./Graficos/predicao_intel_1000.png>] [66]
 bibitemlist
-[64
+[67
 
 ]
 Underfull \hbox (badness 1418) in paragraph at lines 211--215
@@ -4611,7 +4644,7 @@ Underfull \hbox (badness 1418) in paragraph at lines 211--215
 ird edi-tion). 2004.
  []
 
-[65]
+[68]
 Underfull \hbox (badness 5077) in paragraph at lines 254--259
 []\T1/cmr/m/n/12 TORORADAR. Aná-lise téc-nica de ações. 2015. Acesso em 10 de a
 bril de
@@ -4623,11 +4656,11 @@ Underfull \hbox (badness 4266) in paragraph at lines 254--259
 m . br / investimento / analise-[]tecnica /
  []
 
-) [66]
+) [69]
 No file modelo.ind.
 
 AED: lastpage setting LastPage
-[67]
+[70]
 \tf@lof=\write6
 \openout6 = `modelo.lof'.
 
@@ -4652,10 +4685,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
  ) 
 Here is how much of TeX's memory you used:
- 36392 strings out of 493105
- 788721 string characters out of 6137072
- 1185369 words of memory out of 5000000
- 38577 multiletter control sequences out of 15000+600000
+ 36408 strings out of 493105
+ 789156 string characters out of 6137072
+ 1185377 words of memory out of 5000000
+ 38585 multiletter control sequences out of 15000+600000
  18411 words of font info for 52 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  60i,13n,83p,2425b,2374s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4677,10 +4710,10 @@ super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfxc1200.pfb>
-Output written on modelo.pdf (68 pages, 2375986 bytes).
+Output written on modelo.pdf (71 pages, 2491673 bytes).
 PDF statistics:
- 1536 PDF objects out of 1728 (max. 8388607)
- 1369 compressed objects within 14 object streams
- 482 named destinations out of 1000 (max. 500000)
- 727 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1559 PDF objects out of 1728 (max. 8388607)
+ 1385 compressed objects within 14 object streams
+ 488 named destinations out of 1000 (max. 500000)
+ 737 words of extra memory for PDF output out of 10000 (max. 10000000)
 

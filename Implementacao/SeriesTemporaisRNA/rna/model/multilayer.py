@@ -85,11 +85,11 @@ class MultiLayer:
         error = []
         indice = []
         self.trainer = BackpropTrainer(self.network, self.dataset_treino, learningrate=0.4, verbose=True)
-        for i in range (200):
+        for i in range (1000):
             erro_quadratico = self.trainer.train()
             error.append(erro_quadratico)
             indice.append(i)
-        NetworkWriter.writeToFile(self.network, 'snapshot_redes/rede-feedforward-'+self.nome_empresa+'_erro_escrita.xml')
+        NetworkWriter.writeToFile(self.network, 'snapshot_redes/rede-feedforward-'+self.nome_empresa+'_erro_1000.xml')
         self.plotaGraficoErro(indice, error)
 
     def testaRede(self):
@@ -109,7 +109,7 @@ class MultiLayer:
 
     def testarRedeEmpresa(self):
         try:
-            rede = NetworkReader.readFrom('snapshot_redes/rede-feedforward-'+self.nome_empresa+'_erro.xml')
+            rede = NetworkReader.readFrom('snapshot_redes/rede-feedforward-'+self.nome_empresa+'_erro_1000.xml')
             self.dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_calculados/'
                                   + self.nome_empresa + '_normalizado.txt',header=0)
             print ('sadasda', max(self.dataset['Open-normalizado']))
@@ -120,7 +120,6 @@ class MultiLayer:
         print (self.dataset.__len__())
         self.dataset_teste = self.dataset.iloc[4117:4125]
         self.trainer = BackpropTrainer(rede)
-
         base_teste = SupervisedDataSet(8, 1)
 
         for i in range(self.dataset_teste.__len__() - 1):
@@ -148,6 +147,7 @@ class MultiLayer:
         plt.yscale('log')
         plt.xlabel('Iterações')
         plt.ylabel('Erro quadrático médio')
+        plt.grid(True)
         plt.show()
 
     def plotaGraficoResultado(self):
@@ -179,4 +179,4 @@ class MultiLayer:
 if __name__ == '__main__':
     network = None
     rna = MultiLayer(network, 8, 13, 1, "intel")
-    rna.plotaGraficoResultado()
+    rna.testarRedeEmpresa()
