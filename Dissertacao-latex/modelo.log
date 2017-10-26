@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  25 OCT 2017 23:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  26 OCT 2017 00:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4632,43 +4632,42 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 80--81
  [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [63]
 <./Graficos/erro_intel_1000iteracoes.png, id=1125, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_intel_1000iteracoes.png Graphic file (type png)
 
 <use ./Graficos/erro_intel_1000iteracoes.png>
 Package pdftex.def Info: ./Graficos/erro_intel_1000iteracoes.png used on input 
-line 92.
+line 94.
 (pdftex.def)             Requested size: 455.0pt x 222.50119pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 92--93
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 94--95
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[64 <./Graficos/predicao_intel.png>] [65 <./Graficos/erro_intel_1000iteracoes.p
-ng>] <./Graficos/predicao_intel_1000.png, id=1136, 987.2082pt x 482.7636pt>
+[64 <./Graficos/predicao_intel.png>]
+<./Graficos/predicao_intel_1000.png, id=1131, 987.2082pt x 482.7636pt>
 File: ./Graficos/predicao_intel_1000.png Graphic file (type png)
 
 <use ./Graficos/predicao_intel_1000.png>
 Package pdftex.def Info: ./Graficos/predicao_intel_1000.png used on input line 
-126.
+129.
 (pdftex.def)             Requested size: 455.0pt x 222.50119pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 126--127
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 129--130
  [][] 
  []
 
-) (./modelo.bbl [66
 
- <./Graficos/predicao_intel_1000.png>] [67]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [65 <./Graficos/erro_intel_1000iteracoes.png>] (./modelo.bbl [66 <./Graficos/
+predicao_intel_1000.png>]
 bibitemlist
-[68
+[67
 
 ]
 Underfull \hbox (badness 1418) in paragraph at lines 211--215
@@ -4676,7 +4675,7 @@ Underfull \hbox (badness 1418) in paragraph at lines 211--215
 ird edi-tion). 2004.
  []
 
-[69]
+[68]
 Underfull \hbox (badness 5077) in paragraph at lines 254--259
 []\T1/cmr/m/n/12 TORORADAR. Aná-lise téc-nica de ações. 2015. Acesso em 10 de a
 bril de
@@ -4688,11 +4687,11 @@ Underfull \hbox (badness 4266) in paragraph at lines 254--259
 m . br / investimento / analise-[]tecnica /
  []
 
-) [70]
+) [69]
 No file modelo.ind.
 
 AED: lastpage setting LastPage
-[71]
+[70]
 \tf@lof=\write6
 \openout6 = `modelo.lof'.
 
@@ -4717,9 +4716,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
  ) 
 Here is how much of TeX's memory you used:
- 36415 strings out of 493105
- 789393 string characters out of 6137072
- 1185377 words of memory out of 5000000
+ 36414 strings out of 493105
+ 789386 string characters out of 6137072
+ 1185299 words of memory out of 5000000
  38589 multiletter control sequences out of 15000+600000
  18411 words of font info for 52 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
@@ -4742,10 +4741,10 @@ super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfxc1200.pfb>
-Output written on modelo.pdf (72 pages, 2540666 bytes).
+Output written on modelo.pdf (71 pages, 2540276 bytes).
 PDF statistics:
- 1567 PDF objects out of 1728 (max. 8388607)
- 1390 compressed objects within 14 object streams
- 490 named destinations out of 1000 (max. 500000)
+ 1563 PDF objects out of 1728 (max. 8388607)
+ 1387 compressed objects within 14 object streams
+ 489 named destinations out of 1000 (max. 500000)
  742 words of extra memory for PDF output out of 10000 (max. 10000000)
 

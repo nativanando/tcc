@@ -21,9 +21,9 @@ A ideia de executar o treinamento com uma quantidade baixa de iterações, é fe
 	\label{lingua}
 \end{grafico}
 
-O EQM iniciou-se, na primeira iteração, com um erro percentual de 0.00248996652176 e, após o término das 200 épocas de treinamento, concluí-se com um erro percentual de 9.49359025338.$10^{-05}$. Analisando o gráfico, pode-se observar que o erro obteve uma queda brusca nas primeiras 75 iterações, enquanto que, nas 125 iterações posteriores, manteve o padrão com valores aproximados. A queda brusca e rápida do valor está diretamente ligada a capacidade de aprendizado e adaptação ao modelo de dados.
+O EQM iniciou-se, na primeira iteração, com um erro percentual de 0.00248996652176 e, após o término das 200 épocas de treinamento, conclui-se com um erro percentual de 9.49359025338.$10^{-05}$. Analisando o gráfico, pode-se observar que o erro obteve uma queda brusca nas primeiras 75 iterações, enquanto que, nas 125 iterações posteriores, manteve o padrão com valores aproximados. A queda brusca e rápida do valor está diretamente ligada a capacidade de aprendizado e adaptação ao modelo de dados.
 
-O Gráfico 9 demonstra, de acordo com a quantidade de ciclos, a variação do EQM no segundo cenário de teste com 200 iterações.
+Já o Gráfico 9 demonstra, de acordo com a quantidade de ciclos, a variação do EQM no segundo cenário de teste com 200 iterações.
 \begin{grafico}[h]
 	\centering
 	\fbox{\includegraphics[width=1\textwidth]{erro_intel_segundo_cenario}}
@@ -32,9 +32,9 @@ O Gráfico 9 demonstra, de acordo com a quantidade de ciclos, a variação do EQ
 	\label{lingua}
 \end{grafico}
 
-Neste cenário, o erro foi iniciado com um percentual de 0.00102981131422 e, após o término das 200 épocas de treinamento, concluí-se com um erro percentual de 9.1790170623e.$10^{-05}$. Analisando os Gráficos 8 e 9, pode-se observar que apesar da rede ser iniciada com os pesos aleatoriamente, o EQM seguiu a mesma tendência para os dois cenários, isso implica em uma confiabilidade maior por parte do algoritmo, pois o mesmo garante que novas inicializações, aplicadas ao mesmo modelo de dados, não resultam em valores muito distintos.
+Neste cenário, o erro foi iniciado com um percentual de 0.00102981131422 e, após o término das 200 épocas de treinamento, concluí-se com um erro percentual de 9.1790170623e.$10^{-05}$. Analisando os Gráficos 8 e 9, pode-se observar que apesar da rede ser iniciada com os pesos aleatoriamente, o EQM seguiu a mesma tendência para os dois cenários, isso implica em uma confiabilidade maior por parte do algoritmo, pois o mesmo garante que novas inicializações, aplicadas ao mesmo modelo de dados, não resultam em erros muito distintos.
 
-Após a verificação do comportamento do EQM, a rede foi ativada através do período de teste. Na Tabela 1 são detalhados os valores aplicados.
+Após a verificação do comportamento do EQM, a rede foi exposta ao período de teste. Na Tabela 1 são detalhados os valores aplicados.
 \begin{table}[h]
 \centering
 \caption{Período dos dados utilizados para testes: Intel Corporation}
@@ -74,7 +74,7 @@ Data    & Valor esperado   & Resultado    & Erro (\%)\\
 \end{tabular}
 \end{table}
 
-Analisando a Tabela 2, pode-se observar que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.70\%, se aproximando consideravelmente dos valores reais. A média de todo o período analisado obteve um erro de 0.20\%. O Gráfico 9 representa, de maneira ilustrativa, os resultados da série.
+Analisando a Tabela 2, pode-se observar que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.70\%, se aproximando, consideravelmente, dos valores reais. O erro médio, analisado para todo o período de predição, ficou em torno de 0.20\%, o que pode ser considerado baixo levando-se em conta o número de iterações utilizadas para treinar a RNA. O Gráfico 9 representa, de maneira ilustrativa, os resultados da série.
 \begin{grafico}[h]
 	\centering
 	\fbox{\includegraphics[width=1\textwidth]{predicao_intel}}
@@ -85,8 +85,10 @@ Analisando a Tabela 2, pode-se observar que os resultados obtidos foram signific
 
 Pelo gráfico também é possível observar como os resultados são próximos aos esperados. Os valores de abertura, nos respectivos dias testados, são representados por um ponto verde. Já os resultados obtidos pela rede são caracterizados pelo ponto vermelho. 
 
-\subsubsection{Intel Corporation: Treinamento com 1000 Iterações}	
-Para comparar com a simulação anterior, foi realizado um teste com 1000 épocas de treinamento, visando alcançar um resultado mais preciso e com o objetivo de validar se o aumento na quantidade de iterações, no processo de treinamento, melhoram os resultados retornados pela rede. A configuração de treinamento foi de 1000 iterações x 4117 linhas, onde as linhas são a quantidade de registros do período de testes. Portanto, o modelo foi exposto e calculado por um total de 4.117.000 exemplos. O Gráfico 10 demonstra, de acordo com a quantidade de ciclos, a variação do EQM.
+\subsubsection{Treinamento com 1000 Iterações}	
+Para comparar com a simulação anterior foi realizado um teste com 1000 épocas de treinamento, visando alcançar um resultado mais preciso e, também, validar se o aumento na quantidade de iterações, no processo de treinamento, melhoram os resultados retornados pela rede.
+
+Para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (1000) com o número de registros de testes (4117), resultando em um total de 4.117.000 exemplos calculados pela rede.
 \begin{grafico}[h]
 	\centering
 	\fbox{\includegraphics[width=1\textwidth]{erro_intel_1000iteracoes}}
@@ -95,12 +97,13 @@ Para comparar com a simulação anterior, foi realizado um teste com 1000 época
 	\label{lingua}
 \end{grafico}
 
-O Gráfico 10 ilustra a variação dos resultados obtidos. O EQM iniciou-se, na primeira iteração, com um erro percentual de 0.00664064049629 e, após o término das 1000 épocas de treinamento, concluí-se com um erro percentual de 8.7943563121853531.$10^{-05}$. Analisando o gráfico, pode-se observar que o erro obteve uma queda constante até 200 iterações, enquanto que, entre as iterações de número 200 até a de número 400, manteve o padrão com valores aproximados. Os últimos 600 ciclos mantiveram um decaimento mínimo do EQM.
+Para este cenário a rede iniciou-se, na primeira iteração, com um erro percentual de 0.00664064049629 e, após o término das 1000 épocas de treinamento, conclui-se com um erro percentual de 8.7943563121853531.$10^{-05}$. 
 
-Tendo em vista a simulação anterior, fica claro que a queda brusca e rápida aconteceria, pois a base de dados utilizada é a mesma, porém, com um número maior de iterações, é possível observar que o EQM obteve resultados mais baixos em relação ao treino anterior.
+Analisando o Gráfico 11, pode-se observar que o erro obteve uma queda constante até 200 iterações, enquanto que, entre as iterações de número 200 até a de número 400, manteve o padrão com valores aproximados. Os últimos 600 ciclos mantiveram um decaimento mínimo do EQM.
+
+Tendo em vista a simulação anterior, fica claro que a queda brusca e rápida aconteceria, pois a base de dados utilizada é a mesma, mas com um número maior de iterações, fazendo com que o EQM obtenha resultados mais baixos em comparação ao treino anterior.
 
 O período para realizar os testes foi o mesmo utilizado na Tabela 1. Os dados foram devidamente refinados e normalizados e, a partir disto, foram ativados na rede. Os resultados obtidos são demonstrados na Tabela 3.
-\clearpage
 \begin{table}[h]
 \centering
 \caption{Resultados da predição realizada nos dados utilizados pela rede}
@@ -120,7 +123,7 @@ Data    & Valor esperado   & Resultado    & Erro (\%)\\
 \end{tabular}
 \end{table}
 
-Analisando a Tabela 3, pode-se observar que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.50\%, se aproximando consideravelmente dos valores reais. Porém, a média de todo o período analisado obteve um erro de 0.28\%, superior ao treinamento anterior. O Gráfico 10 representa, de maneira ilustrativa, os resultados da série.
+Analisando a Tabela 3, pode-se observar que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.50\%, se aproximando consideravelmente dos valores reais. Porém, a média de todo o período analisado obteve um erro de 0.28\%, superior ao treinamento anterior. O Gráfico 12 representa, de maneira ilustrativa, os resultados da série.
 \begin{grafico}[h]
 	\centering
 	\fbox{\includegraphics[width=1\textwidth]{predicao_intel_1000}}
