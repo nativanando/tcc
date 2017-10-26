@@ -74,9 +74,9 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {AN\IeC {\'A}LISE DOS RESULTADOS}}{61}{chapter.6}
 \contentsline {section}{\numberline {6.1}AN\IeC {\'A}LISE DAS S\IeC {\'E}RIES UTILIZADAS}{61}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}An\IeC {\'a}lise do modelo da RNA: Intel Corporation}{61}{subsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.1.1}Intel Corporation: Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{61}{subsubsection.6.1.1.1}
+\contentsline {subsection}{\numberline {6.1.1}Aplica\IeC {\c c}\IeC {\~a}o da rede na Intel Corporation}{61}{subsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.1.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{61}{subsubsection.6.1.1.1}
 \contentsline {subsubsection}{\numberline {6.1.1.2}Intel Corporation: Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{64}{subsubsection.6.1.1.2}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{67}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{68}{section*.6}

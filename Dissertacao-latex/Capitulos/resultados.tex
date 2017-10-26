@@ -4,28 +4,37 @@
 Este capítulo tem como finalidade apresentar os resultados obtidos através das implementações demonstradas no Capítulo 5.
 
 \section{ANÁLISE DAS SÉRIES UTILIZADAS}
-Após a implementação do modelo da RNA, através dos conjuntos de dados coletados, faz-se necessário avaliar como a respectiva técnica se comportou. Tendo isso em vista, a mesma foi aplicada em função do objetivo principal do trabalho, que é medir a capacidade de precisão de acerto no valor de abertura das ações. Portanto nas seções posteriores foi elaborada, de forma independente, uma análise de eficácia do modelo para o cenário de cada empresa utilizada no presente trabalho. É importante ressaltar que os modelos foram implementados levando em consideração todos os \textit{scripts}, métodos e ferramentas utilizadas no capítulo anterior.
+Após a implementação do modelo da RNA, através dos conjuntos de dados coletados, faz-se necessário avaliar como a respectiva técnica se comportou. Tendo isso em vista, a mesma foi aplicada em função do objetivo principal do trabalho, que é medir a capacidade de precisão de acerto no valor de abertura das ações. Portanto, foi elaborada, de forma independente, uma análise de eficácia do modelo para o cenário de cada empresa utilizada no presente trabalho. É importante ressaltar que os modelos foram implementados levando em consideração todos os \textit{scripts}, métodos e ferramentas utilizadas no capítulo anterior.
 
-\subsection{Análise do modelo da RNA: Intel Corporation}
-A rede da Intel Corporation foi treinada com o objetivo de capturar o maior nível de variação possível dos dados, visando mapear um maior conjunto de padrões e, assim, responder de forma eficiente à dados dispersos através de uma boa capacidade de generalização. Tendo isso em vista, o período de treinamento preparado foi de 09/04/2001 até 21/08/2017.
+\subsection{Aplicação da rede na Intel Corporation}
+A rede da Intel Corporation foi treinada com o objetivo de capturar o maior nível de variação possível dos dados, visando mapear um maior conjunto de padrões e, assim, responder de forma eficiente à dados dispersos através de uma boa capacidade de generalização. Tendo isso em vista, o período de treinamento preparado foi de 09/04/2001 até 21/08/2017, totalizando 4117 registros.
 
-Para o presente caso foram construídos dois cenários de simulação, buscando capacitar a rede à utilizar um parâmetro de ciclos de treinamento adequado ao modelo de dados utilizado. As métricas definidas para análise, a partir destes ciclos de treinamento, são: o comportamento da função de custo que compõem o modelo (erro quadrático médio, EQM) e a margem de erro dos valores resultantes da rede no período de 23/08/2017 a 31/08/2017 em relação aos valores reais. Os parâmetros utilizados foram: 200 e 1000 iterações.
+Para o presente caso foram construídos dois cenários de simulação, buscando obter um parâmetro de ciclos de treinamento adequado ao modelo de dados utilizado. As métricas definidas para análise, a partir destes ciclos de treinamento, são: o comportamento da função de custo que compõem o modelo (erro quadrático médio, EQM) e a margem de erro dos valores resultantes da rede, no período de 23/08/2017 a 31/08/2017, em relação aos valores reais. Os parâmetros utilizados foram: 200 e 1000 iterações.
 
-\subsubsection{Intel Corporation: Treinamento com 200 Iterações}	
-A ideia de executar o treinamento com uma quantidade baixa de iterações, é feita com o intuito de proporcionar um treinamento mais rápido com resultados significativos, levando em consideração as características especificas do modelo de dados. Assim, a configuração de treinamento da rede foi de 200 iterações x 4117 linhas, onde as linhas são a quantidade de registros do período de testes. Portanto, o modelo foi exposto a calculado por um total de 823.400 exemplos. O Gráfico 8 demonstra, de acordo com a quantidade de ciclos, a variação do EQM.
+\subsubsection{Treinamento com 200 Iterações}	
+A ideia de executar o treinamento com uma quantidade baixa de iterações, é feita com o intuito de proporcionar um treinamento mais rápido e com resultados significativos, levando em consideração as características especificas do modelo de dados. Portanto, para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (200) com o número de registros de testes (4117), resultando em um total de 823.400 exemplos calculados pela rede. O Gráfico 8 demonstra, de acordo com a quantidade de ciclos, a variação do EQM no primeiro cenário de teste com 200 iterações.
 \begin{grafico}[h]
 	\centering
-	\fbox{\includegraphics[width=1\textwidth]{erro_intel_comgrid}}
+	\fbox{\includegraphics[width=1\textwidth]{erro_intel_primeiro}}
 	\caption{Decaimento do EQM no treinamento da rede}
 	\fonte{Elaborado pelo autor}
 	\label{lingua}
 \end{grafico}
 
-O Gráfico 8 ilustra a variação dos resultados obtidos. O EQM iniciou-se, na primeira iteração, com um erro percentual de 0.00248996652176 e, após o término das 200 épocas de treinamento, concluí-se com um erro percentual de 9.49359025338.$10^{-05}$.
+O EQM iniciou-se, na primeira iteração, com um erro percentual de 0.00248996652176 e, após o término das 200 épocas de treinamento, concluí-se com um erro percentual de 9.49359025338.$10^{-05}$. Analisando o gráfico, pode-se observar que o erro obteve uma queda brusca nas primeiras 75 iterações, enquanto que, nas 125 iterações posteriores, manteve o padrão com valores aproximados. A queda brusca e rápida do valor está diretamente ligada a capacidade de aprendizado e adaptação ao modelo de dados.
 
-Analisando o gráfico, pode-se observar que o erro obteve uma queda brusca nas primeiras 75 iterações, enquanto que, nas 125 iterações posteriores, manteve o padrão com valores aproximados. A queda brusca e rápida do valor está diretamente ligada ao modelo de dados utilizado. Como detalhado na Seção 5.1, as ações da Intel não sofrem grande variabilidade no período coletado, tornando-se assim mais rápida de ser abstraída pela RNA.
+O Gráfico 9 demonstra, de acordo com a quantidade de ciclos, a variação do EQM no segundo cenário de teste com 200 iterações.
+\begin{grafico}[h]
+	\centering
+	\fbox{\includegraphics[width=1\textwidth]{erro_intel_segundo_cenario}}
+	\caption{Decaimento do EQM no treinamento da rede}
+	\fonte{Elaborado pelo autor}
+	\label{lingua}
+\end{grafico}
 
-Já o período destinado à testes, especificado na Seção 6.1.1, é exposto de na Tabela 1, detalhando quais foram os valores aplicados.
+Neste cenário, o erro foi iniciado com um percentual de 0.00102981131422 e, após o término das 200 épocas de treinamento, concluí-se com um erro percentual de 9.1790170623e.$10^{-05}$. Analisando os Gráficos 8 e 9, pode-se observar que apesar da rede ser iniciada com os pesos aleatoriamente, o EQM seguiu a mesma tendência para os dois cenários, isso implica em uma confiabilidade maior por parte do algoritmo, pois o mesmo garante que novas inicializações, aplicadas ao mesmo modelo de dados, não resultam em valores muito distintos.
+
+Após a verificação do comportamento do EQM, a rede foi ativada através do período de teste. Na Tabela 1 são detalhados os valores aplicados.
 \begin{table}[h]
 \centering
 \caption{Período dos dados utilizados para testes: Intel Corporation}
