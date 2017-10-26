@@ -175,7 +175,6 @@ class MultiLayer:
         plt.close()
 
 
-
 if __name__ == '__main__':
     network = None
     rna = MultiLayer(network, 8, 13, 1, "intel")
