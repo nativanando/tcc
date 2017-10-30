@@ -21,7 +21,7 @@ A ideia de executar o treinamento com uma quantidade baixa de iterações, é fe
 	\label{lingua}
 \end{grafico}
 
-O EQM iniciou-se, na primeira iteração, com um erro percentual de 0.00248996652176 e, após o término das 200 épocas de treinamento, conclui-se com um erro percentual de 9.44359025338.$10^{-05}$. Analisando o gráfico, pode-se observar que os valores tiveram um decaimento constante até a iteração de número 125, enquanto que, nas 75 iterações posteriores, manteve os valores dos erros aproximados. Esta queda constante nas iterações iniciais está diretamente ligada a capacidade de aprendizado e adaptação ao modelo de dados.
+O EQM de treinamento iniciou-se, na primeira iteração, com um erro percentual de 0.00248996652176 e, após o término das 200 épocas de treinamento, conclui-se com um erro percentual de 9.44359025338.$10^{-05}$. Analisando o gráfico, pode-se observar que os valores tiveram um decaimento constante até a iteração de número 125, enquanto que, nas 75 iterações posteriores, manteve os valores dos erros aproximados. Esta queda constante nas iterações iniciais está diretamente ligada a capacidade de aprendizado e adaptação ao modelo de dados.
 
 Tendo em vista a variação dos erros obtidos após a primeira inicialização da rede, foi julgado necessário repetir o mesmo procedimento, visando observar o funcionamento do algoritmo de inicialização dos pesos e validar sua variação aplicada ao mesmo modelo de dados. Portanto, mais dois cenários foram executados com este objetivo. No segundo cenário, o erro foi iniciado com um percentual de 0.00102981131422 e, após o término das 200 épocas de treinamento, concluí-se com um percentual de 9.1790170623.$10^{-05}$. No terceiro cenário, o erro foi iniciado com um percentual de 0.00026991101482 e, após o término das 200 épocas de treinamento, concluí-se com um percentual de 9.49959768553.$10^{-05}$.
 
@@ -52,7 +52,7 @@ Os dados demonstrados na Tabela 1 foram refinados e normalizados de acordo com o
 \centering
 \caption{Resultados da predição realizada nos dados utilizados pela rede}
 \vspace{0.5cm}
-\begin{tabular}{>{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{3cm}}
+\begin{tabular}{>{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm}}
 \toprule
 Data    & Valor real   & Resultado    & Erro (\%) & Variação\\
 \midrule
@@ -67,7 +67,7 @@ Data    & Valor real   & Resultado    & Erro (\%) & Variação\\
 \end{tabular}
 \end{table}
 
-Analisando a Tabela 2, pode-se observar que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.70\%, se aproximando, consideravelmente, dos valores reais. O erro médio, analisado para todo o período de predição, ficou em torno de 0.24\%, o que pode ser considerado baixo levando-se em conta o número de iterações utilizadas para treinar a RNA. Já a medida de dispersão dos erros em torno da média obtida (desvio padrão) foi de aproximadamente de 0.26\%. Entretanto, analisando de forma mais detalhada cada valor resultante, pode-se evidenciar dois erros mais altos nos dias 23/08/2017 e 29/08/2017, com 0.550\% e 0.695\%, respectivamente. Tendo em vista que os valores mais próximos aos verdadeiros oscilaram no intervalo entre [34.70, 34.82], fica evidente que o modelo obteve erros mais altos em momentos de queda no valor desta série. A ocorrência destes erros acontece através da tendência de padrões em que a rede foi treinada, de forma crescente, não acompanhando assim as quedas bruscas no período. Isto fica mais claro observando o valor predito do dia 31/08/2017, onde o valor real obteve uma alta considerável, se comparada aos valores anteriores, porém não afetou a capacidade de precisão da RNA, mantendo a margem de erro pequena. O Gráfico 9 representa, de maneira ilustrativa, os resultados da série.
+Analisando a Tabela 2, pode-se observar que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.70\%, se aproximando, consideravelmente, dos valores reais. O erro médio, analisado para todo o período de predição, ficou em torno de 0.24\%, o que pode ser considerado baixo levando-se em conta o número de iterações utilizadas para treinar a RNA. Já a medida de dispersão dos erros em torno da média obtida (desvio padrão) foi de aproximadamente 0.26\%. Entretanto, analisando de forma mais detalhada cada valor resultante, pode-se evidenciar dois erros mais altos nos dias 23/08/2017 e 29/08/2017, com 0.550\% e 0.695\%, respectivamente. Tendo em vista que os valores mais próximos aos verdadeiros oscilaram no intervalo entre [34.70, 34.82], fica evidente que o modelo obteve erros mais altos em momentos de queda no valor desta série. A ocorrência destes erros acontece através da tendência de padrões em que a rede foi treinada, de forma crescente, não acompanhando assim as quedas bruscas no período. Isto fica mais claro observando o valor predito do dia 31/08/2017, onde o valor real obteve uma alta considerável, se comparada aos valores anteriores, porém não afetou a capacidade de precisão da RNA, mantendo a margem de erro pequena. O Gráfico 9 representa, de maneira ilustrativa, os resultados da série.
 \begin{grafico}[h]
 	\centering
 	\fbox{\includegraphics[width=1\textwidth]{predicao_intel}}
@@ -79,9 +79,13 @@ Analisando a Tabela 2, pode-se observar que os resultados obtidos foram signific
 Analisando o gráfico é possível observar como os resultados são próximos aos esperados. Os valores de abertura, nos respectivos dias testados, são representados por um ponto verde. Já os resultados obtidos pela rede são caracterizados pelo ponto vermelho. No Gráfico também fica evidente, de maneira ilustrativa, como a série não acompanhou as quedas do período e seguiu uma tendência crescente. 
 
 \subsubsection{Treinamento com 1000 Iterações}	
-Para comparar com a simulação anterior foi realizado um teste com 1000 épocas de treinamento, visando alcançar um resultado mais preciso e, também, validar se o aumento na quantidade de iterações, no processo de treinamento, melhoram os resultados retornados pela rede.
+Com a finalidade de comparar com a simulação anterior, foi realizado um teste com 1000 épocas de treinamento visando alcançar um resultado mais preciso e, também, para validar se o aumento na quantidade de iterações, no processo de treinamento, melhoram os resultados retornados pela rede.
 
 Para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (1000) com o número de registros de testes (4117), resultando em um total de 4.117.000 exemplos calculados pela rede.
+
+Para o primeiro cenário a rede iniciou-se, na primeira iteração, com um erro percentual de 0.00664064049629 e, após o término das 1000 épocas de treinamento, conclui-se com um erro percentual de 8.7943563121853531.$10^{-05}$. Mais dois treinos distintos foram realizados visando encontrar alguma dispersão no erro obtido pela rede, como feito na análise anterior. Portanto, o segundo treino obteve um erro inicial de 0.00260377914122 e, após o término das 1000 épocas de treinamento, conclui-se com um percentual de 8.91402403614.$10^{-05}$. O terceiro treino obteve um erro inicial de 0.00496238079711 e, após o término das 1000 épocas de treinamento, o EQM do treinamento conclui-se com um percentual de 8.90814371631.$10^{-05}$.
+
+Após a execução desses cenários de treinamento, pode-se concluir que a rede se comportou de forma estável em relação a quantidade de iterações, não distinguindo, de forma relevante, os valores dos pesos em diversas inicializações aleatórias. O Gráfico 10 representa, de maneira ilustrativa, o comportamento do EQM da rede treinada pelo primeiro cenário.
 \begin{grafico}[h]
 	\centering
 	\fbox{\includegraphics[width=1\textwidth]{erro_intel_1000iteracoes}}
@@ -90,33 +94,32 @@ Para quantificar como ocorreu o processo de treinamento, basta multiplicar o nú
 	\label{lingua}
 \end{grafico}
 
-Para este cenário a rede iniciou-se, na primeira iteração, com um erro percentual de 0.00664064049629 e, após o término das 1000 épocas de treinamento, conclui-se com um erro percentual de 8.7943563121853531.$10^{-05}$. 
-
 Analisando o Gráfico 10, pode-se observar que o erro obteve uma queda constante até 200 iterações, enquanto que, entre as iterações de número 200 até a de número 400, manteve o padrão com valores aproximados. Os últimos 600 ciclos mantiveram um decaimento mínimo do EQM.
 
-Tendo em vista a simulação anterior, fica claro que a queda brusca e rápida aconteceria, pois a base de dados utilizada é a mesma, mas com um número maior de iterações, fazendo com que o EQM obtenha resultados mais baixos em comparação ao treino anterior.
+Tendo em vista a simulação anterior, com 200 iterações, fica claro que a queda brusca e rápida aconteceria nas primeiras iterações, pois a base de dados utilizada é a mesma. Também é possível observar, através de um número maior de iterações, que o EQM obteve resultados mais baixos em comparação ao treino anterior.
 
-O período para realizar os testes foi o mesmo utilizado na Tabela 1. Os dados foram devidamente refinados e normalizados e, a partir disto, foram ativados na rede. Os resultados obtidos são demonstrados na Tabela 3.
+O período aplicado para a realização dos testes foi o mesmo utilizado da Tabela 1. Os dados foram devidamente refinados, normalizados e, a partir disto, foram ativados na rede. Os resultados preditos, a partir da execução dos testes, são demonstrados na Tabela 3.
 \begin{table}[h]
 \centering
 \caption{Resultados da predição realizada nos dados utilizados pela rede}
 \vspace{0.5cm}
-\begin{tabular}{>{\centering\arraybackslash}m{3cm} >{\centering\arraybackslash}m{3cm} >{\centering\arraybackslash}m{3cm} >{\centering\arraybackslash}m{3cm}}
+\begin{tabular}{>{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm}}
 \toprule
-Data    & Valor esperado   & Resultado    & Erro (\%)\\
+Data    & Valor real   & Resultado    & Erro (\%) & Variação\\
 \midrule
-23/08/2017 & 34.54 & 34.67 & 0.376\\
-24/08/2017 & 34.70 & 34.64 & 0.172\\
-25/08/2017 & 34.82 & 34.71 & 0.315\\
-28/08/2017 & 34.78 & 34.68 & 0.287\\
-29/08/2017 & 34.51 & 34.65 & 0.405\\
-30/08/2017 & 34.75 & 34.70 & 0.143\\
-31/08/2017 & 34.94 & 34.84 & 0.286\\
+23/08/2017 & 34.54 & 34.67 & 0.376 & -0.13\\
+24/08/2017 & 34.70 & 34.64 & 0.172 & 0.06\\
+25/08/2017 & 34.82 & 34.71 & 0.315 & 0.11\\
+28/08/2017 & 34.78 & 34.68 & 0.287 & 0.10\\
+29/08/2017 & 34.51 & 34.65 & 0.405 & -0.14\\
+30/08/2017 & 34.75 & 34.70 & 0.143 & 0.05\\
+31/08/2017 & 34.94 & 34.84 & 0.286 & 0.10\\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Analisando a Tabela 3, pode-se observar que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.50\%, se aproximando consideravelmente dos valores reais. Porém, a média de todo o período analisado obteve um erro de 0.28\%, superior ao treinamento anterior. O Gráfico 12 representa, de maneira ilustrativa, os resultados da série.
+Analisando a Tabela 3, pode-se observar que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.50\%, se aproximando consideravelmente dos valores reais. Porém, a média de todo o período analisado obteve um erro de 0.28\%, superior ao treinamento anterior. Já a medida de dispersão dos erros em torno da média obtida (desvio padrão) foi de aproximadamente 0.09\%. Sendo assim, pode-se concluir que o desvio padrão foi menor que o do primeiro cenário, devido ao fato dos erros mais altos (23/08/2017 e 29/08/2017) serem mais suaves. O Gráfico 11 representa, de maneira ilustrativa, os resultados da rede.
+
 \begin{grafico}[h]
 	\centering
 	\fbox{\includegraphics[width=1\textwidth]{predicao_intel_1000}}
@@ -125,4 +128,4 @@ Analisando a Tabela 3, pode-se observar que os resultados obtidos foram signific
 	\label{lingua}
 \end{grafico}
 
-Apesar da diferença do erro percentual relativo entre os dois cenários ser de apenas 8\%, foi encontrada uma melhor parâmetrização para o presente modelo de dados utilizado em 200 iterações. Sendo assim, chega-se a definição que nem sempre um número maior de ciclos de treinamento aumentam a precisão da RNA. Neste caso, a rede sofreu uma convergência do EQM em torno de 200 iteraçoes, este detalhe pode ser observado visualizando o comportamento dos Gráficos 8 e 10. Dessa forma, as iterações posteriores propagaram o erro de forma desnecessária, alterando assim os pesos sinápticos dos neurônios e, automaticamente, causando uma maior dispersão nos resultados. Este processo ocorrido na segunda simulação, na literatura, é denominado \textit{Overtraining}, detalhado no Capítulo 3.
+Apesar da diferença do erro percentual relativo entre os dois cenários ser de apenas 4\%, foi encontrada uma melhor parâmetrização para o presente modelo de dados utilizando um treinamento com 200 iterações, pois a exatidão dos valores preditos foram mais eficazes neste método de treinamento. Sendo assim, chega-se a definição que nem sempre um número maior de ciclos de treinamento aumentam a precisão da RNA. Neste caso, a rede sofreu uma convergência do EQM em torno de 200 iteraçoes, este detalhe pode ser observado visualizando o comportamento do Gráfico 10. Dessa forma, as iterações posteriores propagaram o erro de forma desnecessária, alterando assim os pesos sinápticos dos neurônios e, automaticamente, causando uma maior dispersão nos resultados. Este processo ocorrido na segunda simulação, na literatura, é denominado \textit{Overtraining}, detalhado no Capítulo 3.

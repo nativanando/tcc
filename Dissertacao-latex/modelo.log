@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  28 OCT 2017 15:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  29 OCT 2017 19:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4556,12 +4556,6 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 18--19
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (11.96008pt too wide) in paragraph at lines 24--25
-[]\T1/cmr/m/n/12 O EQM iniciou-se, na pri-meira ite-ra-ção, com um erro per-cen
--tual de 0.00248996652176
- []
-
 [61
 
 ]
@@ -4650,39 +4644,73 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 73--74
  [][] 
  []
 
-[63]
-<./Graficos/erro_intel_1000iteracoes.png, id=1120, 987.2082pt x 482.7636pt>
+[63] [64 <./Graficos/predicao_intel.png>]
+<./Graficos/erro_intel_1000iteracoes.png, id=1126, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_intel_1000iteracoes.png Graphic file (type png)
 
 <use ./Graficos/erro_intel_1000iteracoes.png>
 Package pdftex.def Info: ./Graficos/erro_intel_1000iteracoes.png used on input 
-line 87.
+line 91.
 (pdftex.def)             Requested size: 455.0pt x 222.50119pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 87--88
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 91--92
  [][] 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 110--110
+ []|\T1/cmr/m/n/12 23/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 111--111
+ []|\T1/cmr/m/n/12 24/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 112--112
+ []|\T1/cmr/m/n/12 25/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 113--113
+ []|\T1/cmr/m/n/12 28/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 114--114
+ []|\T1/cmr/m/n/12 29/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 115--115
+ []|\T1/cmr/m/n/12 30/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 116--116
+ []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[64 <./Graficos/predicao_intel.png>]
-<./Graficos/predicao_intel_1000.png, id=1127, 987.2082pt x 482.7636pt>
+[65 <./Graficos/erro_intel_1000iteracoes.png>]
+<./Graficos/predicao_intel_1000.png, id=1132, 987.2082pt x 482.7636pt>
 File: ./Graficos/predicao_intel_1000.png Graphic file (type png)
 
 <use ./Graficos/predicao_intel_1000.png>
 Package pdftex.def Info: ./Graficos/predicao_intel_1000.png used on input line 
-122.
+125.
 (pdftex.def)             Requested size: 455.0pt x 222.50119pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 122--123
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 125--126
  [][] 
  []
 
-[65 <./Graficos/erro_intel_1000iteracoes.png>]) (./modelo.bbl [66 <./Graficos/p
-redicao_intel_1000.png>]
+) [66 <./Graficos/predicao_intel_1000.png>] (./modelo.bbl [67]
 bibitemlist
-[67
+[68
 
 ]
 Underfull \hbox (badness 1418) in paragraph at lines 211--215
@@ -4690,7 +4718,7 @@ Underfull \hbox (badness 1418) in paragraph at lines 211--215
 ird edi-tion). 2004.
  []
 
-[68]
+[69]
 Underfull \hbox (badness 5077) in paragraph at lines 254--259
 []\T1/cmr/m/n/12 TORORADAR. Aná-lise téc-nica de ações. 2015. Acesso em 10 de a
 bril de
@@ -4702,11 +4730,11 @@ Underfull \hbox (badness 4266) in paragraph at lines 254--259
 m . br / investimento / analise-[]tecnica /
  []
 
-) [69]
+) [70]
 No file modelo.ind.
 
 AED: lastpage setting LastPage
-[70]
+[71]
 \tf@lof=\write6
 \openout6 = `modelo.lof'.
 
@@ -4731,8 +4759,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
  ) 
 Here is how much of TeX's memory you used:
- 36408 strings out of 493105
- 789161 string characters out of 6137072
+ 36409 strings out of 493105
+ 789168 string characters out of 6137072
  1185301 words of memory out of 5000000
  38585 multiletter control sequences out of 15000+600000
  18411 words of font info for 52 fonts, out of 8000000 for 9000
@@ -4756,10 +4784,10 @@ super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfxc1200.pfb>
-Output written on modelo.pdf (71 pages, 2494555 bytes).
+Output written on modelo.pdf (72 pages, 2496193 bytes).
 PDF statistics:
- 1559 PDF objects out of 1728 (max. 8388607)
- 1385 compressed objects within 14 object streams
- 488 named destinations out of 1000 (max. 500000)
+ 1563 PDF objects out of 1728 (max. 8388607)
+ 1388 compressed objects within 14 object streams
+ 489 named destinations out of 1000 (max. 500000)
  737 words of extra memory for PDF output out of 10000 (max. 10000000)
 

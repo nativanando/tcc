@@ -79,4 +79,4 @@
 \contentsline {subsubsection}{\numberline {6.1.1.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{64}{subsubsection.6.1.1.2}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{67}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{68}{section*.6}
