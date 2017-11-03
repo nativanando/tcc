@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  2 NOV 2017 22:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  3 NOV 2017 00:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4803,7 +4803,7 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 192--192
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [68 <./Graficos/erro_microsoft_200_segundo_cenario.png>] (./modelo.bbl
+[68 <./Graficos/erro_microsoft_200_segundo_cenario.png>]) (./modelo.bbl
 [69]
 bibitemlist
 [70
@@ -4857,7 +4857,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
 Here is how much of TeX's memory you used:
  36423 strings out of 493105
  789514 string characters out of 6137072
- 1185269 words of memory out of 5000000
+ 1185267 words of memory out of 5000000
  38591 multiletter control sequences out of 15000+600000
  18411 words of font info for 52 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
@@ -4880,7 +4880,7 @@ super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfxc1200.pfb>
-Output written on modelo.pdf (74 pages, 2555384 bytes).
+Output written on modelo.pdf (74 pages, 2556011 bytes).
 PDF statistics:
  1591 PDF objects out of 1728 (max. 8388607)
  1411 compressed objects within 15 object streams
