@@ -21,13 +21,13 @@ A ideia de executar o treinamento com uma quantidade baixa de iterações, é fe
 	\label{lingua}
 \end{grafico}
 
-O EQM de treinamento iniciou-se, na primeira iteração, com um erro percentual de 0.00248996652176 e, após o término das 200 épocas de treinamento, conclui-se com um erro percentual de 9.44359025338.$10^{-05}$. Analisando o gráfico, pode-se observar que os valores tiveram um decaimento constante até a iteração de número 125, enquanto que, nas 75 iterações posteriores, manteve os valores dos erros aproximados. Esta queda constante nas iterações iniciais está diretamente ligada a capacidade de aprendizado e adaptação ao modelo de dados.
+O EQM de treinamento iniciou-se, na primeira iteração, com um erro percentual de 0.00248996652176 e, após o término das 200 épocas de treinamento, conclui-se com um erro percentual de 9.44359025338.$10^{-05}$. Analisando o gráfico, pode-se observar que os valores tiveram um decaimento constante até a iteração de número 125, enquanto que, nas 75 iterações posteriores, manteve os valores dos erros aproximados. A queda constante nas iterações iniciais está diretamente ligada a capacidade de aprendizado e adaptação ao modelo de dados.
 
 Tendo em vista a variação dos erros obtidos após a primeira inicialização da rede, foi julgado necessário repetir o mesmo procedimento, visando observar o funcionamento do algoritmo de inicialização dos pesos e validar sua variação aplicada ao mesmo modelo de dados. Portanto, mais dois cenários foram executados com este objetivo. No segundo cenário, o erro foi iniciado com um percentual de 0.00102981131422 e, após o término das 200 épocas de treinamento, concluí-se com um percentual de 9.1790170623.$10^{-05}$. No terceiro cenário, o erro foi iniciado com um percentual de 0.00026991101482 e, após o término das 200 épocas de treinamento, concluí-se com um percentual de 9.49959768553.$10^{-05}$.
 
 Analisando os três cenários, pode-se observar que apesar da rede ser iniciada com os pesos aleatoriamente, o EQM seguiu a mesma tendência para todos os casos, isso implica em uma confiabilidade maior por parte do algoritmo, pois o mesmo garante que novas inicializações, aplicadas ao mesmo modelo de dados, não resultam em valores muito distintos. Esta validação do algoritmo tem grande importância, pois com ela chega-se a definição de que os pesos iniciais da rede não precisarão, necessariamente, serem ajustados manualmente para encontrar um melhor resultado, pois aplicado ao mesmo modelo de dados, os erros seguem o mesmo padrão.
 
-Após a verificação do comportamento do EQM e a validação do algortimo de inicialização, os testes foram iniciados com o objetivo de verificar a precisão do modelo. Na Tabela 1 são detalhados os valores do período predito.
+Após a análise do comportamento do EQM e a validação do algortimo de inicialização, os testes foram iniciados com o objetivo de verificar a precisão do modelo. Na Tabela 1 são detalhados os valores do período predito.
 \begin{table}[h]
 \centering
 \caption{Período dos dados utilizados para testes: Intel Corporation}
@@ -129,3 +129,69 @@ Analisando a Tabela 3, pode-se observar que os resultados obtidos foram signific
 \end{grafico}
 
 Apesar da diferença do erro percentual relativo entre os dois cenários ser de apenas 4\%, foi encontrada uma melhor parâmetrização para o presente modelo de dados utilizando um treinamento com 200 iterações, pois a exatidão dos valores preditos foram mais eficazes neste método de treinamento. Sendo assim, chega-se a definição que nem sempre um número maior de ciclos de treinamento aumentam a precisão da RNA. Neste caso, a rede sofreu uma convergência do EQM em torno de 200 iteraçoes, este detalhe pode ser observado visualizando o comportamento do Gráfico 10. Dessa forma, as iterações posteriores propagaram o erro de forma desnecessária, alterando assim os pesos sinápticos dos neurônios e, automaticamente, causando uma maior dispersão nos resultados. Este processo ocorrido na segunda simulação, na literatura, é denominado \textit{Overtraining}, detalhado no Capítulo 3.
+
+\subsection{Aplicação da rede na Microsoft Corporation}
+A rede da Microsoft Corporation foi treinada utilizando as mesmas técnicas da Intel Corporation, ou seja, com o intuito de capturar o maior nível de variação possível dos dados, visando mapear um maior conjunto de padrões e, assim, obter uma boa capacidade de generalização. Tendo isso em vista, o período de treinamento preparado foi de 09/04/2001 até 21/08/2017, totalizando 4117 registros.
+
+Para o presente caso foram construídos dois cenários de simulação, buscando obter um parâmetro de ciclos de treinamento adequado ao modelo de dados utilizado. As métricas definidas para análise, a partir destes ciclos de treinamento, são: o comportamento da função de custo que compõem o modelo (erro quadrático médio, EQM) e a margem de erro dos valores resultantes da rede, no período de 23/08/2017 a 31/08/2017, em relação aos valores reais. Os parâmetros de ciclos de treinamento utilizados foram: 200 e 1000 iterações.
+
+\subsubsection{Treinamento com 200 Iterações}	
+O treinamento com 200 iterações foi executado com o objetivo de verificar a capacidade de precisão da rede com um número menor de iterações. Para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (200) com o número de registros de testes (4117), resultando em um total de 823.400 exemplos calculados pela rede.
+
+Para este caso, a RNA foi inicializada duas vezes com o objetivo de observar o comportamento e a tendência do EQM em relação ao algoritmo de inicialização. No primeiro cenário, a rede iniciou-se com o EQM em 0.0018579672451418453 e, após as 200 iterações, conclui-se com um erro de 3.6623220378015219.$10^{-05}$. No segundo cenário, o erro foi inicializado com 0.0047598765727053707 e, após as 200 iterações, conclui-se com um erro de 3.8483854181673219.$10^{-05}$.
+
+É possível verificar, através dos dois cenários executados, que o erro seguiu a mesma tendência para os dois casos, com um erro final próximo a 3.$10^{-05}$. Tendo isso em vista, possíveis inicializações distintas aplicada ao modelo de dados da Microsoft Corporation não irão resultar em valores muito distintos, pois a diferença do erro é mínima.
+
+Para demonstrar, de maneira mais clara, o comportamento do erro obtido pela rede em todo processo de treinamento, o Gráfico 12 demonstra, de acordo com a quantidade ciclos, a variação do EQM no primeiro cenário de teste.
+\begin{grafico}[h]
+	\centering
+	\fbox{\includegraphics[width=1\textwidth]{erro_microsoft_200_segundo_cenario}}
+	\caption{Decaimento do EQM no treinamento da rede}
+	\fonte{Elaborado pelo autor}
+	\label{lingua}
+\end{grafico}
+
+Analisando o gráfico, pode-se observar que os valores tiveram um decaimento constante até a iteração de número 125, enquanto que, nas 75 iterações posteriores, manteve os valores dos erros aproximados. A queda constante nas iterações iniciais está diretamente ligada a capacidade de aprendizado e adaptação ao modelo de dados.
+
+Após a análise do comportamento do EQM e a validação do algortimo de inicialização, os testes foram iniciados com o objetivo de verificar a precisão do modelo. Na Tabela 4 são detalhados os valores do período predito.
+\begin{table}[h]
+\centering
+\caption{Período dos dados utilizados para testes: Microsoft Corporation}
+\vspace{0.5cm}
+\begin{tabular}{>{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm}}
+\toprule
+Data    & Abertura   & Alta   & Baixa   & Fechamento   & Volume\\
+\midrule
+23/08/2017 & 72.96 & 73.15 & 72.53 & 72.72 & 137.665,07\\
+24/08/2017 & 72.74 & 72.86 & 72.07 & 72.69 & 170.982,82\\
+25/08/2017 & 72.86 & 73.35 & 72.48 & 72.82 & 127.943,01\\
+28/08/2017 & 73.06 & 73.09 & 72.55 & 72.83 & 145.697,15\\
+29/08/2017 & 72.25 & 73.16 & 72.05 & 73.05 & 114.783,82\\
+30/08/2017 & 73.01 & 74.21 & 72.83 & 74.01 & 168.978,01\\
+31/08/2017 & 74.03 & 74.96 & 73.80 & 74.77 & 276.528,11\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Os dados demonstrados na Tabela 4 foram refinados e normalizados de acordo com os métodos implementados no Capítulo 5. Após a execução deste processo, os mesmos foram inseridos na RNA para ativação. Posteriormente, foi realizada a desnormalização e os resultados apresentados. Na tabela 5 é possível verificar os resultados obtidos pela rede.
+
+\begin{table}[h]
+\centering
+\caption{Resultados da predição realizada nos dados utilizados pela rede}
+\vspace{0.5cm}
+\begin{tabular}{>{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm}}
+\toprule
+Data    & Valor real   & Resultado    & Erro (\%) & Variação\\
+\midrule
+23/08/2017 & 72.96 & 72.94 & 0.027 & 0.02\\
+24/08/2017 & 72.74 & 72.61 & 0.028 & 0.13\\
+25/08/2017 & 72.86 & 72.50 & 0.086 & 0.36\\
+28/08/2017 & 73.06 & 72.73 & 0.028 & -0.33\\
+29/08/2017 & 72.25 & 72.64 & 0.695 & -0.39\\
+30/08/2017 & 73.01 & 72.82 & 0.201 & 0.19\\
+31/08/2017 & 74.03 & 73.75 & 0.143 & 0.28\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Analisando a Tabela 5, pode-se observar que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.70\%, se aproximando, consideravelmente, dos valores reais. O erro médio, analisado para todo o período de predição, ficou em torno de 0.17\%, o que pode ser considerado baixo levando-se em conta o número de iterações utilizadas para treinar a RNA. Já a medida de dispersão dos erros em torno da média obtida (desvio padrão) foi de aproximadamente 0.23\%.

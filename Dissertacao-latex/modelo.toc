@@ -77,6 +77,8 @@
 \contentsline {subsection}{\numberline {6.1.1}Aplica\IeC {\c c}\IeC {\~a}o da rede na Intel Corporation}{61}{subsection.6.1.1}
 \contentsline {subsubsection}{\numberline {6.1.1.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{61}{subsubsection.6.1.1.1}
 \contentsline {subsubsection}{\numberline {6.1.1.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{64}{subsubsection.6.1.1.2}
+\contentsline {subsection}{\numberline {6.1.2}Aplica\IeC {\c c}\IeC {\~a}o da rede na Microsoft Corporation}{67}{subsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{67}{subsubsection.6.1.2.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{68}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{70}{section*.6}
