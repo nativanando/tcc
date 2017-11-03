@@ -196,4 +196,31 @@ Data    & Valor real   & Resultado    & Erro (\%) & Variação\\
 
 Analisando a Tabela 5, pode-se observar que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.70\%, se aproximando, consideravelmente, dos valores reais. O erro médio, analisado para todo o período de predição, ficou em torno de 0.17\%, o que pode ser considerado baixo levando-se em conta o número de iterações utilizadas para treinar a RNA. Já a medida de dispersão dos erros em torno da média obtida (desvio padrão) foi de aproximadamente 0.23\%. 
 
-Visualizando os erros obtidos, pode-se evidenciar que não houve grande dispersão no período, com excessão do dia 29/08/2017, que foi o mais alto de toda a série. Este erro foi o mais alto porque houve uma queda grande no valor da ação, se comparado ao padrão que a mesma vinha seguindo. Seguindo esta linha de análise, também é preciso destacar que houve um aumento significativo no valor da ação, mais especificamente no dia 31/08/2017, porém, diferentemente do momento de queda, a rede se adaptou a este acrescimento e suavizou o erro. A partir destes cenários levantados, é possível chegar a conclusão de que a rede não conseguiu prever com mais exatidão os momentos de queda da ação, enquanto que, nos momentos de alta, obteve uma boa capacidade de adaptabilidade.
+Visualizando os erros obtidos, pode-se evidenciar que não houve grande dispersão no período, com excessão do dia 29/08/2017, que foi o mais alto de toda a série. Este erro foi o mais alto porque houve uma queda grande no valor da ação, se comparado ao padrão que a mesma vinha seguindo. Seguindo esta linha de análise, é preciso destacar que houve um aumento significativo no valor da ação, mais especificamente no dia 31/08/2017, porém, diferentemente do momento de queda, a rede se adaptou a este acrescimento e suavizou o erro. O Gráfico 13 demonstra, de maneira ilustrativa, os resultados obtidos.
+\begin{grafico}[h]
+	\centering
+	\fbox{\includegraphics[width=1\textwidth]{microsoft_resultados}}
+	\caption{Distribuição dos dados resultantes da RNA e seus valores esperados}
+	\fonte{Elaborado pelo autor}
+	\label{lingua}
+\end{grafico}
+
+A partir destes cenários levantados, é possível chegar a conclusão de que a rede não conseguiu prever com mais exatidão os momentos de queda da ação, enquanto que, nos momentos de alta, obteve uma boa capacidade de adaptabilidade.
+
+\subsubsection{Treinamento com 1000 Iterações}	
+Com a finalidade de comparar com a simulação anterior, foi realizado um teste com 1000 épocas de treinamento visando alcançar um resultado mais preciso e, também, para validar se o aumento na quantidade de iterações, no processo de treinamento, melhoram os resultados retornados pela rede.
+
+Para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (1000) com o número de registros de testes (4117), resultando em um total de 4.117.000 exemplos calculados pela rede.
+
+Para o primeiro cenário a rede iniciou-se, na primeira iteração, com um erro percentual de 0.005757041736 e, após o término das 1000 épocas de treinamento, conclui-se com um erro percentual de 3.0266887029028769.$10^{-05}$. Mais dois treinos distintos foram realizados visando encontrar alguma dispersão no erro obtido pela rede, como feito na análise anterior. Portanto, o segundo treino obteve um erro inicial de 0.0035660777044 e, após o término das 1000 épocas de treinamento, conclui-se com um percentual de 2.57225977588.$10^{-05}$. O terceiro treino obteve um erro inicial de 0.00624617417834 e, após o término das 1000 épocas de treinamento, o EQM do treinamento conclui-se com um percentual de 2.5743685343480545.$10^{-05}$. O Gráfico 14 representa, de maneira ilustrativa, a variação do erro resultante no primeiro cenário.
+\begin{grafico}[h]
+	\centering
+	\fbox{\includegraphics[width=1\textwidth]{erro_microsoft_1000}}
+	\caption{Decaimento do EQM no treinamento da rede}
+	\fonte{Elaborado pelo autor}
+	\label{lingua}
+\end{grafico}
+
+Analisando o Gráfico 14, pode-se observar que o erro obteve uma queda constante até 600 iterações, enquanto que, entre as iterações de número 600 até a de número 1000, manteve o padrão com valores aproximados, ou seja, foi o momento em que a RNA convergiu. Portanto, após a execução desses cenários de treinamento, pode-se concluir que o modelo se comportou de forma estável em relação a quantidade de iterações, não distinguindo, de forma relevante, os valores dos pesos em diversas inicializações aleatórias.
+
+Após a observação do comportamento do erro, o período de teste (Tabela 4) foi inserido na rede. Os dados foram devidamente refinados, normalizados e, a partir disso, foram ativados. Os resultados preditos, a partir da execução dos testes, são demonstrados na Tabela 6. 
