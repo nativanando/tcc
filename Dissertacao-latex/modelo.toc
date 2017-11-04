@@ -68,18 +68,20 @@
 \contentsline {section}{\numberline {5.2}EXPLORANDO O \textit {DATAFRAME}}{50}{section.5.2}
 \contentsline {section}{\numberline {5.3}NORMALIZANDO OS DADOS}{51}{section.5.3}
 \contentsline {section}{\numberline {5.4}DESENVOLVIMENTO DA REDE NEURAL ARTIFICIAL}{54}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}\textit {Script} para cria\IeC {\c c}\IeC {\~a}o de um modelo \textit {FeedForward}}{54}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Organiza\IeC {\c c}\IeC {\~a}o das camadas do modelo}{54}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Treinamento da rede}{56}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.1}\textit {Script} para Cria\IeC {\c c}\IeC {\~a}o de um Modelo \textit {FeedForward}}{54}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Organiza\IeC {\c c}\IeC {\~a}o das Camadas do Modelo}{54}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Treinamento da Rede}{56}{subsection.5.4.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {AN\IeC {\'A}LISE DOS RESULTADOS}}{61}{chapter.6}
 \contentsline {section}{\numberline {6.1}AN\IeC {\'A}LISE DAS S\IeC {\'E}RIES UTILIZADAS}{61}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Aplica\IeC {\c c}\IeC {\~a}o da rede na Intel Corporation}{61}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.1}Aplica\IeC {\c c}\IeC {\~a}o da Rede na S\IeC {\'e}rie da Intel Corporation}{61}{subsection.6.1.1}
 \contentsline {subsubsection}{\numberline {6.1.1.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{61}{subsubsection.6.1.1.1}
 \contentsline {subsubsection}{\numberline {6.1.1.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{64}{subsubsection.6.1.1.2}
-\contentsline {subsection}{\numberline {6.1.2}Aplica\IeC {\c c}\IeC {\~a}o da rede na Microsoft Corporation}{67}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.2}Aplica\IeC {\c c}\IeC {\~a}o da Rede na S\IeC {\'e}rie da Microsoft Corporation}{67}{subsection.6.1.2}
 \contentsline {subsubsection}{\numberline {6.1.2.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{67}{subsubsection.6.1.2.1}
 \contentsline {subsubsection}{\numberline {6.1.2.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{70}{subsubsection.6.1.2.2}
+\contentsline {subsection}{\numberline {6.1.3}Aplica\IeC {\c c}\IeC {\~a}o da Rede na S\IeC {\'e}rie da Apple Inc}{72}{subsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.3.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{73}{subsubsection.6.1.3.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{72}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{74}{section*.6}

@@ -131,12 +131,12 @@ Após a execução do Código 9, foi renderizado o Gráfico 7 que demonstra os v
 
 \section{DESENVOLVIMENTO DA REDE NEURAL ARTIFICIAL}
 O ambiente de desenvolvimento do modelo de RNA proposto baseou-se nas ferramentas definidas no capítulo anterior, sendo elas a linguagem de programação Python, em sua versão 3.6.0, e a biblioteca PyBrain. Esta Seção detalha todos os procedimentos realizados para a implementação do modelo desenvolvido, evidenciando aspectos gerais de como trabalhar com Python e PyBrain.
-\subsection{\textit{Script} para criação de um modelo \textit{FeedForward}}
+\subsection{\textit{Script} para Criação de um Modelo \textit{FeedForward}}
 A implementação de uma RNA com a topologia \textit{FeedForward} foi construída através do módulo pybrain.structure.networks. O mesmo tem como objetivo, especificar como são tratados o fluxo dos dados de entrada da rede. O Código 10 demonstra a importação do módulo e a criação da topologia determinada.
 
 \lstinputlisting[language=Python, label=objeto-feedforward, caption=Construção de uma RNA com a estrutura \textit{FeedForward}]{src/FeedForward.py}
 
-\subsection{Organização das camadas do modelo}
+\subsection{Organização das Camadas do Modelo}
 Após a implementação da topologia, faz-se necessário organizar suas camadas, assim como são tratados os respectivos neurônios das mesmas. Para a construção desta etapa, a biblioteca PyBrain oferece, através do módulo pybrain.structure, suporte à inserção via parâmetros, especificando a quantidade de variáveis para cada camada e, também, suas características. No Código 11 é possível observar a classe que implementa o método desenvolvido para a construção das camadas.
 
 \lstinputlisting[language=Python, label=feedforward-layer, caption=Implementação da classe de criação de camadas]{src/feedforward_layers_pybrain.py}
@@ -155,7 +155,7 @@ A partir disto, a rede precisa identificar quais são as distribuições de cone
 
 Concluída a fase de inserção das conexões, apresentada no Código 13, faz-se necessário inserir os pesos iniciais da rede. Este procedimento é executado através do método \textit{sortModules}, disponbilizado pela biblioteca PyBrain, que adiciona, de forma aleatória, os pesos em um intervalo [-2,2].
 
-\subsection{Treinamento da rede}
+\subsection{Treinamento da Rede}
 Para o desenvolvimento do treinamento a biblioteca PyBrain utiliza dois módulos principais, sendo eles o pybrain.datasets, que é responsável por especificar qual o modelo de aprendizado que a rede trabalha, e, para o caso do aprendizado supervisionado, o módulo pybrain.supervised, que contém os respectivos algoritmos para a presente técnica.
 
 Para mapear uma base de dados de aprendizagem supervisionada com as características desejadas, é necessário utilizar o método \textit{SupervisedDataSet}, onde o mesmo recebe como parâmetro a quantidade de entradas referente à base de dados utilizada e a quantidade de saídas desejadas. Para o presente trabalho, foi instanciada uma base de dados de treino para 8 entradas e 1 saída, seguindo as especificações da Seção 4.5.1.

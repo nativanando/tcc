@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 dados = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/resultado_series/'
-                    'microsoft_predicao_200.txt', header=0)
+                    'microsoft_predicao_1000.txt', header=0)
 
 
 dados['Data'] = pd.to_datetime(dados['Data'], format="%d-%m-%Y")
@@ -21,3 +21,4 @@ ax.plot(linha, coluna1, 'k:', color='blue')  # linha pontilha orange
 plt.grid(True)
 plt.show()
 plt.close()
+print (dados.describe())
