@@ -269,17 +269,17 @@ Dispon{\'\i}vel em:
   stock returns.
 \textbf{IEEE International on Neural Networks}, p. 451--458, 1988.}
 
+\bibitem[Zarate, Helman e Gálvez 2003]{Luiz}
+\abntrefinfo{Zarate, Helman e Gálvez}{ZARATE; HELMAN; GáLVEZ}{2003}
+{ZARATE, L.~E.; HELMAN, H.; GáLVEZ, J.~M. Representação e controle de
+  laminadores tandem baseado em funções de sensibilidade obtidos através de
+  redes neurais.
+\textbf{Sba Controle e Automação}, v.~14, 2003.}
+
 \bibitem[Zhang, Patuwo e HU 1988]{zhang}
 \abntrefinfo{Zhang, Patuwo e HU}{ZHANG; PATUWO; HU}{1988}
 {ZHANG, G.; PATUWO, E.; HU, M. Forecasting with artificial neural networks: The
   state of the art. international journal of forecasting.
 p. 35--62, 1988.}
-
-\bibitem[Zárate, Helman e Gálvez 2003]{Luiz}
-\abntrefinfo{Zárate, Helman e Gálvez}{ZáRATE; HELMAN; GáLVEZ}{2003}
-{ZáRATE, L.~E.; HELMAN, H.; GáLVEZ, J.~M. Representação e controle de
-  laminadores tandem baseado em funções de sensibilidade obtidos através de
-  redes neurais.
-\textbf{Sba Controle e Automação}, v.~14, 2003.}
 
 \end{thebibliography}

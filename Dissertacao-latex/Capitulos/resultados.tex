@@ -223,7 +223,7 @@ Para o primeiro cenário a rede iniciou-se, na primeira iteração, com um erro 
 
 Analisando o Gráfico 14, que representa a variação do EQM no primeiro cenário de teste iniciado, pode-se observar que o mesmo obteve uma queda constante até 600 iterações, enquanto que, entre as iterações de número 600 até a de número 1000, manteve o padrão com valores aproximados, ou seja, foi o momento em que a RNA convergiu. 
 
-Portanto, após a execução desses cenários de treinamento, analisando o comportamento do peso e a sua variação, pode-se concluir que o modelo se comportou de forma estável, não distinguindo, de forma relevante, os valores dos pesos em diversas inicializações aleatórias.
+Portanto, após a execução desses cenários de treinamento, analisando o comportamento do erro e a sua variação, pode-se concluir que o modelo se comportou de forma estável, não distinguindo, de forma relevante, os valores dos pesos em diversas inicializações aleatórias.
 
 A partir disso, é possível assegurar que o algoritmo de inicialização não vai influenciar em resultados diferentes, caso várias inicializações distintas sejam executadas ao mesmo modelo de dados. 
 
@@ -250,7 +250,7 @@ Data    & Valor real   & Resultado    & Erro (\%) & Variação\\
 
 Analisando a Tabela 6, pode-se observar que os resultados sofreram uma maior dispersão, se comparado ao treinamento anterior. O percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.80\%. A média de todo o período analisado obteve um erro de de aproximadamente 0.53\%, superior a média do treinamento anterior. Já a medida de dispersão dos erros em torno da média obtida (desvio padrão) foi de aproximadamente 0.17\%.
 
-No presente cenário em análise, o valor mais falho de toda a série foi o do dia 31/08/2017. Comparando-o com o resultado de 200 iterações, pode-se observar que a rede perdeu a capacidade de adaptabilidade para prever momentos de alta na ação, após o aumento na quantidade de épocas de treinamento. Observando o segundo maior erro da série, obtido no dia 25/08/2017, pode-se notar que o mesmo se encontra dentro dos padrões de tendência em que a rede vinha seguindo, porém a RNA também corrompeu o resultado predito. Este embaralhamento nos resultados mais uma vez está ligado a capacidade de convergência da RNA, onde, após convergir em uma quantidade menor de iterações, as épocas posteriores apenas propagaram o erro desnecessariamente, modificando os pesos sinápticos dos neurônios da camada oculta com valores desnecessários e, assim, causando instabilidade na capacidade de precisão do modelo aplicado. 
+No presente cenário em análise, o valor mais falho de toda a série foi o do dia 31/08/2017. Comparando-o com o resultado de 200 iterações, pode-se observar que a rede perdeu a capacidade de adaptabilidade para prever momentos de alta na ação, após o aumento na quantidade de épocas de treinamento. Observando o segundo maior erro da série, obtido no dia 25/08/2017, pode-se notar que o mesmo se encontra dentro dos padrões de tendência em que a rede vinha seguindo, porém a RNA também corrompeu o resultado predito. Esta instabilidade nos resultados mais uma vez está ligada a capacidade de convergência da RNA, onde, após convergir em uma quantidade menor de iterações, as épocas posteriores apenas propagaram o erro desnecessariamente, modificando os pesos sinápticos dos neurônios da camada oculta com valores desnecessários e, assim, causando instabilidade na capacidade de precisão do modelo aplicado. 
 
 Portanto, novamente é possível observar que o aumento na quantidade de épocas de treinamento e a diminuição do EQM, não necessariamente implicam em uma capacidade maior de previsão e generalização da RNA. No Gráfico 15 é possível notar, de forma mais intuitiva, em quais momentos a previsão obteve maior e menor exatidão, levando em consideração os pontos dos valores reais da ação analisada.
 
@@ -279,4 +279,112 @@ Para este caso, a RNA foi inicializada duas vezes com o objetivo de observar o c
 	\label{lingua}
 \end{grafico}
 
-É possível verificar, através dos dois cenários executados, que o erro seguiu a mesma tendência para os dois casos, com um erro final próximo a 1.$10^{-05}$. Tendo isso em vista, possíveis inicializações distintas, aplicada ao modelo de dados da Apple Inc, não irão resultar em valores muito distintos pois a diferença do erro é mínima.
+É possível verificar, através dos dois cenários executados, que o erro seguiu a mesma tendência para os dois casos, com um erro final próximo a 1.$10^{-05}$. Tendo isso em vista, possíveis inicializações distintas, aplicada ao modelo de dados da Apple Inc, não irão resultar em valores muito distintos pois a diferença entre os erros são mínimas.
+
+Após a análise do comportamento do EQM e a validação do algortimo de inicialização, os testes foram iniciados com o objetivo de verificar a precisão do modelo. Na Tabela 7 são detalhados os valores do período predito.
+\begin{table}[h]
+\centering
+\caption{Período dos dados utilizados para testes: Apple Inc}
+\vspace{0.5cm}
+\begin{tabular}{>{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm}}
+\toprule
+Data    & Abertura   & Alta   & Baixa   & Fechamento   & Volume\\
+\midrule
+23/08/2017 & 159.07 & 160.47 & 158.88 & 159.98 & 193.990,81\\
+24/08/2017 & 160.43 & 160.74 & 158.55 & 159.27 & 198.189,18\\
+25/08/2017 & 159.65 & 160.56 & 159.27 & 159.86 & 254.800,63\\
+28/08/2017 & 160.14 & 162.00 & 159.93 & 161.47 & 259.659,72\\
+29/08/2017 & 160.10 & 163.12 & 160.00 & 162.91 & 295.169,10\\
+30/08/2017 & 163.80 & 163.89 & 162.61 & 163.35 & 272.695,84\\
+31/08/2017 & 163.64 & 164.52 & 163.48 & 164.00 & 267.850,96\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Os dados demonstrados na Tabela 7 foram refinados e normalizados de acordo com os métodos implementados no Capítulo 5. Após a execução deste processo, os mesmos foram inseridos na RNA para ativação. Posteriormente, foi realizada a desnormalização e os resultados apresentados. A Tabela 8 ilustra os resultados obtidos.
+
+\begin{table}[h]
+\centering
+\caption{Resultados da predição realizada nos dados utilizados pela rede}
+\vspace{0.5cm}
+\begin{tabular}{>{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm}}
+\toprule
+Data    & Valor real   & Resultado    & Erro (\%) & Variação\\
+\midrule
+23/08/2017 & 159.07 & 159.89 & 0.515 & 0.82\\
+24/08/2017 & 160.43 & 160.29 & 0.087 & 0.14\\
+25/08/2017 & 159.65 & 159.50 & 0.093 & 0.15\\
+28/08/2017 & 160.14 & 160.24 & 0.062 & -0.10\\
+29/08/2017 & 160.10 & 161.77 & 1.043 & -1.67\\
+30/08/2017 & 163.80 & 163.07 & 0.445 & 0.73\\
+31/08/2017 & 163.64 & 163.43 & 0.128 & 0.21\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Analisando a Tabela 8, pode-se observar que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 1.043\%. Considerando o cenário de ação da Apple Inc, é possível notar que a mesma trabalha com valores mais altos e com uma série histórica de maior variação, se comparada as empresas analisadas anteriormente. Este detalhe pode ser melhor visualizado no Gráfico 3. Tendo isso em vista, mesmo com uma variabilidade maior da série, a arquitetura da RNA se adaptou ao modelo de dados e conseguiu, de forma satisfatória, encontrar resultados de predição com uma boa capacidade de acerto, levando-se em conta que os erros máximos alcançados foram de 0.82 e -1.67 USD, nos dia 23/08/2017 e 29/08/2017, respectivamente.
+
+O erro médio, analisado para todo o período de predição, ficou em torno de 0.33\%, o que pode ser considerado baixo levando-se em conta o número de iterações utilizadas para treinar a RNA. Já a medida de dispersão dos erros em torno da média obtida (desvio padrão) foi de aproximadamente 0.36\%. O Gráfico 17 detalha, de forma ilustrativa, o comportamento dos resultados esperados e os obtidos pela RNA.
+
+\begin{grafico}[h]
+	\centering
+	\fbox{\includegraphics[width=1\textwidth]{resultado_apple_200}}
+	\caption{Distribuição dos dados resultantes da RNA e seus valores esperados}
+	\fonte{Elaborado pelo autor}
+	\label{lingua}
+\end{grafico}
+
+\subsubsection{Treinamento com 1000 Iterações}	
+Com a finalidade de comparar com a simulação anterior, foi realizado um teste com 1000 épocas de treinamento visando alcançar um resultado mais preciso e, também, para validar se o aumento na quantidade de iterações, no processo de treinamento, melhoram os resultados retornados pela rede.
+
+Para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (1000) com o número de registros de testes (4117), resultando em um total de 4.117.000 exemplos calculados pela rede.
+
+Para o primeiro cenário a rede iniciou-se, na primeira iteração, com um erro percentual de 0.000868275992533 e, após o término das 1000 épocas de treinamento, conclui-se com um erro percentual de 1.5728321897054983.$10^{-05}$. Mais dois treinos distintos foram realizados visando encontrar alguma dispersão no erro obtido pela rede, como feito na análise anterior. Portanto, o segundo treino obteve um erro inicial de 0.00411352897345 e, após o término das 1000 épocas de treinamento, conclui-se com um percentual de 0.00411352897345.$10^{-05}$. O terceiro treino obteve um erro inicial de 0.000326093399269 e, após o término das 1000 épocas de treinamento, o EQM do treinamento conclui-se com um percentual de 1.85386451723.$10^{-05}$. Tendo em vista os erros dos treinamentos realizados, chegou-se a definição de que o mesmo não variou, de forma brusca, em distintas inicializações.
+
+O Gráfico 18 demonstra, de forma mais intuitiva, o decaimento do erro durante o processo de treinamento no primeiro cenário executado.
+
+\begin{grafico}[h]
+	\centering
+	\fbox{\includegraphics[width=1\textwidth]{erro_apple_1000_2}}
+	\caption{Decaimento do EQM no treinamento da rede}
+	\fonte{Elaborado pelo autor}
+	\label{lingua}
+\end{grafico}
+
+Analisando o Gráfico 18, pode-se observar que o erro obteve uma queda brusca até 600 iterações, enquanto que, entre as iterações de número 600 até a de número 1000, os erros foram estabilizados, ou seja, foi o momento em que a RNA convergiu. Portanto, após a execução desses cenários de treinamento, analisando o comportamento do erro e a sua variação, pode-se concluir que o modelo se comportou de forma estável, não distinguindo, de forma relevante, os valores dos pesos em diversas inicializações aleatórias.
+
+Após a observação do comportamento do erro, o período de teste (Tabela 7) foi inserido na rede. Os dados foram devidamente refinados, normalizados e, a partir disso, foram ativados. Os resultados preditos, a partir da execução dos testes, são demonstrados na Tabela 9. 
+
+\begin{table}[h]
+\centering
+\caption{Resultados da predição realizada nos dados utilizados pela rede}
+\vspace{0.5cm}
+\begin{tabular}{>{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm}}
+\toprule
+Data    & Valor real   & Resultado    & Erro (\%) & Variação\\
+\midrule
+23/08/2017 & 159.07 & 159.69 & 0.389 & -0.62\\
+24/08/2017 & 160.43 & 159.86 & 0.355 & 0.57\\
+25/08/2017 & 159.65 & 159.11 & 0.338 & 0.54\\
+28/08/2017 & 160.14 & 159.72 & 0.262 & 0.42\\
+29/08/2017 & 160.10 & 161.23 & 0.705 & -1.13\\
+30/08/2017 & 163.80 & 162.55 & 0.763 & 1.25\\
+31/08/2017 & 163.64 & 162.69 & 0.580 & 0.95\\
+\bottomrule
+\end{tabular}
+\end{table} 
+
+Analisando a Tabela 9, pode-se observar que os resultados sofreram uma maior dispersão, se comparado ao treinamento anterior. O percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.77\%. A média de todo o período analisado obteve um erro de de aproximadamente 0.53\%. Já a medida de dispersão dos erros em torno da média obtida (desvio padrão) foi de aproximadamente 0.19\%.
+
+No presente cenário em análise, os valores mais falhos de toda a série foram os dos dias 29/08/2017 e 30/08/2017,  com um erro no valor de -1.13 e 1.25 USD, respectivamente. Comparando-os com os resultados do treinamento realizado anteriormente, pode-se observar que a RNA não suavizou os valores que sofreram maior dispersão, como por exemplo no dia 29/08/2017. Além disso, é possível observar que os respectivos resultados também tiveram uma média total maior que a obtida no treinamento anterior, perdendo a capacidade de adaptabilidade para prever momentos de queda e alta da ação.
+
+Esta instabilidade nos resultados mais uma vez está ligada a capacidade de convergência da RNA, onde, após convergir em uma quantidade menor de iterações, as épocas posteriores apenas propagaram o erro desnecessariamente, modificando os pesos sinápticos dos neurônios da camada oculta com valores desnecessários e, assim, causando instabilidade na capacidade de precisão do modelo aplicado. 
+
+Portanto, novamente é possível observar que o aumento na quantidade de épocas de treinamento e a diminuição do EQM, não necessariamente implicam em uma capacidade maior de previsão e generalização da RNA. No Gráfico 19 é possível notar, de forma mais intuitiva, em quais momentos a previsão obteve maior e menor exatidão, levando em consideração os pontos dos valores reais da ação analisada.
+\begin{grafico}[h]
+	\centering
+	\fbox{\includegraphics[width=1\textwidth]{apple_1000_resultado}}
+	\caption{Distribuição dos dados resultantes da RNA e seus valores esperados}
+	\fonte{Elaborado pelo autor}
+	\label{lingua}
+\end{grafico}

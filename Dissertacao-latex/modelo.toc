@@ -82,6 +82,7 @@
 \contentsline {subsubsection}{\numberline {6.1.2.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{70}{subsubsection.6.1.2.2}
 \contentsline {subsection}{\numberline {6.1.3}Aplica\IeC {\c c}\IeC {\~a}o da Rede na S\IeC {\'e}rie da Apple Inc}{72}{subsection.6.1.3}
 \contentsline {subsubsection}{\numberline {6.1.3.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{73}{subsubsection.6.1.3.1}
+\contentsline {subsubsection}{\numberline {6.1.3.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{75}{subsubsection.6.1.3.2}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{74}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{78}{section*.6}
