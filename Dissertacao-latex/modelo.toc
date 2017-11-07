@@ -62,6 +62,7 @@
 \contentsline {section}{\numberline {4.6}DEFINI\IeC {\c C}\IeC {\~A}O DA BASE DE TREINAMENTO}{41}{section.4.6}
 \contentsline {section}{\numberline {4.7}BIBLIOTECA PYBRAIN}{41}{section.4.7}
 \contentsline {section}{\numberline {4.8}BIBLIOTECA MATPLOTLIB}{43}{section.4.8}
+\contentsline {section}{\numberline {4.9}CONFIGURA\IeC {\c C}\IeC {\~A}O DE HARDWARE}{44}{section.4.9}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {IMPLEMENTA\IeC {\c C}\IeC {\~A}O DAS T\IeC {\'E}CNICAS}}{45}{chapter.5}
 \contentsline {section}{\numberline {5.1}REALIZA\IeC {\c C}\IeC {\~A}O DA COLETA DE DADOS}{45}{section.5.1}
