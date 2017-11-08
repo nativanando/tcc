@@ -34,3 +34,9 @@ class Normalizador:
         plt.grid(True)
         plt.show()
         plt.close()
+
+
+if __name__ == '__main__':
+    normalizador = Normalizador()
+    normalizador.define_linha_coluna()
+    normalizador.cria_grafico()

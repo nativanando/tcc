@@ -23,55 +23,47 @@ passando quatro parâmetros, sendo eles:
 \item Data final da coleta.
 \end{enumerate}
 
-Após a realização da requisição, a API retorna um arquivo com as ações entre as respectivas datas, no formato especificado na Seção 4.4.2, formando assim, o \textit{DataFrame} inicial das empresas. Este procedimento foi realizado para todas as empresas que são analisadas neste trabalho.
+Após a realização da requisição, a API retorna um arquivo com as ações entre as respectivas datas, no formato especificado na Seção 4.4.2, formando assim, o \textit{DataFrame} inicial das empresas. Posteriormente, são analisadas as séries específicas de cada empresa, através de seus valores diários de abertura. O período coletado foi de 09/04/2001 a 31/08/2017.
 
-Posteriormente, são analisadas as séries específicas de cada empresa, através de seus valores diários de abertura. O período coletado foi de 09/04/2001 a 31/08/2017.
-
-Iniciando por ordem alfabética, as ações da Amazon contém os valores mais altos dentre as empresas estudadas. No período coletado, seu valor de abertura apresentou um mínimo de 5,91 e um máximo de 1069,55 Dólares dos Estados Unidos (USD), evidenciando seu crescimento e valorização. O Gráfico 2 representa o comportamento desta série.
+Iniciando por ordem alfabética, as ações da Amazon Inc contém os valores mais altos dentre as empresas estudadas. No período coletado, seu valor de abertura apresentou um mínimo de 5,91 e um máximo de 1069,55 Dólares dos Estados Unidos (USD). Neste caso é possível evidenciar o crescimento e valorização da ação. O Gráfico 2 representa, de forma mais intuitiva, o comportamento desta série.
 \begin{grafico}[h]
 	\centering
-	\centerline{\includegraphics[scale=4]{amazon_coletado}}
+	\fbox{\includegraphics[width=1\textwidth, height=0.45\textwidth]{amazon_serie_novo}}
 	\caption{Valores de abertura das ações da Amazon}
 	\fonte{Elaborado pelo autor}
-	\label{exec-amazon-coleta}
+	\label{lingua}
 \end{grafico}
 
-As ações da Apple contam com seus valores mais constantes, sem grande ascenção se comparada a Amazon. Seu valor de abertura apresentou um mínimo de 0,93 e um máximo de 163,80 USD. O Gráfico 3 representa o comportamento desta série.
+Em contrapartida, as ações da Apple Inc contam com seus valores mais constantes. No período coletado, seu valor de abertura apresentou um mínimo de 0,93 e um máximo de 163,80 USD. No Gráfico 3 é possível observar o comportamento desta série.
 
-As ações da Cisco, Intel e Microsoft possuem os valores mais equilibrados dentre as empresas selecionadas. O valor de abertura mínimo apresentado pela Cisco, no período coletado, foi de 8,45 enquanto seu valor máximo foi de 34,46 USD. Já a Intel, apresentou um valor um mínimo de 12,17 e um máximo de 38,25 USD. Por fim, a Microsoft também apresentou uma série bem equilibrada no período coletado, variando entre um valor mínimo de 15,20 e um máximo de 74,34 USD. Os Gráficos 4, 5 e 6 demonstram, de forma mais intuitiva, as ações da Cisco, Intel e Microsoft, respectivamente. 	
 \begin{grafico}[h]
 	\centering
-	\centerline{\includegraphics[scale=4]{apple_coletado}}
+	\fbox{\includegraphics[width=1\textwidth, height=0.44\textwidth]{apple_serie_novo}}
 	\caption{Valores de abertura das ações da Apple}
 	\fonte{Elaborado pelo autor}
-	\label{exec-apple-coleta}
+	\label{lingua}
 \end{grafico}
+
+Já as ações da Intel e Microsoft Corporation possuem os valores mais equilibrados dentre as empresas selecionadas para análise. Ao realizar a aquisição da série da Intel Corporation, pôde-se observar que a mesma trabalha com valores mais baixos e sem grande variação, principalmente se comparada a Amazon. No período coletado, seu valor de abertura apresentou um mínimo de 12,17 e um máximo de 38,25 USD. Por fim, a Microsoft Corporation também apresentou uma série bem equilibrada no período coletado, variando entre um valor de abertura mínimo de 15,20 e um máximo de 74,34 USD. Os Gráficos 4 e 5 demonstram, de forma mais intuitiva, as ações da Intel e Microsoft, respectivamente. 	
 
 \begin{grafico}[h]
 	\centering
-	\centerline{\includegraphics[scale=4]{cisco_coletado}}
-	\caption{Valores de abertura das ações da Cisco}
-	\fonte{Elaborado pelo autor}
-	\label{exec-cisco-coleta}
-\end{grafico}
- 
-\begin{grafico}[h]
-	\centering
-	\centerline{\includegraphics[scale=4]{intel_coletado}}
+	\fbox{\includegraphics[width=1\textwidth, height=0.45\textwidth]{intel_serie_novo}}
 	\caption{Valores de abertura das ações da Intel}
 	\fonte{Elaborado pelo autor}
-	\label{exec-intel-coleta}
+	\label{lingua}
 \end{grafico}
 
 \begin{grafico}[h]
 	\centering
-	\centerline{\includegraphics[scale=4]{microsoft_coletado}}
+	\fbox{\includegraphics[width=1\textwidth, height=0.45\textwidth]{microsoft_serie_novo}}
 	\caption{Valores de abertura das ações da Microsoft}
 	\fonte{Elaborado pelo autor}
-	\label{exec-microsoft-coleta}
+	\label{lingua}
 \end{grafico}
 
-\clearpage
+Após evidenciar as características de todas as séries coletadas, pode-se concluir que as bases de dados são distintas, sendo de extrema importância para analisar a arquitetura da RNA.
+
 \section{EXPLORANDO O \textit{DATAFRAME}}
 O refinamento do modelo de dados coletado é de suma importância para agregar valor às informações do \textit{DataFrame} de cada empresa. Como especificado na Seção 4.3.1, é necessário calcular alguns indicadores técnicos, que são consideradas informações expressivas que influenciam diretamente nos valores das ações.
 
@@ -119,14 +111,14 @@ Tendo em vista o desenvolvimento dos \textit{scripts} demonstrados, Código 7 e 
 
 \lstinputlisting[language=Python, label=cod-normalizado-grafico, caption=Classe que gera o gráfico dos dados normalizados]{src/normalizadorGrafico.py}
 
-Após a execução do Código 9, foi renderizado o Gráfico 7 que demonstra os valores de cada empresa distribuidos entre o intervalo [0,1].
+Após a execução do Código 9, foi renderizado o Gráfico 6 que demonstra os valores de cada empresa distribuidos entre o intervalo [0,1].
 
 \begin{grafico}[h]
 	\centering
-	\centerline{\includegraphics[scale=4]{empresas_normalizado}}
+	\fbox{\includegraphics[width=1\textwidth]{normalizado_novo}}
 	\caption{Dados normalizados para treinamento}
 	\fonte{Elaborado pelo autor}
-	\label{exec-intel-coleta}
+	\label{lingua}
 \end{grafico}
 
 \section{DESENVOLVIMENTO DA REDE NEURAL ARTIFICIAL}

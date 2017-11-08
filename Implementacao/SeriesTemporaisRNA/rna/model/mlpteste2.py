@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 dados = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/resultado_series/'
-                    'apple_predicao_1000.txt', header=0)
+                    'amazon_predicao_200.txt', header=0)
 
 
 dados['Data'] = pd.to_datetime(dados['Data'], format="%d-%m-%Y")

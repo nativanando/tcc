@@ -66,24 +66,26 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {IMPLEMENTA\IeC {\c C}\IeC {\~A}O DAS T\IeC {\'E}CNICAS}}{45}{chapter.5}
 \contentsline {section}{\numberline {5.1}REALIZA\IeC {\c C}\IeC {\~A}O DA COLETA DE DADOS}{45}{section.5.1}
-\contentsline {section}{\numberline {5.2}EXPLORANDO O \textit {DATAFRAME}}{50}{section.5.2}
-\contentsline {section}{\numberline {5.3}NORMALIZANDO OS DADOS}{51}{section.5.3}
-\contentsline {section}{\numberline {5.4}DESENVOLVIMENTO DA REDE NEURAL ARTIFICIAL}{54}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}\textit {Script} para Cria\IeC {\c c}\IeC {\~a}o de um Modelo \textit {FeedForward}}{54}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Organiza\IeC {\c c}\IeC {\~a}o das Camadas do Modelo}{54}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Treinamento da Rede}{56}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.2}EXPLORANDO O \textit {DATAFRAME}}{49}{section.5.2}
+\contentsline {section}{\numberline {5.3}NORMALIZANDO OS DADOS}{50}{section.5.3}
+\contentsline {section}{\numberline {5.4}DESENVOLVIMENTO DA REDE NEURAL ARTIFICIAL}{52}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}\textit {Script} para Cria\IeC {\c c}\IeC {\~a}o de um Modelo \textit {FeedForward}}{53}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Organiza\IeC {\c c}\IeC {\~a}o das Camadas do Modelo}{53}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Treinamento da Rede}{55}{subsection.5.4.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {AN\IeC {\'A}LISE DOS RESULTADOS}}{61}{chapter.6}
-\contentsline {section}{\numberline {6.1}AN\IeC {\'A}LISE DAS S\IeC {\'E}RIES UTILIZADAS}{61}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Aplica\IeC {\c c}\IeC {\~a}o da Rede na S\IeC {\'e}rie da Intel Corporation}{61}{subsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.1.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{61}{subsubsection.6.1.1.1}
-\contentsline {subsubsection}{\numberline {6.1.1.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{64}{subsubsection.6.1.1.2}
-\contentsline {subsection}{\numberline {6.1.2}Aplica\IeC {\c c}\IeC {\~a}o da Rede na S\IeC {\'e}rie da Microsoft Corporation}{67}{subsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.2.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{67}{subsubsection.6.1.2.1}
-\contentsline {subsubsection}{\numberline {6.1.2.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{70}{subsubsection.6.1.2.2}
-\contentsline {subsection}{\numberline {6.1.3}Aplica\IeC {\c c}\IeC {\~a}o da Rede na S\IeC {\'e}rie da Apple Inc}{72}{subsection.6.1.3}
-\contentsline {subsubsection}{\numberline {6.1.3.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{73}{subsubsection.6.1.3.1}
-\contentsline {subsubsection}{\numberline {6.1.3.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{75}{subsubsection.6.1.3.2}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {AN\IeC {\'A}LISE DOS RESULTADOS}}{60}{chapter.6}
+\contentsline {section}{\numberline {6.1}AN\IeC {\'A}LISE DAS S\IeC {\'E}RIES UTILIZADAS}{60}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Aplica\IeC {\c c}\IeC {\~a}o da Rede na S\IeC {\'e}rie da Intel Corporation}{60}{subsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.1.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{60}{subsubsection.6.1.1.1}
+\contentsline {subsubsection}{\numberline {6.1.1.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{63}{subsubsection.6.1.1.2}
+\contentsline {subsection}{\numberline {6.1.2}Aplica\IeC {\c c}\IeC {\~a}o da Rede na S\IeC {\'e}rie da Microsoft Corporation}{66}{subsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{66}{subsubsection.6.1.2.1}
+\contentsline {subsubsection}{\numberline {6.1.2.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{69}{subsubsection.6.1.2.2}
+\contentsline {subsection}{\numberline {6.1.3}Aplica\IeC {\c c}\IeC {\~a}o da Rede na S\IeC {\'e}rie da Apple Inc}{71}{subsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.3.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{72}{subsubsection.6.1.3.1}
+\contentsline {subsubsection}{\numberline {6.1.3.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{74}{subsubsection.6.1.3.2}
+\contentsline {subsection}{\numberline {6.1.4}Aplica\IeC {\c c}\IeC {\~a}o da Rede na S\IeC {\'e}rie da Amazon Inc}{77}{subsection.6.1.4}
+\contentsline {subsubsection}{\numberline {6.1.4.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{77}{subsubsection.6.1.4.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{78}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{80}{section*.6}
