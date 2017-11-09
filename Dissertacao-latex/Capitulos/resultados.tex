@@ -470,5 +470,70 @@ Por fim, no Gráfico 20 é possível notar, de forma mais intuitiva, em quais mo
 	\label{lingua}
 \end{grafico}
 
-\subsubsection{Treinamento com 1000 Iterações}	
+\subsubsection{Treinamento com 1000 Iterações}
+Com a finalidade de comparar com a simulação anterior, foi realizado um teste com 1000 épocas de treinamento visando alcançar um resultado mais preciso e, também, para validar se o aumento na quantidade de iterações, no processo de treinamento, melhoram os resultados retornados pela rede.
 
+Para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (1000) com o número de registros de testes (4117), resultando em um total de 4.117.000 exemplos calculados pela rede.
+
+Para o primeiro cenário a rede iniciou-se, na primeira iteração, com um erro percentual de 0.00071726446826636352 e, após o término das 1000 épocas de treinamento, conclui-se com um erro percentual de 1.2545666972429883.$10^{-05}$. Mais dois treinos distintos foram realizados visando encontrar alguma dispersão no erro obtido pela rede, como feito na análise anterior. Portanto, o segundo treino obteve um erro inicial de 0.001255831817103349 e, após o término das 1000 épocas de treinamento, conclui-se com um percentual de 1.607023747635374.$10^{-05}$. O terceiro treino obteve um erro inicial de 0.0022901768887634102 e, após o término das 1000 épocas de treinamento, o EQM do treinamento conclui-se com um percentual de 1.363795522772317.$10^{-05}$.
+
+Após a execução desses cenários de treinamento, pode-se concluir que a rede se comportou de forma estável em relação a quantidade de iterações, não distinguindo, de forma relevante, os valores dos pesos em diversas inicializações aleatórias. O Gráfico 21 demonstra, de forma mais intuitiva, o decaimento do erro durante o processo de treinamento no primeiro cenário executado.
+
+\begin{grafico}[h]
+	\centering
+	\fbox{\includegraphics[width=1\textwidth]{erro_amazon_1000}}
+	\caption{Decaimento do EQM no treinamento da rede}
+	\fonte{Elaborado pelo autor}
+	\label{lingua}
+\end{grafico}
+
+Analisando o Gráfico 21, pode-se observar que o erro obteve uma queda brusca até 600 iterações, enquanto que, entre as iterações de número 600 até a de número 1000 seu valor estabilizou-se, ou seja, foi o momento em que a RNA convergiu. Portanto, após a execução desses cenários de treinamento, analisando o comportamento do erro e a sua variação, pode-se concluir que o modelo se comportou de forma estável, não distinguindo, de forma relevante, os valores dos pesos em diversas inicializações aleatórias.
+
+Após a observação do comportamento do erro, o período de teste (Tabela 10) foi inserido na rede. Os dados foram devidamente refinados, normalizados e, a partir disso, foram ativados. Os resultados preditos, a partir da execução dos testes, são demonstrados na Tabela 12. 
+
+\begin{table}[h]
+\centering
+\caption{Resultados da predição realizada nos dados utilizados pela rede}
+\vspace{0.5cm}
+\begin{tabular}{>{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm} >{\centering\arraybackslash}m{2cm}}
+\toprule
+Data    & Valor real   & Resultado    & Erro (\%) & Variação\\
+\midrule
+23/08/2017 & 959.38 & 966.61 & 0.753 & -7.23\\
+24/08/2017 & 957.42 & 959.60 & 0.227 & -2.18\\
+25/08/2017 & 956.00 & 953.98 & 0.211 & 2.02\\
+28/08/2017 & 946.54 & 951.65 & 0.539 & -5.11\\
+29/08/2017 & 940.00 & 950.72 & 1.140 & -10.72\\
+30/08/2017 & 958.44 & 954.18 & 0.444 & 4.26\\
+31/08/2017 & 974.70 & 968.64 & 0.621 & 6.06\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Analisando a Tabela 12, pode-se observar que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 1.14\%, se aproximando, consideravelmente, dos valores reais. O erro médio, analisado para todo o período de predição, ficou em torno de 0,56\%. Já a medida de dispersão dos erros em torno da média obtida (desvio padrão) foi de aproximadamente 0.32\%.
+
+No presente cenário em análise, os valores mais falhos de toda a série foram os dos dias 23/08/2017 e 29/08/2017,  com um erro no valor de -7.23 e -10.72 USD, respectivamente. Comparando-os com os resultados do treinamento realizado anteriormente, pode-se observar que a RNA suavizou os valores que sofreram maior dispersão, como por exemplo nos dias 25/08/2017, 30/08/2017 e 31/08/2017. Além disso, é possível analisar que os respectivos resultados também tiveram uma média total menor que a obtida no treinamento anterior, justamente pela suavização e adaptabilidade aos valores do período testado.
+
+É interessante detalhar que, para este caso, o cenário com 1000 iterações obteve um erro total médio menor que o treinamento com 200 iterações, diferentemente de todas as outras empresas analisadas neste trabalho. Novamente frisando, isto ocorreu justamente porque a série da Amazon conta maiores variações durante o perído coletado, necessitando de uma quantidade de treinamento maior para a RNA convergir. No Gráfico 22 é possível notar, de forma mais intuitiva, em quais momentos a previsão obteve maior e menor exatidão, levando em consideração os pontos dos valores reais da ação analisada.
+\begin{grafico}[h]
+	\centering
+	\fbox{\includegraphics[width=1\textwidth]{amazon_resultado_1000}}
+	\caption{Decaimento do EQM no treinamento da rede}
+	\fonte{Elaborado pelo autor}
+	\label{lingua}
+\end{grafico}
+
+\section{CONSIDERAÇÕES DAS SÉRIES ANALISADAS}
+Tendo em vista as análises de todos os testes executados anteriormente, pode-se evidenciar que o modelo e a arquitetura proposta da RNA obtiveram excelentes resultados para os cenários apresentados. A partir disso, algumas características e informações gerais são necessárias para detalhar, de maneira mais precisa, o comportamento do modelo de rede implementado.
+
+\subsection{Tempo de Execução do Treinamento}
+Um fator que deve ser levado em conta, é a quantidade de tempo de execução para realizar o treinamento da RNA. Foram avaliados os dois cenários utilizados neste trabalho, com 200 e 1000 ciclos de treinamento. Tendo isso em vista, o tempo de execução, levando em consideração as características do \textit{hardware} especificado no Capítulo 4, foi de aproximadamente 5 minutos para o treino de 200 iterações e de 28 minutos para o treino de 1000 iterações. 
+
+Obviamente, além do \textit{hardware}, o modelo de dados utilizado tal como a quantidade de registros, variáveis e, também, a arquitetura em que a RNA foi implementada influenciam no tempo de execução. Portanto, como neste trabalho o período de treinamento foi o mesmo para cada empresa, todos os resultados obtiveram aproximadamente o mesmo tempo de execução.
+
+\subsection{Características Apresentadas pela RNA}
+Observando todos os cenários analisados neste capítulo, pode-se chegar a definição de que a rede apresentou um padrão no decaimento do EQM, onde, as empresas que mais oscilaram seus valores durante a série treinada obtiveram um erro menor e precisaram de um número maior de iterações para convergir. 
+
+Pontuando este detalhe, é possível definir que o modelo proposto trabalha com erros maiores em séries temporais onde os valores possuem pouca variação, pois os mesmos já são suficientes para chegarem em resultados próximos aos esperados. Um exemplo deste caso pode ser observado analisando os erros obtidos pela ação da Intel Corporation, que foi a rede que menos oscilou dentre as utilizadas. Portanto, pode-se concluir que em séries temporais com esta característica, os pesos dos neurônios da camada oculta da rede não requerem erros muito baixos para realizar o mapeamento e o aprendizado dos dados. 
+
+Entretanto, em séries temporais com uma variabilidade maior nas amostras o erro resultante foi mais baixo, pois a rede necessita de um valor menor para realizar aproximações aos respectivos resultados. Este comportamento fica explícito ao analisar as ações da Amazon, que foi a série que mais variou dentre as utilizadas neste trabalho. Portanto, pode-se concluir que em séries com esta característica, os pesos dos neurônios da camada oculta da rede requerem erros mais baixos para realizar o mapeamento e o aprendizado dos dados. 

@@ -62,7 +62,7 @@
 \contentsline {section}{\numberline {4.6}DEFINI\IeC {\c C}\IeC {\~A}O DA BASE DE TREINAMENTO}{41}{section.4.6}
 \contentsline {section}{\numberline {4.7}BIBLIOTECA PYBRAIN}{41}{section.4.7}
 \contentsline {section}{\numberline {4.8}BIBLIOTECA MATPLOTLIB}{43}{section.4.8}
-\contentsline {section}{\numberline {4.9}CONFIGURA\IeC {\c C}\IeC {\~A}O DE HARDWARE}{44}{section.4.9}
+\contentsline {section}{\numberline {4.9}CONFIGURA\IeC {\c C}\IeC {\~A}O DE \textit {HARDWARE}}{44}{section.4.9}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {IMPLEMENTA\IeC {\c C}\IeC {\~A}O DAS T\IeC {\'E}CNICAS}}{45}{chapter.5}
 \contentsline {section}{\numberline {5.1}REALIZA\IeC {\c C}\IeC {\~A}O DA COLETA DE DADOS}{45}{section.5.1}
@@ -87,6 +87,9 @@
 \contentsline {subsection}{\numberline {6.1.4}Aplica\IeC {\c c}\IeC {\~a}o da Rede na S\IeC {\'e}rie da Amazon Inc}{77}{subsection.6.1.4}
 \contentsline {subsubsection}{\numberline {6.1.4.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{77}{subsubsection.6.1.4.1}
 \contentsline {subsubsection}{\numberline {6.1.4.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{80}{subsubsection.6.1.4.2}
+\contentsline {section}{\numberline {6.2}CONSIDERA\IeC {\c C}\IeC {\~O}ES DAS S\IeC {\'E}RIES ANALISADAS}{82}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Tempo de Execu\IeC {\c c}\IeC {\~a}o do Treinamento}{83}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Caracter\IeC {\'\i }sticas Apresentadas pela RNA}{83}{subsection.6.2.2}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{81}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{84}{section*.6}
