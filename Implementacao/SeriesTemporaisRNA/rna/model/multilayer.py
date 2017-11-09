@@ -89,7 +89,7 @@ class MultiLayer:
             erro_quadratico = self.trainer.train()
             error.append(erro_quadratico)
             indice.append(i)
-        NetworkWriter.writeToFile(self.network, 'snapshot_redes/rede-feedforward-'+self.nome_empresa+'1000_2.xml')
+        NetworkWriter.writeToFile(self.network, 'snapshot_redes/rede-feedforward-'+self.nome_empresa+'1000_3.xml')
         self.plotaGraficoErro(indice, error)
 
     def testaRede(self):
@@ -109,7 +109,7 @@ class MultiLayer:
 
     def testarRedeEmpresa(self):
         try:
-            rede = NetworkReader.readFrom('snapshot_redes/rede-feedforward-'+self.nome_empresa+'1000_2.xml')
+            rede = NetworkReader.readFrom('snapshot_redes/rede-feedforward-'+self.nome_empresa+'1000_3.xml')
             self.dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_calculados/'
                                   + self.nome_empresa + '_normalizado.txt',header=0)
             print ('sadasda', max(self.dataset['Open-normalizado']))

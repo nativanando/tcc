@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  8 NOV 2017 21:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  9 NOV 2017 00:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1565,6 +1565,9 @@ LaTeX Warning: Label `lingua' multiply defined.
 
 LaTeX Warning: Label `lingua' multiply defined.
 
+
+LaTeX Warning: Label `lingua' multiply defined.
+
 )
 \openout1 = `modelo.aux'.
 
@@ -1688,7 +1691,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 )
 (./Capitulos/revisa_bib.tex [11] [12] [13
 
-]) (./Capitulos/fundamento_teorico.tex [14] <./Imagens/cerebro.png, id=419, 182
+]) (./Capitulos/fundamento_teorico.tex [14] <./Imagens/cerebro.png, id=421, 182
 .6022pt x 66.7293pt>
 File: ./Imagens/cerebro.png Graphic file (type png)
 
@@ -1698,49 +1701,49 @@ Package pdftex.def Info: ./Imagens/cerebro.png used on input line 20.
  [15
 
  <./Imagens/cerebro.png>]
-<./Imagens/neuronio.png, id=436, 263.5446pt x 147.9126pt>
+<./Imagens/neuronio.png, id=438, 263.5446pt x 147.9126pt>
 File: ./Imagens/neuronio.png Graphic file (type png)
 
 <use ./Imagens/neuronio.png>
 Package pdftex.def Info: ./Imagens/neuronio.png used on input line 35.
 (pdftex.def)             Requested size: 364.00139pt x 204.30241pt.
  [16 <./Imagens/neuronio.png>]
-<./Imagens/RNA.png, id=458, 117.0774pt x 149.5989pt>
+<./Imagens/RNA.png, id=460, 117.0774pt x 149.5989pt>
 File: ./Imagens/RNA.png Graphic file (type png)
  <use ./Imagens/RNA.png>
 Package pdftex.def Info: ./Imagens/RNA.png used on input line 57.
 (pdftex.def)             Requested size: 227.52824pt x 235.55559pt.
 
 [17 <./Imagens/RNA.png>]
-<./Imagens/camadaunica.png, id=476, 192.4791pt x 126.4725pt>
+<./Imagens/camadaunica.png, id=478, 192.4791pt x 126.4725pt>
 File: ./Imagens/camadaunica.png Graphic file (type png)
 
 <use ./Imagens/camadaunica.png>
 Package pdftex.def Info: ./Imagens/camadaunica.png used on input line 81.
 (pdftex.def)             Requested size: 273.00278pt x 179.38956pt.
  [18 <./Imagens/camadaunica.png>]
-<./Imagens/separavel.png, id=485, 409.53pt x 360.34625pt>
+<./Imagens/separavel.png, id=487, 409.53pt x 360.34625pt>
 File: ./Imagens/separavel.png Graphic file (type png)
 
 <use ./Imagens/separavel.png>
 Package pdftex.def Info: ./Imagens/separavel.png used on input line 91.
 (pdftex.def)             Requested size: 227.5pt x 200.18147pt.
 
-<./Imagens/multicamada.png, id=496, 238.0092pt x 119.2455pt>
+<./Imagens/multicamada.png, id=498, 238.0092pt x 119.2455pt>
 File: ./Imagens/multicamada.png Graphic file (type png)
 
 <use ./Imagens/multicamada.png>
 Package pdftex.def Info: ./Imagens/multicamada.png used on input line 110.
 (pdftex.def)             Requested size: 409.49722pt x 205.16919pt.
  [19 <./Imagens/separavel.png>]
-<./Imagens/naolinear.png, id=508, 417.56pt x 380.42125pt>
+<./Imagens/naolinear.png, id=510, 417.56pt x 380.42125pt>
 File: ./Imagens/naolinear.png Graphic file (type png)
 
 <use ./Imagens/naolinear.png>
 Package pdftex.def Info: ./Imagens/naolinear.png used on input line 120.
 (pdftex.def)             Requested size: 227.5pt x 207.27031pt.
  [20 <./Imagens/multicamada.png> <./Imagens/naolinear.png>] <./Imagens/recorren
-te.png, id=521, 237.2865pt x 165.4983pt>
+te.png, id=523, 237.2865pt x 165.4983pt>
 File: ./Imagens/recorrente.png Graphic file (type png)
 
 <use ./Imagens/recorrente.png>
@@ -1790,14 +1793,14 @@ Package xcolor Warning: Incompatible color definition on input line 5.
 
 Package xcolor Warning: Incompatible color definition on input line 5.
 
-) <./Imagens/sigmoide.png, id=557, 411.2163pt x 304.9794pt>
+) <./Imagens/sigmoide.png, id=559, 411.2163pt x 304.9794pt>
 File: ./Imagens/sigmoide.png Graphic file (type png)
 
 <use ./Imagens/sigmoide.png>
 Package pdftex.def Info: ./Imagens/sigmoide.png used on input line 185.
 (pdftex.def)             Requested size: 364.02365pt x 235.55617pt.
  [23 <./Imagens/sigmoide.png>] [24] [25] [26]
-[27] [28] <./Imagens/overfitting.png, id=648, 592.614pt x 273.1806pt>
+[27] [28] <./Imagens/overfitting.png, id=650, 592.614pt x 273.1806pt>
 File: ./Imagens/overfitting.png Graphic file (type png)
 
 <use ./Imagens/overfitting.png>
@@ -1922,7 +1925,7 @@ Package xcolor Warning: Incompatible color definition on input line 8.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
-) <./Imagens/dados-pandas.png, id=744, 487.8225pt x 707.64375pt>
+) <./Imagens/dados-pandas.png, id=746, 487.8225pt x 707.64375pt>
 File: ./Imagens/dados-pandas.png Graphic file (type png)
 
 <use ./Imagens/dados-pandas.png>
@@ -1939,14 +1942,14 @@ Overfull \hbox (3.20535pt too wide) in paragraph at lines 93--94
  []
 
 [37 <./Imagens/dados-pandas.png>] [38] [39]
-<./Imagens/arquitetura-rna.jpg, id=804, 98.79309pt x 74.07675pt>
+<./Imagens/arquitetura-rna.jpg, id=806, 98.79309pt x 74.07675pt>
 File: ./Imagens/arquitetura-rna.jpg Graphic file (type jpg)
 
 <use ./Imagens/arquitetura-rna.jpg>
 Package pdftex.def Info: ./Imagens/arquitetura-rna.jpg used on input line 158.
 (pdftex.def)             Requested size: 49.39641pt x 37.03828pt.
  [40 <./Imagens/arquitetura-rna.jpg>]
-[41] <./Imagens/pybrain8.jpeg, id=824, 84.14293pt x 72.57973pt>
+[41] <./Imagens/pybrain8.jpeg, id=826, 84.14293pt x 72.57973pt>
 File: ./Imagens/pybrain8.jpeg Graphic file (type jpg)
 
 <use ./Imagens/pybrain8.jpeg>
@@ -2350,7 +2353,7 @@ Package xcolor Warning: Incompatible color definition on input line 21.
 
 Package xcolor Warning: Incompatible color definition on input line 21.
 
-) [46] <./Graficos/amazon_serie_novo.png, id=904, 141.02974pt x 68.96623pt>
+) [46] <./Graficos/amazon_serie_novo.png, id=906, 141.02974pt x 68.96623pt>
 File: ./Graficos/amazon_serie_novo.png Graphic file (type png)
 
 <use ./Graficos/amazon_serie_novo.png>
@@ -2362,7 +2365,7 @@ Overfull \hbox (6.89386pt too wide) in paragraph at lines 31--32
  [][] 
  []
 
-<./Graficos/apple_serie_novo.png, id=905, 141.02974pt x 68.96623pt>
+<./Graficos/apple_serie_novo.png, id=907, 141.02974pt x 68.96623pt>
 File: ./Graficos/apple_serie_novo.png Graphic file (type png)
 
 <use ./Graficos/apple_serie_novo.png>
@@ -2375,7 +2378,7 @@ Overfull \hbox (6.89386pt too wide) in paragraph at lines 41--42
  []
 
 [47 <./Graficos/amazon_serie_novo.png> <./Graficos/apple_serie_novo.png>]
-<./Graficos/intel_serie_novo.png, id=912, 141.02974pt x 68.96623pt>
+<./Graficos/intel_serie_novo.png, id=914, 141.02974pt x 68.96623pt>
 File: ./Graficos/intel_serie_novo.png Graphic file (type png)
 
 <use ./Graficos/intel_serie_novo.png>
@@ -2387,7 +2390,7 @@ Overfull \hbox (6.89386pt too wide) in paragraph at lines 51--52
  [][] 
  []
 
-<./Graficos/microsoft_serie_novo.png, id=913, 141.02974pt x 68.96623pt>
+<./Graficos/microsoft_serie_novo.png, id=915, 141.02974pt x 68.96623pt>
 File: ./Graficos/microsoft_serie_novo.png Graphic file (type png)
 
 <use ./Graficos/microsoft_serie_novo.png>
@@ -2582,7 +2585,7 @@ Package xcolor Warning: Incompatible color definition on input line 3.
 
 Package xcolor Warning: Incompatible color definition on input line 3.
 
-) [49] <./Imagens/dados_formatados.png, id=939, 81.6651pt x 50.51672pt>
+) [49] <./Imagens/dados_formatados.png, id=941, 81.6651pt x 50.51672pt>
 File: ./Imagens/dados_formatados.png Graphic file (type png)
 
 <use ./Imagens/dados_formatados.png>
@@ -3295,7 +3298,7 @@ Package xcolor Warning: Incompatible color definition on input line 35.
 
 Package xcolor Warning: Incompatible color definition on input line 36.
 
-) <./Graficos/normalizado_novo.png, id=980, 987.2082pt x 482.7636pt>
+) <./Graficos/normalizado_novo.png, id=982, 987.2082pt x 482.7636pt>
 File: ./Graficos/normalizado_novo.png Graphic file (type png)
 
 <use ./Graficos/normalizado_novo.png>
@@ -4583,7 +4586,7 @@ Package xcolor Warning: Incompatible color definition on input line 31.
 Package xcolor Warning: Incompatible color definition on input line 32.
 
 ) [58]) (./Capitulos/resultados.tex [59]
-<./Graficos/erro_intel_primeiro.png, id=1130, 987.2082pt x 482.7636pt>
+<./Graficos/erro_intel_primeiro.png, id=1132, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_intel_primeiro.png Graphic file (type png)
 
 <use ./Graficos/erro_intel_primeiro.png>
@@ -4675,7 +4678,7 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 65--65
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-<./Graficos/predicao_intel.png, id=1142, 987.2082pt x 482.7636pt>
+<./Graficos/predicao_intel.png, id=1144, 987.2082pt x 482.7636pt>
 File: ./Graficos/predicao_intel.png Graphic file (type png)
 
 <use ./Graficos/predicao_intel.png>
@@ -4687,7 +4690,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 73--74
  []
 
 [62] [63 <./Graficos/predicao_intel.png>]
-<./Graficos/erro_intel_1000iteracoes.png, id=1154, 987.2082pt x 482.7636pt>
+<./Graficos/erro_intel_1000iteracoes.png, id=1156, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_intel_1000iteracoes.png Graphic file (type png)
 
 <use ./Graficos/erro_intel_1000iteracoes.png>
@@ -4738,7 +4741,7 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 116--116
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [64 <./Graficos/erro_intel_1000iteracoes.png>]
-<./Graficos/predicao_intel_1000.png, id=1160, 987.2082pt x 482.7636pt>
+<./Graficos/predicao_intel_1000.png, id=1162, 987.2082pt x 482.7636pt>
 File: ./Graficos/predicao_intel_1000.png Graphic file (type png)
 
 <use ./Graficos/predicao_intel_1000.png>
@@ -4751,7 +4754,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 125--126
  []
 
 [65 <./Graficos/predicao_intel_1000.png>]
-<./Graficos/erro_microsoft_200_segundo_cenario.png, id=1167, 987.2082pt x 482.7
+<./Graficos/erro_microsoft_200_segundo_cenario.png, id=1169, 987.2082pt x 482.7
 636pt>
 File: ./Graficos/erro_microsoft_200_segundo_cenario.png Graphic file (type png)
 
@@ -4839,7 +4842,7 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 192--192
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-<./Graficos/microsoft_resultados.png, id=1179, 987.2082pt x 482.7636pt>
+<./Graficos/microsoft_resultados.png, id=1181, 987.2082pt x 482.7636pt>
 File: ./Graficos/microsoft_resultados.png Graphic file (type png)
 
 <use ./Graficos/microsoft_resultados.png>
@@ -4852,7 +4855,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 200--201
  []
 
 [68 <./Graficos/microsoft_resultados.png>]
-<./Graficos/erro_microsoft_1000.png, id=1186, 987.2082pt x 482.7636pt>
+<./Graficos/erro_microsoft_1000.png, id=1188, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_microsoft_1000.png Graphic file (type png)
 
 <use ./Graficos/erro_microsoft_1000.png>
@@ -4903,7 +4906,7 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 246--246
  []
 
 [70 <./Graficos/erro_microsoft_1000.png>]
-<./Graficos/microsoft_1000_resultado.png, id=1197, 987.2082pt x 482.7636pt>
+<./Graficos/microsoft_1000_resultado.png, id=1199, 987.2082pt x 482.7636pt>
 File: ./Graficos/microsoft_1000_resultado.png Graphic file (type png)
 
 <use ./Graficos/microsoft_1000_resultado.png>
@@ -4916,7 +4919,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 259--260
  []
 
 [71 <./Graficos/microsoft_1000_resultado.png>]
-<./Graficos/erro_apple_200.png, id=1203, 987.2082pt x 482.7636pt>
+<./Graficos/erro_apple_200.png, id=1205, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_apple_200.png Graphic file (type png)
 
 <use ./Graficos/erro_apple_200.png>
@@ -5002,7 +5005,7 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 320--320
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[73] <./Graficos/resultado_apple_200.png, id=1216, 987.2082pt x 482.7636pt>
+[73] <./Graficos/resultado_apple_200.png, id=1218, 987.2082pt x 482.7636pt>
 File: ./Graficos/resultado_apple_200.png Graphic file (type png)
 
 <use ./Graficos/resultado_apple_200.png>
@@ -5014,7 +5017,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 331--332
  [][] 
  []
 
-<./Graficos/erro_apple_1000_2.png, id=1217, 987.2082pt x 482.7636pt>
+<./Graficos/erro_apple_1000_2.png, id=1219, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_apple_1000_2.png Graphic file (type png)
 
 <use ./Graficos/erro_apple_1000_2.png>
@@ -5062,7 +5065,7 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 372--372
  []
 
 [75 <./Graficos/erro_apple_1000_2.png>]
-<./Graficos/apple_1000_resultado.png, id=1229, 987.2082pt x 482.7636pt>
+<./Graficos/apple_1000_resultado.png, id=1231, 987.2082pt x 482.7636pt>
 File: ./Graficos/apple_1000_resultado.png Graphic file (type png)
 
 <use ./Graficos/apple_1000_resultado.png>
@@ -5075,7 +5078,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 386--387
  []
 
 [76 <./Graficos/apple_1000_resultado.png>]
-<./Graficos/erro_amazon_200.png, id=1235, 987.2082pt x 482.7636pt>
+<./Graficos/erro_amazon_200.png, id=1237, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_amazon_200.png Graphic file (type png)
 
 <use ./Graficos/erro_amazon_200.png>
@@ -5165,9 +5168,25 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 451--451
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[78 <./Graficos/erro_amazon_200.png>]) (./modelo.bbl [79]
+[78 <./Graficos/erro_amazon_200.png>]
+<./Graficos/resultados_amazon_200.png, id=1249, 987.2082pt x 482.7636pt>
+File: ./Graficos/resultados_amazon_200.png Graphic file (type png)
+
+<use ./Graficos/resultados_amazon_200.png>
+Package pdftex.def Info: ./Graficos/resultados_amazon_200.png used on input lin
+e 467.
+(pdftex.def)             Requested size: 455.0pt x 222.50119pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 467--468
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./modelo.bbl [79] [80 <./Graficos/resultados_amazon_200.png>]
 bibitemlist
-[80
+[81
 
 ]
 Underfull \hbox (badness 1418) in paragraph at lines 211--215
@@ -5175,7 +5194,7 @@ Underfull \hbox (badness 1418) in paragraph at lines 211--215
 ird edi-tion). 2004.
  []
 
-[81]
+[82]
 Underfull \hbox (badness 5077) in paragraph at lines 254--259
 []\T1/cmr/m/n/12 TORORADAR. Aná-lise téc-nica de ações. 2015. Acesso em 10 de a
 bril de
@@ -5187,11 +5206,11 @@ Underfull \hbox (badness 4266) in paragraph at lines 254--259
 m . br / investimento / analise-[]tecnica /
  []
 
-) [82]
+) [83]
 No file modelo.ind.
 
 AED: lastpage setting LastPage
-[83]
+[84]
 \tf@lof=\write6
 \openout6 = `modelo.lof'.
 
@@ -5216,10 +5235,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
  ) 
 Here is how much of TeX's memory you used:
- 36490 strings out of 493105
- 791088 string characters out of 6137072
- 1184507 words of memory out of 5000000
- 38621 multiletter control sequences out of 15000+600000
+ 36499 strings out of 493105
+ 791322 string characters out of 6137072
+ 1184533 words of memory out of 5000000
+ 38626 multiletter control sequences out of 15000+600000
  18411 words of font info for 52 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  60i,13n,83p,2425b,2374s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5241,10 +5260,10 @@ super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfxc1200.pfb>
-Output written on modelo.pdf (84 pages, 3171384 bytes).
+Output written on modelo.pdf (85 pages, 3242263 bytes).
 PDF statistics:
- 1708 PDF objects out of 1728 (max. 8388607)
- 1503 compressed objects within 16 object streams
- 526 named destinations out of 1000 (max. 500000)
- 849 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1722 PDF objects out of 1728 (max. 8388607)
+ 1514 compressed objects within 16 object streams
+ 529 named destinations out of 1000 (max. 500000)
+ 862 words of extra memory for PDF output out of 10000 (max. 10000000)
 

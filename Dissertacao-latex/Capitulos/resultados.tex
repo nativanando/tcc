@@ -455,6 +455,20 @@ Data    & Valor real   & Resultado    & Erro (\%) & Variação\\
 
 Analisando a Tabela 11, pode-se observar que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 1.34\%, se aproximando, consideravelmente, dos valores reais. O erro médio, analisado para todo o período de predição, ficou em torno de 0.69\%, o que pode ser considerado baixo levando-se em conta o número de iterações utilizadas para treinar a RNA. Já a medida de dispersão dos erros em torno da média obtida (desvio padrão) foi de aproximadamente 0.53\%.
 
-Entretanto, analisando de forma mais detalhada cada valor resultante, pode-se evidenciar três erros mais altos nos dias 25/08/2017, 30/08/2017 e 31/08/2017 com 1.179\%, 1.166\% e 1.338\%, respectivamente. Tendo em vista a grande diferença da base de dados da Amazon em comparação com as demais analisadas neste trabalho, pode-se destacar a capacidade da rede em manter o erro médio, mesmo com os valores variando de uma maneira considerável. Obviamente as variações deste modelo de dados são maiores, pois as mesmas são proporcionais aos valores que estão operando.
+Entretanto, analisando de forma mais detalhada cada valor resultante, pode-se evidenciar três erros mais altos nos dias 25/08/2017, 30/08/2017 e 31/08/2017 com 1.179\%, 1.166\% e 1.338\%, respectivamente. Tendo em vista a grande diferença da base de dados da Amazon em comparação com as demais analisadas neste trabalho, pode-se destacar a capacidade da rede em manter o erro médio, mesmo com os valores variando de uma maneira considerável.
 
-Ainda detalhando os resultados obtidos, pode-se observar que a RNA não seguiu nenhum padrão de dispersão, de alta ou queda da ação, muito provavel porquê a quantidade de treinamento foi insuficiente para mapear o conjunto de dados e suavizar o mesmo. Porém, novamente frisando, apesar de alguns erros chegarem na margem de 1\%, os resultados ainda são significativos, levando-se em conta um investimento no valor da ação da Amazon.
+Levando-se em conta os valores resultantes, é possível observar que as variações do presente modelo de dados são maiores que as das séries analisadas anteriormente, pois as mesmas são proporcionais aos valores em que estão operando. Ainda detalhando os resultados obtidos, é interessante evidenciar que a RNA não seguiu nenhum padrão de dispersão, de alta ou queda da ação, muito provável porque a quantidade de treinamento foi insuficiente para mapear o conjunto de dados e suavizar o mesmo. Porém, novamente frisando, apesar de alguns erros chegarem na margem de 1\%, os resultados ainda são significativos, levando em consideração os valores financeiros operados pela Amazon Inc. 
+
+Portanto, a análise específica desta série implica em resultados relevantes para o modelo da rede e sua arquitetura proposta, pois a mesma apresentou uma boa capacidade de adaptabilidade, obtendo resultados significativos em varios ambientes distintos.
+
+Por fim, no Gráfico 20 é possível notar, de forma mais intuitiva, em quais momentos a previsão obteve maior e menor exatidão, levando em consideração os pontos dos valores reais da ação analisada.
+\begin{grafico}[h]
+	\centering
+	\fbox{\includegraphics[width=1\textwidth]{resultados_amazon_200}}
+	\caption{Distribuição dos dados resultantes da RNA e seus valores esperados}
+	\fonte{Elaborado pelo autor}
+	\label{lingua}
+\end{grafico}
+
+\subsubsection{Treinamento com 1000 Iterações}	
+
