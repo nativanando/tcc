@@ -3,15 +3,16 @@
 \chapter{ANÁLISE DOS RESULTADOS}\label{ch:resultados}
 Este capítulo tem como finalidade apresentar os resultados obtidos através das implementações demonstradas no Capítulo 5.
 
-\section{ANÁLISE DAS SÉRIES UTILIZADAS}
-Após a implementação do modelo da RNA, através dos conjuntos de dados coletados, faz-se necessário avaliar como a respectiva técnica se comportou. Tendo isso em vista, a mesma foi aplicada em função do objetivo principal do trabalho, que é medir a capacidade de precisão de acerto no valor de abertura das ações. Portanto, foi elaborada, de forma independente, uma análise de eficácia do modelo para o cenário de cada empresa utilizada no presente trabalho. É importante ressaltar que os modelos foram implementados levando em consideração todos os \textit{scripts}, métodos e ferramentas utilizadas no capítulo anterior.
+Após as etapas de especificação e implementação do modelo da RNA e, também, da definição e utilização das séries temporais coletadas, faz-se necessário avaliar como a respectiva técnica se comportou. Tendo isso em vista, a mesma foi aplicada em função do objetivo principal do trabalho, que é medir a capacidade de precisão de acerto no valor de abertura das ações.
 
-\subsection{Aplicação da Rede na Série da Intel Corporation}
+A partir disso, foi elaborada, de forma independente, uma análise de eficácia do modelo para o cenário de cada empresa utilizada no presente trabalho. É importante ressaltar que os modelos foram implementados levando em consideração todos os \textit{scripts}, métodos e ferramentas utilizadas no capítulo anterior.
+
+\section{APLICAÇÃO DA REDE NA SÉRIE DA INTEL CORPORATION}
 A rede da Intel Corporation foi treinada com o objetivo de capturar o maior nível de variação possível dos dados, visando mapear um maior conjunto de padrões e, assim, responder de forma eficiente à dados dispersos através de uma boa capacidade de generalização. Tendo isso em vista, o período de treinamento preparado foi de 09/04/2001 até 21/08/2017, totalizando 4117 registros.
 
 Para o presente caso foram construídos dois cenários de simulação, buscando obter um parâmetro de ciclos de treinamento adequado ao modelo de dados utilizado. As métricas definidas para análise, a partir destes ciclos de treinamento, são: o comportamento da função de custo que compõem o modelo (erro quadrático médio, EQM) e a margem de erro dos valores resultantes da rede, no período de 23/08/2017 a 31/08/2017, em relação aos valores reais. Os parâmetros utilizados foram: 200 e 1000 iterações.
 
-\subsubsection{Treinamento com 200 Iterações}	
+\subsection{Treinamento com 200 Iterações}	
 A ideia de executar o treinamento com uma quantidade baixa de iterações, é feita com o intuito de proporcionar um treinamento mais rápido e com resultados significativos, levando em consideração as características especificas do modelo de dados. Portanto, para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (200) com o número de registros de testes (4117), resultando em um total de 823.400 exemplos calculados pela rede. O Gráfico 7 demonstra, de acordo com a quantidade de ciclos, a variação do EQM no primeiro cenário de teste com 200 iterações.
 \begin{grafico}[h]
 	\centering
@@ -78,7 +79,7 @@ Analisando a Tabela 2, pode-se observar que os resultados obtidos foram signific
 
 Analisando o gráfico é possível observar como os resultados são próximos aos esperados. Os valores de abertura, nos respectivos dias testados, são representados por um ponto verde. Já os resultados obtidos pela rede são caracterizados pelo ponto vermelho. No gráfico também fica evidente, de maneira ilustrativa, como a série não acompanhou as quedas do período e seguiu uma tendência crescente. 
 
-\subsubsection{Treinamento com 1000 Iterações}	
+\subsection{Treinamento com 1000 Iterações}	
 Com a finalidade de comparar com a simulação anterior, foi realizado um teste com 1000 épocas de treinamento visando alcançar um resultado mais preciso e, também, para validar se o aumento na quantidade de iterações, no processo de treinamento, melhoram os resultados retornados pela rede.
 
 Para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (1000) com o número de registros de testes (4117), resultando em um total de 4.117.000 exemplos calculados pela rede.
@@ -130,12 +131,12 @@ Analisando a Tabela 3, pode-se observar que os resultados obtidos foram signific
 
 Apesar da diferença do erro percentual relativo entre os dois cenários ser de apenas 4\%, foi encontrada uma melhor parâmetrização para o presente modelo de dados utilizando um treinamento com 200 iterações, pois a exatidão dos valores preditos foram mais eficazes neste método de treinamento. Sendo assim, chega-se a definição que nem sempre um número maior de ciclos de treinamento aumentam a precisão da RNA. Neste caso, a rede sofreu uma convergência do EQM em torno de 200 iteraçoes, este detalhe pode ser observado visualizando o comportamento do Gráfico 9. Dessa forma, as iterações posteriores propagaram o erro de forma desnecessária, alterando assim os pesos sinápticos dos neurônios e, automaticamente, causando uma maior dispersão nos resultados. Este processo ocorrido na segunda simulação, na literatura, é denominado \textit{Overtraining}, detalhado no Capítulo 3.
 
-\subsection{Aplicação da Rede na Série da Microsoft Corporation}
+\section{APLICAÇÃO DA REDE NA SÉRIE DA MICROSOFT CORPORATION}
 A rede da Microsoft Corporation foi treinada utilizando as mesmas técnicas da Intel Corporation, ou seja, com o intuito de capturar o maior nível de variação possível dos dados, visando mapear um maior conjunto de padrões e, assim, obter uma boa capacidade de generalização. Tendo isso em vista, o período de treinamento preparado foi de 09/04/2001 até 21/08/2017, totalizando 4117 registros.
 
 Para o presente caso foram construídos dois cenários de simulação, buscando obter um parâmetro de ciclos de treinamento adequado ao modelo de dados utilizado. As métricas definidas para análise, a partir destes ciclos de treinamento, são: o comportamento da função de custo que compõem o modelo (erro quadrático médio, EQM) e a margem de erro dos valores resultantes da rede, no período de 23/08/2017 a 31/08/2017, em relação aos valores reais. Os parâmetros de ciclos de treinamento utilizados foram: 200 e 1000 iterações.
 
-\subsubsection{Treinamento com 200 Iterações}	
+\subsection{Treinamento com 200 Iterações}	
 O treinamento com 200 iterações foi executado com o objetivo de verificar a capacidade de precisão da rede com um número menor de iterações. Para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (200) com o número de registros de testes (4117), resultando em um total de 823.400 exemplos calculados pela rede.
 
 Para este caso, a RNA foi inicializada duas vezes com o objetivo de observar o comportamento e a tendência do EQM em relação ao algoritmo de inicialização. No primeiro cenário, a rede iniciou-se com o EQM em 0.0018579672451418453 e, após as 200 iterações, conclui-se com um erro de 3.6623220378015219.$10^{-05}$. No segundo cenário, o erro foi inicializado com 0.0047598765727053707 e, após as 200 iterações, conclui-se com um erro de 3.8483854181673219.$10^{-05}$.
@@ -207,7 +208,7 @@ Visualizando os erros obtidos, pode-se evidenciar que não houve grande dispers�
 
 A partir destes cenários levantados, é possível chegar a conclusão de que a rede não conseguiu prever com mais exatidão os momentos de queda da ação, enquanto que, nos momentos de alta, obteve uma boa capacidade de adaptabilidade.
 
-\subsubsection{Treinamento com 1000 Iterações}	
+\subsection{Treinamento com 1000 Iterações}	
 Com a finalidade de comparar com a simulação anterior, foi realizado um teste com 1000 épocas de treinamento visando alcançar um resultado mais preciso e, também, para validar se o aumento na quantidade de iterações, no processo de treinamento, melhoram os resultados retornados pela rede.
 
 Para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (1000) com o número de registros de testes (4117), resultando em um total de 4.117.000 exemplos calculados pela rede.
@@ -262,12 +263,12 @@ Portanto, novamente é possível observar que o aumento na quantidade de épocas
 	\label{lingua}
 \end{grafico}
 
-\subsection{Aplicação da Rede na Série da Apple Inc}
+\section{APLICAÇÃO DA REDE NA SÉRIE DA APPLE INC}
 A rede da Apple foi treinada utilizando as mesmas técnicas dos cenários anteriormente testados, ou seja, com o intuito de capturar o maior nível de variação possível dos dados, proporcionando para a RNA mapear uma quantia significativa de valores e situações distintas, presentes na série histórica utilizada, além de buscar uma boa capacidade de generalização para o modelo aplicado. O período de treinamento preparado foi de 09/04/2001 até 21/08/2017, totalizando 4117 registros.
 
 Para o presente caso foram construídos dois cenários de simulação, buscando obter um parâmetro de ciclos de treinamento adequado ao modelo de dados utilizado. As métricas definidas para análise, a partir destes ciclos de treinamento, são: o comportamento da função de custo que compõem o modelo (erro quadrático médio, EQM) e a margem de erro dos valores resultantes da rede, no período de 23/08/2017 a 31/08/2017, em relação aos valores reais. Os parâmetros de ciclos de treinamento utilizados foram: 200 e 1000 iterações.
 
-\subsubsection{Treinamento com 200 Iterações}	
+\subsection{Treinamento com 200 Iterações}	
 O treinamento com 200 iterações foi executado com o objetivo de verificar a capacidade de precisão da rede com um número menor de iterações. Para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (200) com o número de registros de testes (4117), resultando em um total de 823.400 exemplos calculados pela rede.
 
 Para este caso, a RNA foi inicializada duas vezes com o objetivo de observar o comportamento e a tendência do EQM em relação ao algoritmo de inicialização. No primeiro cenário, a rede iniciou-se com o EQM em 0.000439745663518 e, após as 200 iterações, conclui-se com um erro de 1.9971768385490857.$10^{-05}$. No segundo cenário, o erro foi inicializado com 0.000710657880333 e, após as 200 iterações, conclui-se com um erro de 1.915103371487409.$10^{-05}$. O Gráfico 15 demonstra, de forma mais intuitiva, o comportamento do EQM no primeiro cenário de inicialização e treinamento da rede.
@@ -334,7 +335,7 @@ O erro médio, analisado para todo o período de predição, ficou em torno de 0
 	\label{lingua}
 \end{grafico}
 
-\subsubsection{Treinamento com 1000 Iterações}	
+\subsection{Treinamento com 1000 Iterações}	
 Com a finalidade de comparar com a simulação anterior, foi realizado um teste com 1000 épocas de treinamento visando alcançar um resultado mais preciso e, também, para validar se o aumento na quantidade de iterações, no processo de treinamento, melhoram os resultados retornados pela rede.
 
 Para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (1000) com o número de registros de testes (4117), resultando em um total de 4.117.000 exemplos calculados pela rede.
@@ -389,12 +390,12 @@ Portanto, novamente é possível observar que o aumento na quantidade de épocas
 	\label{lingua}
 \end{grafico}
 
-\subsection{Aplicação da Rede na Série da Amazon Inc}
+\section{APLICAÇÃO DA REDE NA SÉRIE DA AMAZON INC}
 A rede da Amazon Inc foi treinada utilizando as mesmas técnicas analisadas anteriormente, ou seja, com o intuito de capturar o maior nível de variação possível dos dados, visando mapear um maior conjunto de padrões e, assim, obter uma boa capacidade de generalização. Tendo isso em vista, o período de treinamento preparado foi de 09/04/2001 até 21/08/2017, totalizando 4117 registros.
 
 Para o presente caso foram construídos dois cenários de simulação, buscando obter um parâmetro de ciclos de treinamento adequado ao modelo de dados utilizado. As métricas definidas para análise, a partir destes ciclos de treinamento, são: o comportamento da função de custo que compõem o modelo (erro quadrático médio, EQM) e a margem de erro dos valores resultantes da rede, no período de 23/08/2017 a 31/08/2017, em relação aos valores reais. Os parâmetros de ciclos de treinamento utilizados foram: 200 e 1000 iterações.
 
-\subsubsection{Treinamento com 200 Iterações}	
+\subsection{Treinamento com 200 Iterações}	
 A ideia de executar o treinamento com uma quantidade baixa de iterações, é feita com o intuito de proporcionar um treinamento mais rápido e com resultados significativos, levando-se em conta as características especificas do modelo de dados. Portanto, o treinamento com 200 iterações foi executado com o objetivo de verificar a capacidade de precisão da rede com um total de 200 iterações. Para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (200) com o número de registros de testes (4117), resultando em um total de 823.400 exemplos calculados pela rede.
 
 Para este caso, a RNA foi inicializada três vezes com o objetivo de observar o comportamento e a tendência do EQM em relação ao algoritmo de inicialização. No primeiro cenário, a rede iniciou-se com o EQM em 0.00240540733964 e, após as 200 iterações, conclui-se com um erro de 1.79339271141.$10^{-05}$. No segundo cenário, o erro foi inicializado com 0.00489046785604 e, após as 200 iterações, conclui-se com um com aproximadamente 1.59601609973.$10^{-05}$. O terceiro treino obteve um erro inicial de 0.00849440933377 e, após o término das 1000 épocas de treinamento, conclui-se com um percentual de 1.77038646762.$10^{-05}$.
@@ -470,7 +471,7 @@ Por fim, no Gráfico 20 é possível notar, de forma mais intuitiva, em quais mo
 	\label{lingua}
 \end{grafico}
 
-\subsubsection{Treinamento com 1000 Iterações}
+\subsection{Treinamento com 1000 Iterações}
 Com a finalidade de comparar com a simulação anterior, foi realizado um teste com 1000 épocas de treinamento visando alcançar um resultado mais preciso e, também, para validar se o aumento na quantidade de iterações, no processo de treinamento, melhoram os resultados retornados pela rede.
 
 Para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (1000) com o número de registros de testes (4117), resultando em um total de 4.117.000 exemplos calculados pela rede.
@@ -523,17 +524,7 @@ No presente cenário em análise, os valores mais falhos de toda a série foram 
 	\label{lingua}
 \end{grafico}
 
-\section{CONSIDERAÇÕES DAS SÉRIES ANALISADAS}
-Tendo em vista as análises de todos os testes executados anteriormente, pode-se evidenciar que o modelo e a arquitetura proposta da RNA obtiveram excelentes resultados para os cenários apresentados. A partir disso, algumas características e informações gerais são necessárias para detalhar, de maneira mais precisa, o comportamento do modelo de rede implementado.
-
-\subsection{Tempo de Execução do Treinamento}
+\section{TEMPO DE EXECUÇÃO DO TREINAMENTO}
 Um fator que deve ser levado em conta, é a quantidade de tempo de execução para realizar o treinamento da RNA. Foram avaliados os dois cenários utilizados neste trabalho, com 200 e 1000 ciclos de treinamento. Tendo isso em vista, o tempo de execução, levando em consideração as características do \textit{hardware} especificado no Capítulo 4, foi de aproximadamente 5 minutos para o treino de 200 iterações e de 28 minutos para o treino de 1000 iterações. 
 
-Obviamente, além do \textit{hardware}, o modelo de dados utilizado tal como a quantidade de registros, variáveis e, também, a arquitetura em que a RNA foi implementada influenciam no tempo de execução. Portanto, como neste trabalho o período de treinamento foi o mesmo para cada empresa, todos os resultados obtiveram aproximadamente o mesmo tempo de execução.
-
-\subsection{Características Apresentadas pela RNA}
-Observando todos os cenários analisados neste capítulo, pode-se chegar a definição de que a rede apresentou um padrão no decaimento do EQM, onde, as empresas que mais oscilaram seus valores durante a série treinada obtiveram um erro menor e precisaram de um número maior de iterações para convergir. 
-
-Pontuando este detalhe, é possível definir que o modelo proposto trabalha com erros maiores em séries temporais onde os valores possuem pouca variação, pois os mesmos já são suficientes para chegarem em resultados próximos aos esperados. Um exemplo deste caso pode ser observado analisando os erros obtidos pela ação da Intel Corporation, que foi a rede que menos oscilou dentre as utilizadas. Portanto, pode-se concluir que em séries temporais com esta característica, os pesos dos neurônios da camada oculta da rede não requerem erros muito baixos para realizar o mapeamento e o aprendizado dos dados. 
-
-Entretanto, em séries temporais com uma variabilidade maior nas amostras o erro resultante foi mais baixo, pois a rede necessita de um valor menor para realizar aproximações aos respectivos resultados. Este comportamento fica explícito ao analisar as ações da Amazon, que foi a série que mais variou dentre as utilizadas neste trabalho. Portanto, pode-se concluir que em séries com esta característica, os pesos dos neurônios da camada oculta da rede requerem erros mais baixos para realizar o mapeamento e o aprendizado dos dados. 
+Obviamente que, além do \textit{hardware}, o modelo de dados utilizado tal como a quantidade de registros, variáveis e, também, a arquitetura em que a RNA foi implementada influenciam no tempo de execução. Como neste trabalho o período de treinamento foi o mesmo para cada empresa, todos os resultados obtiveram aproximadamente o mesmo tempo de execução.

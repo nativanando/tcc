@@ -1,22 +1,17 @@
 % !TeX encoding = UTF-8
 
 \chapter{CONCLUSÕES E SUGESTÕES PARA FUTUROS TRABALHOS}\label{ch:conclusao}
-\section{CONCLUSÕES} 
-O uso das bibliotecas que Python oferece para a mineração de dados...
+Este capítulo tem por finalidade realizar as devidas considerações obtidas durante o desenvolvimento dessa dissertação e, também, estimar trabalhos posteriores que podem dar sequência as técnicas aplicadas.
+\section{CONCLUSÕES}
 
-- Resgatar o objetivo
+Decorrente aos resultados alcançados no Capítulo 6, pode-se evidenciar que o modelo e a arquitetura proposta da RNA obtiveram excelentes resultados em prol do objetivo principal do trabalho, que é medir a capacidade de precisão de acerto no valor de abertura das ações. A partir disso, algumas considerações gerais são necessárias para detalhar, de maneira mais precisa, o comportamento do modelo de rede implementada neste trabalho.
 
-- Comentar as ferramentas estudadas
+Portanto, detalhando todos os cenários analisados, pode-se chegar a definição de que a rede apresentou um padrão no decaimento do EQM, onde, as empresas que mais oscilaram seus valores durante a série treinada obtiveram um erro menor e precisaram de um número maior de iterações para convergir. 
 
-- Comentar as ferramentas utilizadas
+Pontuando esta particularidade, é possível afirmar que o modelo trabalha com erros maiores em séries temporais onde os valores possuem pouca variação, pois os mesmos já são suficientes para chegarem em resultados próximos aos esperados. Um exemplo deste caso pode ser observado analisando os erros obtidos pela ação da Intel Corporation, que foi a rede que menos oscilou dentre as utilizadas. Portanto, pode-se concluir que em séries temporais com esta característica, os pesos dos neurônios da camada oculta da rede não requerem erros muito baixos para realizar o mapeamento e o aprendizado dos dados. 
 
-- Breve resumo dos resultados
-
-- Pontos positivos e negativos (O fato de não ter o perfil real)
-
+Entretanto, em séries temporais com uma variabilidade maior nas amostras o erro resultante foi mais baixo, pois a rede necessita de um valor menor para realizar aproximações aos respectivos resultados. Este comportamento fica explícito ao visualizar as ações da Amazon, que foi a série que mais variou dentre as utilizadas neste trabalho. Portanto, pode-se concluir que em séries com esta característica, os pesos dos neurônios da camada oculta da RNA requerem erros mais baixos para realizar o mapeamento e o aprendizado dos dados.
+  
+O uso das ferramentas utilizadas para o desenvolvimento do trabalho, como a linguagem de programação Python e suas bibliotecas PyBrain, pandas e matplotlib, foram de grande auxilio para a execução da aquisição, visualização, manipulação e refinamento realizado nas séries temporais, bem como proporcionaram uma maneira simples de se trabalhar com a implementação do modelo da rede neural, formando assim um ambiente estável e produtivo para o contexto de aplicabilidade.
 
 \section{SUGESTÕES PARA FUTUROS TRABALHOS}
-
-%
-%7.2
-%Pensar em outra API (Aplicação para previsão de resultados) ou rede social, baseando-se numa pergunta específica
