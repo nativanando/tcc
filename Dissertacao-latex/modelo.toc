@@ -89,8 +89,6 @@
 \contentsline {section}{\numberline {6.5}TEMPO DE EXECU\IeC {\c C}\IeC {\~A}O DO TREINAMENTO}{82}{section.6.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {CONCLUS\IeC {\~O}ES E SUGEST\IeC {\~O}ES PARA FUTUROS TRABALHOS}}{84}{chapter.7}
-\contentsline {section}{\numberline {7.1}CONCLUS\IeC {\~O}ES}{84}{section.7.1}
-\contentsline {section}{\numberline {7.2}SUGEST\IeC {\~O}ES PARA FUTUROS TRABALHOS}{85}{section.7.2}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{REFER{\^ E}NCIAS}{86}{section*.6}
