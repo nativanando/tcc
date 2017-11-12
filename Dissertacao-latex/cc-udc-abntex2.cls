@@ -57,7 +57,7 @@
 % Comandos de dados - nome autor para citacao
 \providecommand{\imprimircurso}{}
 \newcommand{\curso}[1]{\renewcommand{\imprimircurso}{#1}}
-\curso{Ci{\^ e}ncia da Computa{\c c}{\~ a}o}
+\curso{Ci{\^ e}ncia da Computa{\c c}{\~ a}o }
 
 % Comandos de dados - nome autor para citacao
 \providecommand{\imprimirsegundoautor}{}
