@@ -71,8 +71,6 @@ class MultiLayer:
         self.dataset_teste = self.dataset.iloc[4117:4125]
 
         self.dataset_treino = SupervisedDataSet(8, 1)
-        print(self.dataset.iloc[1]['Open-normalizado'])
-        print(self.dataset.iloc[2]['Open'])
 
         for i in range(self.dataset.__len__() - 8):
             self.dataset_treino.addSample([self.dataset.iloc[i]['Open-normalizado'], self.dataset.iloc[i]['High-normalizado'],

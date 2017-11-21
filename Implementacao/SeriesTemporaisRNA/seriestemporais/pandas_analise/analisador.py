@@ -4,7 +4,7 @@ Os métodos implementados manipulam o dataset, criando os indicadores técnicos 
 """
 __author__ = 'Fernando Demarchi Natividade Luiz'
 __email__ = "nativanando@gmail.com"
-__version__ = "0.0"
+__version__ = "0.0.01"
 
 import pandas as pd
 import matplotlib.pyplot as plt
