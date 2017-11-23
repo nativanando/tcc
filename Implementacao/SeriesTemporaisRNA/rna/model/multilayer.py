@@ -85,13 +85,13 @@ class MultiLayer:
         error = []
         indice = []
         self.trainer = BackpropTrainer(self.network, self.dataset_treino, learningrate=0.4, verbose=True)
-        for i in range (1000):
+        for i in range (200):
             erro_quadratico = self.trainer.train()
             error.append(erro_quadratico)
             indice.append(i)
         fim = time.time()
         print(fim - inicio)
-        NetworkWriter.writeToFile(self.network, 'snapshot_redes/rede-feedforward-'+self.nome_empresa+'1000_tempo.xml')
+        NetworkWriter.writeToFile(self.network, 'snapshot_redes/rede-feedforward-'+self.nome_empresa+'banca.xml')
         self.plotaGraficoErro(indice, error)
 
     def testaRede(self):
@@ -111,7 +111,7 @@ class MultiLayer:
 
     def testarRedeEmpresa(self):
         try:
-            rede = NetworkReader.readFrom('snapshot_redes/rede-feedforward-'+self.nome_empresa+'1000_tempo.xml')
+            rede = NetworkReader.readFrom('snapshot_redes/rede-feedforward-'+self.nome_empresa+'banca.xml')
             self.dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_calculados/'
                                   + self.nome_empresa + '_normalizado.txt',header=0)
             print ('sadasda', max(self.dataset['Open-normalizado']))

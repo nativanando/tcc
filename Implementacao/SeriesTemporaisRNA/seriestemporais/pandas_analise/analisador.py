@@ -17,7 +17,7 @@ class Analisador:
         self.plota_grafico_empresa()
 
     def cria_dataset(self):
-        self.dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados/'+self.nome_empresa+'.txt')
+        self.dataset = pd.read_csv('~/Documentos/TCC/dist-tcc/Implementacao/dados_calculados/dados_brutos/'+self.nome_empresa+'.txt')
         self.dataset.head()  #informacoes sobre a base (colunas etc)
         self.dataset['Date'] = pd.to_datetime(self.dataset['Date'])  #repassando o valor para um formato de data
         self.dataset['movel_26'] = None

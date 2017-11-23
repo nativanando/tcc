@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import datetime
 class Grafico:
 
     def __init__(self):
@@ -15,13 +15,13 @@ class Grafico:
             return 0
 
     def define_linha_coluna(self):
-        self.linha = self.dataset_microsoft['Date'] = pd.to_datetime(self.dataset_cisco['Date'])
-        self.coluna = self.dataset_microsoft['Open']
+        self.linha = pd.to_datetime(self.dataset_apple["Date"])
+        self.coluna = self.dataset_apple['Open']
 
 
     def cria_grafico(self):
         fig, ax = plt.subplots()
-        ax.plot(self.linha, self.coluna)
+        ax.plot(self.coluna)
         fig.set_size_inches(12, 8, forward=True)
         plt.grid(True)
         plt.show()

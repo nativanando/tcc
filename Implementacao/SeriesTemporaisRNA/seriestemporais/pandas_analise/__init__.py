@@ -1,11 +1,9 @@
-from seriestemporais.pandas_analise.classificador import *
+from seriestemporais.pandas_analise.analisador import *
 
 if __name__ == '__main__':
 
-    classificador = Classificador("intel")
-    classificador = Classificador("microsoft")
-    classificador = Classificador("cisco")
-    classificador = Classificador("amazon")
+    classificador = Analisador("intel")
+
 
 
 
