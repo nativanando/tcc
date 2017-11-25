@@ -23,10 +23,10 @@ class Normalizador:
 
     def cria_grafico(self):
         fig, ax = plt.subplots()
-        ax.plot(self.coluna1)
-        ax.plot(self.coluna2)
-        ax.plot(self.coluna3)
-        ax.plot(self.coluna4)
+        ax.plot(self.linha, self.coluna1)
+        ax.plot(self.linha, self.coluna2)
+        ax.plot(self.linha, self.coluna3)
+        ax.plot(self.linha, self.coluna4)
         fig.set_size_inches(12, 8, forward=True)
         plt.legend(['Amazon', 'Microsoft', 'Intel', 'Apple'])
         plt.grid(True)

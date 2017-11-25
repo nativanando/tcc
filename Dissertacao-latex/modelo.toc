@@ -6,89 +6,89 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {INTRODU\IeC {\c C}\IeC {\~A}O}}{9}{chapter.1}
-\contentsline {section}{\numberline {1.1}JUSTIFICATIVA}{10}{section.1.1}
-\contentsline {section}{\numberline {1.2}OBJETIVOS}{10}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Objetivo Geral}{10}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Objetivos Espec\IeC {\'\i }ficos}{11}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}ESTRUTURA DO DOCUMENTO}{11}{section.1.3}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {INTRODU\IeC {\c C}\IeC {\~A}O}}{11}{chapter.1}
+\contentsline {section}{\numberline {1.1}JUSTIFICATIVA}{12}{section.1.1}
+\contentsline {section}{\numberline {1.2}OBJETIVOS}{12}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Objetivo Geral}{12}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Objetivos Espec\IeC {\'\i }ficos}{13}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}ESTRUTURA DO DOCUMENTO}{13}{section.1.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {REVIS\IeC {\~A}O BIBLIOGR\IeC {\'A}FICA}}{13}{chapter.2}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {REVIS\IeC {\~A}O BIBLIOGR\IeC {\'A}FICA}}{15}{chapter.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {FUNDAMENTA\IeC {\c C}\IeC {\~A}O TE\IeC {\'O}RICA}}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}FUNDAMENTOS DE REDES NEURAIS ARTIFICIAIS}{15}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Neur\IeC {\^o}nios Biol\IeC {\'o}gicos}{15}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Neur\IeC {\^o}nios Artificiais}{16}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Redes Neurais Artificiais}{17}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}ARQUITETURA DE REDES NEURAIS ARTIFICIAIS}{17}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Redes Alimentadas Adiante com Camada \IeC {\'U}nica}{18}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Redes Alimentadas Adiante com M\IeC {\'u}ltiplas Camadas}{19}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Redes de Camadas Recorrentes}{20}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Redes de Hopfield}{21}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Redes Auto-Organiz\IeC {\'a}veis}{22}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}FUN\IeC {\c C}\IeC {\~A}O DE ATIVA\IeC {\c C}\IeC {\~A}O}{22}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Fun\IeC {\c c}\IeC {\~a}o Limiar}{22}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Fun\IeC {\c c}\IeC {\~a}o Sigm\IeC {\'o}ide}{23}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}TREINAMENTO DE UMA REDE NEURAL ARTIFICIAL}{24}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Processo de Aprendizagem}{24}{subsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Aprendizagem Supervisionada}{25}{subsubsection.3.4.1.1}
-\contentsline {subsubsection}{\numberline {3.4.1.2}Aprendizagem n\IeC {\~a}o Supervisionada}{25}{subsubsection.3.4.1.2}
-\contentsline {section}{\numberline {3.5}ALGORITMOS DE APRENDIZAGEM PARA TREINAMENTO DAS REDES}{25}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}\textit {Backpropagation}}{26}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Algoritmo de Aprendizado Hebbiano}{27}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}PROCESSO DE GENERALIZA\IeC {\c C}\IeC {\~A}O}{27}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Problemas de Generaliza\IeC {\c c}\IeC {\~a}o}{28}{subsection.3.6.1}
-\contentsline {subsubsection}{\numberline {3.6.1.1}\textit {Overfitting} e \textit {Underfitting}}{28}{subsubsection.3.6.1.1}
-\contentsline {subsubsection}{\numberline {3.6.1.2}\textit {Overtraining}}{29}{subsubsection.3.6.1.2}
-\contentsline {section}{\numberline {3.7}TEORIA DA REGULARIZA\IeC {\c C}\IeC {\~A}O}{29}{section.3.7}
-\contentsline {section}{\numberline {3.8}S\IeC {\'E}RIES TEMPORAIS}{30}{section.3.8}
-\contentsline {section}{\numberline {3.9}MERCADO DE CAPITAIS}{30}{section.3.9}
-\contentsline {subsection}{\numberline {3.9.1}An\IeC {\'a}lise Fundamentalista de Ac\IeC {\~o}es}{31}{subsection.3.9.1}
-\contentsline {subsection}{\numberline {3.9.2}An\IeC {\'a}lise T\IeC {\'e}cnica de A\IeC {\c c}\IeC {\~o}es}{31}{subsection.3.9.2}
-\contentsline {subsection}{\numberline {3.9.3}Bolsa de Valores NASDAQ}{31}{subsection.3.9.3}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {FUNDAMENTA\IeC {\c C}\IeC {\~A}O TE\IeC {\'O}RICA}}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}FUNDAMENTOS DE REDES NEURAIS ARTIFICIAIS}{17}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Neur\IeC {\^o}nios Biol\IeC {\'o}gicos}{17}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Neur\IeC {\^o}nios Artificiais}{18}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Redes Neurais Artificiais}{19}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}ARQUITETURA DE REDES NEURAIS ARTIFICIAIS}{19}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Redes Alimentadas Adiante com Camada \IeC {\'U}nica}{20}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Redes Alimentadas Adiante com M\IeC {\'u}ltiplas Camadas}{21}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Redes de Camadas Recorrentes}{22}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Redes de Hopfield}{23}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Redes Auto-Organiz\IeC {\'a}veis}{24}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}FUN\IeC {\c C}\IeC {\~A}O DE ATIVA\IeC {\c C}\IeC {\~A}O}{24}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Fun\IeC {\c c}\IeC {\~a}o Limiar}{24}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Fun\IeC {\c c}\IeC {\~a}o Sigm\IeC {\'o}ide}{25}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}TREINAMENTO DE UMA REDE NEURAL ARTIFICIAL}{26}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Processo de Aprendizagem}{26}{subsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Aprendizagem Supervisionada}{27}{subsubsection.3.4.1.1}
+\contentsline {subsubsection}{\numberline {3.4.1.2}Aprendizagem n\IeC {\~a}o Supervisionada}{27}{subsubsection.3.4.1.2}
+\contentsline {section}{\numberline {3.5}ALGORITMOS DE APRENDIZAGEM PARA TREINAMENTO DAS REDES}{27}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}\textit {Backpropagation}}{28}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Algoritmo de Aprendizado Hebbiano}{29}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}PROCESSO DE GENERALIZA\IeC {\c C}\IeC {\~A}O}{29}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Problemas de Generaliza\IeC {\c c}\IeC {\~a}o}{30}{subsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.1.1}\textit {Overfitting} e \textit {Underfitting}}{30}{subsubsection.3.6.1.1}
+\contentsline {subsubsection}{\numberline {3.6.1.2}\textit {Overtraining}}{31}{subsubsection.3.6.1.2}
+\contentsline {section}{\numberline {3.7}TEORIA DA REGULARIZA\IeC {\c C}\IeC {\~A}O}{31}{section.3.7}
+\contentsline {section}{\numberline {3.8}S\IeC {\'E}RIES TEMPORAIS}{32}{section.3.8}
+\contentsline {section}{\numberline {3.9}MERCADO DE CAPITAIS}{32}{section.3.9}
+\contentsline {subsection}{\numberline {3.9.1}An\IeC {\'a}lise Fundamentalista de Ac\IeC {\~o}es}{33}{subsection.3.9.1}
+\contentsline {subsection}{\numberline {3.9.2}An\IeC {\'a}lise T\IeC {\'e}cnica de A\IeC {\c c}\IeC {\~o}es}{33}{subsection.3.9.2}
+\contentsline {subsection}{\numberline {3.9.3}Bolsa de Valores NASDAQ}{33}{subsection.3.9.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {MATERIAIS E M\IeC {\'E}TODOS}}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}IDENTIFICA\IeC {\c C}\IeC {\~A}O DA PESQUISA}{33}{section.4.1}
-\contentsline {section}{\numberline {4.2}SELE\IeC {\c C}\IeC {\~A}O DAS A\IeC {\c C}\IeC {\~O}ES}{33}{section.4.2}
-\contentsline {section}{\numberline {4.3}T\IeC {\'E}CNICA PARA COLETA DE DADOS}{34}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Defini\IeC {\c c}\IeC {\~a}o das S\IeC {\'e}ries}{34}{subsection.4.3.1}
-\contentsline {section}{\numberline {4.4}FERRAMENTAS PARA COLETA DE DADOS}{35}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Linguagem de Programa\IeC {\c c}\IeC {\~a}o Python}{35}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Biblioteca Pandas}{36}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Google \textit {Finance} API}{37}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}PyCharm IDE}{37}{subsection.4.4.4}
-\contentsline {section}{\numberline {4.5}ESPECIFICA\IeC {\c C}\IeC {\~A}O DO MODELO DE REDES NEURAIS ARTIFICIAIS}{38}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Defini\IeC {\c c}\IeC {\~a}o da Arquitetura}{38}{subsection.4.5.1}
-\contentsline {section}{\numberline {4.6}DEFINI\IeC {\c C}\IeC {\~A}O DA BASE DE TREINAMENTO}{41}{section.4.6}
-\contentsline {section}{\numberline {4.7}BIBLIOTECA PYBRAIN}{41}{section.4.7}
-\contentsline {section}{\numberline {4.8}BIBLIOTECA MATPLOTLIB}{43}{section.4.8}
-\contentsline {section}{\numberline {4.9}CONFIGURA\IeC {\c C}\IeC {\~A}O DE \textit {HARDWARE}}{44}{section.4.9}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {MATERIAIS E M\IeC {\'E}TODOS}}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}IDENTIFICA\IeC {\c C}\IeC {\~A}O DA PESQUISA}{35}{section.4.1}
+\contentsline {section}{\numberline {4.2}SELE\IeC {\c C}\IeC {\~A}O DAS A\IeC {\c C}\IeC {\~O}ES}{35}{section.4.2}
+\contentsline {section}{\numberline {4.3}T\IeC {\'E}CNICA PARA COLETA DE DADOS}{36}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Defini\IeC {\c c}\IeC {\~a}o das S\IeC {\'e}ries}{36}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}FERRAMENTAS PARA COLETA DE DADOS}{37}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Linguagem de Programa\IeC {\c c}\IeC {\~a}o Python}{37}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Biblioteca Pandas}{38}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Google \textit {Finance} API}{39}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}PyCharm IDE}{39}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.5}ESPECIFICA\IeC {\c C}\IeC {\~A}O DO MODELO DE REDES NEURAIS ARTIFICIAIS}{40}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Defini\IeC {\c c}\IeC {\~a}o da Arquitetura}{40}{subsection.4.5.1}
+\contentsline {section}{\numberline {4.6}DEFINI\IeC {\c C}\IeC {\~A}O DA BASE DE TREINAMENTO}{43}{section.4.6}
+\contentsline {section}{\numberline {4.7}BIBLIOTECA PYBRAIN}{43}{section.4.7}
+\contentsline {section}{\numberline {4.8}BIBLIOTECA MATPLOTLIB}{45}{section.4.8}
+\contentsline {section}{\numberline {4.9}CONFIGURA\IeC {\c C}\IeC {\~A}O DE \textit {HARDWARE}}{46}{section.4.9}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {IMPLEMENTA\IeC {\c C}\IeC {\~A}O DAS T\IeC {\'E}CNICAS}}{45}{chapter.5}
-\contentsline {section}{\numberline {5.1}REALIZA\IeC {\c C}\IeC {\~A}O DA COLETA DE DADOS}{45}{section.5.1}
-\contentsline {section}{\numberline {5.2}EXPLORANDO O \textit {DATAFRAME}}{49}{section.5.2}
-\contentsline {section}{\numberline {5.3}NORMALIZANDO OS DADOS}{50}{section.5.3}
-\contentsline {section}{\numberline {5.4}DESENVOLVIMENTO DA REDE NEURAL ARTIFICIAL}{52}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}\textit {Script} para Cria\IeC {\c c}\IeC {\~a}o de um Modelo \textit {FeedForward}}{53}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Organiza\IeC {\c c}\IeC {\~a}o das Camadas do Modelo}{53}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Treinamento da Rede}{55}{subsection.5.4.3}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {IMPLEMENTA\IeC {\c C}\IeC {\~A}O DAS T\IeC {\'E}CNICAS}}{47}{chapter.5}
+\contentsline {section}{\numberline {5.1}REALIZA\IeC {\c C}\IeC {\~A}O DA COLETA DE DADOS}{47}{section.5.1}
+\contentsline {section}{\numberline {5.2}EXPLORANDO O \textit {DATAFRAME}}{51}{section.5.2}
+\contentsline {section}{\numberline {5.3}NORMALIZANDO OS DADOS}{52}{section.5.3}
+\contentsline {section}{\numberline {5.4}DESENVOLVIMENTO DA REDE NEURAL ARTIFICIAL}{54}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}\textit {Script} para Cria\IeC {\c c}\IeC {\~a}o de um Modelo \textit {FeedForward}}{55}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Organiza\IeC {\c c}\IeC {\~a}o das Camadas do Modelo}{55}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Treinamento da Rede}{56}{subsection.5.4.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {AN\IeC {\'A}LISE DOS RESULTADOS}}{60}{chapter.6}
-\contentsline {section}{\numberline {6.1}APLICA\IeC {\c C}\IeC {\~A}O DA REDE NA S\IeC {\'E}RIE DA INTEL CORPORATION}{60}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{60}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{63}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}APLICA\IeC {\c C}\IeC {\~A}O DA REDE NA S\IeC {\'E}RIE DA MICROSOFT CORPORATION}{66}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{66}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{69}{subsection.6.2.2}
-\contentsline {section}{\numberline {6.3}APLICA\IeC {\c C}\IeC {\~A}O DA REDE NA S\IeC {\'E}RIE DA APPLE INC}{71}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{72}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{74}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}APLICA\IeC {\c C}\IeC {\~A}O DA REDE NA S\IeC {\'E}RIE DA AMAZON INC}{77}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{77}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{80}{subsection.6.4.2}
-\contentsline {section}{\numberline {6.5}TEMPO DE EXECU\IeC {\c C}\IeC {\~A}O DO TREINAMENTO}{82}{section.6.5}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {AN\IeC {\'A}LISE DOS RESULTADOS}}{61}{chapter.6}
+\contentsline {section}{\numberline {6.1}APLICA\IeC {\c C}\IeC {\~A}O DA REDE NA S\IeC {\'E}RIE DA INTEL CORPORATION}{61}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{61}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{64}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}APLICA\IeC {\c C}\IeC {\~A}O DA REDE NA S\IeC {\'E}RIE DA MICROSOFT CORPORATION}{67}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{67}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{70}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}APLICA\IeC {\c C}\IeC {\~A}O DA REDE NA S\IeC {\'E}RIE DA APPLE INC}{72}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{73}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{75}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}APLICA\IeC {\c C}\IeC {\~A}O DA REDE NA S\IeC {\'E}RIE DA AMAZON INC}{78}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{78}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{81}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}TEMPO DE EXECU\IeC {\c C}\IeC {\~A}O DO TREINAMENTO}{83}{section.6.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {CONCLUS\IeC {\~O}ES E SUGEST\IeC {\~O}ES PARA FUTUROS TRABALHOS}}{84}{chapter.7}
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {CONCLUS\IeC {\~O}ES E SUGEST\IeC {\~O}ES PARA FUTUROS TRABALHOS}}{85}{chapter.7}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{86}{section*.6}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{87}{section*.8}

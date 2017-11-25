@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  20 NOV 2017 23:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  25 NOV 2017 11:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1672,21 +1672,26 @@ l.128
 
 
 
-] (./modelo.lof) [2] (./modelo.lol) [3
+] (./Apresentacao/resumo_portugues.tex [2])
+(./Apresentacao/resumo_ingles.tex [3
 
-] (./modelo.logr) [4
+]) (./modelo.lof) [4
+
+] (./modelo.lol)
+[5
+
+] (./modelo.logr) [6
+
+] (./Configuracoes/siglas.tex [7
+
+
+]) (./modelo.toc [8
 
 ]
-(./Configuracoes/siglas.tex [5
+[9]) [10] (./Capitulos/introducao.tex [11
 
 
-]) (./modelo.toc [6
-
-] [7]) [8]
-(./Capitulos/introducao.tex [9
-
-
-] [10]
+] [12]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -1695,67 +1700,67 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
 )
-(./Capitulos/revisa_bib.tex [11] [12] [13
+(./Capitulos/revisa_bib.tex [13] [14] [15
 
-]) (./Capitulos/fundamento_teorico.tex [14] <./Imagens/cerebro.png, id=427, 182
+]) (./Capitulos/fundamento_teorico.tex [16] <./Imagens/cerebro.png, id=439, 182
 .6022pt x 66.7293pt>
 File: ./Imagens/cerebro.png Graphic file (type png)
 
 <use ./Imagens/cerebro.png>
 Package pdftex.def Info: ./Imagens/cerebro.png used on input line 20.
 (pdftex.def)             Requested size: 273.00278pt x 99.76888pt.
- [15
+ [17
 
  <./Imagens/cerebro.png>]
-<./Imagens/neuronio.png, id=444, 263.5446pt x 147.9126pt>
+<./Imagens/neuronio.png, id=456, 263.5446pt x 147.9126pt>
 File: ./Imagens/neuronio.png Graphic file (type png)
 
 <use ./Imagens/neuronio.png>
 Package pdftex.def Info: ./Imagens/neuronio.png used on input line 35.
 (pdftex.def)             Requested size: 364.00139pt x 204.30241pt.
- [16 <./Imagens/neuronio.png>]
-<./Imagens/RNA.png, id=466, 117.0774pt x 149.5989pt>
+ [18 <./Imagens/neuronio.png>]
+<./Imagens/RNA.png, id=479, 117.0774pt x 149.5989pt>
 File: ./Imagens/RNA.png Graphic file (type png)
  <use ./Imagens/RNA.png>
 Package pdftex.def Info: ./Imagens/RNA.png used on input line 57.
 (pdftex.def)             Requested size: 227.52824pt x 235.55559pt.
 
-[17 <./Imagens/RNA.png>]
-<./Imagens/camadaunica.png, id=484, 192.4791pt x 126.4725pt>
+[19 <./Imagens/RNA.png>]
+<./Imagens/camadaunica.png, id=497, 192.4791pt x 126.4725pt>
 File: ./Imagens/camadaunica.png Graphic file (type png)
 
 <use ./Imagens/camadaunica.png>
 Package pdftex.def Info: ./Imagens/camadaunica.png used on input line 81.
 (pdftex.def)             Requested size: 273.00278pt x 179.38956pt.
- [18 <./Imagens/camadaunica.png>]
-<./Imagens/separavel.png, id=493, 409.53pt x 360.34625pt>
+ [20 <./Imagens/camadaunica.png>]
+<./Imagens/separavel.png, id=506, 409.53pt x 360.34625pt>
 File: ./Imagens/separavel.png Graphic file (type png)
 
 <use ./Imagens/separavel.png>
 Package pdftex.def Info: ./Imagens/separavel.png used on input line 91.
 (pdftex.def)             Requested size: 227.5pt x 200.18147pt.
 
-<./Imagens/multicamada.png, id=504, 238.0092pt x 119.2455pt>
+<./Imagens/multicamada.png, id=517, 238.0092pt x 119.2455pt>
 File: ./Imagens/multicamada.png Graphic file (type png)
 
 <use ./Imagens/multicamada.png>
 Package pdftex.def Info: ./Imagens/multicamada.png used on input line 110.
 (pdftex.def)             Requested size: 409.49722pt x 205.16919pt.
- [19 <./Imagens/separavel.png>]
-<./Imagens/naolinear.png, id=516, 417.56pt x 380.42125pt>
+ [21 <./Imagens/separavel.png>]
+<./Imagens/naolinear.png, id=528, 417.56pt x 380.42125pt>
 File: ./Imagens/naolinear.png Graphic file (type png)
 
 <use ./Imagens/naolinear.png>
 Package pdftex.def Info: ./Imagens/naolinear.png used on input line 120.
 (pdftex.def)             Requested size: 227.5pt x 207.27031pt.
- [20 <./Imagens/multicamada.png> <./Imagens/naolinear.png>] <./Imagens/recorren
-te.png, id=529, 237.2865pt x 165.4983pt>
+ [22 <./Imagens/multicamada.png> <./Imagens/naolinear.png>] <./Imagens/recorren
+te.png, id=541, 237.2865pt x 165.4983pt>
 File: ./Imagens/recorrente.png Graphic file (type png)
 
 <use ./Imagens/recorrente.png>
 Package pdftex.def Info: ./Imagens/recorrente.png used on input line 133.
 (pdftex.def)             Requested size: 409.49722pt x 285.61363pt.
- [21 <./Imagens/recorrente.png>] [22]
+ [23 <./Imagens/recorrente.png>] [24]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
@@ -1799,23 +1804,23 @@ Package xcolor Warning: Incompatible color definition on input line 5.
 
 Package xcolor Warning: Incompatible color definition on input line 5.
 
-) <./Imagens/sigmoide.png, id=565, 411.2163pt x 304.9794pt>
+) <./Imagens/sigmoide.png, id=578, 411.2163pt x 304.9794pt>
 File: ./Imagens/sigmoide.png Graphic file (type png)
 
 <use ./Imagens/sigmoide.png>
 Package pdftex.def Info: ./Imagens/sigmoide.png used on input line 185.
 (pdftex.def)             Requested size: 364.02365pt x 235.55617pt.
- [23 <./Imagens/sigmoide.png>] [24] [25] [26]
-[27] [28] <./Imagens/overfitting.png, id=656, 592.614pt x 273.1806pt>
+ [25 <./Imagens/sigmoide.png>] [26] [27] [28]
+[29] [30] <./Imagens/overfitting.png, id=669, 592.614pt x 273.1806pt>
 File: ./Imagens/overfitting.png Graphic file (type png)
 
 <use ./Imagens/overfitting.png>
 Package pdftex.def Info: ./Imagens/overfitting.png used on input line 302.
 (pdftex.def)             Requested size: 409.49722pt x 188.77408pt.
- [29 <./Imagens/overfitting.png>] [30])
-(./Capitulos/materiais_metodo.tex [31] [32] [33
+ [31 <./Imagens/overfitting.png>] [32])
+(./Capitulos/materiais_metodo.tex [33] [34] [35
 
-] [34] [35]
+] [36] [37]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
@@ -1931,7 +1936,7 @@ Package xcolor Warning: Incompatible color definition on input line 8.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
-) <./Imagens/dados-pandas.png, id=752, 487.8225pt x 707.64375pt>
+) <./Imagens/dados-pandas.png, id=765, 487.8225pt x 707.64375pt>
 File: ./Imagens/dados-pandas.png Graphic file (type png)
 
 <use ./Imagens/dados-pandas.png>
@@ -1941,28 +1946,28 @@ Package pdftex.def Info: ./Imagens/dados-pandas.png used on input line 84.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[36]
+[38]
 Overfull \hbox (3.20535pt too wide) in paragraph at lines 93--94
 []\T1/cmr/m/n/12 A API tra-ba-lha com um li-mite ini-cial para a co-leta das aç
 ões, a par-tir de 03/05/2001
  []
 
-[37 <./Imagens/dados-pandas.png>] [38] [39]
-<./Imagens/arquitetura-rna.jpg, id=812, 98.79309pt x 74.07675pt>
+[39 <./Imagens/dados-pandas.png>] [40] [41]
+<./Imagens/arquitetura-rna.jpg, id=824, 98.79309pt x 74.07675pt>
 File: ./Imagens/arquitetura-rna.jpg Graphic file (type jpg)
 
 <use ./Imagens/arquitetura-rna.jpg>
 Package pdftex.def Info: ./Imagens/arquitetura-rna.jpg used on input line 158.
 (pdftex.def)             Requested size: 49.39641pt x 37.03828pt.
- [40 <./Imagens/arquitetura-rna.jpg>]
-[41] <./Imagens/pybrain8.jpeg, id=832, 84.14293pt x 72.57973pt>
+ [42 <./Imagens/arquitetura-rna.jpg>]
+[43] <./Imagens/pybrain8.jpeg, id=845, 84.14293pt x 72.57973pt>
 File: ./Imagens/pybrain8.jpeg Graphic file (type jpg)
 
 <use ./Imagens/pybrain8.jpeg>
 Package pdftex.def Info: ./Imagens/pybrain8.jpeg used on input line 193.
 (pdftex.def)             Requested size: 42.07135pt x 36.28976pt.
- [42 <./Imagens/pybrain8.jpeg>] [43])
-(./Capitulos/implementacao.tex [44]
+ [44 <./Imagens/pybrain8.jpeg>] [45])
+(./Capitulos/implementacao.tex [46]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
@@ -2080,7 +2085,7 @@ Package xcolor Warning: Incompatible color definition on input line 18.
 
 Package xcolor Warning: Incompatible color definition on input line 19.
 
-) [45
+) [47
 
 ] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
@@ -2359,7 +2364,7 @@ Package xcolor Warning: Incompatible color definition on input line 21.
 
 Package xcolor Warning: Incompatible color definition on input line 21.
 
-) [46] <./Graficos/amazon_serie_novo.png, id=912, 141.02974pt x 68.96623pt>
+) [48] <./Graficos/amazon_serie_novo.png, id=925, 141.02974pt x 68.96623pt>
 File: ./Graficos/amazon_serie_novo.png Graphic file (type png)
 
 <use ./Graficos/amazon_serie_novo.png>
@@ -2371,7 +2376,7 @@ Overfull \hbox (6.89386pt too wide) in paragraph at lines 31--32
  [][] 
  []
 
-<./Graficos/apple_serie_novo.png, id=913, 141.02974pt x 68.96623pt>
+<./Graficos/apple_serie_novo.png, id=926, 141.02974pt x 68.96623pt>
 File: ./Graficos/apple_serie_novo.png Graphic file (type png)
 
 <use ./Graficos/apple_serie_novo.png>
@@ -2383,8 +2388,8 @@ Overfull \hbox (6.89386pt too wide) in paragraph at lines 41--42
  [][] 
  []
 
-[47 <./Graficos/amazon_serie_novo.png> <./Graficos/apple_serie_novo.png>]
-<./Graficos/intel_serie_novo.png, id=920, 141.02974pt x 68.96623pt>
+[49 <./Graficos/amazon_serie_novo.png> <./Graficos/apple_serie_novo.png>]
+<./Graficos/intel_serie_novo.png, id=933, 141.02974pt x 68.96623pt>
 File: ./Graficos/intel_serie_novo.png Graphic file (type png)
 
 <use ./Graficos/intel_serie_novo.png>
@@ -2396,7 +2401,7 @@ Overfull \hbox (6.89386pt too wide) in paragraph at lines 51--52
  [][] 
  []
 
-<./Graficos/microsoft_serie_novo.png, id=921, 141.02974pt x 68.96623pt>
+<./Graficos/microsoft_serie_novo.png, id=934, 141.02974pt x 68.96623pt>
 File: ./Graficos/microsoft_serie_novo.png Graphic file (type png)
 
 <use ./Graficos/microsoft_serie_novo.png>
@@ -2408,7 +2413,7 @@ Overfull \hbox (6.89386pt too wide) in paragraph at lines 59--60
  [][] 
  []
 
-[48 <./Graficos/intel_serie_novo.png> <./Graficos/microsoft_serie_novo.png>]
+[50 <./Graficos/intel_serie_novo.png> <./Graficos/microsoft_serie_novo.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
@@ -2591,13 +2596,13 @@ Package xcolor Warning: Incompatible color definition on input line 3.
 
 Package xcolor Warning: Incompatible color definition on input line 3.
 
-) [49] <./Imagens/dados_formatados.png, id=947, 81.6651pt x 50.51672pt>
+) [51] <./Imagens/dados_formatados.png, id=959, 81.6651pt x 50.51672pt>
 File: ./Imagens/dados_formatados.png Graphic file (type png)
 
 <use ./Imagens/dados_formatados.png>
 Package pdftex.def Info: ./Imagens/dados_formatados.png used on input line 85.
 (pdftex.def)             Requested size: 40.83244pt x 25.25829pt.
- [50 <./Imagens/dados_formatados.png>]
+ [52 <./Imagens/dados_formatados.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
@@ -2983,55 +2988,49 @@ Package xcolor Warning: Incompatible color definition on input line 12.
 Package xcolor Warning: Incompatible color definition on input line 12.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
-
-
-Package xcolor Warning: Incompatible color definition on input line 12.
-
-
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
 Package xcolor Warning: Incompatible color definition on input line 13.
@@ -3046,55 +3045,25 @@ Package xcolor Warning: Incompatible color definition on input line 14.
 Package xcolor Warning: Incompatible color definition on input line 14.
 
 
-Package xcolor Warning: Incompatible color definition on input line 14.
+Package xcolor Warning: Incompatible color definition on input line 16.
 
 
-Package xcolor Warning: Incompatible color definition on input line 14.
+Package xcolor Warning: Incompatible color definition on input line 16.
 
 
-Package xcolor Warning: Incompatible color definition on input line 14.
+Package xcolor Warning: Incompatible color definition on input line 16.
 
 
-Package xcolor Warning: Incompatible color definition on input line 14.
+Package xcolor Warning: Incompatible color definition on input line 17.
 
 
-Package xcolor Warning: Incompatible color definition on input line 14.
+Package xcolor Warning: Incompatible color definition on input line 17.
 
 
-Package xcolor Warning: Incompatible color definition on input line 14.
+Package xcolor Warning: Incompatible color definition on input line 17.
 
 
-Package xcolor Warning: Incompatible color definition on input line 14.
-
-
-Package xcolor Warning: Incompatible color definition on input line 14.
-
-
-Package xcolor Warning: Incompatible color definition on input line 14.
-
-
-Package xcolor Warning: Incompatible color definition on input line 14.
-
-
-Package xcolor Warning: Incompatible color definition on input line 14.
-
-
-Package xcolor Warning: Incompatible color definition on input line 14.
-
-
-Package xcolor Warning: Incompatible color definition on input line 14.
-
-
-Package xcolor Warning: Incompatible color definition on input line 14.
-
-
-Package xcolor Warning: Incompatible color definition on input line 14.
-
-
-Package xcolor Warning: Incompatible color definition on input line 15.
-
-
-Package xcolor Warning: Incompatible color definition on input line 15.
+Package xcolor Warning: Incompatible color definition on input line 17.
 
 
 Package xcolor Warning: Incompatible color definition on input line 17.
@@ -3123,10 +3092,7 @@ Package xcolor Warning: Incompatible color definition on input line 18.
 
 Package xcolor Warning: Incompatible color definition on input line 18.
 
-
-Package xcolor Warning: Incompatible color definition on input line 18.
-
-[51]
+[53]
 
 Package xcolor Warning: Incompatible color definition on input line 19.
 
@@ -3182,24 +3148,6 @@ Package xcolor Warning: Incompatible color definition on input line 21.
 Package xcolor Warning: Incompatible color definition on input line 21.
 
 
-Package xcolor Warning: Incompatible color definition on input line 22.
-
-
-Package xcolor Warning: Incompatible color definition on input line 22.
-
-
-Package xcolor Warning: Incompatible color definition on input line 22.
-
-
-Package xcolor Warning: Incompatible color definition on input line 22.
-
-
-Package xcolor Warning: Incompatible color definition on input line 22.
-
-
-Package xcolor Warning: Incompatible color definition on input line 22.
-
-
 Package xcolor Warning: Incompatible color definition on input line 23.
 
 
@@ -3209,19 +3157,7 @@ Package xcolor Warning: Incompatible color definition on input line 23.
 Package xcolor Warning: Incompatible color definition on input line 23.
 
 
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-
-Package xcolor Warning: Incompatible color definition on input line 25.
-
-
-Package xcolor Warning: Incompatible color definition on input line 25.
+Package xcolor Warning: Incompatible color definition on input line 24.
 
 
 Package xcolor Warning: Incompatible color definition on input line 25.
@@ -3245,52 +3181,43 @@ Package xcolor Warning: Incompatible color definition on input line 30.
 Package xcolor Warning: Incompatible color definition on input line 31.
 
 
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+
 Package xcolor Warning: Incompatible color definition on input line 32.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
 
 
 Package xcolor Warning: Incompatible color definition on input line 33.
@@ -3298,25 +3225,20 @@ Package xcolor Warning: Incompatible color definition on input line 33.
 
 Package xcolor Warning: Incompatible color definition on input line 34.
 
+)
+<./Graficos/normalizados_correto_banca.png, id=1000, 987.2082pt x 482.7636pt>
+File: ./Graficos/normalizados_correto_banca.png Graphic file (type png)
 
-Package xcolor Warning: Incompatible color definition on input line 35.
-
-
-Package xcolor Warning: Incompatible color definition on input line 36.
-
-) <./Graficos/normalizado_novo.png, id=988, 987.2082pt x 482.7636pt>
-File: ./Graficos/normalizado_novo.png Graphic file (type png)
-
-<use ./Graficos/normalizado_novo.png>
-Package pdftex.def Info: ./Graficos/normalizado_novo.png used on input line 118
-.
+<use ./Graficos/normalizados_correto_banca.png>
+Package pdftex.def Info: ./Graficos/normalizados_correto_banca.png used on inpu
+t line 118.
 (pdftex.def)             Requested size: 455.0pt x 222.50119pt.
 
 Overfull \hbox (6.79999pt too wide) in paragraph at lines 118--119
  [][] 
  []
 
-[52 <./Graficos/normalizado_novo.png>]
+[54 <./Graficos/normalizados_correto_banca.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
@@ -3436,7 +3358,7 @@ Package xcolor Warning: Incompatible color definition on input line 8.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
-) [53] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+) [55] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
@@ -3594,7 +3516,7 @@ Package xcolor Warning: Incompatible color definition on input line 6.
 
 Package xcolor Warning: Incompatible color definition on input line 7.
 
-) [54] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+) [56] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
@@ -3967,7 +3889,7 @@ Package xcolor Warning: Incompatible color definition on input line 25.
 
 Package xcolor Warning: Incompatible color definition on input line 25.
 
-) [55] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+) [57] (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
@@ -4058,12 +3980,12 @@ Overfull \hbox (7.37355pt too wide) in paragraph at lines 171--172
 on-trado na li-nha 7, per-tence ao pa-cote to-ols.customxml,
  []
 
-[56] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-)
+) [58]
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
@@ -4500,7 +4422,7 @@ Package xcolor Warning: Incompatible color definition on input line 22.
 
 Package xcolor Warning: Incompatible color definition on input line 23.
 
-[57]
+[59]
 
 Package xcolor Warning: Incompatible color definition on input line 24.
 
@@ -4591,8 +4513,8 @@ Package xcolor Warning: Incompatible color definition on input line 31.
 
 Package xcolor Warning: Incompatible color definition on input line 32.
 
-) [58]) (./Capitulos/resultados.tex [59]
-<./Graficos/erro_intel_primeiro.png, id=1139, 987.2082pt x 482.7636pt>
+)) (./Capitulos/resultados.tex [60]
+<./Graficos/erro_intel_primeiro.png, id=1146, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_intel_primeiro.png Graphic file (type png)
 
 <use ./Graficos/erro_intel_primeiro.png>
@@ -4607,7 +4529,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 19--20
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[60
+[61
 
 ]
 Overfull \hbox (3.94908pt too wide) in paragraph at lines 38--38
@@ -4649,7 +4571,7 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 46--46
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[61 <./Graficos/erro_intel_primeiro.png>]
+[62 <./Graficos/erro_intel_primeiro.png>]
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 60--60
  []|\T1/cmr/m/n/12 23/08/2017| 
  []
@@ -4684,7 +4606,7 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 66--66
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-<./Graficos/predicao_intel.png, id=1150, 987.2082pt x 482.7636pt>
+<./Graficos/predicao_intel.png, id=1156, 987.2082pt x 482.7636pt>
 File: ./Graficos/predicao_intel.png Graphic file (type png)
 
 <use ./Graficos/predicao_intel.png>
@@ -4695,8 +4617,8 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 74--75
  [][] 
  []
 
-[62] [63 <./Graficos/predicao_intel.png>]
-<./Graficos/erro_intel_1000iteracoes.png, id=1162, 987.2082pt x 482.7636pt>
+[63] [64 <./Graficos/predicao_intel.png>]
+<./Graficos/erro_intel_1000iteracoes.png, id=1168, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_intel_1000iteracoes.png Graphic file (type png)
 
 <use ./Graficos/erro_intel_1000iteracoes.png>
@@ -4746,8 +4668,8 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 117--117
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[64 <./Graficos/erro_intel_1000iteracoes.png>]
-<./Graficos/predicao_intel_1000.png, id=1168, 987.2082pt x 482.7636pt>
+[65 <./Graficos/erro_intel_1000iteracoes.png>]
+<./Graficos/predicao_intel_1000.png, id=1174, 987.2082pt x 482.7636pt>
 File: ./Graficos/predicao_intel_1000.png Graphic file (type png)
 
 <use ./Graficos/predicao_intel_1000.png>
@@ -4759,8 +4681,8 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 126--127
  [][] 
  []
 
-[65 <./Graficos/predicao_intel_1000.png>]
-<./Graficos/erro_microsoft_200_segundo_cenario.png, id=1175, 987.2082pt x 482.7
+[66 <./Graficos/predicao_intel_1000.png>]
+<./Graficos/erro_microsoft_200_segundo_cenario.png, id=1182, 987.2082pt x 482.7
 636pt>
 File: ./Graficos/erro_microsoft_200_segundo_cenario.png Graphic file (type png)
 
@@ -4773,7 +4695,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 149--150
  [][] 
  []
 
-[66]
+[67]
 Overfull \hbox (3.94908pt too wide) in paragraph at lines 164--164
  []|\T1/cmr/m/n/12 Fechamento| 
  []
@@ -4813,7 +4735,7 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 172--172
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[67 <./Graficos/erro_microsoft_200_segundo_cenario.png>]
+[68 <./Graficos/erro_microsoft_200_segundo_cenario.png>]
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 187--187
  []|\T1/cmr/m/n/12 23/08/2017| 
  []
@@ -4848,7 +4770,7 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 193--193
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-<./Graficos/microsoft_resultados.png, id=1187, 987.2082pt x 482.7636pt>
+<./Graficos/microsoft_resultados.png, id=1193, 987.2082pt x 482.7636pt>
 File: ./Graficos/microsoft_resultados.png Graphic file (type png)
 
 <use ./Graficos/microsoft_resultados.png>
@@ -4860,8 +4782,8 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 201--202
  [][] 
  []
 
-[68 <./Graficos/microsoft_resultados.png>]
-<./Graficos/erro_microsoft_1000.png, id=1194, 987.2082pt x 482.7636pt>
+[69 <./Graficos/microsoft_resultados.png>]
+<./Graficos/erro_microsoft_1000.png, id=1200, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_microsoft_1000.png Graphic file (type png)
 
 <use ./Graficos/erro_microsoft_1000.png>
@@ -4876,7 +4798,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 219--220
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[69]
+[70]
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 241--241
  []|\T1/cmr/m/n/12 23/08/2017| 
  []
@@ -4911,8 +4833,8 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 247--247
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[70 <./Graficos/erro_microsoft_1000.png>]
-<./Graficos/microsoft_1000_resultado.png, id=1205, 987.2082pt x 482.7636pt>
+[71 <./Graficos/erro_microsoft_1000.png>]
+<./Graficos/microsoft_1000_resultado.png, id=1211, 987.2082pt x 482.7636pt>
 File: ./Graficos/microsoft_1000_resultado.png Graphic file (type png)
 
 <use ./Graficos/microsoft_1000_resultado.png>
@@ -4924,8 +4846,8 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 260--261
  [][] 
  []
 
-[71 <./Graficos/microsoft_1000_resultado.png>]
-<./Graficos/erro_apple_200.png, id=1211, 987.2082pt x 482.7636pt>
+[72 <./Graficos/microsoft_1000_resultado.png>]
+<./Graficos/erro_apple_200.png, id=1218, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_apple_200.png Graphic file (type png)
 
 <use ./Graficos/erro_apple_200.png>
@@ -4976,7 +4898,7 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 300--300
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[72 <./Graficos/erro_apple_200.png>]
+[73 <./Graficos/erro_apple_200.png>]
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 315--315
  []|\T1/cmr/m/n/12 23/08/2017| 
  []
@@ -5011,7 +4933,7 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 321--321
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[73] <./Graficos/resultado_apple_200.png, id=1224, 987.2082pt x 482.7636pt>
+[74] <./Graficos/resultado_apple_200.png, id=1230, 987.2082pt x 482.7636pt>
 File: ./Graficos/resultado_apple_200.png Graphic file (type png)
 
 <use ./Graficos/resultado_apple_200.png>
@@ -5023,7 +4945,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 332--333
  [][] 
  []
 
-<./Graficos/erro_apple_1000_2.png, id=1225, 987.2082pt x 482.7636pt>
+<./Graficos/erro_apple_1000_2.png, id=1231, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_apple_1000_2.png Graphic file (type png)
 
 <use ./Graficos/erro_apple_1000_2.png>
@@ -5035,7 +4957,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 349--350
  [][] 
  []
 
-[74 <./Graficos/resultado_apple_200.png>]
+[75 <./Graficos/resultado_apple_200.png>]
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 367--367
  []|\T1/cmr/m/n/12 23/08/2017| 
  []
@@ -5070,8 +4992,8 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 373--373
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[75 <./Graficos/erro_apple_1000_2.png>]
-<./Graficos/apple_1000_resultado.png, id=1237, 987.2082pt x 482.7636pt>
+[76 <./Graficos/erro_apple_1000_2.png>]
+<./Graficos/apple_1000_resultado.png, id=1243, 987.2082pt x 482.7636pt>
 File: ./Graficos/apple_1000_resultado.png Graphic file (type png)
 
 <use ./Graficos/apple_1000_resultado.png>
@@ -5083,8 +5005,8 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 387--388
  [][] 
  []
 
-[76 <./Graficos/apple_1000_resultado.png>]
-<./Graficos/erro_amazon_200.png, id=1243, 987.2082pt x 482.7636pt>
+[77 <./Graficos/apple_1000_resultado.png>]
+<./Graficos/erro_amazon_200.png, id=1249, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_amazon_200.png Graphic file (type png)
 
 <use ./Graficos/erro_amazon_200.png>
@@ -5139,7 +5061,7 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 429--429
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[77]
+[78]
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 446--446
  []|\T1/cmr/m/n/12 23/08/2017| 
  []
@@ -5174,8 +5096,8 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 452--452
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[78 <./Graficos/erro_amazon_200.png>]
-<./Graficos/resultados_amazon_200.png, id=1255, 987.2082pt x 482.7636pt>
+[79 <./Graficos/erro_amazon_200.png>]
+<./Graficos/resultados_amazon_200.png, id=1261, 987.2082pt x 482.7636pt>
 File: ./Graficos/resultados_amazon_200.png Graphic file (type png)
 
 <use ./Graficos/resultados_amazon_200.png>
@@ -5190,7 +5112,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 468--469
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[79] <./Graficos/erro_amazon_1000.png, id=1261, 987.2082pt x 482.7636pt>
+[80] <./Graficos/erro_amazon_1000.png, id=1268, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_amazon_1000.png Graphic file (type png)
 
 <use ./Graficos/erro_amazon_1000.png>
@@ -5205,7 +5127,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 485--486
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[80 <./Graficos/resultados_amazon_200.png>]
+[81 <./Graficos/resultados_amazon_200.png>]
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 503--503
  []|\T1/cmr/m/n/12 23/08/2017| 
  []
@@ -5240,8 +5162,8 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 509--509
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[81 <./Graficos/erro_amazon_1000.png>]
-<./Graficos/amazon_resultado_1000.png, id=1274, 987.2082pt x 482.7636pt>
+[82 <./Graficos/erro_amazon_1000.png>]
+<./Graficos/amazon_resultado_1000.png, id=1280, 987.2082pt x 482.7636pt>
 File: ./Graficos/amazon_resultado_1000.png Graphic file (type png)
 
 <use ./Graficos/amazon_resultado_1000.png>
@@ -5253,12 +5175,12 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 521--522
  [][] 
  []
 
-[82 <./Graficos/amazon_resultado_1000.png>]) (./Capitulos/conclusao.tex
-[83] [84
+[83 <./Graficos/amazon_resultado_1000.png>]) (./Capitulos/conclusao.tex
+[84] [85
 
-]) (./modelo.bbl [85]
+]) (./modelo.bbl [86]
 bibitemlist
-[86
+[87
 
 ]
 Underfull \hbox (badness 1418) in paragraph at lines 211--215
@@ -5266,7 +5188,7 @@ Underfull \hbox (badness 1418) in paragraph at lines 211--215
 ird edi-tion). 2004.
  []
 
-[87]
+[88]
 Underfull \hbox (badness 5077) in paragraph at lines 254--259
 []\T1/cmr/m/n/12 TORORADAR. Aná-lise téc-nica de ações. 2015. Acesso em 10 de a
 bril de
@@ -5278,11 +5200,11 @@ Underfull \hbox (badness 4266) in paragraph at lines 254--259
 m . br / investimento / analise-[]tecnica /
  []
 
-) [88]
+) [89]
 No file modelo.ind.
 
 AED: lastpage setting LastPage
-[89]
+[90]
 \tf@lof=\write6
 \openout6 = `modelo.lof'.
 
@@ -5307,10 +5229,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
  ) 
 Here is how much of TeX's memory you used:
- 36525 strings out of 493105
- 791818 string characters out of 6137072
- 1184825 words of memory out of 5000000
- 38638 multiletter control sequences out of 15000+600000
+ 36540 strings out of 493105
+ 792189 string characters out of 6137072
+ 1187757 words of memory out of 5000000
+ 38643 multiletter control sequences out of 15000+600000
  18411 words of font info for 52 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  60i,13n,83p,2425b,2374s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5332,10 +5254,10 @@ super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfxc1200.pfb>
-Output written on modelo.pdf (90 pages, 3386135 bytes).
+Output written on modelo.pdf (91 pages, 3324512 bytes).
 PDF statistics:
- 1756 PDF objects out of 2073 (max. 8388607)
- 1539 compressed objects within 16 object streams
- 538 named destinations out of 1000 (max. 500000)
- 880 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1771 PDF objects out of 2073 (max. 8388607)
+ 1553 compressed objects within 16 object streams
+ 541 named destinations out of 1000 (max. 500000)
+ 896 words of extra memory for PDF output out of 10000 (max. 10000000)
 
