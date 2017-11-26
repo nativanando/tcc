@@ -78,7 +78,7 @@ Segundo \citeonline{haykin2000}, na estrutura de camada única, a representaçã
 
 \begin{figure}[h]
 	\centering
-	\fbox{\includegraphics[width=0.6\textwidth]{camadaunica}}
+	\fbox{\includegraphics[width=0.6\textwidth]{camadaunica-teste}}
 	\caption{Representação de uma Rede Neural Artificial com camada única}
 	\fonte{Elaborado pelo autor}
 	\label{exec-rna-camada-unica}
@@ -194,7 +194,7 @@ Após determinar a arquitetura a ser utilizada pela RNA, a quantia de camadas, a
 
 O treinamento de uma RNA consiste em minimizar uma função de custo, através de um algoritmo, cujos valores iniciais são escolhidos aleatoriamente com o objetivo de facilitar a busca  pelo valor mínimo da função da amostra de treinamento, através de iterações. 
 
-O treinamento pode ser interrompido de duas formas: um limite de épocas estipulado para o treinamento ou um ponto de parada a partir de um critério de desempenho. Os critérios de desempenho típicos em um processo de treinamento, de uma determinada amostra de dados, são o Erro quadrático médio (EQM), Raiz do Erro Quadrático Médio (REQM) e o Erro Absoluto Médio (EAM) \cite{gambogi}. 
+O treinamento pode ser interrompido de duas formas: um limite de iterações estipulada para o treinamento ou um ponto de parada a partir de um critério de desempenho. Os critérios de desempenho típicos em um processo de treinamento, de uma determinada amostra de dados, são o Erro quadrático médio (EQM), Raiz do Erro Quadrático Médio (REQM) e o Erro Absoluto Médio (EAM) \cite{gambogi}. 
 
 \subsection{Processo de Aprendizagem}
 O processo de aprendizagem é considerado uma etapa de grande dificuldade em termos de análise de dados, porque a procura da solução adequada ocorre em um universo de soluções válidas de grande dimensão, onde a base de tomada de decisão serão os próprios dados treinados \cite{medeiros}.
@@ -204,9 +204,9 @@ Para adquirir conhecimento, uma RNA requer um processo de inúmeras iterações,
 Segundo \citeonline{haykin2000}, o processo de aprendizagem de uma rede neural pode ser resumido a uma sequência de três passos a cada estímulo enviado a rede, são eles:
 
 \begin{enumerate}
-	\item \textit O ambiente estimula a RNA com informações oriundas do mundo exterior;
-	\item \textit A RNA experimenta alterações em seus pesos na tentativa de melhor responder ao estímulo recebido;
-	\item \textit A RNA responde ao estímulo recebido após empreender as alterações realizadas no evento anterior.
+	\item O ambiente estimula a RNA com informações oriundas do mundo exterior;
+	\item A RNA experimenta alterações em seus pesos na tentativa de melhor responder ao estímulo recebido;
+	\item A RNA responde ao estímulo recebido após empreender as alterações realizadas no evento anterior.
 \end{enumerate}
 
 A cada estímulo enviado a RNA em sua aprendizagem, a sequência acima é realizada, os pesos sinápticos são ajustados até que atinjam seus valores ideais, visando aumentar a acuracidade dos resultados do processo, este processo, segundo \citeonline{haykin2000}, é conhecido como algoritmo de aprendizagem.
@@ -226,11 +226,12 @@ Portanto, esses métodos de aprendizagem não supervisionada podem ser utilizado
 \section{ALGORITMOS DE APRENDIZAGEM PARA TREINAMENTO DAS REDES}\label{algoritmos-aprendizagem}
 Muitos algoritmos são aplicados para a minimização e melhoria da aprendizagem da RNA. Esses algoritmos podem ser classificados como de minimização local e minimização global. Algoritmos de minimização local, tal qual o método gradiente descendente, são rápidos, porém convergem para mínimos locais. Por outro lado, os algoritmos de minimização global utilizam métodos de busca para achar soluções aproximadas, como estratégias heurísticas e algoritmos genéticos, buscando não convergir para mínimos locais \cite{haykin2000}.
 
-\subsection{\textit{Backpropagation}}
+\subsection{Algoritmo \textit{Backpropagation}}
 O algoritmo de retropropagação (\textit{backpropagation}) é um método baseado no gradiente descendente, de aprendizado supervisionado e com alimentação à frente, que utiliza a função de ativação do tipo sigmóide e um coeficiente de aprendizado, denominado \textit{learning rate}, responsável por especificar uma taxa de convergência da RNA, este coeficiente de aprendizado normalmente está em um intervalo entre [0,1]    \cite{haykin2000}.
+
 Neste modelo, reconhecido por ser a técnica mais utilizada dentre os métodos de treinamento aplicados, o erro de saída obtido se propaga para as camadas intermediárias da RNA, isso se dá pela necessidade de ajuste dos neurônios que não tem contato com a saída, possibilitando assim, a atualização dos pesos desses neurônios, aumentando o poder de classificação e de correção de erros \cite{medeiros}.
 
-O algoritmo usa a equação abaixo para atualizar os pesos de um determinado neurônio.
+O algoritmo usa a equação (3.5) para atualizar os pesos de um determinado neurônio.
 \begin{equation}\label{eq:backpropagation-ajuste-pesos}
 W_{ij,(t+1)} = W_{ij, t} + (\lambda)(\varepsilon W_{ij})(N_i)
 \end{equation}
@@ -264,11 +265,11 @@ onde $j$ representa os neurônios da camada escondida.
 De forma geral, as operações de cada neurônio seguem os cálculos especificados acima. A ideia é que os valores dos neurônios sejam atualizados de acordo com cada entrada da rede. 
 
 \subsection{Algoritmo de Aprendizado Hebbiano}
-O Aprendizado Hebbiano é uma classe de aprendizado não-supervisionado ou auto-organizado, onde uma RNA treinada sob este algoritmo possui capacidade de descobrir padrões significativos ou características em dados sem o auxílio de um padrão pré-definido, deixando a cargo da própria RNA aprender por sí só os padrões, características, correlações ou categorias nos dados de entrada \cite{castro}.
+O Aprendizado Hebbiano é uma classe de aprendizado não-supervisionado ou auto-organizado, onde uma RNA treinada sob este algoritmo possui capacidade de descobrir padrões significativos ou características em dados sem o auxílio de um padrão pré-definido, deixando a cargo da própria RNA aprender os padrões, características, correlações ou categorias nos dados de entrada \cite{castro}.
 
 Segundo \citeonline{haykin2000}, o primeiro princípio do Aprendizado Hebbiano afirma que as modificações nos pesos sinápticos, baseadas em sinais pré-sinápticos e pós-sinápticos, tendem a se auto-amplificar. Uma sinapse forte leva à coincidência entre os sinais pré-sinápticos e pós-sinápticos e isto leva ao acréscimo da força da sinapse.
 
-os sinais pré-sinápticos e pós-sinápticos, respectivamente x e y, podem ser equacionados por:
+Os sinais pré-sinápticos e pós-sinápticos, respectivamente x e y, podem ser equacionados por:
 \begin{equation}\label{eq:hebbiano}
 w_{0} (n + 1) = w_{0}(n)+ \eta y_0(n)x(n),
 \end{equation}
@@ -277,7 +278,7 @@ onde $w_{0}(n)$ é o peso atual do neurônio, $\eta$ é a taxa de aprendizagem, 
 \citeonline{castro} diz que o segundo princípio do Aprendizado Hebbiano trabalha através de competição entre os pesos sinápticos, ou seja, um aumento na força de algumas sinapses na rede deve ser compensado por um decréscimo em outras. Assim, só as sinapses de sucesso podem crescer, enquanto as de menos sucesso tendem a enfraquecer podendo, inclusive, desaparecer.
 
 \section{PROCESSO DE GENERALIZAÇÃO}\label{rna-generalização}
-O processo de generalização de uma RNA, ocorre a partir da sua capacidade em responder adequadamente não somente aos padrões de treinamento mas também aos demais padrões \cite{medeiros}. Vale ressaltar que o processo de treinamento é uma das eta	pas mais delicadas, em termos de análise e execução, ao se utilizar um modelo de RNA.
+O processo de generalização de uma RNA ocorre a partir da sua capacidade em responder adequadamente não somente aos padrões de treinamento mas também aos demais padrões \cite{medeiros}. Vale ressaltar que o processo de treinamento é uma das etapas mais delicadas, em termos de análise e execução, ao se utilizar um modelo de RNA.
 
 Tendo este conceito como ponto de partida, a capacidade de alta generalização desses modelos são fatores fundamentais para alcançar um nível de excelência. Desde os primórdios dessas técnicas, são utilizados métodos que possam abstrair a complexidade e suprir a necessidade de controlar o processo de generalização.
 
@@ -293,7 +294,7 @@ Uma forma de evitar a alta taxa de variância, e assim, a ocorrência de \textit
 
 Com isso nota-se que deve existir um ponto de equilíbrio entre ambos efeitos, várias são as abordagens que tentam minimizar esses problemas, como os métodos construtivos e os algoritmos de \textit{pruning}.
 
-Os algoritmos construtivos buscam a construção gradual da RNA por meio da adição, até que um critério de parada envolvendo o erro de treinamento seja atingido. A resposta da rede se inicia em uma situação de \textit{underfitting} e com a adição de novos neurônios aproxima-se de \textit{overfitting}, a ideia desses algoritmos consiste em encontrar uma melhor generalização na transição entre esses dois extremos \cite{medeiros}.
+Os algoritmos construtivos buscam a construção gradual da RNA por meio da adição, até que um critério de parada envolvendo o erro de treinamento seja atingido. A resposta da rede se inicia em uma situação de \textit{underfitting} e com a adição de novos neurônios aproxima-se de \textit{overfitting}, o objetivo desses algoritmos consiste em encontrar uma melhor generalização na transição entre esses dois extremos \cite{medeiros}.
 
 Os algoritmos de pruning, por sua vez, visam à minimização da estrutura pela eliminação gradativa dos pesos e dos neurônios, buscando diminuir os pesos excessivos, e assim, diminuindo o \textit{overfitting}.
 
@@ -306,10 +307,10 @@ Os algoritmos de pruning, por sua vez, visam à minimização da estrutura pela 
 \end{figure}
 
 \subsubsection{\textit{Overtraining}}
-As arquiteturas convencionais de treinamento estão sujeitas a sofrerem um sobretreinamento (\textit{overtraining}). Quando a rede parece estar respondendo o conjunto de dados cada vez melhor, ou seja, o erro de treinamento do conjunto de dados continua diminuindo, em algum ponto desse processo, a capacidade em resolver novos padrões torna-se falha. Isto ocorre por utilizar dados muito parecidos, assim como a quantidade de épocas em que esse conjunto de dados é treinado, viciando o conhecimento da RNA \cite{haykin2000}.
+As arquiteturas convencionais de treinamento estão sujeitas a sofrerem um sobretreinamento (\textit{overtraining}). Quando a rede parece estar respondendo o conjunto de dados cada vez melhor, ou seja, o erro de treinamento do conjunto de dados continua diminuindo, em algum ponto desse processo, a capacidade em resolver novos padrões torna-se falha. Isto ocorre por utilizar dados muito parecidos, assim como a quantidade de iterações em que esse conjunto de dados é treinado, viciando o conhecimento da RNA \cite{haykin2000}.
 
 \section{TEORIA DA REGULARIZAÇÃO}\label{regularizacao}
-A regularização é um método que busca melhorar a capacidade de generalização dos algoritmos de aprendizado por meio de alguma regra durante o processo de treinamento. A ideia básica da regularização é estabilizar a solução por meio de uma suavização entre o mapeamento da entrada até a saída, no sentido de que entradas similares correspondam a saídas similares. A suavização pode transformar um problema mal posto em um problema bem posto \cite{medeiros}. Um dos problemas a ser resolvido com métodos de regularização, seria encontrar um ponto de equilíbrio entre \textit{overfitting} e \textit{underfitting} no processo de treinamento de uma RNA, implicando na suavização do conjunto de dados.
+A regularização é um método que busca melhorar a capacidade de generalização dos algoritmos de aprendizado por meio de alguma regra durante o processo de treinamento. O objetivo fundamental da regularização é estabilizar a solução por meio de uma suavização entre o mapeamento da entrada até a saída, no sentido de que entradas similares correspondam a saídas similares. A suavização pode transformar um problema mal posto, ou seja, um resultado classificado de forma incorreta em um problema bem posto, ajustando-o de forma correta \cite{medeiros}. Um dos problemas a ser resolvido com métodos de regularização, seria encontrar um ponto de equilíbrio entre \textit{overfitting} e \textit{underfitting} no processo de treinamento de uma RNA, implicando na suavização do conjunto de dados.
 
 \section{SÉRIES TEMPORAIS}\label{series-temporais}
 Séries temporais são definidas como sequências de dados indexados ao longo de um período. Diferentemente de dados em seção transversal (\textit{cross-section}), em que os dados são coletados somente em um determinado instante de tempo, representando uma instância dos dados naquele momento, a ordem temporal dos dados tem relevância na obtenção de resultados e conclusões. Se a ordem dos dados for modificada, haverá perda de informação relevante sobre os dados, podendo obter conclusões equivocadas em relação à série em estudo \cite{neto}.
@@ -331,7 +332,7 @@ A análise fundamentalista busca, basicamente, avaliar a saúde financeira das e
 \subsection{Análise Técnica de Ações}\label{ch:analise-tecnica}
 Análise Técnica de ações é a prática de medir as flutuações futuras do preço de uma ação analisando suas atividades passadas. Este método envolve a procura de padrões gráficos e o exame de outros dados históricos relacionados a preço e volume de ações negociadas \cite{tororadar}.
  
-Relaciona as oscilações de preços do mercado em relação à ação, e não à empresa. Este modelo de análise acredita na repetitividade do comportamento humano e no poder da ciência estatística como forma de determinar, com base no comportamento passado, as perspectivas para o mercado no futuro \cite{pereira}.
+Esta análise relaciona as oscilações de preços do mercado em relação à ação, e não à empresa. Este modelo de análise acredita na repetitividade do comportamento humano e no poder da ciência estatística como forma de determinar, com base no comportamento passado, as perspectivas para o mercado no futuro \cite{pereira}.
 
 A análise técnica também é conhecida como escola grafista, e auxilia o investidor na escolha do melhor momento para compra e venda de ações. Esta escola baseia-se na análise gráfica, tendo como base os volumes e os preços pelos quais foram comercializadas as ações nos pregões anteriores \cite{fortuna}.
 

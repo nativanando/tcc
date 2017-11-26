@@ -226,6 +226,12 @@ Dispon{\'\i}vel em: \url{http://www.w3.org/TR/2004/REC-xml-20040204}.}
 Acesso em 15 de junho de 2017.
 Dispon{\'\i}vel em: \url{https://www.jetbrains.com/pycharm/documentation}.}
 
+\bibitem[Robert 1989]{nielsen}
+\abntrefinfo{Robert}{ROBERT}{1989}
+{ROBERT, H.~N. Theory of the backpropagation neural network.
+\textbf{International Joint Conference on}, p. 593--605, 1989.
+Acesso em 13 de setembro de 2017.}
+
 \bibitem[Schaul et al. 2010]{pybrain2010}
 \abntrefinfo{Schaul et al.}{SCHAUL et al.}{2010}
 {SCHAUL, T. et al. {PyBrain}.

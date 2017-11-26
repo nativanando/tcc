@@ -1,7 +1,7 @@
 % !TeX encoding = UTF-8
 
 \chapter{MATERIAIS E MÉTODOS}\label{ch:materiais-metodos}
-Conforme mencionado anteriormente, o objetivo principal dessa dissertação é especificar e aplicar um modelo de RNA para análise e predição de valores acionários. Neste capítulo será realizada a pergunta de pesquisa e dos objetivos do trabalho na escolha da metodologia. Em seguida, esta metodologia será descrita e classificada quanto ao seu conteúdo e quanto aos métodos empregados na coleta e análise de dados.
+Conforme mencionado anteriormente, o objetivo principal dessa dissertação foi especificar e aplicar um modelo de RNA para análise e predição de valores acionários. Neste capítulo foi realizada a pergunta de pesquisa e dos objetivos do trabalho na escolha da metodologia. Em seguida, esta metodologia foi descrita e classificada quanto ao seu conteúdo e quanto aos métodos empregados na coleta e análise de dados.
 
 \section{IDENTIFICAÇÃO DA PESQUISA}
 
@@ -12,18 +12,18 @@ A escolha de uma estratégia de pesquisa tem que ser feita considerando-se, entr
 Portanto, de acordo com as afirmativas acima, a presente pesquisa é caracterizada por ser experimental e qualitativa. Segundo \citeonline{chizzotti}, na pesquisa experimental, o pesquisador parte de um estado delimitado a priori, sobre qual cria possíveis hipóteses que podem ser analisadas, determinando os métodos de verificação a serem utilizados, através dos quais procurará controlar as condições do experimento.
 
 \section{SELEÇÃO DAS AÇÕES}
-Para iniciar o processo de desenvolvimento deste trabalho, é necessário definir quais ações serão escolhidas para compor a implementação. Os critérios para definir quais serão selecionadas, são caracterizados pelo alto potencial de movimentação e lucratividade na NASDAQ, ou seja, são as empresas que mais influênciam na ecônomia, que, por coincidência, são do ramo da tecnologia \cite{christie}.
+Para iniciar o processo de desenvolvimento deste trabalho, foi necessário definir quais ações foram escolhidas para compor a implementação. Os critérios selecionados foram caracterizados pelo alto potencial de movimentação e lucratividade na NASDAQ, ou seja, são as empresas que mais influênciam na ecônomia, que, por coincidência, são do ramo da tecnologia \cite{christie}.
 
-Tendo em vista os critérios especificados acima, as empresas selecionadas e o código de suas ações para a realização da coleta dos dados são:
+Tendo em vista os critérios especificados acima, as empresas selecionadas e o código de suas ações para a realização da coleta dos dados foram:
 \begin{itemize}
 	\item Apple (AAPL);
 	\item Amazon (AMZN);
 	\item Intel (INTC);
-	\item Microsoft (MSFT);
+	\item Microsoft (MSFT).
 \end{itemize}
 
 \section{TÉCNICA PARA COLETA DE DADOS}
-Com a definição da bolsa de valores em questão e das empresas que serão utilizadas para realizar a implementação deste trabalho, a próxima etapa se dá pela necessidade em coletar seus dados histórios.
+Com a definição da bolsa de valores em questão e das empresas utilizadas para realizar a implementação deste trabalho, a próxima etapa se dá pela necessidade em coletar seus dados histórios.
 
 Como os dados históricos das ações caracterizam-se por serem séries temporais, o tipo de técnica aplicada para conseguir indicadores de relevância para uma boa análise dos objetivos propostos, refere-se à análise técnica. Portanto, esta fase de coleta de dados é muito importante para o bom funcionamento da RNA que será criada, tornando-se essencial para o êxito final do trabalho.
 
@@ -50,7 +50,7 @@ Segundo \citeonline{tororadar}, as variáveis que influenciam em um sistema de a
 \end{enumerate}
 
 \section{FERRAMENTAS PARA COLETA DE DADOS}
-Com a especificação das séries que serão coletadas, é necessário preparar um ambiente que dispõe o acesso à esses dados de forma simplificada. 
+Com a especificação das séries coletadas, foi necessário preparar um ambiente que dispõe o acesso à esses dados de forma simplificada. 
 
 Pensando nesse contexto, é essencial utilizar uma linguagem de programação que tenha suporte à esse modelo de busca por dados. Tendo em vista esta premissa, a disponibilidade de uma API ou biblioteca é de extrema importância para a automatização deste processo.
 
@@ -75,7 +75,7 @@ Para exemplificar como a biblioteca facilita o processo de coleta dos dados, o C
 \codigoPython\
 \lstinputlisting[language=Python, label=script-coleta-dados, caption=\textit{Script} para coleta de dados]{src/microsoft.py}
 
-As séries históricas são disponibilizadas em arquivos com valores separados por vírgulas (*.csv), contendo a data de negociação, valor de abertura, valores máximo e mínimo atingidos, valor de fechamento e o volume de negociações. Este formato de de arquivo, segundo \citeonline{pandas}, é chamado de \textit{DataFrame}.
+As séries históricas são disponibilizadas, através da biblioteca, em arquivos com valores separados por vírgulas (*.csv), contendo a data de negociação, valor de abertura, valores máximo e mínimo atingidos, valor de fechamento e o volume de negociações. Este formato de de arquivo, segundo \citeonline{pandas}, é chamado de \textit{DataFrame}.
 
 Na Figura 10 é possível observar o arquivo criado a partir do Código 2, demonstrando o formato que foi especificado no código e o que a API retorna para a manipulação.
 
@@ -88,16 +88,16 @@ Na Figura 10 é possível observar o arquivo criado a partir do Código 2, demon
 \end{figure}
 
 \subsection{Google \textit{Finance} API}
-É importante citar qual a fonte onde o pandas busca as séries históricas, por questões como confiabilidade dos dados. O acesso é realizado através da integração com o Google \textit{Finance} API, um banco de dados quase em tempo real mantido pelo Google, que trabalha com as principais bolsas de valores do mundo \cite{pandas}.
+Faz-se importante citar qual a fonte onde o pandas busca as séries históricas, por questões como confiabilidade dos dados. O acesso é realizado através da integração com o Google \textit{Finance} API, um banco de dados quase em tempo real mantido pelo Google, que trabalha com as principais bolsas de valores do mundo \cite{pandas}.
 
 A API trabalha com um limite inicial para a coleta das ações, a partir de 03/05/2001 e vai se atualizando diariamente. Tendo em vista que para trabalhar com RNAs é importante buscar o máximo de informações possíveis e, também, considerando o limite disponível pela API, o período das ações das empresas selecionadas serão coletadas iniciando no ano de 2001 até o ano de 2017. 
 
-Sendo assim, a ideia é preparar um ambiente que proporcione o uso dessa ferramenta, junto à biblioteca citada na \autoref{pandas-lib} para realizar as buscas pelos dados necessários.
+Sendo assim, foi desenvolvido um ambiente que proporcione o uso dessa ferramenta, junto à biblioteca citada na \autoref{pandas-lib} para realizar as buscas pelos dados necessários.
 
 \subsection{PyCharm IDE}
-É necessário utilizar uma \textit{Integrated Development Environment} (IDE) para auxiliar no \textit{script} de coleta de dados. PyCharm é uma IDE proprietária do grupo JetBrains que conta com uma versão livre para estudantes, que será realizada neste trabalho.
+Para auxiliar no \textit{script} de coleta de dados foi utilizada utilizada uma \textit{Integrated Development Environment} (IDE). PyCharm é uma IDE proprietária do grupo JetBrains que conta com uma versão livre para estudantes, que será realizada neste trabalho.
  
-PyCharm suporta o desenvolvimento com a linguagem de programação Python desde a sua versão 2.4 até a versão 3.6. Vale citar que outras IDEs para o desenvolvimento poderiam ser utilizadas, porém a praticidade e a boa documentação das ferramentas JetBrains são fatores que justificam a sua utilização \cite{pycharm}.
+A IDE suporta o desenvolvimento com a linguagem de programação Python desde a sua versão 2.4 até a versão 3.6. Vale citar que outras IDEs para o desenvolvimento poderiam ser utilizadas, porém a praticidade e a boa documentação das ferramentas JetBrains são fatores que justificam a sua utilização \cite{pycharm}.
 
 \section{ESPECIFICAÇÃO DO MODELO DE REDES NEURAIS ARTIFICIAIS}\label{especifica-modelo}
 Tendo como base o conhecimento adquirido no Capítulo 3, a definição de um modelo de RNA varia muito, sendo específico para cada problema do mundo real. Por isso, é importante frisar que não existe um modelo pré-definido e eficiente em RNAs, ficando a cargo da análise dos resultados, e, muitas vezes, por métodos de tentativa e erro para se chegar à um resultado eficiente \cite{haykin2000}.
@@ -120,11 +120,11 @@ A terceira pergunta refere-se à capacidade de generalização. Sendo assim, um 
 
 \subsection{Definição da Arquitetura}
 
-Tendo em vista os critérios estabelecidos na seção anterior, chega-se a definição de que a RNA deverá possuir uma arquitetura de camadas alimentada adiante, um método de aprendizado supervisionado e uma função de custo, para controlar o processo de generalização da mesma.
+Tendo em vista os critérios estabelecidos na seção anterior, chegou-se a definição de que a RNA deverá possuir uma arquitetura de camadas alimentada adiante, um método de aprendizado supervisionado e uma função de custo, para controlar o processo de generalização da mesma.
 
-\citeonline{haykin2000} direciona este modelo de rede ao \textit{Perceptron} de Múltiplas Camadas (MLP, \textit{Multilayer Perceptron}), são redes neurais compostas por um conjunto de unidades sensoriais que constituem a camada de entrada, uma ou mais camadas ocultas e uma camada de saída, onde o sinal de entrada se propaga para frente através da rede, camada por camada. Redes MLP trabalham normalmente junto ao algoritmo \textit{backpropagation} para realizar seu treinamento e aprendizado.
+\citeonline{haykin2000} direciona este modelo de rede ao \textit{Perceptron} de Múltiplas Camadas (MLP, \textit{Multilayer Perceptron}), que são redes neurais compostas por um conjunto de unidades sensoriais que constituem a camada de entrada, uma ou mais camadas ocultas e uma camada de saída, onde o sinal de entrada se propaga para frente através da rede, camada por camada. Redes MLP trabalham normalmente junto ao algoritmo \textit{backpropagation} para realizar seu treinamento e aprendizado.
 
-Tendo em vista a especificação do modelo da rede e dos dados que serão utilizados para realizar o treinamento e os testes, a próxima etapa será definir quais serão as entradas utilizadas. Como o objetivo do trabalho é realizar a predição do valor de abertura das ações em dias posteriores aos treinados, todas as váriaveis coletadas serão utilizadas como entrada da RNA. Portanto, os parâmetros que irão compor a camada de entrada da RNA são:
+Tendo em vista a especificação do modelo da rede e dos dados utilizados para realizar o treinamento e os testes, a próxima etapa foi levantar as entradas utilizadas na RNA. Como o objetivo do trabalho é realizar a predição do valor de abertura das ações em dias posteriores aos treinados, todas as váriaveis coletadas serão utilizadas como entrada da RNA. Portanto, os parâmetros que irão compor a camada de entrada da RNA são:
 
 \begin{enumerate}
 \item Valor de abertura;
@@ -145,13 +145,11 @@ Segundo \citeonline{haykin2000} e \citeonline{marangoni}, na camada intermediár
 \item Utilizar um número de sinapses dez vezes menor que o número de exemplos disponíveis para treinamento.
 \end{itemize}
 
-Por isso, para a grande maioria dos problemas utiliza-se apenas uma camada escondida, onde sua quantidade de neurônios é definida buscando um meio termo entre a quantidade de entradas e a sua saída, tentando evitar as complicações evidenciadas nos tópicos anteriores.
+Por isso, para a grande maioria dos problemas utiliza-se apenas uma camada escondida, onde sua quantidade de neurônios é definida buscando um meio termo entre a quantidade de entradas e a sua saída, tentando evitar as complicações evidenciadas nos tópicos anteriores. De acordo com \citeonline{nielsen}, a quantidade de neurônios para a camada oculta deve ter aproximadamente 2 vezes a quantidade de variáveis de entrada. 
 
-Mediante estas informações, o modelo será desenvolvido com apenas uma camada intermediária composta por 13 neurônios, buscando otimizar a sua estrutura e obtendo um resultado eficiente para o problema.
+Mediante estas informações, o modelo desenvolvido tem apenas uma camada intermediária composta por 13 neurônios, que seguem as especificações propostas por \citeonline{nielsen}, \citeonline{haykin2000} e \citeonline{marangoni} buscando otimizar a sua estrutura e obtendo um resultado eficiente para o problema.
 
-Por fim, a saída da rede será composta por uma única camada que irá conter o valor de abertura do dia seguinte. É importante deixar claro que este valor, durante o processo de treinamento, será preenchido com os valores reais das ações em relação ao período que será escolhido para o processo de treinamento.
-
-Na Figura 11 é possível visualizar a composição gráfica da arquitetura proposta.
+Por fim, a saída da rede será composta por uma única camada que irá conter o valor de abertura do dia seguinte. É importante deixar claro que este valor, durante o processo de treinamento, será preenchido com os valores reais das ações em relação ao período que será escolhido para o processo de treinamento. Na Figura 11 é possível visualizar a composição gráfica da arquitetura proposta.
 
 \begin{figure}[h]
 	\centering
@@ -162,9 +160,9 @@ Na Figura 11 é possível visualizar a composição gráfica da arquitetura prop
 \end{figure}
 
 \section{DEFINIÇÃO DA BASE DE TREINAMENTO}
-A partir do modelo de rede definido, é necessário classificar os dados que serão utilizados na fase de treinamento e os que serão utilizados para a realização dos testes. Como no trabalho serão coletadas as ações de 5 empresas distintas, a ideia é que para cada empresa, individualmente, sejam realizados os processos de treinamento e testes, com objetivo de observar o comportamento da rede nas mais diversas situações e proporcionar uma análise mais detalhada do modelo.
+A partir do modelo de rede definido, é necessário classificar os dados que serão utilizados na fase de treinamento e os que serão utilizados para a realização dos testes. Como no trabalho foram coletadas as ações de 4 empresas distintas, para cada empresa, individualmente, foram realizados os processos de treinamento e testes, com objetivo de observar o comportamento da rede nas mais diversas situações e proporcionar uma análise mais detalhada do modelo.
 
-Os dados utilizados para o treinamento da rede devem ser significativos e cobrir amplamente o domínio do problema, e não apenas envolver os casos de operações normais ou rotineiras, mas também incorporar casos de exceção e de situações limites. Seguindo o funcionamento do algoritmo \textit{backpropagation}, os dados treinados devem seguir os seguintes passos:
+Os dados utilizados para o treinamento da rede devem ser significativos e cobrir amplamente o domínio do problema, e não apenas envolver os casos de operações normais ou rotineiras, mas também incorporar casos de exceção e de situações limites. Seguindo o funcionamento do algoritmo \textit{backpropagation}, os dados treinados seguiram os seguintes passos:
 
 \begin{enumerate}
 \item Aplicar o vetor de entrada da rede;
@@ -186,7 +184,7 @@ Segundo \citeonline{haykin2000}, ao determinar a classificação de um conjunto 
 
 Segundo \citeonline{pybrain2010}, como o próprio nome sugere, PyBrain contém algoritmos para redes neurais, aprendizagem supervisionada, aprendizagem não supervisionada e algoritmos evolutivos. A biblioteca é construída com seu núcleo baseado em redes neurais, onde todos os métodos de treinamento aceitam uma rede como instância pré-treinada. Isso faz de PyBrain uma ferramenta poderosa para a execução de tarefas complexas de serem resolvidas. 
 
-A Figura 12 demonstra, de maneira mais clara, como a biblioteca PyBrain irá auxiliar no projeto.
+A Figura 12 demonstra, de maneira mais clara, como a biblioteca PyBrain auxilia no projeto.
 
 \begin{figure}[h]
 	\centering
@@ -232,6 +230,6 @@ Segundo \citeonline{matplotlib}, o código Matplotlib é dividido conceitualment
 \end{itemize}
 
 \section{CONFIGURAÇÃO DE \textit{HARDWARE}}
-Também é importante deixar evidente que a implementação das técnicas serão executadas em um computador pessoal com um processador Intel(R) Core(TM) i5-4200U com 2.60 \textit{gigahertz} e uma memória de acesso aleatório (RAM) DDR3 com 6 \textit{gigabytes}. 
+Também é importante deixar evidente que a implementação das técnicas foram executadas em um computador pessoal com um processador Intel(R) Core(TM) i5-4200U com 2.60 \textit{gigahertz} e uma memória de acesso aleatório (RAM) DDR3 com 6 \textit{gigabytes}. 
 
 Desta forma, todos os métodos necessários para realizar a implementação deste trabalho foram levantados, o próximo capítulo irá detalhar o processo de desenvolvimento das técnicas, e, consequentemente, da obtenção dos objetivos desejados, levando todos os aspectos estudados e definidos até o momento considerado. 

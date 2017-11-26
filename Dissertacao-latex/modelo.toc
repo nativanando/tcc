@@ -34,7 +34,7 @@
 \contentsline {subsubsection}{\numberline {3.4.1.1}Aprendizagem Supervisionada}{27}{subsubsection.3.4.1.1}
 \contentsline {subsubsection}{\numberline {3.4.1.2}Aprendizagem n\IeC {\~a}o Supervisionada}{27}{subsubsection.3.4.1.2}
 \contentsline {section}{\numberline {3.5}ALGORITMOS DE APRENDIZAGEM PARA TREINAMENTO DAS REDES}{27}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}\textit {Backpropagation}}{28}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.1}Algoritmo \textit {Backpropagation}}{28}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Algoritmo de Aprendizado Hebbiano}{29}{subsection.3.5.2}
 \contentsline {section}{\numberline {3.6}PROCESSO DE GENERALIZA\IeC {\c C}\IeC {\~A}O}{29}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Problemas de Generaliza\IeC {\c c}\IeC {\~a}o}{30}{subsection.3.6.1}

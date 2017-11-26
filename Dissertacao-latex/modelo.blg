@@ -13,6 +13,8 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: Configuracoes/referencias.bib
+Warning--I'm ignoring nielsen's extra "year" field
+--line 32 of file Configuracoes/referencias.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -22,44 +24,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 47 entries,
+You've used 48 entries,
             6711 wiz_defined-function locations,
-            1433 strings with 15781 characters,
-and the built_in function-call counts, 40191 in all, are:
-= -- 3480
-> -- 1198
-< -- 408
-+ -- 865
-- -- 370
-* -- 2742
-:= -- 5415
-add.period$ -- 152
-call.type$ -- 47
-change.case$ -- 446
-chr.to.int$ -- 55
-cite$ -- 45
-duplicate$ -- 2769
-empty$ -- 2422
-format.name$ -- 1745
-if$ -- 8705
+            1439 strings with 15898 characters,
+and the built_in function-call counts, 40918 in all, are:
+= -- 3534
+> -- 1213
+< -- 409
++ -- 870
+- -- 375
+* -- 2788
+:= -- 5512
+add.period$ -- 156
+call.type$ -- 48
+change.case$ -- 454
+chr.to.int$ -- 56
+cite$ -- 46
+duplicate$ -- 2813
+empty$ -- 2483
+format.name$ -- 1768
+if$ -- 8873
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 798
-newline$ -- 250
-num.names$ -- 225
-pop$ -- 1041
+missing$ -- 816
+newline$ -- 256
+num.names$ -- 230
+pop$ -- 1061
 preamble$ -- 1
-purify$ -- 173
+purify$ -- 176
 quote$ -- 0
-skip$ -- 2967
+skip$ -- 3009
 stack$ -- 1
-substring$ -- 1755
-swap$ -- 1058
-text.length$ -- 32
+substring$ -- 1806
+swap$ -- 1080
+text.length$ -- 33
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 16
 warning$ -- 0
-while$ -- 332
+while$ -- 341
 width$ -- 0
-write$ -- 677
+write$ -- 693
+(There was 1 warning)
