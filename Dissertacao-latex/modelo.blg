@@ -14,7 +14,7 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: Configuracoes/referencias.bib
 Warning--I'm ignoring nielsen's extra "year" field
---line 32 of file Configuracoes/referencias.bib
+--line 31 of file Configuracoes/referencias.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -27,27 +27,27 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 You've used 48 entries,
             6711 wiz_defined-function locations,
             1439 strings with 15898 characters,
-and the built_in function-call counts, 40918 in all, are:
-= -- 3534
+and the built_in function-call counts, 40892 in all, are:
+= -- 3530
 > -- 1213
 < -- 409
 + -- 870
 - -- 375
-* -- 2788
-:= -- 5512
-add.period$ -- 156
+* -- 2787
+:= -- 5510
+add.period$ -- 155
 call.type$ -- 48
-change.case$ -- 454
+change.case$ -- 453
 chr.to.int$ -- 56
 cite$ -- 46
-duplicate$ -- 2813
-empty$ -- 2483
+duplicate$ -- 2810
+empty$ -- 2482
 format.name$ -- 1768
-if$ -- 8873
+if$ -- 8867
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 816
-newline$ -- 256
+missing$ -- 815
+newline$ -- 255
 num.names$ -- 230
 pop$ -- 1061
 preamble$ -- 1
@@ -55,8 +55,8 @@ purify$ -- 176
 quote$ -- 0
 skip$ -- 3009
 stack$ -- 1
-substring$ -- 1806
-swap$ -- 1080
+substring$ -- 1804
+swap$ -- 1078
 text.length$ -- 33
 text.prefix$ -- 0
 top$ -- 0
@@ -64,5 +64,5 @@ type$ -- 16
 warning$ -- 0
 while$ -- 341
 width$ -- 0
-write$ -- 693
+write$ -- 692
 (There was 1 warning)
