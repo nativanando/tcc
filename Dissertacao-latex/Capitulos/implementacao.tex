@@ -6,7 +6,7 @@ Este capítulo tem como objetivo apresentar, de forma mais detalhada, todo o pro
 \section{REALIZAÇÃO DA COLETA DE DADOS}
 Tendo em vista as ferramentas necessárias para realizar à coleta das séries temporais que serão utilizadas para o treinamento e testes da RNA, foi desenvolvido um método de automatização de aquisição dos \textit{DataFrames} das ações que serão coletadas para a análise.
 
-Inicialmente, foi criada uma interface em Python que contém a assinatura do método que as classes das empresas deverão implementar. Após isso, foram criadas as classes para as respectivas empresas, definidas no Seção 4.2. Para exemplificar o que está sendo exposto, o Código 3 demonstra, de forma mais intuituva, a implementação do atual procedimento.
+Inicialmente, foi criada uma interface em Python que contém a assinatura do método que as classes das empresas deverão implementar. Após isso, criou-se as classes para as respectivas empresas, definidas no Seção 4.2. Para exemplificar o que está sendo exposto, o Código 3 demonstra, de forma mais intuitiva, a implementação do atual procedimento.
 \codigoPython\
 \lstinputlisting[label=cod:exempla-coleta, caption=Implementação da interface Empresa em Python]{src/empresa.py}
 
@@ -14,7 +14,7 @@ Analisando este código, pode-se observar o desenvolvimento da interface "Empres
 
 \lstinputlisting[language=Python, label=cod-crawler, caption=Implementação do objeto Crawler que realiza a busca das ações]{src/crawler.py}
 
-O Código 4 utiliza a biblioteca pandas para realizar a coleta das ações. Pode-se observar que o método construtor "\_\_init\_\_"\, recebe o nome e o código da empresa que faz a chamada de sua instância. Também é possível analisar o método "executa\_busca"\, implementado, que realiza a chamada da função "web.DataReader"\,
+O Código 4 utiliza a biblioteca pandas para realizar a coleta das ações. Pode-se observar que o método construtor "\_\_init\_\_"\, recebe o nome e o código da empresa que faz a chamada de sua instância, além da data coletada. Também é possível analisar o método "executa\_busca"\, implementado, que realiza a chamada da função "web.DataReader"\,
 passando quatro parâmetros, sendo eles:
 \begin{enumerate}
 \item Código da empresa;
@@ -25,7 +25,7 @@ passando quatro parâmetros, sendo eles:
 
 Após a realização da requisição, a API retorna um arquivo com as ações entre as respectivas datas, no formato especificado na Seção 4.4.2, formando assim, o \textit{DataFrame} inicial das empresas. Posteriormente, são analisadas as séries específicas de cada empresa, através de seus valores diários de abertura. O período coletado foi de 09/04/2001 a 31/08/2017, contendo 4117 registros para cada série.
 
-Iniciando por ordem alfabética, as ações da Amazon Inc contém os valores mais altos dentre as empresas estudadas. No período coletado, seu valor de abertura apresentou um mínimo de 5,91 e um máximo de 1069,55 Dólares dos Estados Unidos (USD). Neste caso é possível evidenciar o crescimento e valorização da ação. O Gráfico 2 representa, de forma mais intuitiva, o comportamento desta série.
+Iniciando por ordem alfabética, as ações da Amazon Inc contém os valores mais altos dentre as empresas estudadas. No período coletado, seu valor de abertura apresentou um mínimo de 5,91 e um máximo de 1069,55 dólares dos Estados Unidos (USD). Neste caso é possível evidenciar o crescimento e valorização da ação. O Gráfico 2 representa, de forma mais intuitiva, o comportamento desta série.
 \begin{grafico}[h]
 	\centering
 	\fbox{\includegraphics[width=1\textwidth, height=0.45\textwidth]{amazon_serie_novo}}
@@ -65,7 +65,7 @@ Já as ações da Intel e Microsoft Corporation possuem os valores mais equilibr
 Após evidenciar as características de todas as séries coletadas, pode-se concluir que as bases de dados são distintas, sendo de extrema importância para analisar a arquitetura da RNA.
 
 \section{EXPLORANDO O \textit{DATAFRAME}}
-O refinamento do modelo de dados coletado é de suma importância para agregar valor às informações do \textit{DataFrame} de cada empresa. Como especificado na Seção 4.3.1, é necessário calcular alguns indicadores técnicos, que são consideradas informações expressivas que influenciam diretamente nos valores das ações.
+O refinamento do modelo de dados coletado é de suma importância para agregar valor às informações do \textit{DataFrame} de cada empresa. Como especificado na Seção 4.3.1, faz-se necessário calcular alguns indicadores técnicos, que são consideradas informações expressivas que influenciam diretamente nos valores das ações.
 
 Para desenvolver o cálculo das médias móveis de 10 e 26 dias, foi formada uma equação levando em consideração o exposto na Seção 4.3.1, o que proporciona de uma forma mais clara como realizar a implementação do algoritmo. A equação (5.1) demonstra este procedimento:
 \begin{equation}\label{eq:MMS}
@@ -141,16 +141,18 @@ Realizada a etapa de especificação das camadas e suas respectivas funcionalida
 
 Observando este código, pode-se notar que o mesmo recebe um modelo de rede como parâmetro, faz a inserção através dos respectivos métodos citados anteriormente e retorna a rede com a nova configuração.
 
-A partir disto, a rede precisa identificar quais são as distribuições de conexões referente às camadas inseridas, para determinar o fluxo de trabalho dos dados. Este procedimento é realizado através do objeto \textit{FullConnection}, que determina a ligação entre as camadas. Como o modelo será composto por 3 camadas, faz-se necessário realizar duas conexões, uma entre a camada de entrada e a camada oculta e outra entre a camada oculta e a camada de saída. No Código 13 é demonstrado o método desenvolvido para criar esta funcionalidade.
+A partir disto, a rede precisa identificar quais são as distribuições de conexões referente às camadas inseridas, para determinar o fluxo de trabalho dos dados. Este procedimento é realizado através do objeto \textit{FullConnection}, que determina a ligação entre as camadas. Como o modelo é composto por 3 camadas, realizou-se duas conexões, uma entre a camada de entrada e a camada oculta e outra entre a camada oculta e a camada de saída. No Código 13 é demonstrado o método desenvolvido para criar esta funcionalidade.
 
 \lstinputlisting[language=Python, label=feedforward-connection, caption=Conectando as camadas criadas na RNA]{src/conexoes-camadas.py}
 
-Concluída a fase de inserção das conexões, apresentada no Código 13, faz-se necessário inserir os pesos iniciais da rede. Este procedimento é executado através do método \textit{sortModules}, disponbilizado pela biblioteca PyBrain, que adiciona, de forma aleatória, os pesos em um intervalo [-2,2].
+Concluída a fase de inserção das conexões, apresentada no Código 13, fez-se necessário inserir os pesos iniciais da rede. Este procedimento foi executado através do método \textit{sortModules}, disponbilizado pela biblioteca PyBrain, que adiciona, de forma aleatória, os pesos em um intervalo [-2,2].
 
 \subsection{Treinamento da Rede}
 Para o desenvolvimento do treinamento a biblioteca PyBrain utiliza dois módulos principais, sendo eles o pybrain.datasets, que é responsável por especificar qual o modelo de aprendizado que a rede trabalha, e, para o caso do aprendizado supervisionado, o módulo pybrain.supervised, que contém os respectivos algoritmos para a presente técnica.
 
 Para mapear uma base de dados de aprendizagem supervisionada com as características desejadas, é necessário utilizar o método \textit{SupervisedDataSet}, onde o mesmo recebe como parâmetro a quantidade de entradas referente à base de dados utilizada e a quantidade de saídas desejadas. Para o presente trabalho, foi instanciada uma base de dados de treino para 8 entradas e 1 saída, seguindo as especificações da Seção 4.5.1.
+
+Segundo \citeonline{haykin2000}, uma RNA, em média, utiliza até 1500 iterações para convergir. Tendo em vista esse valor, foi aplicado na rede um parâmetro de 200 iterações, buscando otimizar o tempo de treinamento, e de 1000 iterações, que se encontra dentro do limite desejável.
 
 O Código 14 expõe o desenvolvimento do método que realiza a criação da base de treino.
 
@@ -166,7 +168,7 @@ Após concluído os procedimentos anteriores, pode-se iniciar, efetivamente, o t
 
 A função implementada no Código 15, inicia o processo de treino a partir da chamada ao objeto \textit{BackPropTrainer}. Este, por sua vez, recebe alguns parâmetros no momento de sua criação, sendo eles: a rede neural em sí, a base de treinamento e a taxa de aprendizagem (\textit{learning rate}), detalhada na Seção 3.5.1. Segundo \citeonline{haykin2000}, um valor recomendado para o parâmetro \textit{learning rate} é de 0.4 (40\%). No presente trabalho, foi utilizada esta taxa como referência para o treinamento, evidenciada na linha 5 do Código 15. Já o parâmetro \textit{verbose}, auxilia o acompanhamento do erro quadrático médio durante o processo de treinamento, guardando as respectivas variações em um vetor unidimensional.
 
-A partir disto, faz-se necessário realizar a chamada ao método \textit{train}. O mesmo recebe um valor responsável por limitar a quantidade de ciclos (iterações) na qual o modelo é treinado, através da variável \textit{epochs}.
+A partir disto, fez-se necessário realizar a chamada ao método \textit{train}. O mesmo recebe um valor responsável por limitar a quantidade de ciclos (iterações) na qual o modelo é treinado, através da variável \textit{epochs}.
 
 O objeto \textit{NetworkWriter}, encontrado na linha 7, pertence ao pacote tools.customxml, implementando pela biblioteca, que utiliza uma classe que pode receber o estado atual de uma rede treinada e gravá-la em um arquivo \textit{eXtensible Markup Language} (XML). Segundo \citeonline{xml}, o XML foi criado para gerar linguagens de notação para necessidades especiais, de fácil manuseio e portabilidade de sua estrutura. Portanto, tendo em vista a capacidade de exportação da RNA para um arquivo XML, algumas possibilidades são oferecidas, tais como: retreinar a mesma, de forma simplificada, e testá-la quando desejado, sem a necessidade de realizar o processo de treinamento novamente.
 
@@ -174,6 +176,6 @@ A estrutura do arquivo gerado, levando em consideração a exportação realizad
 
 \lstinputlisting[language=XML, label=base-treino-cod, caption=Estrutura do arquivo XML de uma RNA]{src/rede-feedforward-intel.xml}
 
-Observando o Código 16, pode-se notar que todas as configurações executadas para construir a rede são armazenadas dentro de suas respectivas características, denominadas \textit{tags}. As \textit{tags} são padronizadas para que, no momento de leitura da RNA, através do objeto \textit{networkReader}, todo o ambiente seja importado de forma correta. Analisando as linhas 3, 6 e 14, por exemplo, é possível notar alguns dos parâmetros inseridos anteriormente na RNA. Além disso, também fica evidente a presença dos pesos sinápticos, entre a camada de entrada e a camada oculta, e, entre a camada oculta e a camada de saída, que são fundamentais para salvar um determinado estado da rede.
+Observando o Código 16, pode-se notar que todas as configurações executadas para construir a rede foram armazenadas dentro de suas respectivas características, denominadas \textit{tags}. As \textit{tags} foram padronizadas para que, no momento de leitura da RNA, através do objeto \textit{networkReader}, todo o ambiente seja importado de forma correta. Analisando as linhas 3, 6 e 14, por exemplo, é possível notar alguns dos parâmetros inseridos anteriormente na RNA. Além disso, também fica evidente a presença dos pesos sinápticos, entre a camada de entrada e a camada oculta, e, entre a camada oculta e a camada de saída, que são fundamentais para salvar um determinado estado da rede.
 
 Por fim, tendo em vista o refinamento de todas as bases de dados coletadas e da implementação do modelo da RNA, todos os procedimentos necessários para realizar os testes foram desenvolvidos, com base na teoria e especificações dos capítulos anteriores. 

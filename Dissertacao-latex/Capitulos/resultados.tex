@@ -3,17 +3,17 @@
 \chapter{ANÁLISE DOS RESULTADOS}\label{ch:resultados}
 Este capítulo tem como finalidade apresentar os resultados obtidos através das implementações demonstradas no Capítulo 5.
 
-Após as etapas de especificação e implementação do modelo da RNA e, também, da definição e utilização das séries temporais coletadas, faz-se necessário avaliar como a respectiva técnica se comportou. Tendo isso em vista, a mesma foi aplicada em função do objetivo principal do trabalho, que é medir a capacidade de precisão de acerto no valor de abertura das ações.
+Após as etapas de especificação e implementação do modelo da RNA e, também, da definição e utilização das séries temporais coletadas, avaliou-se como a respectiva técnica se comportou. Tendo isso em vista, a mesma foi aplicada em função do objetivo principal do trabalho, que é medir a capacidade de precisão de acerto no valor de abertura das ações.
 
 A partir disso, foi elaborada, de forma independente, uma análise de eficácia do modelo para o cenário de cada empresa utilizada no presente trabalho. É importante ressaltar que os modelos foram implementados levando em consideração todos os \textit{scripts}, métodos e ferramentas utilizadas no capítulo anterior.
 
 \section{APLICAÇÃO DA REDE NA SÉRIE DA INTEL CORPORATION}
 A rede da Intel Corporation foi treinada com o objetivo de capturar o maior nível de variação possível dos dados, visando mapear um maior conjunto de padrões e, assim, responder de forma eficiente à dados dispersos através de uma boa capacidade de generalização. Tendo isso em vista, o período de treinamento preparado foi de 09/04/2001 até 21/08/2017, totalizando 4117 registros.
 
-Para o presente caso foram construídos dois cenários de simulação, buscando obter um parâmetro de ciclos de treinamento adequado ao modelo de dados utilizado. As métricas definidas para análise, a partir destes ciclos de treinamento, são: o comportamento da função de custo que compõem o modelo (erro quadrático médio, EQM) e a margem de erro dos valores resultantes da rede, no período de 23/08/2017 a 31/08/2017, em relação aos valores reais. Os parâmetros utilizados foram: 200 e 1000 iterações.
+Para o presente caso foram construídos dois cenários de simulação, buscando obter um parâmetro de ciclos de treinamento adequado ao modelo de dados utilizado. As métricas definidas para análise, a partir destes ciclos de treinamento, foram: o comportamento da função de custo que compõem o modelo (erro quadrático médio, EQM) e a margem de erro dos valores resultantes da rede, no período de 23/08/2017 a 31/08/2017, em relação aos valores reais. Os parâmetros utilizados foram: 200 e 1000 iterações.
 
 \subsection{Treinamento com 200 Iterações}	
-A ideia de executar o treinamento com uma quantidade baixa de iterações, é feita com o intuito de proporcionar um treinamento mais rápido e com resultados significativos, levando em consideração as características especificas do modelo de dados. Portanto, para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (200) com o número de registros de testes (4117), resultando em um total de 823.400 exemplos calculados pela rede. O Gráfico 7 demonstra, de acordo com a quantidade de ciclos, a variação do EQM no primeiro cenário de teste com 200 iterações.
+O objetivo de executar o treinamento com uma quantidade baixa de iterações, é feita com o intuito de proporcionar um treinamento mais rápido e com resultados significativos, levando em consideração as características especificas do modelo de dados. Portanto, para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (200) com o número de registros de testes (4117), resultando em um total de 823.400 exemplos calculados pela rede. O Gráfico 7 demonstra, de acordo com a quantidade de ciclos, a variação do EQM no primeiro cenário de teste com 200 iterações.
 \begin{grafico}[h]
 	\centering
 	\fbox{\includegraphics[width=1\textwidth]{erro_intel_primeiro}}
@@ -24,7 +24,7 @@ A ideia de executar o treinamento com uma quantidade baixa de iterações, é fe
 
 O EQM de treinamento iniciou-se, na primeira iteração, com um erro percentual de 0.00248996652176 e, após o término das 200 iterações de treinamento, conclui-se com um erro percentual de 9.44359025338.$10^{-05}$. Analisando o gráfico, pode-se observar que os valores tiveram um decaimento constante até a iteração de número 125, enquanto que, nas 75 iterações posteriores, manteve os valores dos erros aproximados. A queda constante nas iterações iniciais está diretamente ligada a capacidade de aprendizado e adaptação ao modelo de dados.
 
-Tendo em vista a variação dos erros obtidos após a primeira inicialização da rede, foi julgado necessário repetir o mesmo procedimento, visando observar o funcionamento do algoritmo de inicialização dos pesos e validar sua variação aplicada ao mesmo modelo de dados. Portanto, mais dois cenários foram executados com este objetivo. No segundo cenário, o erro foi iniciado com um percentual de 0.00102981131422 e, após o término das 200 iterações de treinamento, concluí-se com um percentual de 9.1790170623.$10^{-05}$. No terceiro cenário, o erro foi iniciado com um percentual de 0.00026991101482 e, após o término das 200 iterações de treinamento, concluí-se com um percentual de 9.49959768553.$10^{-05}$.
+Tendo em vista a variação dos erros obtidos após a primeira inicialização da rede, foi julgado necessário repetir o mesmo procedimento, visando observar o funcionamento do algoritmo de inicialização dos pesos e validar sua variação aplicada ao mesmo modelo de dados. Portanto, mais dois cenários foram executados com este objetivo. No segundo cenário, o erro foi iniciado com um percentual de 0.00102981131422 e, após o término das 200 iterações de treinamento, concluiu-se com um percentual de 9.1790170623.$10^{-05}$. No terceiro cenário, o erro foi iniciado com um percentual de 0.00026991101482 e, após o término das 200 iterações de treinamento, concluí-se com um percentual de 9.49959768553.$10^{-05}$.
 
 Analisando os três cenários, pode-se observar que apesar da rede ser iniciada com os pesos aleatoriamente, o EQM seguiu a mesma tendência para todos os casos, isso implica em uma confiabilidade maior por parte do algoritmo, pois o mesmo garante que novas inicializações, aplicadas ao mesmo modelo de dados, não resultam em valores muito distintos. Esta validação do algoritmo tem grande importância, pois com ela chega-se a definição de que os pesos iniciais da rede não precisarão, necessariamente, serem ajustados manualmente para encontrar um melhor resultado, pois aplicado ao mesmo modelo de dados, os erros seguem o mesmo padrão.
 
@@ -84,7 +84,7 @@ Com a finalidade de comparar com a simulação anterior, foi realizado um teste 
 
 Para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (1000) com o número de registros de testes (4117), resultando em um total de 4.117.000 exemplos calculados pela rede.
 
-Para o primeiro cenário a rede iniciou-se, na primeira iteração, com um erro percentual de 0.00664064049629 e, após o término das 1000 iterações de treinamento, conclui-se com um erro percentual de 8.7943563121853531.$10^{-05}$. Mais dois treinos distintos foram realizados visando encontrar alguma dispersão no erro obtido pela rede, como feito na análise anterior. Portanto, o segundo treino obteve um erro inicial de 0.00260377914122 e, após o término das 1000 iterações de treinamento, conclui-se com um percentual de 8.91402403614.$10^{-05}$. O terceiro treino obteve um erro inicial de 0.00496238079711 e, após o término das 1000 iterações de treinamento, o EQM do treinamento conclui-se com um percentual de 8.90814371631.$10^{-05}$.
+Para o primeiro cenário a rede iniciou-se, na primeira iteração, com um erro percentual de 0.00664064049629 e, após o término das 1000 iterações de treinamento, conclui-se com um erro percentual de 8.7943563121853531.$10^{-05}$. Mais dois treinos distintos foram realizados visando encontrar alguma dispersão no erro obtido pela rede, como feito na análise anterior. Portanto, o segundo treino obteve um erro inicial de 0.00260377914122 e, após o término das 1000 iterações de treinamento, concluiu-se com um percentual de 8.91402403614.$10^{-05}$. O terceiro treino obteve um erro inicial de 0.00496238079711 e, após o término das 1000 iterações de treinamento, o EQM do treinamento conclui-se com um percentual de 8.90814371631.$10^{-05}$.
 
 Após a execução desses cenários de treinamento, pode-se concluir que a rede se comportou de forma estável em relação a quantidade de iterações, não distinguindo, de forma relevante, os valores dos pesos em diversas inicializações aleatórias. O Gráfico 9 representa, de maneira ilustrativa, o comportamento do EQM da rede treinada pelo primeiro cenário.
 \begin{grafico}[h]
@@ -119,7 +119,7 @@ Data    & Valor real   & Resultado    & Erro (\%) & Variação\\
 \end{tabular}
 \end{table}
 
-Analisando a Tabela 3, pode-se observar que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.50\%, se aproximando consideravelmente dos valores reais. O erro médio, de todo o período analisado, obteve um valor de aproximadamente 0.28\%, superior ao treinamento anterior. Já a medida de dispersão dos erros em torno da média obtida (desvio padrão) foi de aproximadamente 0.09\%. Sendo assim, pode-se concluir que o desvio padrão foi menor que o do primeiro cenário, devido ao fato dos erros mais altos (23/08/2017 e 29/08/2017) serem mais suaves. O Gráfico 10 representa, de maneira ilustrativa, os resultados da rede.
+Analisando a Tabela 3, observou-se que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.50\%, se aproximando consideravelmente dos valores reais. O erro médio, de todo o período analisado, obteve um valor de aproximadamente 0.28\%, superior ao treinamento anterior. Já a medida de dispersão dos erros em torno da média obtida (desvio padrão) foi de aproximadamente 0.09\%. Sendo assim, chegou-se a conclusão que o desvio padrão foi menor que o do primeiro cenário, devido ao fato dos erros mais altos (23/08/2017 e 29/08/2017) serem mais suaves. O Gráfico 10 representa, de maneira ilustrativa, os resultados da rede.
 
 \begin{grafico}[h]
 	\centering
@@ -129,19 +129,21 @@ Analisando a Tabela 3, pode-se observar que os resultados obtidos foram signific
 	\label{lingua}
 \end{grafico}
 
-Apesar da diferença do erro percentual relativo entre os dois cenários ser de apenas 4\%, foi encontrada uma melhor parâmetrização para o presente modelo de dados utilizando um treinamento com 200 iterações, pois a exatidão dos valores preditos foram mais eficazes neste método de treinamento. Sendo assim, chega-se a definição que nem sempre um número maior de ciclos de treinamento aumentam a precisão da RNA. Neste caso, a rede sofreu uma convergência do EQM em torno de 200 iteraçoes, este detalhe pode ser observado visualizando o comportamento do Gráfico 9. Dessa forma, as iterações posteriores propagaram o erro de forma desnecessária, alterando assim os pesos sinápticos dos neurônios e, automaticamente, causando uma maior dispersão nos resultados. Este processo ocorrido na segunda simulação, na literatura, é denominado \textit{Overtraining}, detalhado no Capítulo 3.
+Apesar da diferença do erro percentual relativo entre os dois cenários ser de apenas 4\%, foi encontrada uma melhor parâmetrização para o presente modelo de dados utilizando um treinamento com 200 iterações, pois a exatidão dos valores preditos foram mais eficazes neste método de treinamento. Sendo assim, chega-se a definição que nem sempre um número maior de ciclos de treinamento aumentam a precisão da RNA. Neste caso, a rede sofreu uma convergência do EQM em torno de 200 iteraçoes, este detalhe pode ser observado visualizando o comportamento do Gráfico 9. 
+
+Dessa forma, as iterações posteriores propagaram o erro de forma desnecessária, alterando assim os pesos sinápticos dos neurônios e, automaticamente, causando uma maior dispersão nos resultados. Este processo ocorrido na segunda simulação, na literatura, é denominado \textit{Overtraining}, detalhado no Capítulo 3.
 
 \section{APLICAÇÃO DA REDE NA SÉRIE DA MICROSOFT CORPORATION}
 A rede da Microsoft Corporation foi treinada utilizando as mesmas técnicas da Intel Corporation, ou seja, com o intuito de capturar o maior nível de variação possível dos dados, visando mapear um maior conjunto de padrões e, assim, obter uma boa capacidade de generalização. Tendo isso em vista, o período de treinamento preparado foi de 09/04/2001 até 21/08/2017, totalizando 4117 registros.
 
-Para o presente caso foram construídos dois cenários de simulação, buscando obter um parâmetro de ciclos de treinamento adequado ao modelo de dados utilizado. As métricas definidas para análise, a partir destes ciclos de treinamento, são: o comportamento da função de custo que compõem o modelo (erro quadrático médio, EQM) e a margem de erro dos valores resultantes da rede, no período de 23/08/2017 a 31/08/2017, em relação aos valores reais. Os parâmetros de ciclos de treinamento utilizados foram: 200 e 1000 iterações.
+Para o presente caso foram construídos dois cenários de simulação, buscando obter um parâmetro de ciclos de treinamento adequado ao modelo de dados utilizado. As métricas definidas para análise, a partir destes ciclos de treinamento, foram: o comportamento da função de custo que compõem o modelo (erro quadrático médio, EQM) e a margem de erro dos valores resultantes da rede, no período de 23/08/2017 a 31/08/2017, em relação aos valores reais. Os parâmetros de ciclos de treinamento utilizados foram: 200 e 1000 iterações.
 
 \subsection{Treinamento com 200 Iterações}	
 O treinamento com 200 iterações foi executado com o objetivo de verificar a capacidade de precisão da rede com um número menor de iterações. Para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (200) com o número de registros de testes (4117), resultando em um total de 823.400 exemplos calculados pela rede.
 
 Para este caso, a RNA foi inicializada duas vezes com o objetivo de observar o comportamento e a tendência do EQM em relação ao algoritmo de inicialização. No primeiro cenário, a rede iniciou-se com o EQM em 0.0018579672451418453 e, após as 200 iterações, conclui-se com um erro de 3.6623220378015219.$10^{-05}$. No segundo cenário, o erro foi inicializado com 0.0047598765727053707 e, após as 200 iterações, conclui-se com um erro de 3.8483854181673219.$10^{-05}$.
 
-É possível verificar, através dos dois cenários executados, que o erro seguiu a mesma tendência para os dois casos, com um erro final próximo a 3.70.$10^{-05}$. Tendo isso em vista, possíveis inicializações distintas, aplicada ao modelo de dados da Microsoft Corporation, não irão resultar em valores muito distintos pois a diferença do erro é mínima.
+Foi possível verificar, através dos dois cenários executados, que o erro seguiu a mesma tendência para os dois casos, com um erro final próximo a 3.70.$10^{-05}$. Tendo isso em vista, possíveis inicializações distintas, aplicada ao modelo de dados da Microsoft Corporation, não irão resultar em valores muito distintos pois a diferença do erro é mínima.
 
 Para demonstrar, de maneira mais clara, o comportamento do erro obtido pela rede em todo processo de treinamento, o Gráfico 11 demonstra, de acordo com a quantidade ciclos, a variação do EQM no primeiro cenário de teste.
 \begin{grafico}[h]
@@ -152,7 +154,7 @@ Para demonstrar, de maneira mais clara, o comportamento do erro obtido pela rede
 	\label{lingua}
 \end{grafico}
 
-Analisando o gráfico, pode-se observar que os valores tiveram um decaimento constante até a iteração de número 125, enquanto que, nas 75 iterações posteriores, manteve os valores dos erros aproximados. A queda constante nas iterações iniciais está diretamente ligada a capacidade de aprendizado e adaptação ao modelo de dados.
+Analisando o gráfico, observou-se que os valores tiveram um decaimento constante até a iteração de número 125, enquanto que, nas 75 iterações posteriores, manteve os valores dos erros aproximados. A queda constante nas iterações iniciais está diretamente ligada a capacidade de aprendizado e adaptação ao modelo de dados.
 
 Após a análise do comportamento do EQM e a validação do algortimo de inicialização, os testes foram iniciados com o objetivo de verificar a precisão do modelo. Na Tabela 4 são detalhados os valores do período predito.
 \begin{table}[h]
@@ -204,9 +206,9 @@ Analisando a Tabela 5, pode-se observar que os resultados obtidos foram signific
 	\label{lingua}
 \end{grafico}
 
-Visualizando os erros obtidos, pode-se evidenciar que não houve grande dispersão no período, com excessão do dia 29/08/2017, que foi o mais alto de toda a série. Este erro foi o mais alto porque houve uma queda grande no valor da ação, se comparado ao padrão que a mesma vinha seguindo. Seguindo esta linha de análise, é preciso destacar que houve um aumento significativo no valor da ação, mais especificamente no dia 31/08/2017, porém, diferentemente do momento de queda, a rede se adaptou a este acrescimento e suavizou o erro. 
+Visualizando os erros obtidos, evidenciou-se que não houve grande dispersão no período, com excessão do dia 29/08/2017, que foi o mais alto de toda a série. Este erro foi o mais alto porque houve uma queda grande no valor da ação, se comparado ao padrão que a mesma vinha seguindo. Seguindo esta linha de análise, é preciso destacar que houve um aumento significativo no valor da ação, mais especificamente no dia 31/08/2017, porém, diferentemente do momento de queda, a rede se adaptou a este acrescimento e suavizou o erro. 
 
-A partir destes cenários levantados, é possível chegar a conclusão de que a rede não conseguiu prever com mais exatidão os momentos de queda da ação, enquanto que, nos momentos de alta, obteve uma boa capacidade de adaptabilidade.
+A partir destes cenários levantados, conclui-se que a rede não conseguiu prever com mais exatidão os momentos de queda da ação, enquanto que, nos momentos de alta, obteve uma boa capacidade de adaptabilidade.
 
 \subsection{Treinamento com 1000 Iterações}	
 Com a finalidade de comparar com a simulação anterior, foi realizado um teste com 1000 iterações de treinamento visando alcançar um resultado mais preciso e, também, para validar se o aumento na quantidade de iterações, no processo de treinamento, melhoram os resultados retornados pela rede.
@@ -226,7 +228,7 @@ Analisando o Gráfico 13, que representa a variação do EQM no primeiro cenári
 
 Portanto, após a execução desses cenários de treinamento, analisando o comportamento do erro e a sua variação, pode-se concluir que o modelo se comportou de forma estável, não distinguindo, de forma relevante, os valores dos pesos em diversas inicializações aleatórias.
 
-A partir disso, é possível assegurar que o algoritmo de inicialização não vai influenciar em resultados diferentes, caso várias inicializações distintas sejam executadas ao mesmo modelo de dados. 
+A partir disso, é possível assegurar que o algoritmo de inicialização não influencia em resultados diferentes, caso várias inicializações distintas sejam executadas ao mesmo modelo de dados. 
 
 Após a observação do comportamento do erro, o período de teste (Tabela 4) foi inserido na rede. Os dados foram devidamente refinados, normalizados e, a partir disso, foram ativados. Os resultados preditos, a partir da execução dos testes, são demonstrados na Tabela 6. 
 
@@ -249,7 +251,7 @@ Data    & Valor real   & Resultado    & Erro (\%) & Variação\\
 \end{tabular}
 \end{table}
 
-Analisando a Tabela 6, pode-se observar que os resultados sofreram uma maior dispersão, se comparado ao treinamento anterior. O percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.80\%. A média de todo o período analisado obteve um erro de de aproximadamente 0.53\%, superior a média do treinamento anterior. Já a medida de dispersão dos erros em torno da média obtida (desvio padrão) foi de aproximadamente 0.17\%.
+Analisando a Tabela 6, observou-se que os resultados sofreram uma maior dispersão, se comparado ao treinamento anterior. O percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 0.80\%. A média de todo o período analisado obteve um erro de de aproximadamente 0.53\%, superior a média do treinamento anterior. Já a medida de dispersão dos erros em torno da média obtida (desvio padrão) foi de aproximadamente 0.17\%.
 
 No presente cenário em análise, o valor mais falho de toda a série foi o do dia 31/08/2017. Comparando-o com o resultado de 200 iterações, pode-se observar que a rede perdeu a capacidade de adaptabilidade para prever momentos de alta na ação, após o aumento na quantidade de iterações de treinamento. Observando o segundo maior erro da série, obtido no dia 25/08/2017, pode-se notar que o mesmo se encontra dentro dos padrões de tendência em que a rede vinha seguindo, porém a RNA também corrompeu o resultado predito. Esta instabilidade nos resultados mais uma vez está ligada a capacidade de convergência da RNA, onde, após convergir em uma quantidade menor de iterações, as posteriores apenas propagaram o erro desnecessariamente, modificando os pesos sinápticos dos neurônios da camada oculta com valores desnecessários e, assim, causando instabilidade na capacidade de precisão do modelo aplicado. 
 
@@ -266,7 +268,7 @@ Portanto, novamente é possível observar que o aumento na quantidade de iteraç
 \section{APLICAÇÃO DA REDE NA SÉRIE DA APPLE INC}
 A rede da Apple foi treinada utilizando as mesmas técnicas dos cenários anteriormente testados, ou seja, com o intuito de capturar o maior nível de variação possível dos dados, proporcionando para a RNA mapear uma quantia significativa de valores e situações distintas, presentes na série histórica utilizada, além de buscar uma boa capacidade de generalização para o modelo aplicado. O período de treinamento preparado foi de 09/04/2001 até 21/08/2017, totalizando 4117 registros.
 
-Para o presente caso foram construídos dois cenários de simulação, buscando obter um parâmetro de ciclos de treinamento adequado ao modelo de dados utilizado. As métricas definidas para análise, a partir destes ciclos de treinamento, são: o comportamento da função de custo que compõem o modelo (erro quadrático médio, EQM) e a margem de erro dos valores resultantes da rede, no período de 23/08/2017 a 31/08/2017, em relação aos valores reais. Os parâmetros de ciclos de treinamento utilizados foram: 200 e 1000 iterações.
+Para o presente caso foram construídos dois cenários de simulação, buscando obter um parâmetro de ciclos de treinamento adequado ao modelo de dados utilizado. As métricas definidas para análise, a partir destes ciclos de treinamento, foram: o comportamento da função de custo que compõem o modelo (erro quadrático médio, EQM) e a margem de erro dos valores resultantes da rede, no período de 23/08/2017 a 31/08/2017, em relação aos valores reais. Os parâmetros de ciclos de treinamento utilizados foram: 200 e 1000 iterações.
 
 \subsection{Treinamento com 200 Iterações}	
 O treinamento com 200 iterações foi executado com o objetivo de verificar a capacidade de precisão da rede com um número menor de iterações. Para quantificar como ocorreu o processo de treinamento, basta multiplicar o número de iterações (200) com o número de registros de testes (4117), resultando em um total de 823.400 exemplos calculados pela rede.
@@ -280,7 +282,7 @@ Para este caso, a RNA foi inicializada duas vezes com o objetivo de observar o c
 	\label{lingua}
 \end{grafico}
 
-É possível verificar, através dos dois cenários executados, que o erro seguiu a mesma tendência para os dois casos, com um erro final próximo a 1.90.$10^{-05}$. Tendo isso em vista, possíveis inicializações distintas, aplicada ao modelo de dados da Apple Inc, não irão resultar em valores muito distintos pois a diferença entre os erros são mínimas.
+Foi possível verificar, através dos dois cenários executados, que o erro seguiu a mesma tendência para os dois casos, com um erro final próximo a 1.90.$10^{-05}$. Tendo isso em vista, possíveis inicializações distintas, aplicada ao modelo de dados da Apple Inc, não irão resultar em valores muito distintos pois a diferença entre os erros são mínimas.
 
 Após a análise do comportamento do EQM e a validação do algortimo de inicialização, os testes foram iniciados com o objetivo de verificar a precisão do modelo. Na Tabela 7 são detalhados os valores do período predito.
 \begin{table}[h]
@@ -400,7 +402,7 @@ A ideia de executar o treinamento com uma quantidade baixa de iterações, é fe
 
 Para este caso, a RNA foi inicializada três vezes com o objetivo de observar o comportamento e a tendência do EQM em relação ao algoritmo de inicialização. No primeiro cenário, a rede iniciou-se com o EQM em 0.00240540733964 e, após as 200 iterações, conclui-se com um erro de 1.79339271141.$10^{-05}$. No segundo cenário, o erro foi inicializado com 0.00489046785604 e, após as 200 iterações, conclui-se com um com aproximadamente 1.59601609973.$10^{-05}$. O terceiro treino obteve um erro inicial de 0.00849440933377 e, após o término das 1000 iterações de treinamento, conclui-se com um percentual de 1.77038646762.$10^{-05}$.
 
-A partir da variação dos erros obtidos, é possível verificar que o erro seguiu a mesma tendência para os três casos, com um erro final de aproximadamente 1.70.$10^{-05}$. Tendo isso em vista, possíveis inicializações distintas, aplicada ao modelo de dados da Amazon Inc, não irão resultar em valores muito distintos pois a diferença entre os erros são mínimas.
+A partir da variação dos erros obtidos, verificou-se que o erro seguiu a mesma tendência para os três casos, com um erro final de aproximadamente 1.70.$10^{-05}$. Tendo isso em vista, possíveis inicializações distintas, aplicada ao modelo de dados da Amazon Inc, não irão resultar em valores muito distintos pois a diferença entre os erros são mínimas.
 
 No Gráfico 19 é possível observar, de maneira mais simples, o decaimento do erro no primeiro cenário de inicialização executado.
 \begin{grafico}[h]
@@ -431,7 +433,7 @@ Data    & Abertura   & Alta   & Baixa   & Fechamento   & Volume\\
 \end{tabular}
 \end{table}
 
-Analisando os valores da Tabela 10, pode-se observar que os mesmos sofrem mudanças bruscas significativas, tanto positivamente quanto negativamente, como por exemplo a diferença entre os valores de abertura dos dias 25/08/2017 e 28/08/2017, com uma queda de -9.46 USD e também dos dias 30/08/2017 e 31/08/0217, com uma alta de 16.26 USD. A partir disso, é de extremo interesse validar a arquitetura proposta e sua capacidade de precisão em um ambiente de ação mais instável. 
+Analisando os valores da Tabela 10, observou-se que os mesmos sofrem mudanças bruscas significativas, tanto positivamente quanto negativamente, como por exemplo a diferença entre os valores de abertura dos dias 25/08/2017 e 28/08/2017, com uma queda de -9.46 USD e também dos dias 30/08/2017 e 31/08/0217, com uma alta de 16.26 USD. A partir disso, é de extremo interesse validar a arquitetura proposta e sua capacidade de precisão em um ambiente de ação mais instável. 
 
 Desta forma, os dados demonstrados na Tabela 10 foram refinados e normalizados de acordo com os métodos implementados no Capítulo 5. Após a execução deste processo, os mesmos foram inseridos na RNA para ativação. Posteriormente, foi realizada a desnormalização e os resultados apresentados. Na tabela 11 é possível verificar os resultados obtidos pela rede.
 
@@ -458,11 +460,11 @@ Analisando a Tabela 11, pode-se observar que os resultados obtidos foram signifi
 
 Entretanto, analisando de forma mais detalhada cada valor resultante, pode-se evidenciar três erros mais altos nos dias 25/08/2017, 30/08/2017 e 31/08/2017 com 1.179\%, 1.166\% e 1.338\%, respectivamente. Tendo em vista a grande diferença da base de dados da Amazon em comparação com as demais analisadas neste trabalho, pode-se destacar a capacidade da rede em manter o erro médio, mesmo com os valores variando de uma maneira considerável.
 
-Levando-se em conta os valores resultantes, é possível observar que as variações do presente modelo de dados são maiores que as das séries analisadas anteriormente, pois as mesmas são proporcionais aos valores em que estão operando. Ainda detalhando os resultados obtidos, é interessante evidenciar que a RNA não seguiu nenhum padrão de dispersão, de alta ou queda da ação, muito provável porque a quantidade de treinamento foi insuficiente para mapear o conjunto de dados e suavizar o mesmo. Porém, novamente frisando, apesar de alguns erros chegarem na margem de 1\%, os resultados ainda são significativos, levando em consideração os valores financeiros operados pela Amazon Inc. 
+Levando-se em conta os valores resultantes, foi possível observar que as variações do presente modelo de dados são maiores que as das séries analisadas anteriormente, pois as mesmas são proporcionais aos valores em que estão operando. Ainda detalhando os resultados obtidos, é interessante evidenciar que a RNA não seguiu nenhum padrão de dispersão, de alta ou queda da ação, muito provável porque a quantidade de treinamento foi insuficiente para mapear o conjunto de dados e suavizar o mesmo. Porém, novamente frisando, apesar de alguns erros chegarem na margem de 1\%, os resultados ainda são significativos, levando em consideração os valores financeiros operados pela Amazon Inc. 
 
 Portanto, a análise específica desta série implica em resultados relevantes para o modelo da rede e sua arquitetura proposta, pois a mesma apresentou uma boa capacidade de adaptabilidade, obtendo resultados significativos em varios ambientes distintos.
 
-Por fim, no Gráfico 20 é possível notar, de forma mais intuitiva, em quais momentos a previsão obteve maior e menor exatidão, levando em consideração os pontos dos valores reais da ação analisada.
+Por fim, no Gráfico 20 notou-se, de forma mais intuitiva, em quais momentos a previsão obteve maior e menor exatidão, levando em consideração os pontos dos valores reais da ação analisada.
 \begin{grafico}[h]
 	\centering
 	\fbox{\includegraphics[width=1\textwidth]{resultados_amazon_200}}
@@ -478,7 +480,7 @@ Para quantificar como ocorreu o processo de treinamento, basta multiplicar o nú
 
 Para o primeiro cenário a rede iniciou-se, na primeira iteração, com um erro percentual de 0.00071726446826636352 e, após o término das 1000 iterações de treinamento, conclui-se com um erro percentual de 1.2545666972429883.$10^{-05}$. Mais dois treinos distintos foram realizados visando encontrar alguma dispersão no erro obtido pela rede, como feito na análise anterior. Portanto, o segundo treino obteve um erro inicial de 0.001255831817103349 e, após o término das 1000 iterações de treinamento, conclui-se com um percentual de 1.607023747635374.$10^{-05}$. O terceiro treino obteve um erro inicial de 0.0022901768887634102 e, após o término das 1000 iterações de treinamento, o EQM do treinamento conclui-se com um percentual de 1.363795522772317.$10^{-05}$.
 
-Após a execução desses cenários de treinamento, pode-se concluir que a rede se comportou de forma estável em relação a quantidade de iterações, não distinguindo, de forma relevante, os valores dos pesos em diversas inicializações aleatórias. O Gráfico 21 demonstra, de forma mais intuitiva, o decaimento do erro durante o processo de treinamento no primeiro cenário executado.
+Após a execução desses cenários de treinamento, concluiu-se que a rede se comportou de forma estável em relação a quantidade de iterações, não distinguindo, de forma relevante, os valores dos pesos em diversas inicializações aleatórias. O Gráfico 21 demonstra, de forma mais intuitiva, o decaimento do erro durante o processo de treinamento no primeiro cenário executado.
 
 \begin{grafico}[h]
 	\centering
@@ -488,7 +490,7 @@ Após a execução desses cenários de treinamento, pode-se concluir que a rede 
 	\label{lingua}
 \end{grafico}
 
-Analisando o Gráfico 21, pode-se observar que o erro obteve uma queda brusca até 600 iterações, enquanto que, entre as iterações de número 600 até a de número 1000 seu valor estabilizou-se, ou seja, foi o momento em que a RNA convergiu. Portanto, após a execução desses cenários de treinamento, analisando o comportamento do erro e a sua variação, pode-se concluir que o modelo se comportou de forma estável, não distinguindo, de forma relevante, os valores dos pesos em diversas inicializações aleatórias.
+Analisando o Gráfico 21, observou-se que o erro obteve uma queda brusca até 600 iterações, enquanto que, entre as iterações de número 600 até a de número 1000 seu valor estabilizou-se, ou seja, foi o momento em que a RNA convergiu. Portanto, após a execução desses cenários de treinamento, analisando o comportamento do erro e a sua variação, pode-se concluir que o modelo se comportou de forma estável, não distinguindo, de forma relevante, os valores dos pesos em diversas inicializações aleatórias.
 
 Após a observação do comportamento do erro, o período de teste (Tabela 10) foi inserido na rede. Os dados foram devidamente refinados, normalizados e, a partir disso, foram ativados. Os resultados preditos, a partir da execução dos testes, são demonstrados na Tabela 12. 
 
@@ -511,11 +513,11 @@ Data    & Valor real   & Resultado    & Erro (\%) & Variação\\
 \end{tabular}
 \end{table}
 
-Analisando a Tabela 12, pode-se observar que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 1.14\%, se aproximando, consideravelmente, dos valores reais. O erro médio, analisado para todo o período de predição, ficou em torno de 0,56\%. Já a medida de dispersão dos erros em torno da média obtida (desvio padrão) foi de aproximadamente 0.32\%.
+Analisando a Tabela 12, notou-se que os resultados obtidos foram significativos, onde o percentual de erro calculado, através do erro relativo percentual, não ultrapassou a margem 1.14\%, se aproximando, consideravelmente, dos valores reais. O erro médio, analisado para todo o período de predição, ficou em torno de 0,56\%. Já a medida de dispersão dos erros em torno da média obtida (desvio padrão) foi de aproximadamente 0.32\%.
 
 No presente cenário em análise, os valores mais falhos de toda a série foram os dos dias 23/08/2017 e 29/08/2017,  com um erro no valor de -7.23 e -10.72 USD, respectivamente. Comparando-os com os resultados do treinamento realizado anteriormente, pode-se observar que a RNA suavizou os valores que sofreram maior dispersão, como por exemplo nos dias 25/08/2017, 30/08/2017 e 31/08/2017. Além disso, é possível analisar que os respectivos resultados também tiveram uma média total menor que a obtida no treinamento anterior, justamente pela suavização e adaptabilidade aos valores do período testado.
 
-É interessante detalhar que, para este caso, o cenário com 1000 iterações obteve um erro total médio menor que o treinamento com 200 iterações, diferentemente de todas as outras empresas analisadas neste trabalho. Novamente frisando, isto ocorreu justamente porque a série da Amazon conta maiores variações durante o perído coletado, necessitando de uma quantidade de treinamento maior para a RNA convergir. No Gráfico 22 é possível notar, de forma mais intuitiva, em quais momentos a previsão obteve maior e menor exatidão, levando em consideração os pontos dos valores reais da ação analisada.
+É interessante detalhar que, para este caso, o cenário com 1000 iterações obteve um erro total médio menor que o treinamento com 200 iterações, diferentemente de todas as outras empresas analisadas neste trabalho. Novamente frisando, isto ocorreu justamente porque a série da Amazon conta maiores variações durante o perído coletado, necessitando de uma quantidade de treinamento maior para a RNA convergir. No Gráfico 22 nota-se, de forma mais intuitiva, em quais momentos a previsão obteve maior e menor exatidão, levando em consideração os pontos dos valores reais da ação analisada.
 \begin{grafico}[h]
 	\centering
 	\fbox{\includegraphics[width=1\textwidth]{amazon_resultado_1000}}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  27 NOV 2017 10:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.22)  30 NOV 2017 20:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3521,13 +3521,13 @@ Package xcolor Warning: Incompatible color definition on input line 7.
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
-Package xcolor Warning: Incompatible color definition on input line 157.
+Package xcolor Warning: Incompatible color definition on input line 159.
 
 
-Package xcolor Warning: Incompatible color definition on input line 157.
+Package xcolor Warning: Incompatible color definition on input line 159.
 
 
-Package xcolor Warning: Incompatible color definition on input line 157.
+Package xcolor Warning: Incompatible color definition on input line 159.
 
 (./src/base-treino.py
 
@@ -3894,13 +3894,13 @@ Package xcolor Warning: Incompatible color definition on input line 25.
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
-Package xcolor Warning: Incompatible color definition on input line 165.
+Package xcolor Warning: Incompatible color definition on input line 167.
 
 
-Package xcolor Warning: Incompatible color definition on input line 165.
+Package xcolor Warning: Incompatible color definition on input line 167.
 
 
-Package xcolor Warning: Incompatible color definition on input line 165.
+Package xcolor Warning: Incompatible color definition on input line 167.
 
 (./src/realizaTreinamento.py
 
@@ -3976,28 +3976,28 @@ Package xcolor Warning: Incompatible color definition on input line 7.
 Package xcolor Warning: Incompatible color definition on input line 7.
 
 )
-Overfull \hbox (7.37355pt too wide) in paragraph at lines 171--172
+Overfull \hbox (7.37355pt too wide) in paragraph at lines 173--174
 []\T1/cmr/m/n/12 O ob-jeto \T1/cmr/m/it/12 Network-Wri-ter\T1/cmr/m/n/12 , en-c
 on-trado na li-nha 7, per-tence ao pa-cote to-ols.customxml,
  []
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[58] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-) [58]
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 )
 
-Package xcolor Warning: Incompatible color definition on input line 175.
+Package xcolor Warning: Incompatible color definition on input line 177.
 
 
-Package xcolor Warning: Incompatible color definition on input line 175.
+Package xcolor Warning: Incompatible color definition on input line 177.
 
 
-Package xcolor Warning: Incompatible color definition on input line 175.
+Package xcolor Warning: Incompatible color definition on input line 177.
 
 (./src/rede-feedforward-intel.xml
 
@@ -4514,8 +4514,8 @@ Package xcolor Warning: Incompatible color definition on input line 31.
 
 Package xcolor Warning: Incompatible color definition on input line 32.
 
-)) (./Capitulos/resultados.tex [60]
-<./Graficos/erro_intel_primeiro.png, id=1155, 987.2082pt x 482.7636pt>
+)) (./Capitulos/resultados.tex [60] [61]
+<./Graficos/erro_intel_primeiro.png, id=1161, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_intel_primeiro.png Graphic file (type png)
 
 <use ./Graficos/erro_intel_primeiro.png>
@@ -4530,7 +4530,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 19--20
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[61
+[62
 
 ]
 Overfull \hbox (3.94908pt too wide) in paragraph at lines 38--38
@@ -4572,7 +4572,7 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 46--46
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[62 <./Graficos/erro_intel_primeiro.png>]
+[63 <./Graficos/erro_intel_primeiro.png>]
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 60--60
  []|\T1/cmr/m/n/12 23/08/2017| 
  []
@@ -4607,7 +4607,7 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 66--66
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-<./Graficos/predicao_intel.png, id=1165, 987.2082pt x 482.7636pt>
+<./Graficos/predicao_intel.png, id=1171, 987.2082pt x 482.7636pt>
 File: ./Graficos/predicao_intel.png Graphic file (type png)
 
 <use ./Graficos/predicao_intel.png>
@@ -4618,8 +4618,8 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 74--75
  [][] 
  []
 
-[63] [64 <./Graficos/predicao_intel.png>]
-<./Graficos/erro_intel_1000iteracoes.png, id=1177, 987.2082pt x 482.7636pt>
+[64] [65 <./Graficos/predicao_intel.png>]
+<./Graficos/erro_intel_1000iteracoes.png, id=1183, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_intel_1000iteracoes.png Graphic file (type png)
 
 <use ./Graficos/erro_intel_1000iteracoes.png>
@@ -4669,8 +4669,8 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 117--117
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[65 <./Graficos/erro_intel_1000iteracoes.png>]
-<./Graficos/predicao_intel_1000.png, id=1183, 987.2082pt x 482.7636pt>
+[66 <./Graficos/erro_intel_1000iteracoes.png>]
+<./Graficos/predicao_intel_1000.png, id=1190, 987.2082pt x 482.7636pt>
 File: ./Graficos/predicao_intel_1000.png Graphic file (type png)
 
 <use ./Graficos/predicao_intel_1000.png>
@@ -4682,340 +4682,340 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 126--127
  [][] 
  []
 
-[66 <./Graficos/predicao_intel_1000.png>]
-<./Graficos/erro_microsoft_200_segundo_cenario.png, id=1191, 987.2082pt x 482.7
+[67 <./Graficos/predicao_intel_1000.png>]
+<./Graficos/erro_microsoft_200_segundo_cenario.png, id=1197, 987.2082pt x 482.7
 636pt>
 File: ./Graficos/erro_microsoft_200_segundo_cenario.png Graphic file (type png)
 
  <use ./Graficos/erro_microsoft_200_segundo_cenario.png>
 Package pdftex.def Info: ./Graficos/erro_microsoft_200_segundo_cenario.png used
- on input line 149.
+ on input line 151.
 (pdftex.def)             Requested size: 455.0pt x 222.50119pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 149--150
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 151--152
  [][] 
  []
 
-[67]
-Overfull \hbox (3.94908pt too wide) in paragraph at lines 164--164
+[68]
+Overfull \hbox (3.94908pt too wide) in paragraph at lines 166--166
  []|\T1/cmr/m/n/12 Fechamento| 
- []
-
-
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 166--166
- []|\T1/cmr/m/n/12 23/08/2017| 
- []
-
-
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 167--167
- []|\T1/cmr/m/n/12 24/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 168--168
- []|\T1/cmr/m/n/12 25/08/2017| 
+ []|\T1/cmr/m/n/12 23/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 169--169
- []|\T1/cmr/m/n/12 28/08/2017| 
+ []|\T1/cmr/m/n/12 24/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 170--170
- []|\T1/cmr/m/n/12 29/08/2017| 
+ []|\T1/cmr/m/n/12 25/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 171--171
- []|\T1/cmr/m/n/12 30/08/2017| 
+ []|\T1/cmr/m/n/12 28/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 172--172
+ []|\T1/cmr/m/n/12 29/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 173--173
+ []|\T1/cmr/m/n/12 30/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 174--174
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[68 <./Graficos/erro_microsoft_200_segundo_cenario.png>]
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 187--187
- []|\T1/cmr/m/n/12 23/08/2017| 
- []
-
-
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 188--188
- []|\T1/cmr/m/n/12 24/08/2017| 
- []
-
-
+[69 <./Graficos/erro_microsoft_200_segundo_cenario.png>]
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 189--189
- []|\T1/cmr/m/n/12 25/08/2017| 
+ []|\T1/cmr/m/n/12 23/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 190--190
- []|\T1/cmr/m/n/12 28/08/2017| 
+ []|\T1/cmr/m/n/12 24/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 191--191
- []|\T1/cmr/m/n/12 29/08/2017| 
+ []|\T1/cmr/m/n/12 25/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 192--192
- []|\T1/cmr/m/n/12 30/08/2017| 
+ []|\T1/cmr/m/n/12 28/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 193--193
+ []|\T1/cmr/m/n/12 29/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 194--194
+ []|\T1/cmr/m/n/12 30/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 195--195
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-<./Graficos/microsoft_resultados.png, id=1202, 987.2082pt x 482.7636pt>
+<./Graficos/microsoft_resultados.png, id=1208, 987.2082pt x 482.7636pt>
 File: ./Graficos/microsoft_resultados.png Graphic file (type png)
 
 <use ./Graficos/microsoft_resultados.png>
 Package pdftex.def Info: ./Graficos/microsoft_resultados.png used on input line
- 201.
+ 203.
 (pdftex.def)             Requested size: 455.0pt x 222.50119pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 201--202
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 203--204
  [][] 
  []
 
-[69 <./Graficos/microsoft_resultados.png>]
-<./Graficos/erro_microsoft_1000.png, id=1209, 987.2082pt x 482.7636pt>
+[70 <./Graficos/microsoft_resultados.png>]
+<./Graficos/erro_microsoft_1000.png, id=1215, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_microsoft_1000.png Graphic file (type png)
 
 <use ./Graficos/erro_microsoft_1000.png>
 Package pdftex.def Info: ./Graficos/erro_microsoft_1000.png used on input line 
-219.
+221.
 (pdftex.def)             Requested size: 455.0pt x 222.50119pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 219--220
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 221--222
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[70]
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 241--241
- []|\T1/cmr/m/n/12 23/08/2017| 
- []
-
-
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 242--242
- []|\T1/cmr/m/n/12 24/08/2017| 
- []
-
-
+[71]
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 243--243
- []|\T1/cmr/m/n/12 25/08/2017| 
+ []|\T1/cmr/m/n/12 23/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 244--244
- []|\T1/cmr/m/n/12 28/08/2017| 
+ []|\T1/cmr/m/n/12 24/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 245--245
- []|\T1/cmr/m/n/12 29/08/2017| 
+ []|\T1/cmr/m/n/12 25/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 246--246
- []|\T1/cmr/m/n/12 30/08/2017| 
+ []|\T1/cmr/m/n/12 28/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 247--247
+ []|\T1/cmr/m/n/12 29/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 248--248
+ []|\T1/cmr/m/n/12 30/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 249--249
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[71 <./Graficos/erro_microsoft_1000.png>]
-<./Graficos/microsoft_1000_resultado.png, id=1220, 987.2082pt x 482.7636pt>
+[72 <./Graficos/erro_microsoft_1000.png>]
+<./Graficos/microsoft_1000_resultado.png, id=1227, 987.2082pt x 482.7636pt>
 File: ./Graficos/microsoft_1000_resultado.png Graphic file (type png)
 
 <use ./Graficos/microsoft_1000_resultado.png>
 Package pdftex.def Info: ./Graficos/microsoft_1000_resultado.png used on input 
-line 260.
+line 262.
 (pdftex.def)             Requested size: 455.0pt x 222.50119pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 260--261
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 262--263
  [][] 
  []
 
-[72 <./Graficos/microsoft_1000_resultado.png>]
-<./Graficos/erro_apple_200.png, id=1227, 987.2082pt x 482.7636pt>
+[73 <./Graficos/microsoft_1000_resultado.png>]
+<./Graficos/erro_apple_200.png, id=1233, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_apple_200.png Graphic file (type png)
 
 <use ./Graficos/erro_apple_200.png>
-Package pdftex.def Info: ./Graficos/erro_apple_200.png used on input line 277.
+Package pdftex.def Info: ./Graficos/erro_apple_200.png used on input line 279.
 (pdftex.def)             Requested size: 455.0pt x 222.50119pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 277--278
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 279--280
  [][] 
  []
 
 
-Overfull \hbox (3.94908pt too wide) in paragraph at lines 292--292
+Overfull \hbox (3.94908pt too wide) in paragraph at lines 294--294
  []|\T1/cmr/m/n/12 Fechamento| 
- []
-
-
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 294--294
- []|\T1/cmr/m/n/12 23/08/2017| 
- []
-
-
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 295--295
- []|\T1/cmr/m/n/12 24/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 296--296
- []|\T1/cmr/m/n/12 25/08/2017| 
+ []|\T1/cmr/m/n/12 23/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 297--297
- []|\T1/cmr/m/n/12 28/08/2017| 
+ []|\T1/cmr/m/n/12 24/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 298--298
- []|\T1/cmr/m/n/12 29/08/2017| 
+ []|\T1/cmr/m/n/12 25/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 299--299
- []|\T1/cmr/m/n/12 30/08/2017| 
+ []|\T1/cmr/m/n/12 28/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 300--300
+ []|\T1/cmr/m/n/12 29/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 301--301
+ []|\T1/cmr/m/n/12 30/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 302--302
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[73 <./Graficos/erro_apple_200.png>]
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 315--315
- []|\T1/cmr/m/n/12 23/08/2017| 
- []
-
-
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 316--316
- []|\T1/cmr/m/n/12 24/08/2017| 
- []
-
-
+[74 <./Graficos/erro_apple_200.png>]
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 317--317
- []|\T1/cmr/m/n/12 25/08/2017| 
+ []|\T1/cmr/m/n/12 23/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 318--318
- []|\T1/cmr/m/n/12 28/08/2017| 
+ []|\T1/cmr/m/n/12 24/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 319--319
- []|\T1/cmr/m/n/12 29/08/2017| 
+ []|\T1/cmr/m/n/12 25/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 320--320
- []|\T1/cmr/m/n/12 30/08/2017| 
+ []|\T1/cmr/m/n/12 28/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 321--321
+ []|\T1/cmr/m/n/12 29/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 322--322
+ []|\T1/cmr/m/n/12 30/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 323--323
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[74] <./Graficos/resultado_apple_200.png, id=1239, 987.2082pt x 482.7636pt>
+[75] <./Graficos/resultado_apple_200.png, id=1245, 987.2082pt x 482.7636pt>
 File: ./Graficos/resultado_apple_200.png Graphic file (type png)
 
 <use ./Graficos/resultado_apple_200.png>
 Package pdftex.def Info: ./Graficos/resultado_apple_200.png used on input line 
-332.
+334.
 (pdftex.def)             Requested size: 455.0pt x 222.50119pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 332--333
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 334--335
  [][] 
  []
 
-<./Graficos/erro_apple_1000_2.png, id=1240, 987.2082pt x 482.7636pt>
+<./Graficos/erro_apple_1000_2.png, id=1246, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_apple_1000_2.png Graphic file (type png)
 
 <use ./Graficos/erro_apple_1000_2.png>
-Package pdftex.def Info: ./Graficos/erro_apple_1000_2.png used on input line 34
-9.
+Package pdftex.def Info: ./Graficos/erro_apple_1000_2.png used on input line 35
+1.
 (pdftex.def)             Requested size: 455.0pt x 222.50119pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 349--350
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 351--352
  [][] 
  []
 
-[75 <./Graficos/resultado_apple_200.png>]
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 367--367
- []|\T1/cmr/m/n/12 23/08/2017| 
- []
-
-
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 368--368
- []|\T1/cmr/m/n/12 24/08/2017| 
- []
-
-
+[76 <./Graficos/resultado_apple_200.png>]
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 369--369
- []|\T1/cmr/m/n/12 25/08/2017| 
+ []|\T1/cmr/m/n/12 23/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 370--370
- []|\T1/cmr/m/n/12 28/08/2017| 
+ []|\T1/cmr/m/n/12 24/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 371--371
- []|\T1/cmr/m/n/12 29/08/2017| 
+ []|\T1/cmr/m/n/12 25/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 372--372
- []|\T1/cmr/m/n/12 30/08/2017| 
+ []|\T1/cmr/m/n/12 28/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 373--373
+ []|\T1/cmr/m/n/12 29/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 374--374
+ []|\T1/cmr/m/n/12 30/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 375--375
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[76 <./Graficos/erro_apple_1000_2.png>]
-<./Graficos/apple_1000_resultado.png, id=1252, 987.2082pt x 482.7636pt>
+[77 <./Graficos/erro_apple_1000_2.png>]
+<./Graficos/apple_1000_resultado.png, id=1258, 987.2082pt x 482.7636pt>
 File: ./Graficos/apple_1000_resultado.png Graphic file (type png)
 
 <use ./Graficos/apple_1000_resultado.png>
 Package pdftex.def Info: ./Graficos/apple_1000_resultado.png used on input line
- 387.
+ 389.
 (pdftex.def)             Requested size: 455.0pt x 222.50119pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 387--388
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 389--390
  [][] 
  []
 
-[77 <./Graficos/apple_1000_resultado.png>]
-<./Graficos/erro_amazon_200.png, id=1258, 987.2082pt x 482.7636pt>
+[78 <./Graficos/apple_1000_resultado.png>]
+<./Graficos/erro_amazon_200.png, id=1266, 987.2082pt x 482.7636pt>
 File: ./Graficos/erro_amazon_200.png Graphic file (type png)
 
 <use ./Graficos/erro_amazon_200.png>
-Package pdftex.def Info: ./Graficos/erro_amazon_200.png used on input line 408.
+Package pdftex.def Info: ./Graficos/erro_amazon_200.png used on input line 410.
 
 (pdftex.def)             Requested size: 455.0pt x 222.50119pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 408--409
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 410--411
  [][] 
  []
 
@@ -5023,165 +5023,168 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 408--409
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (3.94908pt too wide) in paragraph at lines 421--421
+Overfull \hbox (3.94908pt too wide) in paragraph at lines 423--423
  []|\T1/cmr/m/n/12 Fechamento| 
  []
 
 
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 423--423
- []|\T1/cmr/m/n/12 23/08/2017| 
- []
-
-
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 424--424
- []|\T1/cmr/m/n/12 24/08/2017| 
- []
-
-
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 425--425
- []|\T1/cmr/m/n/12 25/08/2017| 
+ []|\T1/cmr/m/n/12 23/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 426--426
- []|\T1/cmr/m/n/12 28/08/2017| 
+ []|\T1/cmr/m/n/12 24/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 427--427
- []|\T1/cmr/m/n/12 29/08/2017| 
+ []|\T1/cmr/m/n/12 25/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 428--428
- []|\T1/cmr/m/n/12 30/08/2017| 
+ []|\T1/cmr/m/n/12 28/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 429--429
+ []|\T1/cmr/m/n/12 29/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 430--430
+ []|\T1/cmr/m/n/12 30/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 431--431
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[78]
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 446--446
- []|\T1/cmr/m/n/12 23/08/2017| 
- []
-
-
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 447--447
- []|\T1/cmr/m/n/12 24/08/2017| 
- []
-
-
+[79]
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 448--448
- []|\T1/cmr/m/n/12 25/08/2017| 
+ []|\T1/cmr/m/n/12 23/08/2017| 
  []
 
 
 Overfull \hbox (1.83015pt too wide) in paragraph at lines 449--449
- []|\T1/cmr/m/n/12 28/08/2017| 
- []
-
-
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 450--450
- []|\T1/cmr/m/n/12 29/08/2017| 
- []
-
-
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 451--451
- []|\T1/cmr/m/n/12 30/08/2017| 
- []
-
-
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 452--452
- []|\T1/cmr/m/n/12 31/08/2017| 
- []
-
-[79 <./Graficos/erro_amazon_200.png>]
-<./Graficos/resultados_amazon_200.png, id=1271, 987.2082pt x 482.7636pt>
-File: ./Graficos/resultados_amazon_200.png Graphic file (type png)
-
-<use ./Graficos/resultados_amazon_200.png>
-Package pdftex.def Info: ./Graficos/resultados_amazon_200.png used on input lin
-e 468.
-(pdftex.def)             Requested size: 455.0pt x 222.50119pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 468--469
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[80] <./Graficos/erro_amazon_1000.png, id=1277, 987.2082pt x 482.7636pt>
-File: ./Graficos/erro_amazon_1000.png Graphic file (type png)
-
-<use ./Graficos/erro_amazon_1000.png>
-Package pdftex.def Info: ./Graficos/erro_amazon_1000.png used on input line 485
-.
-(pdftex.def)             Requested size: 455.0pt x 222.50119pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 485--486
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[81 <./Graficos/resultados_amazon_200.png>]
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 503--503
- []|\T1/cmr/m/n/12 23/08/2017| 
- []
-
-
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 504--504
  []|\T1/cmr/m/n/12 24/08/2017| 
  []
 
 
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 505--505
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 450--450
  []|\T1/cmr/m/n/12 25/08/2017| 
  []
 
 
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 506--506
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 451--451
  []|\T1/cmr/m/n/12 28/08/2017| 
  []
 
 
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 507--507
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 452--452
  []|\T1/cmr/m/n/12 29/08/2017| 
  []
 
 
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 508--508
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 453--453
  []|\T1/cmr/m/n/12 30/08/2017| 
  []
 
 
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 509--509
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 454--454
  []|\T1/cmr/m/n/12 31/08/2017| 
  []
 
-[82 <./Graficos/erro_amazon_1000.png>]
-<./Graficos/amazon_resultado_1000.png, id=1289, 987.2082pt x 482.7636pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[80 <./Graficos/erro_amazon_200.png>]
+<./Graficos/resultados_amazon_200.png, id=1277, 987.2082pt x 482.7636pt>
+File: ./Graficos/resultados_amazon_200.png Graphic file (type png)
+
+<use ./Graficos/resultados_amazon_200.png>
+Package pdftex.def Info: ./Graficos/resultados_amazon_200.png used on input lin
+e 470.
+(pdftex.def)             Requested size: 455.0pt x 222.50119pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 470--471
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[81] <./Graficos/erro_amazon_1000.png, id=1283, 987.2082pt x 482.7636pt>
+File: ./Graficos/erro_amazon_1000.png Graphic file (type png)
+
+<use ./Graficos/erro_amazon_1000.png>
+Package pdftex.def Info: ./Graficos/erro_amazon_1000.png used on input line 487
+.
+(pdftex.def)             Requested size: 455.0pt x 222.50119pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 487--488
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[82 <./Graficos/resultados_amazon_200.png>]
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 505--505
+ []|\T1/cmr/m/n/12 23/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 506--506
+ []|\T1/cmr/m/n/12 24/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 507--507
+ []|\T1/cmr/m/n/12 25/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 508--508
+ []|\T1/cmr/m/n/12 28/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 509--509
+ []|\T1/cmr/m/n/12 29/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 510--510
+ []|\T1/cmr/m/n/12 30/08/2017| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 511--511
+ []|\T1/cmr/m/n/12 31/08/2017| 
+ []
+
+[83 <./Graficos/erro_amazon_1000.png>]
+<./Graficos/amazon_resultado_1000.png, id=1295, 987.2082pt x 482.7636pt>
 File: ./Graficos/amazon_resultado_1000.png Graphic file (type png)
 
 <use ./Graficos/amazon_resultado_1000.png>
 Package pdftex.def Info: ./Graficos/amazon_resultado_1000.png used on input lin
-e 521.
+e 523.
 (pdftex.def)             Requested size: 455.0pt x 222.50119pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 521--522
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 523--524
  [][] 
  []
 
-[83 <./Graficos/amazon_resultado_1000.png>]) (./Capitulos/conclusao.tex
-[84] [85
+[84 <./Graficos/amazon_resultado_1000.png>]) (./Capitulos/conclusao.tex
+[85] [86
 
-]) (./modelo.bbl [86]
+]) (./modelo.bbl [87]
 bibitemlist
-[87
+[88
 
 ]
 Underfull \hbox (badness 1418) in paragraph at lines 211--215
@@ -5189,7 +5192,7 @@ Underfull \hbox (badness 1418) in paragraph at lines 211--215
 ird edi-tion). 2004.
  []
 
-[88]
+[89]
 Underfull \hbox (badness 5077) in paragraph at lines 259--264
 []\T1/cmr/m/n/12 TORORADAR. Aná-lise téc-nica de ações. 2015. Acesso em 10 de a
 bril de
@@ -5201,11 +5204,11 @@ Underfull \hbox (badness 4266) in paragraph at lines 259--264
 m . br / investimento / analise-[]tecnica /
  []
 
-) [89]
+) [90]
 No file modelo.ind.
 
 AED: lastpage setting LastPage
-[90]
+[91]
 \tf@lof=\write6
 \openout6 = `modelo.lof'.
 
@@ -5230,9 +5233,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
  ) 
 Here is how much of TeX's memory you used:
- 36546 strings out of 493105
- 792303 string characters out of 6137072
- 1187942 words of memory out of 5000000
+ 36547 strings out of 493105
+ 792310 string characters out of 6137072
+ 1183850 words of memory out of 5000000
  38648 multiletter control sequences out of 15000+600000
  18411 words of font info for 52 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
@@ -5255,10 +5258,10 @@ super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfxc1200.pfb>
-Output written on modelo.pdf (91 pages, 3420487 bytes).
+Output written on modelo.pdf (92 pages, 3339312 bytes).
 PDF statistics:
- 1780 PDF objects out of 2073 (max. 8388607)
- 1562 compressed objects within 16 object streams
- 542 named destinations out of 1000 (max. 500000)
+ 1786 PDF objects out of 2073 (max. 8388607)
+ 1567 compressed objects within 16 object streams
+ 543 named destinations out of 1000 (max. 500000)
  896 words of extra memory for PDF output out of 10000 (max. 10000000)
 

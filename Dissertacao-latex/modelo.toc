@@ -73,22 +73,22 @@
 \contentsline {subsection}{\numberline {5.4.2}Organiza\IeC {\c c}\IeC {\~a}o das Camadas do Modelo}{55}{subsection.5.4.2}
 \contentsline {subsection}{\numberline {5.4.3}Treinamento da Rede}{56}{subsection.5.4.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {AN\IeC {\'A}LISE DOS RESULTADOS}}{61}{chapter.6}
-\contentsline {section}{\numberline {6.1}APLICA\IeC {\c C}\IeC {\~A}O DA REDE NA S\IeC {\'E}RIE DA INTEL CORPORATION}{61}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{61}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{64}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}APLICA\IeC {\c C}\IeC {\~A}O DA REDE NA S\IeC {\'E}RIE DA MICROSOFT CORPORATION}{67}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{67}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{70}{subsection.6.2.2}
-\contentsline {section}{\numberline {6.3}APLICA\IeC {\c C}\IeC {\~A}O DA REDE NA S\IeC {\'E}RIE DA APPLE INC}{72}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{73}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{75}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}APLICA\IeC {\c C}\IeC {\~A}O DA REDE NA S\IeC {\'E}RIE DA AMAZON INC}{78}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{78}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{81}{subsection.6.4.2}
-\contentsline {section}{\numberline {6.5}TEMPO DE EXECU\IeC {\c C}\IeC {\~A}O DO TREINAMENTO}{83}{section.6.5}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {AN\IeC {\'A}LISE DOS RESULTADOS}}{62}{chapter.6}
+\contentsline {section}{\numberline {6.1}APLICA\IeC {\c C}\IeC {\~A}O DA REDE NA S\IeC {\'E}RIE DA INTEL CORPORATION}{62}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{62}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{65}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}APLICA\IeC {\c C}\IeC {\~A}O DA REDE NA S\IeC {\'E}RIE DA MICROSOFT CORPORATION}{68}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{68}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{71}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}APLICA\IeC {\c C}\IeC {\~A}O DA REDE NA S\IeC {\'E}RIE DA APPLE INC}{73}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{74}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{76}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}APLICA\IeC {\c C}\IeC {\~A}O DA REDE NA S\IeC {\'E}RIE DA AMAZON INC}{79}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Treinamento com 200 Itera\IeC {\c c}\IeC {\~o}es}{79}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Treinamento com 1000 Itera\IeC {\c c}\IeC {\~o}es}{82}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}TEMPO DE EXECU\IeC {\c C}\IeC {\~A}O DO TREINAMENTO}{84}{section.6.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {CONCLUS\IeC {\~O}ES E SUGEST\IeC {\~O}ES PARA FUTUROS TRABALHOS}}{85}{chapter.7}
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {CONCLUS\IeC {\~O}ES E SUGEST\IeC {\~O}ES PARA FUTUROS TRABALHOS}}{86}{chapter.7}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{REFER{\^ E}NCIAS}{87}{section*.8}
+\contentsline {chapter}{REFER{\^ E}NCIAS}{88}{section*.8}

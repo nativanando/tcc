@@ -88,7 +88,7 @@ Na Figura 10 é possível observar o arquivo criado a partir do Código 2, demon
 \end{figure}
 
 \subsection{Google \textit{Finance} API}
-Faz-se importante citar qual a fonte onde o pandas busca as séries históricas, por questões como confiabilidade dos dados. O acesso é realizado através da integração com o Google \textit{Finance} API, um banco de dados quase em tempo real mantido pelo Google, que trabalha com as principais bolsas de valores do mundo \cite{pandas}.
+Fez-se importante citar qual a fonte onde o pandas busca as séries históricas, por questões como confiabilidade dos dados. O acesso é realizado através da integração com o Google \textit{Finance} API, um banco de dados quase em tempo real mantido pelo Google, que trabalha com as principais bolsas de valores do mundo \cite{pandas}.
 
 A API trabalha com um limite inicial para a coleta das ações, a partir de 03/05/2001 e vai se atualizando diariamente. Tendo em vista que para trabalhar com RNAs é importante buscar o máximo de informações possíveis e, também, considerando o limite disponível pela API, o período das ações das empresas selecionadas serão coletadas iniciando no ano de 2001 até o ano de 2017. 
 
@@ -124,7 +124,7 @@ Tendo em vista os critérios estabelecidos na seção anterior, chegou-se a defi
 
 \citeonline{haykin2000} direciona este modelo de rede ao \textit{Perceptron} de Múltiplas Camadas (MLP, \textit{Multilayer Perceptron}), que são redes neurais compostas por um conjunto de unidades sensoriais que constituem a camada de entrada, uma ou mais camadas ocultas e uma camada de saída, onde o sinal de entrada se propaga para frente através da rede, camada por camada. Redes MLP trabalham normalmente junto ao algoritmo \textit{backpropagation} para realizar seu treinamento e aprendizado.
 
-Tendo em vista a especificação do modelo da rede e dos dados utilizados para realizar o treinamento e os testes, a próxima etapa foi levantar as entradas utilizadas na RNA. Como o objetivo do trabalho é realizar a predição do valor de abertura das ações em dias posteriores aos treinados, todas as váriaveis coletadas serão utilizadas como entrada da RNA. Portanto, os parâmetros que irão compor a camada de entrada da RNA são:
+Tendo em vista a especificação do modelo da rede e dos dados utilizados para realizar o treinamento e os testes, a próxima etapa foi definir as entradas que foram utilizadas na RNA. Como o objetivo do trabalho é realizar a predição do valor de abertura das ações em dias posteriores aos treinados, todas as váriaveis coletadas serão utilizadas como entrada da RNA. Portanto, os parâmetros que irão compor a camada de entrada da RNA são:
 
 \begin{enumerate}
 \item Valor de abertura;
@@ -149,7 +149,7 @@ Por isso, para a grande maioria dos problemas utiliza-se apenas uma camada escon
 
 Mediante estas informações, o modelo desenvolvido tem apenas uma camada intermediária composta por 13 neurônios, que seguem as especificações propostas por \citeonline{nielsen}, \citeonline{haykin2000} e \citeonline{marangoni} buscando otimizar a sua estrutura e obtendo um resultado eficiente para o problema.
 
-Por fim, a saída da rede será composta por uma única camada que irá conter o valor de abertura do dia seguinte. É importante deixar claro que este valor, durante o processo de treinamento, será preenchido com os valores reais das ações em relação ao período que será escolhido para o processo de treinamento. Na Figura 11 é possível visualizar a composição gráfica da arquitetura proposta.
+Por fim, a saída da rede é composta por uma única camada que contém o valor de abertura do dia seguinte. É importante deixar claro que este valor, durante o processo de treinamento, é preenchido com os valores reais das ações em relação ao período coletado. Na Figura 11 é possível visualizar a composição gráfica da arquitetura proposta.
 
 \begin{figure}[h]
 	\centering
